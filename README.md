@@ -53,12 +53,12 @@ Updates about following opportunities are available:
 
 <h2 align="center">Bugs and Feature Requests</h2>
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/blob/master/contributing.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/issues/new).
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/blob/develop/contributing.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/issues/new).
 
 <h2 align="center">Contributing</h2>
 
 We want contributing to Opportunity Calendar to be enjoyable and educational for everyone. We would love to have your contributions.
-To get started have a look at our [documentation on contributing](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/blob/master/contributing.md).
+To get started have a look at our [documentation on contributing](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/blob/develop/contributing.md).
 
 <h2 align="center">Copyright and license</h2>
 
