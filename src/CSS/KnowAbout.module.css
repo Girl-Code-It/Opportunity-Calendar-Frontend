@@ -1,0 +1,14 @@
+.Jumbotron {
+    background-color: white;
+    padding-top: 0px;
+    /* justify-content: center; */
+}
+
+.Heading {
+    text-align: center;
+    font-size: 50px;
+}
+
+.About {
+    color: #008dc8;
+}

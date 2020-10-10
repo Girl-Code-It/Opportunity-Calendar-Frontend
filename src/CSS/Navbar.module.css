@@ -1,0 +1,45 @@
+.NavBar {
+  margin: 0 0;
+  background-color: white !important;
+}
+
+.NavBar a {
+  color: black !important;
+  letter-spacing: 0px;
+  font-weight: 500;
+  font-size: 17px;
+  margin: auto 8px;
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+.Logo {
+  letter-spacing: 0px;
+  font-size: 2.3rem;
+  font-weight: 390;
+  font-family: Arial;
+  padding-left: 20px;
+}
+
+a:hover,
+a:active,
+a:global(.active) {
+  cursor: pointer;
+  border-bottom: 3px solid #008dc8;
+}
+
+@media (max-width: 360px) {
+  .Logo {
+    position: relative;
+    left: -20px;
+    font-size: 2rem;
+  }
+  button {
+    position: absolute;
+    top: 16px;
+    right: 0;
+  }
+}

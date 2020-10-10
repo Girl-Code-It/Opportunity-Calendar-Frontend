@@ -1,0 +1,111 @@
+.Jumbotron {
+    margin: 0px;
+    padding: 20px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+
+.Container {
+    /* padding: 0px; */
+}
+
+.Logo {
+    /* padding-top: 20px; */
+    height: 180px;
+    width: 200px;
+}
+
+.Bottom2, .Top2 {
+    display: none;
+}
+
+.Column {
+    margin-top: 30px;
+}
+
+h5 {
+    color: #008dc8;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+}
+
+.Rectangle {
+    height: 2px;
+    background-color: rgb(0, 141, 200);
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.line1 {
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    opacity: 1;
+    border: none;
+    margin-top: 0px;
+}
+
+.line2 {
+    width: 1px;
+    height: 140px;
+    background-color: grey;
+    opacity: 1;
+    border: none;
+    margin-left: 0px;
+    margin-right: 2%;
+}
+
+p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Bottom1 {
+    padding: 0px;
+}
+
+.SocialLinks {
+    text-align: end;
+}
+
+.Shift {
+    margin-left: 40px;
+    margin-top: 0px;
+    font-size: 22px;
+    color: black;
+}
+
+.Shift:hover {
+    border: none;
+}
+
+@media (max-width: 767px){
+    .Bottom1, .Top1, .Phone, .Mail {
+        display: none;
+    }
+
+    .Bottom2, .Top2 {
+        display: flex;
+    }
+    
+    .Jumbotron {
+        /* padding-top: 0px; */
+    }
+
+    .Logo {
+        margin-left: 30%;
+    }
+
+    .Top3 {
+        text-align: center;
+    }
+
+    .Para {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .SocialLinks {
+        text-align: center;
+    }
+}
