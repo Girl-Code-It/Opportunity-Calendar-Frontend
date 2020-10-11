@@ -1,0 +1,80 @@
+import React, { Component } from "react";
+import KnowAboutCard from "./KnowAboutCard";
+import KnowAboutData from "./KnowAboutData";
+import { Container, Jumbotron, Row } from "react-bootstrap";
+import styles from "../../../CSS/KnowAbout.module.css"
+
+class KnowAbout extends Component {
+    constructor() {
+        super();
+        this.state = {
+            KnowAboutData
+        };
+    }
+
+    // renderItems = () => {
+    //     return (
+    //         <Card.Group>
+
+    //         </Card.Group>
+    //     )
+    // }
+
+    render() {
+        let KnowAboutData = this.state.KnowAboutData.map((knowAbout) => {
+            return <KnowAboutCard key = {knowAbout.id} knowAbout = {knowAbout} />;
+        });
+
+        return (
+            <Jumbotron className = {styles.Jumbotron}>
+                <Container fluid = "sm">
+                    <h2 className = {styles.Heading}> 
+                        Know
+                        <span className = {styles.About}> About </span>
+                    </h2>
+                    <Row className = "justify-content-md-center" style = {{marginTop: "50px"}}>
+                        {KnowAboutData}
+                    </Row>
+                    {/* <Row>
+                        <Col>
+                            <KnowAboutCard 
+                                "id" = "1"
+                                "name" = "Full Time Jobs"
+                                "imgUrl" =  "fte.svg"
+                            />
+                        </Col>
+                        <Col>
+                            <KnowAboutCard 
+                                
+                            />
+                        </Col>
+                        <Col>
+                            <KnowAboutCard 
+                                
+                            />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <KnowAboutCard 
+
+                            />
+                        </Col>
+                        <Col>
+                            <KnowAboutCard 
+                                
+                            />
+                        </Col>
+                        <Col>
+                            <KnowAboutCard 
+                                
+                            />
+                        </Col>
+                    </Row> */}
+                </Container>
+            </Jumbotron>
+        );
+    }
+}
+
+export default KnowAbout;
