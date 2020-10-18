@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../CSS/Navbar.module.css";
+import styles from "../../../CSS/Navbar.module.css";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-scroll";
 
@@ -7,9 +7,11 @@ function navbar() {
   return (
     <Navbar fixed = "top" bg = "light" expand = "lg" className = {styles.NavBar}>
       <Navbar.Brand className = {styles.Logo}>
-        Girl 
-        <span style = {{ color: "#008dc8" }}> Code </span> 
-        It
+        <a href = "/" className = {styles.Brand} style = {{fontSize: "35px"}}>
+          Girl 
+          <span style = {{ color: "#008dc8" }}> Code </span> 
+          It
+        </a>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls = "responsive-navbar-nav" />
       <Navbar.Collapse id = "responsive-navbar-nav">

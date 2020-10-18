@@ -11,6 +11,11 @@
   margin: auto 8px;
 }
 
+.Brand:hover {
+  border: none; 
+  text-decoration: none;
+}
+
 .navbar-default {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
@@ -28,7 +33,61 @@ a:hover,
 a:active,
 a:global(.active) {
   cursor: pointer;
-  border-bottom: 3px solid #008dc8;
+  border-bottom: 2px solid #008dc8;
+}
+
+.Middle {
+  margin-left: 480px;
+}
+
+.Search {
+  border-radius: 8px 0px 0px 8px;
+}
+
+.SearchButton {
+  background-color: #008dc8;
+  border: none;
+  color: white;
+  padding: 4px 10px 4px 10px;
+  border-radius: 0px 8px 8px 0px;
+  font-size: 20px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.Title {
+  color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 8px;
+  margin-right: 85px;
+}
+
+.Dropdown {
+  background-color: #008dc8;
+  border: none;
+  color: #fff;
+  margin-left: 40px;
+  border-radius: 10px 10px 0px 0px;
+  font-size: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  float: right;
+  width: 256px;
+}
+
+.Button {
+  background-color: #008dc8;
+  border: none;
+  color: #fff;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 5px 30px 5px 30px;
+  margin-right: 2%;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 @media (max-width: 360px) {
@@ -41,5 +100,22 @@ a:global(.active) {
     position: absolute;
     top: 16px;
     right: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 992px){
+  .Middle {
+    margin-left: 0px;
+  }  
+  .ShiftRight {
+    margin-left: 0px;
+  }
+  .Dropdown {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .Button {
+    margin-top: 10px;
   }
 }

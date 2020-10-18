@@ -66,7 +66,7 @@ function Footer() {
                 {/* <hr className = {styles.line2}/> */}
                 <Col style = {{textAlign: "end"}}>
                     <h5> Products </h5>
-                    <div className = {styles.Rectangle} style = {{width: "80px", marginLeft: "140px"}}></div>
+                    <div className = {styles.Rectangle} style = {{width: "80px", marginLeft: "161px"}}></div>
                     <p> CodeMaps </p>
                     <p> Opportuntiy Calendar </p>
                 </Col>
@@ -75,7 +75,7 @@ function Footer() {
             <Row className = {styles.Top2}>
                 <Col className = {styles.Top3}>
                     <h5> Contact Us </h5>
-                    <div className = {styles.Rectangle} style = {{width: "100px", marginLeft: "185px"}}></div>
+                    <div className = {styles.Rectangle} style = {{width: "100px", marginLeft: "205px"}}></div>
                     <Row>
                         <Col>
                             <p> <FaPhoneAlt />  (+91) - 83848-13292 </p>
@@ -92,9 +92,9 @@ function Footer() {
                     <p> <BiCopyright /> 2020 Girl Code It | All rights reserved.</p>
                 </Col>
                 <Col className = {styles.SocialLinks}>
-                    <a href = "/" className = {styles.Shift}> <FaLinkedinIn /> </a>
-                    <a href = "/" className = {styles.Shift}> <FaInstagram /> </a>
-                    <a href = "/" className = {styles.Shift}> <FaTwitter /> </a>
+                    <a href = "https://www.linkedin.com/company/14568052/admin/" className = {styles.Shift}> <FaLinkedinIn /> </a>
+                    <a href = "https://www.instagram.com/girlcodeit/" className = {styles.Shift}> <FaInstagram /> </a>
+                    <a href = "https://twitter.com/GirlCodeIt1" className = {styles.Shift}> <FaTwitter /> </a>
                 </Col>
             </Row>
             <Row className = {styles.Bottom2}>
@@ -104,9 +104,9 @@ function Footer() {
             </Row>
             <Row className = {styles.Bottom2}>
                 <Col className = {styles.SocialLinks}>
-                    <a href = "/" className = {styles.Shift}> <FaLinkedinIn /> </a>
-                    <a href = "/" className = {styles.Shift}> <FaInstagram /> </a>
-                    <a href = "/" className = {styles.Shift}> <FaTwitter /> </a>
+                    <a href = "https://www.linkedin.com/company/14568052/admin/" className = {styles.Shift}> <FaLinkedinIn /> </a>
+                    <a href = "https://www.instagram.com/girlcodeit/" className = {styles.Shift}> <FaInstagram /> </a>
+                    <a href = "https://twitter.com/GirlCodeIt1" className = {styles.Shift}> <FaTwitter /> </a>
                 </Col>
             </Row>
         </Container>
