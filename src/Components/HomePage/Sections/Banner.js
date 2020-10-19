@@ -20,9 +20,11 @@ function Banner() {
                 <br></br>
                 at the right time!
             </h2>
-            <button className = {styles.Button}>
+            <a href = "/viewopportunity">
+              <button className = {styles.Button}>
                 Explore
-            </button>
+              </button>
+            </a>
           </Col>
           <Col md = {6} lg = {6} className = {styles.rightCol}>
             <Image 

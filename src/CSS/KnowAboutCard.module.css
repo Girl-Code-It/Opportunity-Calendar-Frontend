@@ -15,6 +15,11 @@
 .CardTitle {
     font-size: 23px;
     text-align: left;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 .CardImage {

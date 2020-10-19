@@ -5,12 +5,7 @@
     padding-bottom: 0px;
 }
 
-.Container {
-    /* padding: 0px; */
-}
-
 .Logo {
-    /* padding-top: 20px; */
     height: 180px;
     width: 200px;
 }
@@ -30,10 +25,11 @@ h5 {
 }
 
 .Rectangle {
-    height: 2px;
-    background-color: rgb(0, 141, 200);
-    margin-bottom: 10px;
-    margin-left: 10px;
+    border-bottom: 2px #008dc8 solid;
+    position: absolute;
+    right: 50%;
+    left: 0;
+    margin-left: 25px;
 }
 
 .line1 {
@@ -58,6 +54,7 @@ h5 {
 p {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
 }
 
 .Bottom1 {
@@ -87,17 +84,13 @@ p {
     .Bottom2, .Top2 {
         display: flex;
     }
-    
-    .Jumbotron {
-        /* padding-top: 0px; */
-    }
-
-    .Logo {
-        margin-left: 30%;
-    }
 
     .Top3 {
         text-align: center;
+    }
+
+    #Prod {
+        margin-left: 180px;
     }
 
     .Para {

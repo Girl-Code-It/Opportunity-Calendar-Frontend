@@ -13,7 +13,12 @@ function KnowAbout(props) {
                     className = {styles.CardImage}
                 />
                 <Card.Body>
-                    <Card.Title className = {styles.CardTitle}> {props.knowAbout.name} </Card.Title>
+                    <a href = {props.knowAbout.link}>
+                        <Card.Title 
+                            className = {styles.CardTitle}> 
+                            {props.knowAbout.name} 
+                        </Card.Title>
+                    </a>
                     <div className = {styles.Rectangle}></div>
                 </Card.Body>
             </Card>

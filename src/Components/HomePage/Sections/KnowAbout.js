@@ -12,14 +12,6 @@ class KnowAbout extends Component {
         };
     }
 
-    // renderItems = () => {
-    //     return (
-    //         <Card.Group>
-
-    //         </Card.Group>
-    //     )
-    // }
-
     render() {
         let KnowAboutData = this.state.KnowAboutData.map((knowAbout) => {
             return <KnowAboutCard key = {knowAbout.id} knowAbout = {knowAbout} />;
@@ -35,42 +27,6 @@ class KnowAbout extends Component {
                     <Row className = "justify-content-md-center" style = {{marginTop: "50px"}}>
                         {KnowAboutData}
                     </Row>
-                    {/* <Row>
-                        <Col>
-                            <KnowAboutCard 
-                                "id" = "1"
-                                "name" = "Full Time Jobs"
-                                "imgUrl" =  "fte.svg"
-                            />
-                        </Col>
-                        <Col>
-                            <KnowAboutCard 
-                                
-                            />
-                        </Col>
-                        <Col>
-                            <KnowAboutCard 
-                                
-                            />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <KnowAboutCard 
-
-                            />
-                        </Col>
-                        <Col>
-                            <KnowAboutCard 
-                                
-                            />
-                        </Col>
-                        <Col>
-                            <KnowAboutCard 
-                                
-                            />
-                        </Col>
-                    </Row> */}
                 </Container>
             </Jumbotron>
         );
