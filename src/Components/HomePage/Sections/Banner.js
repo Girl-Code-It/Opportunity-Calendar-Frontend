@@ -10,7 +10,7 @@ function Banner() {
         <Row>
           <Col md = {6} lg = {6} className = {styles.leftCol}>
             <h1 className = {styles.Heading}>
-                Opportunity 
+                Opportunity
                 <br></br>
                 <span style = {{color: "#008dc8"}}> Calendar </span>
             </h1>
@@ -20,18 +20,18 @@ function Banner() {
                 <br></br>
                 at the right time!
             </h2>
-            <a href = "/viewopportunity">
+            <a href = "/viewopportunity/fulltime">
               <button className = {styles.Button}>
                 Explore
               </button>
             </a>
           </Col>
           <Col md = {6} lg = {6} className = {styles.rightCol}>
-            <Image 
-                className = {styles.BannerImage} 
-                src = {BannerImage} 
-                alt = "BannerImage" 
-                fluid 
+            <Image
+                className = {styles.BannerImage}
+                src = {BannerImage}
+                alt = "BannerImage"
+                fluid
             />
           </Col>
         </Row>

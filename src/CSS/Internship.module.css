@@ -1,0 +1,87 @@
+.Box {
+    /* justify-content: center; */
+    /* margin: 5% 5% 5% 5%; */
+      margin: 5%;
+    /* margin-bottom: 5%; */
+}
+.Card {
+    width: 800px;
+    height: 350px;
+    border-radius: 15px;
+    /* margin-left: 50%; */
+
+    box-shadow: 0px 2px 2px 0px #ccc;
+}
+.CardTitle {
+    font-size: 23px;
+    text-align: left;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+.CardImage {
+    height: 100px;
+    width: 120px;
+    padding: 20px;
+    margin-left: 20px;
+    padding-bottom: 0px;
+}
+.Rectangle {
+    height: 3px;
+    width: 155px;
+    background-color: #008dc8;
+    margin-bottom: 20px;
+}
+.Title {
+  margin-top: 15px;
+  margin-left: 15px;
+  color: "blue";
+font-size: 35px;
+}
+.Title2 {
+  margin-left: 15px;
+  color: "blue";
+  font-size: 25px;
+}
+.Description {
+  margin-top: 15px;
+  margin-left: 35px;
+  margin-right: 25px;
+
+}
+.Heading {
+  margin-top: 7px;
+  margin-left: 0px;
+}
+
+.Value {
+  margin-top: 7px;
+  margin-left: 5px;
+  color: black;
+}
+.Button {
+    background-color: #008dc8;
+    border: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 5px 30px 5px 30px;
+    margin-top: 5px;
+    margin-right: 4%;
+    position: relative;
+    float: right;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 0.7);
+    align-self: center;
+
+}
+.BannerImage {
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
