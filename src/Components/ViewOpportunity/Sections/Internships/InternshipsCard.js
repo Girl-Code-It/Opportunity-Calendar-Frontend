@@ -73,7 +73,9 @@ function InternshipsCard(props) {
 
           <Row>
             <Col md={0} lg={12}>
-              <button className={styles.Button}>Apply</button>
+              <a href={props.knowAbout.url}>
+                <button className={styles.Button}>Apply</button>
+              </a>
             </Col>
           </Row>
         </Container>

@@ -25,7 +25,7 @@ class FullTime extends Component {
           >
             <Container>
               <Row>
-                <Col>
+                <Col style={{ marginTop: "20px" }}>
                   {this.state.FullTimeData.map(knowAbout => {
                     return (
                       <FullTimeCard key={knowAbout.id} knowAbout={knowAbout} />

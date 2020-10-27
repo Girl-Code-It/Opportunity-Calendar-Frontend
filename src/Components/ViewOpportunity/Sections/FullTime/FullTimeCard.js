@@ -72,7 +72,7 @@ function FullTimeCard(props) {
 
           <Row>
             <Col md={0} lg={12}>
-              <a href="https://www.amazon.jobs/en/jobs/1312592/software-development-engineer-graduate-amazon-redshift-spectrum">
+              <a href={props.knowAbout.url}>
                 <button className={styles.Button}>Apply</button>
               </a>
             </Col>

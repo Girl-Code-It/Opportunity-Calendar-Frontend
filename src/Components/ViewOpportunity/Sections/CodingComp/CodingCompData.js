@@ -9,7 +9,9 @@ var CodingCompData = [
       "At Amdocs, our purpose is to enrich lives and progress society. With our creativity and technology, we help make a better-connected world. Amdocs and its 25,000 employees serve the leading players in the communications and media industry, enabling next - generation experiences in 85 countries.",
     eligibility: "Women only ",
     max_team_size: "5",
-    deadline: "15 Oct 2020"
+    deadline: "15 Oct 2020",
+    url:
+      "https://assessment.hackerearth.com/challenges/hiring/the-math-company-data-engineer-hc-2020/"
   },
   {
     id: 2,
@@ -21,7 +23,9 @@ var CodingCompData = [
     location: "Gurugram",
     eligibility: "Women only ",
     max_team_size: "5",
-    deadline: "17 Oct 2020"
+    deadline: "17 Oct 2020",
+    url:
+      "https://assessment.hackerearth.com/challenges/hiring/the-math-company-data-engineer-hc-2020/"
   },
   {
     id: 3,
@@ -33,7 +37,9 @@ var CodingCompData = [
     location: "Panipat",
     eligibility: "Women only ",
     max_team_size: "5",
-    deadline: "18 Oct 2020"
+    deadline: "18 Oct 2020",
+    url:
+      "https://assessment.hackerearth.com/challenges/hiring/the-math-company-data-engineer-hc-2020/"
   },
   {
     id: 4,
@@ -45,7 +51,9 @@ var CodingCompData = [
     location: "Bihar",
     eligibility: "Women only ",
     max_team_size: "5",
-    deadline: "19 Oct 2020"
+    deadline: "19 Oct 2020",
+    url:
+      "https://assessment.hackerearth.com/challenges/hiring/the-math-company-data-engineer-hc-2020/"
   },
   {
     id: 5,
@@ -57,7 +65,9 @@ var CodingCompData = [
     location: "Goa",
     eligibility: "Women only ",
     max_team_size: "4",
-    deadline: "20 Oct 2020"
+    deadline: "20 Oct 2020",
+    url:
+      "https://assessment.hackerearth.com/challenges/hiring/the-math-company-data-engineer-hc-2020/"
   },
   {
     id: 6,
@@ -69,7 +79,9 @@ var CodingCompData = [
     location: "Pune",
     eligibility: "Btech students",
     max_team_size: "5",
-    deadline: "21 Oct 2020"
+    deadline: "21 Oct 2020",
+    url:
+      "https://assessment.hackerearth.com/challenges/hiring/the-math-company-data-engineer-hc-2020/"
   }
 ];
 
