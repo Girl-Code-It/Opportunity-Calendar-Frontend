@@ -37,7 +37,7 @@ a:hover{
   margin-top: 15px;
   margin-left: 15px;
   color:  #fff;
-font-size: 35px;
+  font-size: 35px;
 }
 .Title2 {
   margin-top: 0px;
@@ -52,13 +52,16 @@ font-size: 35px;
 
 }
 .Heading {
-  margin-top: 7px;
+  margin-top: 5px;
   margin-left: 0px;
+  font-size: 18px;
 }
 
 .Value {
   margin-top: 7px;
   margin-left: 5px;
+  margin-right: -100px;
+  font-size: 18px;
   color: black;
 }
 .Button {
@@ -69,7 +72,7 @@ font-size: 35px;
     border-radius: 50px;
     font-size: 20px;
     padding: 5px 30px 5px 30px;
-    margin-top: 5px;
+    margin-top: 8px;
     margin-right: 4%;
     position: relative;
     float: right;

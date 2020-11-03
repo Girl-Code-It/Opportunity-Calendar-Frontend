@@ -42,16 +42,19 @@ a:hover{
   margin-top: 15px;
   margin-left: 35px;
   margin-right: 25px;
+  margin-bottom: 10px;
 
 }
 .Heading {
-  margin-top: 7px;
+  margin-top: 5px;
   margin-left: 0px;
+  font-size: 18px;
 }
 
 .Value {
-  margin-top: 7px;
+  margin-top: 5px;
   margin-left: 5px;
+  font-size: 18px;
   color: black;
 }
 .Button {
