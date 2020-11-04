@@ -1,52 +1,78 @@
 import React, { Component } from "react";
 import Navbar from "../Navbar";
 import { Col, Container, Jumbotron, Row, Image, Button } from "react-bootstrap";
-import FullTimeData from "./FullTimeData";
 import FullTimeCard from "./FullTimeCard";
-import HackathonImage from "../../../../Assets/fte.svg";
+import FullTimeImage from "../../../../Assets/fte.svg";
 import styles from "../../../../CSS/FullTime.module.css";
+import axios from "axios";
 
 class FullTime extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      FullTimeData
+      data: []
     };
   }
+
+  componentDidMount(){
+    axios
+      .get('https://opportunitycalendar.herokuapp.com/opportunities/job/list/')
+      .then((res) => {
+        const data = res.data;
+        console.log(data);
+        this.setState({ data });
+      }, (error) => {
+        console.log(error);
+      })
+  }
+
   render() {
+    const { data } = this.state;
+
+    if(data.length === 0 || !data){
+      return (
+        <div>
+          <Navbar/>
+          <h3 style = {{textAlign: "center", marginTop: "220px", marginBottom: "200px"}}> 
+            No opportunities, sorry! 
+          </h3>
+        </div>
+      );
+    }
+
     return (
       <div>
         <Navbar />
         <div>
-          <Jumbotron
-            style={{
-              backgroundColor: "white"
-            }}
-          >
+          <Jumbotron style = {{backgroundColor: "white"}}>
             <Container>
               <Row>
                 <Col>
-                  {this.state.FullTimeData.map(knowAbout => {
+                  {data.map(item => {
                     return (
-                      <FullTimeCard key={knowAbout.id} knowAbout={knowAbout} />
+                      <FullTimeCard 
+                        key = {item.id} 
+                        item = {item} 
+                      />
                     );
                   })}
                 </Col>
-                <Col style={{ marginLeft: "700px", marginTop: "20px" }}>
+                <Col style = {{ marginLeft: "700px", marginTop: "20px" }}>
                   <Image
-                    className={styles.BannerImage}
-                    src={HackathonImage}
-                    alt="HackathonImage"
-                  ></Image>
+                    className = {styles.BannerImage}
+                    src = {FullTimeImage}
+                    alt = "FullTimeImage"
+                  />
                   <Button
-                    className={styles.Button}
-                    style={{
+                    className = {styles.Button}
+                    style = {{
+                      padding: "5px 18px 5px 18px",
                       marginTop: "50px",
-                      fontSize: "12px",
-                      marginLeft: "10px"
+                      fontSize: "20px",
+                      marginRight: "-5px"
                     }}
                   >
-                    POST OPPRTUNITY
+                    Post Opportunity
                   </Button>
                 </Col>
               </Row>

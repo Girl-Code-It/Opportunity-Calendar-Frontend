@@ -1,57 +1,78 @@
 import React, { Component } from "react";
 import Navbar from "../Navbar";
-import ScholarshipData from "./ScholarshipData";
 import { Col, Container, Jumbotron, Row, Image, Button } from "react-bootstrap";
 import ScholarshipsCard from "./ScholarshipsCard";
-
-import HackathonImage from "../../../../Assets/scholarship-large.png";
+import ScholarshipImage from "../../../../Assets/scholarship-large.png";
 import styles from "../../../../CSS/HackathonCard.module.css";
+import axios from 'axios'
 
 class Scholarships extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      ScholarshipData
+      data: []
     };
   }
 
+  componentDidMount(){
+    axios
+      .get('https://opportunitycalendar.herokuapp.com/opportunities/scholarship/list/')
+      .then((res) => {
+        const data = res.data;
+        console.log(data);
+        this.setState({ data });
+      }, (error) => {
+        console.log(error);
+      })
+  }
+
   render() {
+    const { data } = this.state;
+
+    if(data.length === 0 || !data){
+      return (
+        <div>
+          <Navbar/>
+          <h3 style = {{textAlign: "center", marginTop: "220px", marginBottom: "200px"}}> 
+            No opportunities, sorry! 
+          </h3>
+        </div>
+      );
+    }
+
     return (
       <div>
         <Navbar />
         <div>
-          <Jumbotron
-            style={{
-              backgroundColor: "white"
-            }}
-          >
+          <Jumbotron style = {{backgroundColor: "white"}}>
             <Container>
               <Row>
-                <Col style={{ marginTop: "20px" }}>
-                  {this.state.ScholarshipData.map(knowAbout => {
+                <Col style = {{ marginTop: "20px" }}>
+                  {data.map(item => {
                     return (
                       <ScholarshipsCard
-                        key={knowAbout.id}
-                        knowAbout={knowAbout}
+                        key = {item.id}
+                        item = {item}
                       />
                     );
                   })}
                 </Col>
-                <Col style={{ marginLeft: "700px", marginTop: "20px" }}>
+                <Col style = {{ marginLeft: "700px", marginTop: "20px" }}>
                   <Image
-                    className={styles.BannerImage}
-                    src={HackathonImage}
-                    alt="HackathonImage"
+                    className = {styles.BannerImage}
+                    src = {ScholarshipImage}
+                    alt = "ScholarshipImage"
                   ></Image>
                   <Button
-                    className={styles.Button}
-                    style={{
+                    className = {styles.Button}
+                    style = {{
+                      padding: "5px 18px 5px 18px",
                       marginTop: "50px",
-                      fontSize: "12px",
-                      marginLeft: "10px"
+                      fontSize: "20px",
+                      marginRight: "-5px"
                     }}
                   >
-                    POST OPPORTUNITY
+                    Post Opportunity
                   </Button>
                 </Col>
               </Row>

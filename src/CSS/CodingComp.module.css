@@ -6,7 +6,7 @@
 }
 .Card {
     width: 800px;
-    height: 350px;
+    height: 310px;
     border-radius: 15px;
     /* margin-left: 50%; */
 
@@ -34,32 +34,26 @@ a:hover{
     margin-bottom: 20px;
 }
 .Title {
-  margin-top: 15px;
+  margin-top: 35px;
   margin-left: 15px;
-  color: #008cd8;
+  color: #008dc8;
   font-size: 35px;
-}
-.Title2 {
-  margin-left: 15px;
-  color: "blue";
-  font-size: 25px;
 }
 .Description {
   margin-top: 15px;
   margin-left: 35px;
   margin-right: 25px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .Heading {
-  margin-top: 7px;
+  margin-top: 5px;
   margin-left: 0px;
   font-size: 18px;
 }
 
 .Value {
-  margin-top: 7px;
+  margin-top: 5px;
   margin-left: 5px;
-  margin-right: 5px;
   font-size: 18px;
   color: black;
 }
@@ -71,7 +65,7 @@ a:hover{
     border-radius: 50px;
     font-size: 20px;
     padding: 5px 30px 5px 30px;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-right: 4%;
     position: relative;
     float: right;
@@ -87,4 +81,3 @@ a:hover{
     padding: 20px;
     padding-bottom: 0px;
 }
-
