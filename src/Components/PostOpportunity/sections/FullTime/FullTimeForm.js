@@ -18,8 +18,6 @@ class FullTimeForm extends Component {
       eligibility: "",
       deadline: ""
     };
-
-    this.data = {}
   }
 
   componentDidMount(){
@@ -43,7 +41,6 @@ class FullTimeForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log(this.state.data);
     alert(
       `${this.state.jobId} ${this.state.jobURL} ${this.state.title} ${this.state.company} ${this.state.image} ${this.state.jobDescription} ${this.state.location} ${this.state.eligibility} ${this.state.deadline}`
     );
