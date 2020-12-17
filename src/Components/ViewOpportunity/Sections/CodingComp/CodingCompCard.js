@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
+import logo from "../../../../Assets/amdocs.png"
 import styles from "../../../../CSS/CodingComp.module.css";
 
 function CodingCompCard(props) {
@@ -11,7 +12,8 @@ function CodingCompCard(props) {
         <Row>
           <Card.Img
             variant = "top"
-            src = {item.image}
+            src = {logo}
+            // src = {item.imgURL}
             alt = {item.title}
             className = {styles.CardImage}
           />
