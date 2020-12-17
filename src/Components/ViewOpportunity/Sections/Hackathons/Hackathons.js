@@ -65,7 +65,6 @@ class Hackathons extends Component {
                   />
                   <Button
                     className = {styles.Button}
-                    href = "/postopportunity/Hackathons"
                     style = {{
                       padding: "5px 18px 5px 18px",
                       marginTop: "50px",
