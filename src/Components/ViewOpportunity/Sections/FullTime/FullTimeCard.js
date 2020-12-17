@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
-import logo  from "../../../../Assets/amdocs.png";
 import styles from "../../../../CSS/FullTime.module.css";
 
 function FullTimeCard(props) {
@@ -12,17 +11,16 @@ function FullTimeCard(props) {
         <Row>
           <Card.Img
             variant = "top"
-            src = {logo}
-            // src = {item.imgURL}
+            src = {item.image}
             alt = {item.company}
             className = {styles.CardImage}
           />
           <Col>
             <h1 className = {styles.Title} style = {{ color: "#008cd8" }}>
-              {item.title}
+              {item.company}
             </h1>
             <h3 className = {styles.Title2}> 
-              Job ID : {item.jobId} 
+              {item.title} (Job ID : {item.jobId})
             </h3>
           </Col>
         </Row>
