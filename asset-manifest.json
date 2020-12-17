@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/Opportunity-Calendar-Frontend/static/css/main.224afa40.chunk.css",
+    "main.js": "/Opportunity-Calendar-Frontend/static/js/main.74150a33.chunk.js",
+    "main.js.map": "/Opportunity-Calendar-Frontend/static/js/main.74150a33.chunk.js.map",
+    "runtime-main.js": "/Opportunity-Calendar-Frontend/static/js/runtime-main.a245674e.js",
+    "runtime-main.js.map": "/Opportunity-Calendar-Frontend/static/js/runtime-main.a245674e.js.map",
+    "static/js/2.e5cc182c.chunk.js": "/Opportunity-Calendar-Frontend/static/js/2.e5cc182c.chunk.js",
+    "static/js/2.e5cc182c.chunk.js.map": "/Opportunity-Calendar-Frontend/static/js/2.e5cc182c.chunk.js.map",
+    "index.html": "/Opportunity-Calendar-Frontend/index.html",
+    "precache-manifest.010e51e08959cb56c9d9619fbcb90cc8.js": "/Opportunity-Calendar-Frontend/precache-manifest.010e51e08959cb56c9d9619fbcb90cc8.js",
+    "service-worker.js": "/Opportunity-Calendar-Frontend/service-worker.js",
+    "static/css/main.224afa40.chunk.css.map": "/Opportunity-Calendar-Frontend/static/css/main.224afa40.chunk.css.map",
+    "static/js/2.e5cc182c.chunk.js.LICENSE.txt": "/Opportunity-Calendar-Frontend/static/js/2.e5cc182c.chunk.js.LICENSE.txt",
+    "static/media/GCI.png": "/Opportunity-Calendar-Frontend/static/media/GCI.4870a984.png",
+    "static/media/banner-large.png": "/Opportunity-Calendar-Frontend/static/media/banner-large.0e81ab53.png",
+    "static/media/banner-small.png": "/Opportunity-Calendar-Frontend/static/media/banner-small.7ed87435.png",
+    "static/media/banner.png": "/Opportunity-Calendar-Frontend/static/media/banner.24adf0b3.png",
+    "static/media/banner_bg.svg": "/Opportunity-Calendar-Frontend/static/media/banner_bg.38d314ed.svg",
+    "static/media/codearduino.png": "/Opportunity-Calendar-Frontend/static/media/codearduino.d1dbfe15.png",
+    "static/media/coding-large.png": "/Opportunity-Calendar-Frontend/static/media/coding-large.880a3e68.png",
+    "static/media/conference-large.png": "/Opportunity-Calendar-Frontend/static/media/conference-large.43919267.png",
+    "static/media/conference-small.png": "/Opportunity-Calendar-Frontend/static/media/conference-small.7dba13c9.png",
+    "static/media/first.png": "/Opportunity-Calendar-Frontend/static/media/first.a6fc60bb.png",
+    "static/media/fte.svg": "/Opportunity-Calendar-Frontend/static/media/fte.d3d3a040.svg",
+    "static/media/hackathon-large.png": "/Opportunity-Calendar-Frontend/static/media/hackathon-large.64044002.png",
+    "static/media/hackathon-small.png": "/Opportunity-Calendar-Frontend/static/media/hackathon-small.02aa5014.png",
+    "static/media/hacked.png": "/Opportunity-Calendar-Frontend/static/media/hacked.6ca46f5d.png",
+    "static/media/hnc.png": "/Opportunity-Calendar-Frontend/static/media/hnc.dd2e5ab1.png",
+    "static/media/intel.png": "/Opportunity-Calendar-Frontend/static/media/intel.699fcb75.png",
+    "static/media/internships-large.png": "/Opportunity-Calendar-Frontend/static/media/internships-large.56d8cf96.png",
+    "static/media/open.png": "/Opportunity-Calendar-Frontend/static/media/open.9922d987.png",
+    "static/media/scholarship-large.png": "/Opportunity-Calendar-Frontend/static/media/scholarship-large.99e5dfb9.png",
+    "static/media/scholarship-small.png": "/Opportunity-Calendar-Frontend/static/media/scholarship-small.a4d62223.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a245674e.js",
+    "static/js/2.e5cc182c.chunk.js",
+    "static/css/main.224afa40.chunk.css",
+    "static/js/main.74150a33.chunk.js"
+  ]
+}
