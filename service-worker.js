@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Opportunity-Calendar-Frontend/precache-manifest.010e51e08959cb56c9d9619fbcb90cc8.js"
+  "/Opportunity-Calendar-Frontend/precache-manifest.322be55654226c989b6f27641dff7308.js"
 );
 
 self.addEventListener('message', (event) => {
