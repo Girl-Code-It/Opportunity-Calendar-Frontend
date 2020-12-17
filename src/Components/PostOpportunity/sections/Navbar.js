@@ -37,12 +37,12 @@ function navbar() {
                     id = "basic-nav-dropdown" 
                     className = {styles.Dropdown}
                 >
-                    <NavDropdown.Item href = "/PostOpportunity/FullTime"> Full Time Jobs </NavDropdown.Item>
-                    <NavDropdown.Item href = "/PostOpportunity/Hackathons"> Hackathons </NavDropdown.Item>
-                    <NavDropdown.Item href = "/PostOpportunity/Scholarships"> Scholarships </NavDropdown.Item>
-                    <NavDropdown.Item href = "/PostOpportunity/CodingComp"> Coding Competitions </NavDropdown.Item>
-                    <NavDropdown.Item href = "/PostOpportunity/TechConf"> Tech Conferences </NavDropdown.Item>
-                    <NavDropdown.Item href = "/PostOpportunity/Internships"> Internship Opportunities </NavDropdown.Item>
+                    <NavDropdown.Item href = "/viewopportunity/fulltime"> Full Time Jobs </NavDropdown.Item>
+                    <NavDropdown.Item href = "/viewopportunity/hackathon"> Hackathons </NavDropdown.Item>
+                    <NavDropdown.Item href = "/viewopportunity/scholarship"> Scholarships </NavDropdown.Item>
+                    <NavDropdown.Item href = "/viewopportunity/codingcomp"> Coding Competitions </NavDropdown.Item>
+                    <NavDropdown.Item href = "/viewopportunity/techconf"> Tech Conferences </NavDropdown.Item>
+                    <NavDropdown.Item href = "/viewopportunity/internships"> Internship Opportunities </NavDropdown.Item>
                 </NavDropdown>
             </Nav>
             <button className = {styles.Button}>
