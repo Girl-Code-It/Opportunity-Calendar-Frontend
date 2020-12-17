@@ -42,8 +42,7 @@ class FullTimeForm extends Component {
         jobDescription: this.state.jobDescription,
         location: this.state.location,
         eligibility: this.state.eligibility,
-        deadline: this.state.deadline,
-        image: this.state.image,
+        deadline: this.state.deadline
       })
       .then(
         (res) => {
