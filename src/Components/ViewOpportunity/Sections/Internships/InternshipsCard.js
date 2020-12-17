@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
-import logo from "../../../../Assets/amdocs.png"
 import styles from "../../../../CSS/Internship.module.css";
 
 function InternshipsCard(props) {
@@ -12,17 +11,16 @@ function InternshipsCard(props) {
         <Row>
           <Card.Img
             variant = "top"
-            src = {logo}
-            // src = {item.imgURL}
-            alt = {item.title}
+            src = {item.image}
+            alt = {item.company}
             className = {styles.CardImage}
           />
           <Col>
             <h1 className = {styles.Title}>
-              {item.title}
+              {item.company}
             </h1>
             <h3 className = {styles.Title2}>
-              JOB ID : {item.jobId}
+              {item.title} (JOB ID : {item.jobId})
             </h3>
           </Col>
         </Row>

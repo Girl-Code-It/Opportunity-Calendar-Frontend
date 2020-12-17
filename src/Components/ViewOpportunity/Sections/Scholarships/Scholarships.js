@@ -65,6 +65,7 @@ class Scholarships extends Component {
                   ></Image>
                   <Button
                     className = {styles.Button}
+                    href = "/postopportunity/Scholarships"
                     style = {{
                       padding: "5px 18px 5px 18px",
                       marginTop: "50px",
