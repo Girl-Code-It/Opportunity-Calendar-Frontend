@@ -1,40 +1,66 @@
 import React, { Component } from "react";
 import Navbar from "../Navbar";
-import InternshipData from "./InternshipData";
 import { Col, Container, Jumbotron, Row, Image, Button } from "react-bootstrap";
 import InternshipsCard from "./InternshipsCard";
-
 import HackathonImage from "../../../../Assets/internships-large.png";
 import styles from "../../../../CSS/HackathonCard.module.css";
+import axios from "axios";
 
 class Internships extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      InternshipData
+      data: [],
     };
   }
 
+  componentDidMount() {
+    axios
+      .get(
+        "https://opportunitycalendar.herokuapp.com/opportunities/intern/list/"
+      )
+      .then(
+        (res) => {
+          const data = res.data;
+          console.log(data);
+          this.setState({ data });
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  }
+
   render() {
+    const { data } = this.state;
+
+    if (data.length === 0 || !data) {
+      return (
+        <div>
+          <Navbar />
+          <h3
+            style={{
+              textAlign: "center",
+              marginTop: "220px",
+              marginBottom: "200px",
+            }}
+          >
+            No opportunities, sorry!
+          </h3>
+        </div>
+      );
+    }
+
     return (
       <div>
         <Navbar />
         <div>
-          <Jumbotron
-            style={{
-              backgroundColor: "white"
-            }}
-          >
+          <Jumbotron style={{ backgroundColor: "white" }}>
             <Container>
               <Row>
                 <Col style={{ marginTop: "20px" }}>
-                  {this.state.InternshipData.map(knowAbout => {
-                    return (
-                      <InternshipsCard
-                        key={knowAbout.id}
-                        knowAbout={knowAbout}
-                      />
-                    );
+                  {data.map((item) => {
+                    return <InternshipsCard key={item.id} item={item} />;
                   })}
                 </Col>
                 <Col style={{ marginLeft: "700px", marginTop: "20px" }}>
@@ -45,13 +71,15 @@ class Internships extends Component {
                   ></Image>
                   <Button
                     className={styles.Button}
+                    href="/PostOpportunity/Internships"
                     style={{
+                      padding: "5px 18px 5px 18px",
                       marginTop: "50px",
-                      fontSize: "12px",
-                      marginLeft: "10px"
+                      fontSize: "20px",
+                      marginRight: "-5px",
                     }}
                   >
-                    POST OPPORTUNITY
+                    Post Opportunity
                   </Button>
                 </Col>
               </Row>
