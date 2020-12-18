@@ -75,7 +75,29 @@ a:global(.active) {
   float: right;
   width: 256px;
 }
-
+.Modal_Title{
+  font-size: 35px;
+  text-align: left;
+  color: black;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.Rectangle {
+  height: 3px;
+  width: 105px;
+  background-color: #008dc8;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.FormLabel{
+  margin-left: 20px;
+  color: #848e92be;
+}
+.Input{
+  border-left-width: 0in;
+  border-top-width: 0in;
+  border-right-width: 0in;
+}
 .Button {
   background-color: #008dc8;
   border: none;
@@ -88,6 +110,10 @@ a:global(.active) {
   position: relative;
   transition: all 0.5s;
   cursor: pointer;
+}
+.Modal {
+  height: 300px;
+  border-radius: 10px;
 }
 
 @media (max-width: 360px) {

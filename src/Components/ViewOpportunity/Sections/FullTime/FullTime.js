@@ -47,13 +47,8 @@ class FullTime extends Component {
           <Jumbotron style = {{backgroundColor: "white"}}>
             <Container>
               <Row>
-<<<<<<< HEAD
-                <Col style={{ marginTop: "20px" }}>
-                  {this.state.FullTimeData.map(knowAbout => {
-=======
                 <Col>
                   {data.map(item => {
->>>>>>> upstream/develop
                     return (
                       <FullTimeCard 
                         key = {item.id} 

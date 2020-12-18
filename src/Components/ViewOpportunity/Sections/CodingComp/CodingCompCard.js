@@ -74,17 +74,11 @@ function CodingCompCard(props) {
             </Col>
           </Row>
           <Row>
-<<<<<<< HEAD
-            <Col md={0} lg={12}>
-              <a href={props.knowAbout.url}>
-                <button className={styles.Button}>Apply</button>
-=======
             <Col md = {0} lg = {12}>
               <a href = {item.url}>
                 <button className = {styles.Button}>
                   Apply
                 </button>
->>>>>>> upstream/develop
               </a>
             </Col>
           </Row>

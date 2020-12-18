@@ -70,17 +70,11 @@ function FullTimeCard(props) {
           </Row>
       
           <Row>
-<<<<<<< HEAD
-            <Col md={0} lg={12}>
-              <a href={props.knowAbout.url}>
-                <button className={styles.Button}>Apply</button>
-=======
             <Col md = {0} lg = {12}>
               <a href = {item.jobURL}>
                 <button className = {styles.Button}>
                   Apply
                 </button>
->>>>>>> upstream/develop
               </a>
             </Col>
           </Row>
