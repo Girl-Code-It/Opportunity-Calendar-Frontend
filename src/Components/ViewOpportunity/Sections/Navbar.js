@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../../CSS/Navbar.module.css";
-import { Navbar, Nav, Form, FormControl, Button, NavDropdown } from "react-bootstrap";
-import { AiOutlineSearch } from "react-icons/ai"
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+// import { AiOutlineSearch } from "react-icons/ai"
 
 function navbar() {
   return (
@@ -15,7 +15,7 @@ function navbar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls = "basic-navbar-nav" />
         <Navbar.Collapse id = "basic-navbar-nav" className = {styles.ShiftRight}>
-            <Form inline>
+            {/* <Form inline>
                 <div className = {styles.Middle}>
                     <FormControl 
                         type = "text" 
@@ -26,7 +26,7 @@ function navbar() {
                         <AiOutlineSearch />
                     </Button>
                 </div>
-            </Form>
+            </Form> */}
             <Nav className = "mr-auto">
                 <NavDropdown 
                     title = {
@@ -34,7 +34,7 @@ function navbar() {
                             Opportunities
                         </span>
                     } 
-                    id = "basic-nav-dropdown" 
+                    id = "dropdown-basic-button" 
                     className = {styles.Dropdown}
                 >
                     <NavDropdown.Item href = "/viewopportunity/fulltime"> Full Time Jobs </NavDropdown.Item>
@@ -45,9 +45,9 @@ function navbar() {
                     <NavDropdown.Item href = "/viewopportunity/internships"> Internship Opportunities </NavDropdown.Item>
                 </NavDropdown>
             </Nav>
-            <button className = {styles.Button}>
+            {/* <button className = {styles.Button}>
                 Login / SignUp
-            </button>
+            </button> */}
         </Navbar.Collapse>
     </Navbar>
   );

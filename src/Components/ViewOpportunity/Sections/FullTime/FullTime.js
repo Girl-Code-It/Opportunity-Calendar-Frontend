@@ -44,10 +44,13 @@ class FullTime extends Component {
       <div>
         <Navbar />
         <div>
+          <div className = {styles.Background}>
+            <h1 className = {styles.Opportunity}> FullTime Opportunities </h1>
+          </div>
           <Jumbotron style = {{backgroundColor: "white"}}>
-            <Container>
-              <Row>
-                <Col>
+            <Container className = {styles.Cards}>
+              {/* <Row> */}
+                {/* <Col> */}
                   {data.map(item => {
                     return (
                       <FullTimeCard 
@@ -56,8 +59,8 @@ class FullTime extends Component {
                       />
                     );
                   })}
-                </Col>
-                <Col style = {{ marginLeft: "700px", marginTop: "20px" }}>
+                {/* </Col> */}
+                {/* <Col style = {{ marginLeft: "700px", marginTop: "20px" }}>
                   <Image
                     className = {styles.BannerImage}
                     src = {FullTimeImage}
@@ -75,8 +78,8 @@ class FullTime extends Component {
                   >
                     Post Opportunity
                   </Button>
-                </Col>
-              </Row>
+                </Col> */}
+              {/* </Row> */}
             </Container>
           </Jumbotron>
         </div>

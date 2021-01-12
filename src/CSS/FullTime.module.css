@@ -1,15 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 .Box {
-    /* justify-content: center; */
-    /* margin: 5% 5% 5% 5%; */
-      margin: 5%;
-    /* margin-bottom: 5%; */
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .Card {
     width: 800px;
     height: 350px;
     border-radius: 15px;
-    /* margin-left: 50%; */
-
     box-shadow: 0px 2px 2px 0px #ccc;
 }
 .CardTitle {
@@ -27,42 +28,62 @@ a:hover{
     margin-left: 20px;
     padding-bottom: 0px;
 }
+
+.Cards {
+  /* display: block; */
+  /* align-self: flex-start; */
+}
+.Background {
+  margin-top: 5%;
+  background-color: #BD6997;
+}
+.Opportunity {
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
 .Rectangle {
-    height: 3px;
-    width: 155px;
-    background-color: #008dc8;
-    margin-bottom: 20px;
+  height: 3px;
+  width: 155px;
+  background-color: #008dc8;
+  margin-bottom: 20px;
 }
 .Title {
   margin-top: 15px;
   margin-left: 15px;
-  color:  #fff;
+  color:  #008dc8;
   font-size: 35px;
+  font-family: "Poppins", sans-serif;
 }
 .Title2 {
   margin-top: 0px;
   margin-left: 15px;
   color: "blue";
   font-size: 25px;
+  font-family: "Poppins", sans-serif;
 }
 .Description {
   margin-top: 15px;
   margin-left: 35px;
   margin-right: 25px;
-
+  font-family: "Inter", sans-serif;
 }
 .Heading {
-  margin-top: 5px;
+  margin-top: 7px;
   margin-left: 0px;
   font-size: 18px;
+  font-family: "Poppins", sans-serif;
 }
 
 .Value {
   margin-top: 7px;
   margin-left: 5px;
-  margin-right: -100px;
+  margin-right: 5px;
   font-size: 18px;
   color: black;
+  font-family: "Inter", sans-serif;
 }
 .Button {
     background-color: #008dc8;
@@ -78,6 +99,7 @@ a:hover{
     float: right;
     transition: all 0.5s;
     cursor: pointer;
+    font-family: "Inter", sans-serif;
     box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 0.7);
     align-self: center;
 
@@ -87,5 +109,11 @@ a:hover{
     width: 200px;
     padding: 20px;
     padding-bottom: 0px;
+}
+
+@media (max-width: 500px) {
+  .CardImage {
+    display: none;
+  }
 }
 

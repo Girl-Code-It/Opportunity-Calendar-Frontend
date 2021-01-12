@@ -1,15 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 .Box {
-    /* justify-content: center; */
-    /* margin: 5% 5% 5% 5%; */
-      margin: 5%;
-    /* margin-bottom: 5%; */
+    margin: 5%;
 }
 .Card {
     width: 800px;
     height: 310px;
     border-radius: 15px;
-    /* margin-left: 50%; */
-
     box-shadow: 0px 2px 2px 0px #ccc;
 }
 .CardTitle {
@@ -27,6 +25,17 @@ a:hover{
     margin-left: 20px;
     padding-bottom: 0px;
 }
+.Background {
+  margin-top: 5%;
+  background-color: #BD6997;
+}
+.Opportunity {
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
 .Rectangle {
     height: 3px;
     width: 155px;
@@ -36,19 +45,21 @@ a:hover{
 .Title {
   margin-top: 35px;
   margin-left: 15px;
-  color: "blue";
+  color: #008dc8;
+  font-family: "Poppins", sans-serif;
 }
 .Description {
   margin-top: 15px;
   margin-left: 35px;
   margin-right: 25px;
   margin-bottom: 10px;
-
+  font-family: "Inter", sans-serif;
 }
 .Heading {
   margin-top: 5px;
   margin-left: 0px;
   font-size: 18px;
+  font-family: "Poppins", sans-serif;
 }
 
 .Value {
@@ -56,6 +67,7 @@ a:hover{
   margin-left: 5px;
   font-size: 18px;
   color: black;
+  font-family: "Inter", sans-serif;
 }
 .Button {
     background-color: #008dc8;
@@ -71,6 +83,7 @@ a:hover{
     float: right;
     transition: all 0.5s;
     cursor: pointer;
+    font-family: "Inter", sans-serif;
     box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 0.7);
     align-self: center;
 

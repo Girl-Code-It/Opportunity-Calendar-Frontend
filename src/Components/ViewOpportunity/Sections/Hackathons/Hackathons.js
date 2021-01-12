@@ -44,10 +44,13 @@ class Hackathons extends Component {
       <div>
         <Navbar />
         <div>
+          <div className = {styles.Background}>
+            <h1 className = {styles.Opportunity}> Hackathons </h1>
+          </div>
           <Jumbotron style = {{backgroundColor: "white"}}>
             <Container>
-              <Row>
-                <Col style = {{ marginTop: "20px" }}>
+              {/* <Row>
+                <Col style = {{ marginTop: "20px" }}> */}
                   {data.map(item => {
                     return (
                       <HackathonCard 
@@ -56,7 +59,7 @@ class Hackathons extends Component {
                       />
                     );
                   })}
-                </Col>
+                {/* </Col>
                 <Col style = {{ marginLeft: "700px", marginTop: "20px" }}>
                   <Image
                     className = {styles.BannerImage}
@@ -76,7 +79,7 @@ class Hackathons extends Component {
                     Post Opportunity
                   </Button>
                 </Col>
-              </Row>
+              </Row> */}
             </Container>
           </Jumbotron>
         </div>
