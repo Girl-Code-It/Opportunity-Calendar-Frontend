@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 .Jumbotron {
     background-color: white;
     margin-top: 30px;
@@ -5,13 +8,13 @@
 }
 
 .Heading {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 70px;
     font-weight: 700;
 }
 
 .TagLine {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 45px;
 }
 
@@ -36,7 +39,13 @@
     float: right;
     transition: all 0.5s;
     cursor: pointer;
+    font-family: "Inter", sans-serif;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+.Button:hover {
+    padding-right: 35px;
+    padding-left: 35px;
 }
 
 .BannerImage {

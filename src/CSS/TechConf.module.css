@@ -27,6 +27,17 @@ a:hover{
     margin-left: 20px;
     padding-bottom: 0px;
 }
+.Background {
+  margin-top: 5%;
+  background-color: #BD6997;
+}
+.Opportunity {
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
 .Rectangle {
     height: 3px;
     width: 155px;

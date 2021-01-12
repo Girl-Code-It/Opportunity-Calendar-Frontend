@@ -5,7 +5,7 @@ import styles from "../../../CSS/KnowAboutCard.module.css"
 function KnowAbout(props) {
     return (
         <div id = "knowAbout" className = {styles.Box}>
-            <Card className = {styles.Card}>
+            <Card style = {{width: "13rem", borderRadius: "20px"}}>
                 <Card.Img 
                     variant = "top"
                     src = {require("../../../Assets/" + props.knowAbout.imgUrl)}

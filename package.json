@@ -21,6 +21,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "author": "vaishali thakur",
+  "proxy": "https://opportunitycalendar.herokuapp.com/opportunities",
   "eslintConfig": {
     "extends": "react-app"
   },

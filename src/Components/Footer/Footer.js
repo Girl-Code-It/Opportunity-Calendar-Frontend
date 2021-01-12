@@ -19,22 +19,19 @@ function Footer() {
                     />
                 </Col>
                 <Col className = {styles.Column}>
-                    <h5> Links </h5>
-                    <div className = {styles.Rectangle} style = {{width: "45px"}}></div>
+                    <h5 className = {styles.Border}> Links </h5>
                     <p> Terms and Condition </p>
                     <p> Privacy Policy </p>
                 </Col>
                 <hr className = {styles.line2}/>
                 <Col className = {styles.Column}>
-                    <h5> Products </h5>
-                    <div className = {styles.Rectangle} style = {{width: "80px"}}></div>
+                    <h5 className = {styles.Border}> Products </h5>
                     <p> CodeMaps </p>
                     <p> Opportuntiy Calendar </p>
                 </Col>
                 <hr className = {styles.line2}/>
                 <Col className = {styles.Column}>
-                    <h5> Contact Us </h5>
-                    <div className = {styles.Rectangle} style = {{width: "100px"}}></div>
+                    <h5 className = {styles.Border}> Contact Us </h5>
                     <Row>
                         <Col md = {10}>
                             <p> <FaPhoneAlt />  (+91) - 83848-13292 </p>
@@ -58,24 +55,19 @@ function Footer() {
             </Row> */}
             <Row className = {styles.Top2}>
                 <Col>
-                    <h5> Links </h5>
-                    <div className = {styles.Rectangle} style = {{width: "45px"}}></div>
+                    <h5 style ={{textDecoration: "underline"}}> Links </h5>
                     <p> Terms and Condition </p>
                     <p> Privacy Policy </p>
                 </Col>
-                {/* <hr className = {styles.line2}/> */}
-                <Col style = {{textAlign: "end"}}>
-                    <h5> Products </h5>
-                    <div className = {styles.Rectangle} style = {{width: "80px", marginLeft: "161px"}}></div>
-                    <p> CodeMaps </p>
-                    <p> Opportuntiy Calendar </p>
+                <Col>
+                    <h5 style = {{textAlign: "end", textDecoration: "underline"}}> Products </h5>
+                    <p style = {{textAlign: "end"}}> CodeMaps </p>
+                    <p style = {{textAlign: "end"}}> Opportuntiy Calendar </p>
                 </Col>
             </Row>
-            {/* <hr className = {styles.line1}/> */}
             <Row className = {styles.Top2}>
                 <Col className = {styles.Top3}>
-                    <h5> Contact Us </h5>
-                    <div className = {styles.Rectangle} style = {{width: "100px", marginLeft: "205px"}}></div>
+                    <h5 style ={{textDecoration: "underline"}}> Contact Us </h5>
                     <Row>
                         <Col>
                             <p> <FaPhoneAlt />  (+91) - 83848-13292 </p>

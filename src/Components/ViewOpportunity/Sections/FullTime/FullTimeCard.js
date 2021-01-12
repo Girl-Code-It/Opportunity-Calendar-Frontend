@@ -7,78 +7,80 @@ function FullTimeCard(props) {
   
   return (
     <div id = "fulltime" className = {styles.Box}>
-      <Card className = {styles.Card}>
-        <Row>
-          <Card.Img
-            variant = "top"
-            src = {item.image}
-            alt = {item.company}
-            className = {styles.CardImage}
-          />
-          <Col>
-            <h1 className = {styles.Title} style = {{ color: "#008cd8" }}>
-              {item.company}
-            </h1>
-            <h3 className = {styles.Title2}> 
-              {item.title} (Job ID : {item.jobId})
-            </h3>
-          </Col>
-        </Row>
-        <Row>
-          <p className = {styles.Description}>
-            {item.jobDescription}
-          </p>
-        </Row>
-        <Container>
+      <Card style = {{borderRadius: "10px"}}>
+        <Card.Header style = {{backgroundColor: "#008dc8", borderRadius: "10px 10px 0 0"}}></Card.Header>
+        <Card.Body>
           <Row>
-            <Col md = {8} lg = {4}>
-              <Row>
-                <h5 className = {styles.Heading} style = {{ marginLeft: "20px" }}>
-                  Apply Before : 
-                </h5>
-                <h5 className = {styles.Value}> 
-                  {item.deadline}
-                </h5>
-              </Row>
-            </Col>
-
-            <Col md = {8} lg = {4}>
-              <Row>
-                <h5 className = {styles.Heading} style = {{ marginLeft: "20px" }}>
-                  Location :
-                </h5>
-                <h5 className = {styles.Value}> 
-                  {item.location}
-                </h5>
-              </Row>
+            <Card.Img
+              variant = "top"
+              src = {item.image}
+              alt = {item.company}
+              className = {styles.CardImage}
+            />
+            <Col>
+              <h1 className = {styles.Title}>
+                {item.company}
+              </h1>
+              <h3 className = {styles.Title2}> 
+                {item.title} (Job ID : {item.jobId})
+              </h3>
             </Col>
           </Row>
-
           <Row>
-            <Col md = {12} lg = {12}>
-              <Row>
-                <Container>
-                  <h5 className = {styles.Heading} style = {{ marginLeft: "5px" }}>
-                    Eligibility : 
-                    <span className = {styles.Value}>
-                      {item.eligibility} 
-                    </span>
+            <p className = {styles.Description}>
+              {item.jobDescription}
+            </p>
+          </Row>
+          <Container>
+            <Row>
+            <Col md = {6} lg = {6}>
+                <Row>
+                  <h5 className = {styles.Heading} style = {{ marginLeft: "20px" }}>
+                    Location :
                   </h5>
-                </Container>
-              </Row>
-            </Col>
-          </Row>
-      
-          <Row>
-            <Col md = {0} lg = {12}>
-              <a href = {item.jobURL}>
-                <button className = {styles.Button}>
-                  Apply
-                </button>
-              </a>
-            </Col>
-          </Row>
-        </Container>
+                  <h5 className = {styles.Value}>
+                    {item.location}
+                  </h5>
+                </Row>
+              </Col>
+
+              <Col md = {6} lg = {6}>
+                <Row>
+                  <h5 className = {styles.Heading} style = {{ marginLeft: "20px" }}>
+                    Deadline : 
+                  </h5>
+                  <h5 className = {styles.Value}>
+                    {item.deadline}
+                  </h5>
+                </Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col md = {12} lg = {12}>
+                <Row>
+                  <Container>
+                    <h5 className = {styles.Heading} style = {{ marginLeft: "4px" }}>
+                      Eligibility : 
+                      <span className = {styles.Value}>
+                        {item.eligibility} 
+                      </span>
+                    </h5>
+                  </Container>
+                </Row>
+              </Col>
+            </Row>
+        
+            <Row>
+              <Col md = {0} lg = {12}>
+                <a href = {item.jobURL}>
+                  <button className = {styles.Button}>
+                    Apply
+                  </button>
+                </a>
+              </Col>
+            </Row>
+          </Container>
+        </Card.Body>
       </Card>
     </div>
   );

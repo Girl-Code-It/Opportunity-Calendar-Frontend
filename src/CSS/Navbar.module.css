@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 .NavBar {
   margin: 0 0;
   background-color: white !important;
@@ -25,7 +28,7 @@
   letter-spacing: 0px;
   font-size: 2.3rem;
   font-weight: 390;
-  font-family: Arial;
+  font-family: "Poppins", sans-serif;
   padding-left: 20px;
 }
 
@@ -58,16 +61,17 @@ a:global(.active) {
 .Title {
   color: white;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-left: 8px;
-  margin-right: 85px;
+  margin-right: 58px;
 }
 
 .Dropdown {
   background-color: #008dc8;
   border: none;
   color: #fff;
-  margin-left: 40px;
+  margin-left: 900px;
+  font-family: "Inter", sans-serif;
   border-radius: 10px 10px 0px 0px;
   font-size: 20px;
   transition: all 0.5s;
@@ -86,6 +90,7 @@ a:global(.active) {
   padding: 5px 30px 5px 30px;
   margin-right: 2%;
   position: relative;
+  font-family: "Inter", sans-serif;
   transition: all 0.5s;
   cursor: pointer;
 }
