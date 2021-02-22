@@ -14,7 +14,7 @@ class KnowAbout extends Component {
 
     render() {
         let KnowAboutData = this.state.KnowAboutData.map((knowAbout) => {
-            return <KnowAboutCard key = {knowAbout.id} knowAbout = {knowAbout} />;
+            return <KnowAboutCard key = {knowAbout.id} knowAbout = {knowAbout} link={KnowAbout.link}/>;
         });
 
         return (

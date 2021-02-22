@@ -5,6 +5,7 @@ import styles from "../../../CSS/KnowAboutCard.module.css"
 function KnowAbout(props) {
     return (
         <div id = "knowAbout" className = {styles.Box}>
+            <a href={props.knowAbout.link}>
             <Card className = {styles.Card}>
                 <Card.Img 
                     variant = "top"
@@ -22,6 +23,7 @@ function KnowAbout(props) {
                     <div className = {styles.Rectangle}></div>
                 </Card.Body>
             </Card>
+            </a>
         </div>
     );
 }
