@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { OpportunityCard } from "./OpportunityCard";
 import { Col, Container, Jumbotron, Row, Image, Button } from "react-bootstrap";
-import styles from "../../CSS/HackathonCard.module.css";
+import styles from "./Opportunity.module.css";
 import Navbar from "./Navbar";
 
 const mapPathToResource = {
@@ -22,6 +22,7 @@ const mapPathToResource = {
 export function ViewOpportunity(props) {
   const [data, setData] = React.useState([]);
   const [imgSrc, setImgSrc] = React.useState();
+  const [postOpportunityPath, setPostOpportunityPath] = React.useState();
 
   // whenever props.path changes, get latest data from backend
   React.useEffect(() => {
@@ -37,6 +38,14 @@ export function ViewOpportunity(props) {
   React.useEffect(() => {
     mapPathToResource[props.path].image.then((mod) => setImgSrc(mod.default));
   }, [props.path]);
+
+  // as the last chunk of ViewOpportunity and PostOpportunity is same, we can
+  // simply extract it from the URL. passing a prop is not necessary
+  React.useEffect(() => {
+    const pathname = window.location.pathname;
+    const lastChunk = pathname.split("/").pop();
+    lastChunk && setPostOpportunityPath(`/postopportunity/${lastChunk}`);
+  }, []);
 
   if (data.length === 0 || !data) {
     return (
@@ -76,7 +85,7 @@ export function ViewOpportunity(props) {
                   ></Image>
                   <Button
                     className={styles.Button}
-                    href="/postopportunity/TechConf"
+                    href={postOpportunityPath}
                     style={{
                       padding: "5px 18px 5px 18px",
                       marginTop: "50px",
@@ -97,6 +106,9 @@ export function ViewOpportunity(props) {
   );
 }
 
+/**
+ * @param {string} pathChunk API endpoint path for this specific job listing
+ */
 function generateAPIEndpoint(pathChunk) {
   return `https://opportunitycalendar.herokuapp.com/opportunities/${pathChunk}/list/`;
 }
