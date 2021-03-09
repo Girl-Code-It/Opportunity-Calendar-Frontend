@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../../CSS/Navbar.module.css";
+import styles from "../../CSS/Navbar.module.css";
 import { Navbar, Nav, Form, FormControl, Button, NavDropdown } from "react-bootstrap";
 import { AiOutlineSearch } from "react-icons/ai"
 
