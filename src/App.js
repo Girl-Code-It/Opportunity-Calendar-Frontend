@@ -69,7 +69,7 @@ function App() {
             path="/viewopportunity/scholarship"
             render={(props) => (
               <div>
-                <ViewOpportunity path="competition" />
+                <ViewOpportunity path="scholarship" />
               </div>
             )}
           />
