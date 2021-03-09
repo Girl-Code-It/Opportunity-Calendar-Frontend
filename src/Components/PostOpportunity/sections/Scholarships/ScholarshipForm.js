@@ -28,14 +28,17 @@ class ScholarshipForm extends Component {
     event.preventDefault();
     console.log("From handleSubmit", this.state.title);
     axios
-      .post("https://opportunitycalendar.herokuapp.com/opportunities/scholarship/create/", {
-        title: this.state.title,
-        url: this.state.url,
-        description: this.state.description,
-        eligibility: this.state.eligibility,
-        deadline: this.state.deadline,
-        image: this.state.image,
-      })
+      .post(
+        "https://opportunitycalendar.herokuapp.com/opportunities/scholarship/create/",
+        {
+          title: this.state.title,
+          url: this.state.url,
+          description: this.state.description,
+          eligibility: this.state.eligibility,
+          deadline: this.state.deadline,
+          image: this.state.image,
+        }
+      )
       .then(
         (res) => {
           const data = res.data;

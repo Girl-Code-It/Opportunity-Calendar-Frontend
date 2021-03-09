@@ -33,17 +33,20 @@ class FullTimeForm extends Component {
     event.preventDefault();
     console.log("From handleSubmit", this.state.jobId);
     axios
-      .post("https://opportunitycalendar.herokuapp.com/opportunities/job/create/", {
-        jobId: this.state.jobId,
-        jobURL: this.state.jobURL,
-        title: this.state.title, 
-        company: this.state.company,
-        image: this.state.image,
-        jobDescription: this.state.jobDescription,
-        location: this.state.location,
-        eligibility: this.state.eligibility,
-        deadline: this.state.deadline
-      })
+      .post(
+        "https://opportunitycalendar.herokuapp.com/opportunities/job/create/",
+        {
+          jobId: this.state.jobId,
+          jobURL: this.state.jobURL,
+          title: this.state.title,
+          company: this.state.company,
+          image: this.state.image,
+          jobDescription: this.state.jobDescription,
+          location: this.state.location,
+          eligibility: this.state.eligibility,
+          deadline: this.state.deadline,
+        }
+      )
       .then(
         (res) => {
           const data = res.data;

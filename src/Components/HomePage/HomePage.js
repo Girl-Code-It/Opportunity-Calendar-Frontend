@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navbar from "./Sections/Navbar"
+import Navbar from "./Sections/Navbar";
 import Banner from "./Sections/Banner";
 import KnowAbout from "./Sections/KnowAbout";
 

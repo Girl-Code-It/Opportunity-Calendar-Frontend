@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navbar from "./sections/Navbar"
+import Navbar from "./sections/Navbar";
 
 class PostOpportunity extends Component {
   render() {
