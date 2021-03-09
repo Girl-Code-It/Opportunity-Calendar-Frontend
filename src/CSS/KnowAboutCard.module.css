@@ -12,6 +12,11 @@
     box-shadow: 0px 3px 4px 0px #ccc;
 }
 
+.Card:hover{
+    animation: card-ani 3s infinite;
+    background-color: grey;
+}
+
 .CardTitle {
     font-size: 23px;
     text-align: left;
@@ -36,7 +41,18 @@ a:hover{
     margin-bottom: 20px;
 }
 
-@media (min-width: 300px) (max-width: 531px) {
+@keyframes card-ani{
+    0%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+@media (min-width: 300px) and (max-width: 531px) {
     .Box {
         width: 100%;
     }
