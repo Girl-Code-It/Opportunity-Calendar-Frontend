@@ -1,21 +1,23 @@
 import React from "react";
 import { Card, Row, Col, Container } from "react-bootstrap";
+import Button from '@material-ui/core/Button';
+
 import styles from "../../../../CSS/FullTime.module.css";
 
 function FullTimeCard(props) {
   const { item } = props;
   
   return (
-    <div id = "fulltime" className = {styles.Box}>
-      <Card className = {styles.Card}>
-        <Row>
+  
+      <Card  style={{marginTop:'1rem'}}>
+        <Row >
           <Card.Img
             variant = "top"
             src = {item.image}
             alt = {item.company}
-            className = {styles.CardImage}
+            className = {styles.CardImage} 
           />
-          <Col>
+          <Col >
             <h1 className = {styles.Title} style = {{ color: "#008cd8" }}>
               {item.company}
             </h1>
@@ -31,7 +33,7 @@ function FullTimeCard(props) {
         </Row>
         <Container>
           <Row>
-            <Col md = {8} lg = {4}>
+            <Col  md = {12} lg = {12} >
               <Row>
                 <h5 className = {styles.Heading} style = {{ marginLeft: "20px" }}>
                   Apply Before : 
@@ -42,10 +44,10 @@ function FullTimeCard(props) {
               </Row>
             </Col>
 
-            <Col md = {8} lg = {4}>
+            <Col md = {12} lg = {12} >
               <Row>
                 <h5 className = {styles.Heading} style = {{ marginLeft: "20px" }}>
-                  Location :
+                 Location : 
                 </h5>
                 <h5 className = {styles.Value}> 
                   {item.location}
@@ -70,17 +72,17 @@ function FullTimeCard(props) {
           </Row>
       
           <Row>
-            <Col md = {0} lg = {12}>
+            <Col>
               <a href = {item.jobURL}>
-                <button className = {styles.Button}>
-                  Apply
-                </button>
+              <Button variant="contained" color="primary"  style={{marginTop:"1rem" , marginBottom:"1rem"}}>
+  Apply
+</Button>
               </a>
             </Col>
           </Row>
         </Container>
       </Card>
-    </div>
+    
   );
 }
 

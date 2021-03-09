@@ -11,4 +11,4 @@ class ViewOpportunity extends Component {
   }
 }
 
-export default ViewOpportunity;
+export default ViewOpportunity; 

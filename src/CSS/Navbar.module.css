@@ -48,7 +48,7 @@ a:global(.active) {
   background-color: #008dc8;
   border: none;
   color: white;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 10px 4px 10px; 
   border-radius: 0px 8px 8px 0px;
   font-size: 20px;
   position: relative;
@@ -56,7 +56,7 @@ a:global(.active) {
 }
 
 .Title {
-  color: white;
+  color: #008dc8;;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 8px;
@@ -64,7 +64,7 @@ a:global(.active) {
 }
 
 .Dropdown {
-  background-color: #008dc8;
+  background-color: #fff;
   border: none;
   color: #fff;
   margin-left: 40px;

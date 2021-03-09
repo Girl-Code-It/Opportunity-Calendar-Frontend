@@ -21,7 +21,7 @@ a:hover{
     text-decoration: none;
 }
 .CardImage {
-    height: 100px;
+    height: auto;
     width: 120px;
     padding: 20px;
     margin-left: 20px;
@@ -73,7 +73,7 @@ a:hover{
     font-size: 20px;
     padding: 5px 30px 5px 30px;
     margin-top: 8px;
-    margin-right: 4%;
+    margin-bottom: 8px;
     position: relative;
     float: right;
     transition: all 0.5s;
@@ -82,10 +82,15 @@ a:hover{
     align-self: center;
 
 }
+@media (max-width: 576px) {
+  .Button {
+    font-size: 6vw;
+  }
+}
 .BannerImage {
-    height: 200px;
-    width: 200px;
-    padding: 20px;
+    height: 100px;
+    width: 100px;
+   
     padding-bottom: 0px;
 }
 

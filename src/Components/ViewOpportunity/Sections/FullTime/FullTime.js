@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import Navbar from "../Navbar";
-import { Col, Container, Jumbotron, Row, Image, Button } from "react-bootstrap";
+import { Col, Container, Jumbotron, Row, Image } from "react-bootstrap";
 import FullTimeCard from "./FullTimeCard";
 import FullTimeImage from "../../../../Assets/fte.svg";
 import styles from "../../../../CSS/FullTime.module.css";
+import Button from '@material-ui/core/Button';
 import axios from "axios";
 
 class FullTime extends Component {
@@ -45,10 +46,9 @@ class FullTime extends Component {
         <Navbar />
         <div>
           <Jumbotron style = {{backgroundColor: "white"}}>
-            <Container>
-              <Row>
-                <Col>
-                  {data.map(item => {
+            <div className="row">
+              <div className="col-sm-10">
+              {data.map(item => {
                     return (
                       <FullTimeCard 
                         key = {item.id} 
@@ -56,28 +56,29 @@ class FullTime extends Component {
                       />
                     );
                   })}
-                </Col>
-                <Col style = {{ marginLeft: "700px", marginTop: "20px" }}>
+              </div>
+         
+                  <div className="col-sm-2">
+                  
                   <Image
                     className = {styles.BannerImage}
                     src = {FullTimeImage}
                     alt = "FullTimeImage"
                   />
-                  <Button
-                    className = {styles.Button}
-                    href = "/postopportunity/FullTime"
-                    style = {{
-                      padding: "5px 18px 5px 18px",
-                      marginTop: "50px",
-                      fontSize: "20px",
-                      marginRight: "-5px"
-                    }}
-                  >
-                    Post Opportunity
-                  </Button>
-                </Col>
-              </Row>
-            </Container>
+                <a  href = "/postopportunity/FullTime">  <Button variant="contained" color="primary" style={{marginTop:"1rem"}}>
+                  Post Opportunity
+                     </Button></a>
+                
+                  
+                  
+                  </div>
+              
+            </div>
+                 
+                 
+                
+             
+            
           </Jumbotron>
         </div>
       </div>
