@@ -1,124 +1,124 @@
 .Jumbotron {
-    background-color: white;
-    margin-top: 30px;
-    padding-top: 80px;
+  background-color: white;
+  margin-top: 30px;
+  padding-top: 80px;
 }
 
 .Heading {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 70px;
-    font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  font-weight: 700;
 }
 
 .TagLine {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
 }
 
 .Rectangle {
-    height: 5px;
-    width: 250px;
-    background-color: #008dc8;
-    margin-bottom: 20px;
+  height: 5px;
+  width: 250px;
+  background-color: #008dc8;
+  margin-bottom: 20px;
 }
 
 .Button {
-    background-color: #008dc8;
-    border: none;
-    color: #fff;
-    text-align: center;
-    border-radius: 50px;
-    font-size: 20px;
-    padding: 5px 30px 5px 30px;
-    margin-top: 20px;
-    margin-right: 10%;
-    position: relative;
-    float: right;
-    transition: all 0.5s;
-    cursor: pointer;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  background-color: #008dc8;
+  border: none;
+  color: #fff;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 5px 30px 5px 30px;
+  margin-top: 20px;
+  margin-right: 10%;
+  position: relative;
+  float: right;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }
 
 .BannerImage {
-    height: 400px;
-    width: 700px;
+  height: 400px;
+  width: 700px;
 }
 
-@media (min-width: 150px) and (max-width: 355px){
-    .TagLine {
-        margin-top: 140%;
-    }
+@media (min-width: 150px) and (max-width: 355px) {
+  .TagLine {
+    margin-top: 140%;
+  }
 
-    .rightCol {
-        margin-top: -200%;
-    }
+  .rightCol {
+    margin-top: -200%;
+  }
 
-    .Button {
-        float: left;
-    }
+  .Button {
+    float: left;
+  }
 }
 
-@media (min-width: 355px) and (max-width: 425px){
-    .TagLine {
-        margin-top: 120%;
-    }
+@media (min-width: 355px) and (max-width: 425px) {
+  .TagLine {
+    margin-top: 120%;
+  }
 
-    .rightCol {
-        margin-top: -160%;
-    }
+  .rightCol {
+    margin-top: -160%;
+  }
 
-    .Button {
-        float: left;
-    }
+  .Button {
+    float: left;
+  }
 }
 
-@media (min-width: 427px) and (max-width: 455px){
-    .TagLine {
-        margin-top: 120%;
-    }
+@media (min-width: 427px) and (max-width: 455px) {
+  .TagLine {
+    margin-top: 120%;
+  }
 
-    .rightCol {
-        margin-top: -150%;
-    }
+  .rightCol {
+    margin-top: -150%;
+  }
 
-    .Button {
-        float: left;
-    }
+  .Button {
+    float: left;
+  }
 }
 
-@media (min-width: 455px) and (max-width: 512px){
-    .TagLine {
-        margin-top: 120%;
-    }
+@media (min-width: 455px) and (max-width: 512px) {
+  .TagLine {
+    margin-top: 120%;
+  }
 
-    .rightCol {
-        margin-top: -150%;
-    }
+  .rightCol {
+    margin-top: -150%;
+  }
 
-    .Button {
-        float: left;
-    }
+  .Button {
+    float: left;
+  }
 }
 
 @media (min-width: 513px) and (max-width: 767px) {
-    .TagLine {
-        margin-top: 100%;
-    }
+  .TagLine {
+    margin-top: 100%;
+  }
 
-    .rightCol {
-        margin-top: -115%;
-        height: 300px;
-        width: 600px;
-    }
+  .rightCol {
+    margin-top: -115%;
+    height: 300px;
+    width: 600px;
+  }
 
-    .Button {
-        float: left;
-    }
+  .Button {
+    float: left;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-    .Button {
-      float: left;
-      margin-top: 20px;
-    }
+  .Button {
+    float: left;
+    margin-top: 20px;
+  }
 }

@@ -50,7 +50,6 @@ Updates about following opportunities are available:
 -   [**View Opportunities**](https://xd.adobe.com/view/c0932765-884f-4cb5-7799-3d58ca6a1e8e-b6a2/screen/6c24433f-7f7e-433d-9fbd-9b08bd8c47cf/?fullscreen)
 -   [**Post Opportunity**](https://xd.adobe.com/view/c0932765-884f-4cb5-7799-3d58ca6a1e8e-b6a2/screen/7bd973ee-1fab-4d8b-961c-028e2bf5296c/?fullscreen)
 
-
 <h2 align="center">Bugs and Feature Requests</h2>
 
 Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/blob/develop/contributing.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/issues/new).

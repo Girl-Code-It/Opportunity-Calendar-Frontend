@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 // import axios from 'axios'
-import HomePage from "./Components/HomePage/HomePage";
-import PostOpportunity from "./Components/PostOpportunity/PostOpportunity";
-import FullTimeForm from "./Components/PostOpportunity/sections/FullTime/FullTime";
-import InternshipForm from "./Components/PostOpportunity/sections/Internships/Internships";
-import TechConfForm from "./Components/PostOpportunity/sections/TechConf/TechConf";
-import HackathonForm from "./Components/PostOpportunity/sections/Hackathons/Hackathons";
-import CodingCompForm from "./Components/PostOpportunity/sections/CodingComp/CodingComp";
-import ScholarshipForm from "./Components/PostOpportunity/sections/Scholarships/Scholarships";
+import HomePage from './Components/HomePage/HomePage';
+import PostOpportunity from './Components/PostOpportunity/PostOpportunity';
+import FullTimeForm from './Components/PostOpportunity/sections/FullTime/FullTime';
+import InternshipForm from './Components/PostOpportunity/sections/Internships/Internships';
+import TechConfForm from './Components/PostOpportunity/sections/TechConf/TechConf';
+import HackathonForm from './Components/PostOpportunity/sections/Hackathons/Hackathons';
+import CodingCompForm from './Components/PostOpportunity/sections/CodingComp/CodingComp';
+import ScholarshipForm from './Components/PostOpportunity/sections/Scholarships/Scholarships';
 
-import { ViewOpportunity } from "./Components/ViewOpportunity/";
+import { ViewOpportunity } from './Components/ViewOpportunity/';
 
-import Footer from "./Components/Footer/Footer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from './Components/Footer/Footer';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
