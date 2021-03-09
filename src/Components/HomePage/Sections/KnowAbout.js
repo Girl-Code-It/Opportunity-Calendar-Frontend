@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import KnowAboutCard from "./KnowAboutCard";
-import KnowAboutData from "./KnowAboutData";
-import { Container, Jumbotron, Row } from "react-bootstrap";
-import styles from "../../../CSS/KnowAbout.module.css";
+import React, { Component } from 'react';
+import KnowAboutCard from './KnowAboutCard';
+import KnowAboutData from './KnowAboutData';
+import { Container, Jumbotron, Row } from 'react-bootstrap';
+import styles from '../../../CSS/KnowAbout.module.css';
 
 class KnowAbout extends Component {
   constructor() {
@@ -32,7 +32,7 @@ class KnowAbout extends Component {
           </h2>
           <Row
             className="justify-content-md-center"
-            style={{ marginTop: "50px" }}
+            style={{ marginTop: '50px' }}
           >
             {KnowAboutData}
           </Row>

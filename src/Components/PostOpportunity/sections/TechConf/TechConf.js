@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Navbar from "../Navbar";
-import TechConfForm from "./TechConfForm";
+import React, { Component } from 'react';
+import Navbar from '../Navbar';
+import TechConfForm from './TechConfForm';
 
 class TechConf extends Component {
   render() {
@@ -9,9 +9,9 @@ class TechConf extends Component {
         <Navbar />
         <div
           style={{
-            marginTop: "120px",
-            marginLeft: "300px",
-            marginRight: "300px",
+            marginTop: '120px',
+            marginLeft: '300px',
+            marginRight: '300px',
           }}
         >
           <TechConfForm />

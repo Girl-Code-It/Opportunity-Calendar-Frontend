@@ -1,17 +1,17 @@
-import React from "react";
-import axios from "axios";
-import { OpportunityCard } from "./OpportunityCard";
-import { Col, Container, Jumbotron, Row, Image, Button } from "react-bootstrap";
-import styles from "./Opportunity.module.css";
-import Navbar from "./Navbar";
+import React from 'react';
+import axios from 'axios';
+import { OpportunityCard } from './OpportunityCard';
+import { Col, Container, Jumbotron, Row, Image, Button } from 'react-bootstrap';
+import styles from './Opportunity.module.css';
+import Navbar from './Navbar';
 
 const mapPathToResource = {
-  conference: { image: import("../../Assets/conference-large.png") },
-  competition: { image: import("../../Assets/coding-large.png") },
-  scholarship: { image: import("../../Assets/scholarship-large.png") },
-  hackathon: { image: import("../../Assets/hackathon-large.png") },
-  intern: { image: import("../../Assets/internships-large.png") },
-  job: { image: import("../../Assets/fte.svg") },
+  conference: { image: import('../../Assets/conference-large.png') },
+  competition: { image: import('../../Assets/coding-large.png') },
+  scholarship: { image: import('../../Assets/scholarship-large.png') },
+  hackathon: { image: import('../../Assets/hackathon-large.png') },
+  intern: { image: import('../../Assets/internships-large.png') },
+  job: { image: import('../../Assets/fte.svg') },
 };
 
 /**
@@ -43,7 +43,7 @@ export function ViewOpportunity(props) {
   // simply extract it from the URL. passing a prop is not necessary
   React.useEffect(() => {
     const pathname = window.location.pathname;
-    const lastChunk = pathname.split("/").pop();
+    const lastChunk = pathname.split('/').pop();
     lastChunk && setPostOpportunityPath(`/postopportunity/${lastChunk}`);
   }, []);
 
@@ -53,9 +53,9 @@ export function ViewOpportunity(props) {
         <Navbar />
         <h3
           style={{
-            textAlign: "center",
-            marginTop: "220px",
-            marginBottom: "200px",
+            textAlign: 'center',
+            marginTop: '220px',
+            marginBottom: '200px',
           }}
         >
           No opportunities, sorry!
@@ -69,15 +69,15 @@ export function ViewOpportunity(props) {
       <div>
         <Navbar />
         <div>
-          <Jumbotron style={{ backgroundColor: "white" }}>
+          <Jumbotron style={{ backgroundColor: 'white' }}>
             <Container>
               <Row>
-                <Col style={{ marginTop: "20px" }}>
+                <Col style={{ marginTop: '20px' }}>
                   {data.map((item) => {
                     return <OpportunityCard key={item.id} item={item} />;
                   })}
                 </Col>
-                <Col style={{ marginLeft: "700px", marginTop: "20px" }}>
+                <Col style={{ marginLeft: '700px', marginTop: '20px' }}>
                   <Image
                     className={styles.BannerImage}
                     src={imgSrc}
@@ -87,10 +87,10 @@ export function ViewOpportunity(props) {
                     className={styles.Button}
                     href={postOpportunityPath}
                     style={{
-                      padding: "5px 18px 5px 18px",
-                      marginTop: "50px",
-                      fontSize: "20px",
-                      marginRight: "-5px",
+                      padding: '5px 18px 5px 18px',
+                      marginTop: '50px',
+                      fontSize: '20px',
+                      marginRight: '-5px',
                     }}
                   >
                     Post Opportunity

@@ -1,21 +1,21 @@
-import React, { Component } from "react";
-import axios from "axios";
-import { Form, Button } from "react-bootstrap";
-import styles from "../../../../CSS/CodingCompForm.module.css";
+import React, { Component } from 'react';
+import axios from 'axios';
+import { Form, Button } from 'react-bootstrap';
+import styles from '../../../../CSS/CodingCompForm.module.css';
 
 class CodingCompForm extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      title: "",
-      url: "",
-      date: "",
-      description: "",
-      location: "",
-      eligibility: "",
-      deadline: "",
-      image: "",
+      title: '',
+      url: '',
+      date: '',
+      description: '',
+      location: '',
+      eligibility: '',
+      deadline: '',
+      image: '',
     };
   }
 
@@ -28,10 +28,10 @@ class CodingCompForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log("From handleSubmit", this.state.title);
+    console.log('From handleSubmit', this.state.title);
     axios
       .post(
-        "https://opportunitycalendar.herokuapp.com/opportunities/competition/create/",
+        'https://opportunitycalendar.herokuapp.com/opportunities/competition/create/',
         {
           title: this.state.title,
           url: this.state.url,
@@ -54,14 +54,14 @@ class CodingCompForm extends Component {
         }
       );
     this.setState({
-      title: "",
-      url: "",
-      date: "",
-      description: "",
-      location: "",
-      eligibility: "",
-      deadline: "",
-      image: "",
+      title: '',
+      url: '',
+      date: '',
+      description: '',
+      location: '',
+      eligibility: '',
+      deadline: '',
+      image: '',
     });
   };
 
@@ -78,7 +78,7 @@ class CodingCompForm extends Component {
     } = this.state;
 
     return (
-      <div style={{ marginBottom: "80px" }}>
+      <div style={{ marginBottom: '80px' }}>
         <Form onSubmit={this.handleSubmit}>
           <Form.Label className={styles.CardTitle}>
             Post a Coding Competition
@@ -88,7 +88,7 @@ class CodingCompForm extends Component {
 
           <Form.Group>
             <Form.Control
-              style={{ marginLeft: "40px" }}
+              style={{ marginLeft: '40px' }}
               className={styles.Input}
               type="text"
               name="title"
@@ -105,7 +105,7 @@ class CodingCompForm extends Component {
               name="image"
               value={image}
               placeholder="Logo URL"
-              style={{ marginLeft: "40px", marginTop: "30px" }}
+              style={{ marginLeft: '40px', marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -114,7 +114,7 @@ class CodingCompForm extends Component {
             <Form.Control
               as="textarea"
               rows={4}
-              style={{ marginTop: "35px", marginLeft: "40px" }}
+              style={{ marginTop: '35px', marginLeft: '40px' }}
               name="description"
               value={description}
               placeholder="Short Description"
@@ -129,7 +129,7 @@ class CodingCompForm extends Component {
               name="date"
               value={date}
               placeholder="Date of Competition"
-              style={{ marginTop: "30px", marginLeft: "40px" }}
+              style={{ marginTop: '30px', marginLeft: '40px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -141,7 +141,7 @@ class CodingCompForm extends Component {
               name="location"
               value={location}
               placeholder="Location"
-              style={{ marginLeft: "40px", marginTop: "30px" }}
+              style={{ marginLeft: '40px', marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -153,7 +153,7 @@ class CodingCompForm extends Component {
               name="deadline"
               value={deadline}
               placeholder="Last Date to Apply"
-              style={{ marginTop: "30px", marginLeft: "40px" }}
+              style={{ marginTop: '30px', marginLeft: '40px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -165,7 +165,7 @@ class CodingCompForm extends Component {
               name="eligibility"
               value={eligibility}
               placeholder="Eligibility"
-              style={{ marginLeft: "40px", marginTop: "30px" }}
+              style={{ marginLeft: '40px', marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -177,7 +177,7 @@ class CodingCompForm extends Component {
               name="url"
               value={url}
               placeholder="Website"
-              style={{ marginLeft: "40px", marginTop: "30px" }}
+              style={{ marginLeft: '40px', marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>

@@ -1,6 +1,6 @@
-import React from "react";
-import { Card } from "react-bootstrap";
-import styles from "../../../CSS/KnowAboutCard.module.css";
+import React from 'react';
+import { Card } from 'react-bootstrap';
+import styles from '../../../CSS/KnowAboutCard.module.css';
 
 function KnowAbout(props) {
   return (
@@ -9,7 +9,7 @@ function KnowAbout(props) {
         <Card className={styles.Card}>
           <Card.Img
             variant="top"
-            src={require("../../../Assets/" + props.knowAbout.imgUrl)}
+            src={require('../../../Assets/' + props.knowAbout.imgUrl)}
             alt="Image"
             className={styles.CardImage}
           />

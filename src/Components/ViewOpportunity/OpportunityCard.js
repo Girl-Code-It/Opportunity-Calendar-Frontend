@@ -1,7 +1,7 @@
-import React from "react";
-import { Card, Row, Col, Container } from "react-bootstrap";
-import logo from "../../Assets/amdocs.png";
-import styles from "./Opportunity.module.css";
+import React from 'react';
+import { Card, Row, Col, Container } from 'react-bootstrap';
+import logo from '../../Assets/amdocs.png';
+import styles from './Opportunity.module.css';
 
 export function OpportunityCard(props) {
   const { item } = props;
@@ -26,7 +26,7 @@ export function OpportunityCard(props) {
           <Row>
             <Col md={4} lg={4}>
               <Row>
-                <h5 className={styles.Heading} style={{ marginLeft: "20px" }}>
+                <h5 className={styles.Heading} style={{ marginLeft: '20px' }}>
                   Date :
                 </h5>
                 <h5 className={styles.Value}>{item.date}</h5>
@@ -35,7 +35,7 @@ export function OpportunityCard(props) {
 
             <Col md={4} lg={4}>
               <Row>
-                <h5 className={styles.Heading} style={{ marginLeft: "20px" }}>
+                <h5 className={styles.Heading} style={{ marginLeft: '20px' }}>
                   Location :
                 </h5>
                 <h5 className={styles.Value}>{item.location}</h5>
@@ -53,7 +53,7 @@ export function OpportunityCard(props) {
             <Col md={12} lg={12}>
               <Row>
                 <Container>
-                  <h5 className={styles.Heading} style={{ marginLeft: "5px" }}>
+                  <h5 className={styles.Heading} style={{ marginLeft: '5px' }}>
                     Eligibility :
                     <span className={styles.Value}>{item.eligibility}</span>
                   </h5>

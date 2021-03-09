@@ -1,15 +1,15 @@
-import React from "react";
-import { Container, Jumbotron, Row, Col, Image } from "react-bootstrap";
-import Logo from "../../Assets/GCI.png";
-import styles from "../../CSS/Footer.module.css";
+import React from 'react';
+import { Container, Jumbotron, Row, Col, Image } from 'react-bootstrap';
+import Logo from '../../Assets/GCI.png';
+import styles from '../../CSS/Footer.module.css';
 import {
   FaLinkedinIn,
   FaInstagram,
   FaTwitter,
   FaPhoneAlt,
-} from "react-icons/fa";
-import { BiCopyright } from "react-icons/bi";
-import { GrMail } from "react-icons/gr";
+} from 'react-icons/fa';
+import { BiCopyright } from 'react-icons/bi';
+import { GrMail } from 'react-icons/gr';
 
 function Footer() {
   return (
@@ -21,34 +21,34 @@ function Footer() {
           </Col>
           <Col className={styles.Column}>
             <h5> Links </h5>
-            <div className={styles.Rectangle} style={{ width: "45px" }}></div>
+            <div className={styles.Rectangle} style={{ width: '45px' }}></div>
             <p> Terms and Condition </p>
             <p> Privacy Policy </p>
           </Col>
           <hr className={styles.line2} />
           <Col className={styles.Column}>
             <h5> Products </h5>
-            <div className={styles.Rectangle} style={{ width: "80px" }}></div>
+            <div className={styles.Rectangle} style={{ width: '80px' }}></div>
             <p> CodeMaps </p>
             <p> Opportuntiy Calendar </p>
           </Col>
           <hr className={styles.line2} />
           <Col className={styles.Column}>
             <h5> Contact Us </h5>
-            <div className={styles.Rectangle} style={{ width: "100px" }}></div>
+            <div className={styles.Rectangle} style={{ width: '100px' }}></div>
             <Row>
               <Col md={10}>
                 <p>
-                  {" "}
-                  <FaPhoneAlt /> (+91) - 83848-13292{" "}
+                  {' '}
+                  <FaPhoneAlt /> (+91) - 83848-13292{' '}
                 </p>
               </Col>
             </Row>
             <Row>
               <Col md={10}>
                 <p>
-                  {" "}
-                  <GrMail /> girlcodeit@gmail.com{" "}
+                  {' '}
+                  <GrMail /> girlcodeit@gmail.com{' '}
                 </p>
               </Col>
             </Row>
@@ -66,16 +66,16 @@ function Footer() {
         <Row className={styles.Top2}>
           <Col>
             <h5> Links </h5>
-            <div className={styles.Rectangle} style={{ width: "45px" }}></div>
+            <div className={styles.Rectangle} style={{ width: '45px' }}></div>
             <p> Terms and Condition </p>
             <p> Privacy Policy </p>
           </Col>
           {/* <hr className = {styles.line2}/> */}
-          <Col style={{ textAlign: "end" }}>
+          <Col style={{ textAlign: 'end' }}>
             <h5> Products </h5>
             <div
               className={styles.Rectangle}
-              style={{ width: "80px", marginLeft: "161px" }}
+              style={{ width: '80px', marginLeft: '161px' }}
             ></div>
             <p> CodeMaps </p>
             <p> Opportuntiy Calendar </p>
@@ -87,19 +87,19 @@ function Footer() {
             <h5> Contact Us </h5>
             <div
               className={styles.Rectangle}
-              style={{ width: "100px", marginLeft: "205px" }}
+              style={{ width: '100px', marginLeft: '205px' }}
             ></div>
             <Row>
               <Col>
                 <p>
-                  {" "}
-                  <FaPhoneAlt /> (+91) - 83848-13292{" "}
+                  {' '}
+                  <FaPhoneAlt /> (+91) - 83848-13292{' '}
                 </p>
               </Col>
               <Col>
                 <p>
-                  {" "}
-                  <GrMail /> girlcodeit@gmail.com{" "}
+                  {' '}
+                  <GrMail /> girlcodeit@gmail.com{' '}
                 </p>
               </Col>
             </Row>
@@ -109,7 +109,7 @@ function Footer() {
         <Row className={styles.Bottom1}>
           <Col>
             <p>
-              {" "}
+              {' '}
               <BiCopyright /> 2020 Girl Code It | All rights reserved.
             </p>
           </Col>
@@ -118,26 +118,26 @@ function Footer() {
               href="https://www.linkedin.com/company/14568052/admin/"
               className={styles.Shift}
             >
-              {" "}
-              <FaLinkedinIn />{" "}
+              {' '}
+              <FaLinkedinIn />{' '}
             </a>
             <a
               href="https://www.instagram.com/girlcodeit/"
               className={styles.Shift}
             >
-              {" "}
-              <FaInstagram />{" "}
+              {' '}
+              <FaInstagram />{' '}
             </a>
             <a href="https://twitter.com/GirlCodeIt1" className={styles.Shift}>
-              {" "}
-              <FaTwitter />{" "}
+              {' '}
+              <FaTwitter />{' '}
             </a>
           </Col>
         </Row>
         <Row className={styles.Bottom2}>
           <Col>
             <p className={styles.Para}>
-              {" "}
+              {' '}
               <BiCopyright /> 2020 Girl Code It | All rights reserved.
             </p>
           </Col>
@@ -148,19 +148,19 @@ function Footer() {
               href="https://www.linkedin.com/company/14568052/admin/"
               className={styles.Shift}
             >
-              {" "}
-              <FaLinkedinIn />{" "}
+              {' '}
+              <FaLinkedinIn />{' '}
             </a>
             <a
               href="https://www.instagram.com/girlcodeit/"
               className={styles.Shift}
             >
-              {" "}
-              <FaInstagram />{" "}
+              {' '}
+              <FaInstagram />{' '}
             </a>
             <a href="https://twitter.com/GirlCodeIt1" className={styles.Shift}>
-              {" "}
-              <FaTwitter />{" "}
+              {' '}
+              <FaTwitter />{' '}
             </a>
           </Col>
         </Row>

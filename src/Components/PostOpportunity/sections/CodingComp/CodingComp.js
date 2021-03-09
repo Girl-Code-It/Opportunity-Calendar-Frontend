@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Navbar from "../Navbar";
-import CodingCompForm from "./CodingCompForm";
+import React, { Component } from 'react';
+import Navbar from '../Navbar';
+import CodingCompForm from './CodingCompForm';
 
 class CodingComp extends Component {
   render() {
@@ -9,9 +9,9 @@ class CodingComp extends Component {
         <Navbar />
         <div
           style={{
-            marginTop: "120px",
-            marginLeft: "300px",
-            marginRight: "300px",
+            marginTop: '120px',
+            marginLeft: '300px',
+            marginRight: '300px',
           }}
         >
           <CodingCompForm />

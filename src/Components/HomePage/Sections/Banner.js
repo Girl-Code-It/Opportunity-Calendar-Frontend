@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "../../../CSS/Banner.module.css";
-import { Container, Row, Col, Jumbotron, Image } from "react-bootstrap";
-import BannerImage from "../../../Assets/banner.png";
+import React from 'react';
+import styles from '../../../CSS/Banner.module.css';
+import { Container, Row, Col, Jumbotron, Image } from 'react-bootstrap';
+import BannerImage from '../../../Assets/banner.png';
 
 function Banner() {
   return (
@@ -12,7 +12,7 @@ function Banner() {
             <h1 className={styles.Heading}>
               Opportunity
               <br></br>
-              <span style={{ color: "#008dc8" }}> Calendar </span>
+              <span style={{ color: '#008dc8' }}> Calendar </span>
             </h1>
             <div className={styles.Rectangle} />
             <h2 className={styles.TagLine}>

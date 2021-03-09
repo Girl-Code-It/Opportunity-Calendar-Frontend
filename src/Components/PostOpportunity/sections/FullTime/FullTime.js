@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Navbar from "../Navbar";
-import FullTimeForm from "./FullTimeForm";
+import React, { Component } from 'react';
+import Navbar from '../Navbar';
+import FullTimeForm from './FullTimeForm';
 
 class FullTime extends Component {
   render() {
@@ -9,9 +9,9 @@ class FullTime extends Component {
         <Navbar />
         <div
           style={{
-            marginTop: "120px",
-            marginLeft: "300px",
-            marginRight: "300px",
+            marginTop: '120px',
+            marginLeft: '300px',
+            marginRight: '300px',
           }}
         >
           <FullTimeForm />
