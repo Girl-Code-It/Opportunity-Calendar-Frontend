@@ -26,7 +26,7 @@ class KnowAbout extends Component {
     return (
       <Jumbotron className={styles.Jumbotron}>
         <Container fluid="sm">
-          <h2 className={styles.Heading}>
+          <h2 id = 'about' className={styles.Heading}>
             Know
             <span className={styles.About}> About </span>
           </h2>
