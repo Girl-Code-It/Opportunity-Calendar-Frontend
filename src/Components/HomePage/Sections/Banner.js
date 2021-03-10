@@ -7,7 +7,7 @@ function Banner() {
   return (
     <Jumbotron id="home" className={styles.Jumbotron} fluid>
       <Container className={styles.Container}>
-        <Row>
+        <Row className={styles.BannerRow}>
           <Col md={6} lg={6} className={styles.leftCol}>
             <h1 className={styles.Heading}>
               Opportunity
@@ -15,6 +15,14 @@ function Banner() {
               <span style={{ color: '#008dc8' }}> Calendar </span>
             </h1>
             <div className={styles.Rectangle} />
+            <div>
+              <Image
+                className={styles.BannerImage2}
+                src={BannerImage}
+                alt="BannerImage"
+                fluid
+              />
+            </div>
             <h2 className={styles.TagLine}>
               Know right opportunities
               <br></br>

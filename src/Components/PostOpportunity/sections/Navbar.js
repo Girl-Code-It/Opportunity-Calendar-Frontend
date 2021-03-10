@@ -34,7 +34,7 @@ function navbar() {
             </Button>
           </div>
         </Form>
-        <Nav className="mr-auto">
+        <Nav className="mr-3">
           <NavDropdown
             title={<span className={styles.Title}>Opportunities</span>}
             id="basic-nav-dropdown"
