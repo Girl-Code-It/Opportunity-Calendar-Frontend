@@ -58,7 +58,7 @@ a:global(.active) {
   padding: 4px 10px 4px 10px;
   border-radius: 0px 8px 8px 0px;
   font-size: 20px;
-  position: relative;
+  /* position: relative; */
   transition: all 0.5s;
 }
 
@@ -74,7 +74,8 @@ a:global(.active) {
   background-color: #008dc8;
   border: none;
   color: #fff;
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   border-radius: 10px 10px 0px 0px;
   font-size: 20px;
   transition: all 0.5s;
@@ -121,7 +122,6 @@ a:global(.active) {
   }
   .Button {
     margin-top: 10px;
-    /* font-size: 1rem; */
   }
 }
 
@@ -129,14 +129,9 @@ a:global(.active) {
   .ShiftRight {
     padding-left: 10px;
     font-size: 0.9rem;
-    width: 100%;
   }
   .Button, .Middle{
     font-size: 1rem;
-  }
-  .Middle{
-    width: 100%;
-    justify-content: flex-start;
   }
   .NavBar a{
     font-size: 0.9rem;
@@ -146,17 +141,6 @@ a:global(.active) {
     font-size: 1rem;
     padding: 0;
   }
-  .SearchButton{
-    padding: 3px 5px;
-    width: 10%;
-  }
-  .Search{
-    padding: 10px 5px;
-    width: 50%;
-  }
-  .SearchForm{
-    width: 100%;
-  }
 }
 @media only screen and (max-width: 360px) {
   .Logo {
@@ -164,10 +148,9 @@ a:global(.active) {
     left: -20px;
     font-size: 2rem;
   }
-  button {
-    position: absolute;
-    top: 16px;
-    right: 20px;
-    /* margin-top: 10px; */
+}
+@media only screen and (max-width: 3280px) {
+  .NavBar{
+    padding: 8px 10px 8px 4px;
   }
 }

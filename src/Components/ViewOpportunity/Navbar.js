@@ -24,17 +24,21 @@ function navbar() {
       <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
         <Form inline className={styles.SearchForm}>
           <div className={styles.Middle}>
-            <FormControl
-              type="text"
-              placeholder="Search"
-              className={styles.Search}
-            />
-            <Button className={styles.SearchButton}>
-              <AiOutlineSearch />
-            </Button>
+            <div className={styles.SearchDiv}>
+              <FormControl
+                type="text"
+                placeholder="Search"
+                className={styles.Search}
+              />
+            </div>
+            <div className={styles.SearchButtonDiv}>
+              <Button className={styles.SearchButton}>
+                <AiOutlineSearch />
+              </Button>
+            </div>
           </div>
         </Form>
-        <Nav className="mr-4">
+        <Nav className="">
           <NavDropdown
             title={<span className={styles.Title}>Opportunities</span>}
             id="basic-nav-dropdown"
