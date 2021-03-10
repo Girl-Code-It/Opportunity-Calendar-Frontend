@@ -19,7 +19,7 @@
 
 .CardTitle {
   font-size: 23px;
-  text-align: left;
+  text-align: center;
   color: black;
 }
 
@@ -56,5 +56,22 @@ a:hover {
 @media (min-width: 300px) and (max-width: 531px) {
     .Box {
         width: 100%;
+    }
+    .Card{
+      width: 100%;
+    }
+    .CardImage {
+      width: 60%;
+      max-width: 250px;
+      height: auto;
+    }
+
+    .Rectangle {
+      width: 100%;
+    }
+
+    .CardImage {
+      margin-left: auto;
+      margin-right: auto;
     }
 }
