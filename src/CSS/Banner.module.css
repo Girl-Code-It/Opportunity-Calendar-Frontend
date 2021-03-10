@@ -8,6 +8,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 70px;
   font-weight: 700;
+  z-index: 100;
 }
 
 .TagLine {
@@ -42,6 +43,7 @@
 .BannerImage {
   height: 400px;
   width: 700px;
+  z-index: 10;
 }
 
 @media (min-width: 150px) and (max-width: 355px) {
@@ -120,5 +122,50 @@
   .Button {
     float: left;
     margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .Heading {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .TagLine {
+    font-size: 35px;
+  }
+  .BannerImage {
+    height: 350px;
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 516px){
+  .Heading {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .TagLine {
+    font-size: 25px;
+    /* margin-top: 100px; */
+  }
+  .BannerImage {
+    height: 300px;
+    width: 400px;
+    margin-top: 70px;
+  }
+}
+@media only screen and (max-width: 400px){
+  .Heading {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .TagLine {
+    font-size: 20px;
+    /* margin-top: 200px; */
+    padding-top: 80px;
+  }
+  .BannerImage {
+    height: 250px;
+    width: 300px;
+    margin-top: 80px;
   }
 }
