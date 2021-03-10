@@ -13,6 +13,7 @@ import { GrMail } from 'react-icons/gr';
 
 function Footer() {
   return (
+
     <Jumbotron className={styles.Jumbotron}>
       <Container className={styles.ContainerFooter}>
         <Row className={styles.Top1}>
