@@ -5,15 +5,16 @@
   /* margin-bottom: 5%; */
 }
 .Card {
-  width: 800px;
-  height: 330px;
+  width: 50rem;
+  height: 25rem;
   border-radius: 15px;
   /* margin-left: 50%; */
+  margin-top: auto;
 
   box-shadow: 0px 2px 2px 0px #ccc;
 }
 .CardTitle {
-  font-size: 23px;
+  font-size: 20px;
   text-align: left;
   color: black;
 }
@@ -22,7 +23,7 @@ a:hover {
 }
 .CardImage {
   height: 100px;
-  width: 120px;
+  width: 180px;
   padding: 20px;
   margin-left: 20px;
   padding-bottom: 0px;
@@ -58,7 +59,7 @@ a:hover {
   border: none;
   color: #fff;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 5px;
   font-size: 20px;
   padding: 5px 30px 5px 30px;
   margin-top: 3px;

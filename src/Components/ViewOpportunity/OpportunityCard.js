@@ -9,7 +9,7 @@ export function OpportunityCard(props) {
   return (
     <div id="CodingComp" className={styles.Box}>
       <Card className={styles.Card}>
-        <Row>
+      
           <Card.Img
             variant="top"
             src={logo}
@@ -17,59 +17,61 @@ export function OpportunityCard(props) {
             alt={item.title}
             className={styles.CardImage}
           />
-          <h1 className={styles.Title}>{item.title}</h1>
-        </Row>
-        <Row>
+          <Card.Body>
+          <Card.Title><h1 className={styles.Title}>{item.title}</h1></Card.Title>
+            <Card.Text>
           <p className={styles.Description}>{item.description}</p>
-        </Row>
-        <Container>
-          <Row>
-            <Col md={4} lg={4}>
+       
+            <Container>
               <Row>
-                <h5 className={styles.Heading} style={{ marginLeft: '20px' }}>
+                <Col>
+                <h5 className={styles.Heading} >
                   Date :
-                </h5>
-                <h5 className={styles.Value}>{item.date}</h5>
-              </Row>
-            </Col>
-
-            <Col md={4} lg={4}>
-              <Row>
-                <h5 className={styles.Heading} style={{ marginLeft: '20px' }}>
+               
+                <span className={styles.Value}>{item.date} </span></h5>
+                </Col>
+                <Col>
+                    <h5 className={styles.Heading} >
                   Location :
+                  <span className={styles.Value}>{item.location}</span>
                 </h5>
-                <h5 className={styles.Value}>{item.location}</h5>
-              </Row>
+               
             </Col>
-
-            <Col md={4} lg={4}>
-              <Row>
-                <h5 className={styles.Heading}>Deadline :</h5>
-                <h5 className={styles.Value}>{item.deadline}</h5>
+                
+             
+                
               </Row>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={12} lg={12}>
-              <Row>
-                <Container>
-                  <h5 className={styles.Heading} style={{ marginLeft: '5px' }}>
+            
+               <Row>
+                 <Col>
+                 <h5 className={styles.Heading}>Deadline :
+                <span className={styles.Value}>{item.deadline}</span>
+                </h5>
+                 </Col>
+                 <Col>
+                 <h5 className={styles.Heading}>
                     Eligibility :
                     <span className={styles.Value}>{item.eligibility}</span>
                   </h5>
-                </Container>
-              </Row>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={0} lg={12}>
+
+                 </Col>
+               
+            
+                 
+               </Row>
+            
+              
+
+            </Container>
+            
+                  </Card.Text>
               <a href={item.url}>
                 <button className={styles.Button}>Apply</button>
               </a>
-            </Col>
-          </Row>
-        </Container>
-      </Card>
-    </div>
+            
+              </Card.Body>
+     </Card>
+     </div>
+   
   );
 }

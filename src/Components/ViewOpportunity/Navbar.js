@@ -23,7 +23,7 @@ function navbar() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
         <Form inline>
-          <div className={styles.Middle}>
+         
             <FormControl
               type="text"
               placeholder="Search"
@@ -32,17 +32,17 @@ function navbar() {
             <Button className={styles.SearchButton}>
               <AiOutlineSearch />
             </Button>
-          </div>
+       
         </Form>
         <Nav className="mr-auto">
           <NavDropdown
             title={<span className={styles.Title}>Opportunities</span>}
-            id="basic-nav-dropdown"
+            id="dropdown-basic-button" 
             className={styles.Dropdown}
           >
             <NavDropdown.Item href="/viewopportunity/fulltime">
               {' '}
-              Full Time Jobs{' '}
+              Full Time Jobs{' '} 
             </NavDropdown.Item>
             <NavDropdown.Item href="/viewopportunity/hackathon">
               {' '}
@@ -66,7 +66,7 @@ function navbar() {
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
-        <button className={styles.Button}>Login / SignUp</button>
+        <Button variant="outline-info">Login/Signup</Button>{' '}
       </Navbar.Collapse>
     </Navbar>
   );
