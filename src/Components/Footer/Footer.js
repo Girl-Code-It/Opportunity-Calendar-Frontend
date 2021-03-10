@@ -13,27 +13,28 @@ import { GrMail } from 'react-icons/gr';
 
 function Footer() {
   return (
-    <Jumbotron id = 'contact' className={styles.Jumbotron}>
-      <Container className={styles.Container}>
+
+    <Jumbotron className={styles.Jumbotron}>
+      <Container className={styles.ContainerFooter}>
         <Row className={styles.Top1}>
-          <Col>
+          <Col className={styles.ImgColumn}>
             <Image className={styles.Logo} src={Logo} alt="Logo" />
           </Col>
-          <Col className={styles.Column}>
+          <Col className={styles.Column1}>
             <h5> Links </h5>
             <div className={styles.Rectangle} style={{ width: '45px' }}></div>
             <p> Terms and Condition </p>
             <p> Privacy Policy </p>
           </Col>
           <hr className={styles.line2} />
-          <Col className={styles.Column}>
+          <Col className={styles.Column2}>
             <h5> Products </h5>
-            <div className={styles.Rectangle} style={{ width: '80px' }}></div>
+            <div className={`${styles.Rectangle} ${styles.Rectangle3}`} style={{ width: '80px' }}></div>
             <p> CodeMaps </p>
             <p> Opportuntiy Calendar </p>
           </Col>
           <hr className={styles.line2} />
-          <Col className={styles.Column}>
+          <Col className={styles.Column3}>
             <h5> Contact Us </h5>
             <div className={styles.Rectangle} style={{ width: '100px' }}></div>
             <Row>
@@ -74,8 +75,8 @@ function Footer() {
           <Col style={{ textAlign: 'end' }}>
             <h5> Products </h5>
             <div
-              className={styles.Rectangle}
-              style={{ width: '80px', marginLeft: '161px' }}
+              className={styles.Rectangle2}
+              style={{ width: '80px' }}
             ></div>
             <p> CodeMaps </p>
             <p> Opportuntiy Calendar </p>
@@ -85,11 +86,13 @@ function Footer() {
         <Row className={styles.Top2}>
           <Col className={styles.Top3}>
             <h5> Contact Us </h5>
-            <div
-              className={styles.Rectangle}
-              style={{ width: '100px', marginLeft: '205px' }}
-            ></div>
-            <Row>
+            <div className={styles.RectangleContainer}>
+              <div
+                className={styles.Rectangle3}
+                style={{ width: '100px' }}
+              ></div>
+            </div>
+            <Row className={styles.ContactRow}>
               <Col>
                 <p>
                   {' '}

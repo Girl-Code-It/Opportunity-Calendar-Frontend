@@ -12,7 +12,7 @@ import { AiOutlineSearch } from 'react-icons/ai';
 
 function navbar() {
   return (
-    <Navbar fixed="top" bg="light" expand="lg" className={styles.NavBar}>
+    <Navbar fixed="top" bg="light" expand="lg" className={`${styles.NavBar}`}>
       <Navbar.Brand className={styles.Logo}>
         <a href="/" className={styles.Brand} style={{ fontSize: '35px' }}>
           Girl
@@ -22,7 +22,7 @@ function navbar() {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
-        <Form inline>
+        <Form inline className={styles.SearchForm}>
           <div className={styles.Middle}>
             <FormControl
               type="text"
@@ -34,7 +34,7 @@ function navbar() {
             </Button>
           </div>
         </Form>
-        <Nav className="mr-auto">
+        <Nav className="mr-4">
           <NavDropdown
             title={<span className={styles.Title}>Opportunities</span>}
             id="basic-nav-dropdown"
