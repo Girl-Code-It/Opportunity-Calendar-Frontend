@@ -59,7 +59,7 @@ a:global(.active) {
   color: white;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
- margin-right: 10px;
+  margin-right: 10px;
 }
 
 .Dropdown {
@@ -92,14 +92,14 @@ a:global(.active) {
 @media (max-width: 360px) {
   .Logo {
     position: relative;
-    left: -20px;
+   
     font-size: 2rem;
   }
-  button {
+  .Button {
     position: absolute;
     top: 16px;
     right: 0;
-    margin-top: 10px;
+   
   }
 }
 
@@ -109,12 +109,30 @@ a:global(.active) {
   }
   .ShiftRight {
     margin-left: 0px;
+    margin-top: 10px;
   }
   .Dropdown {
     margin-left: 0px;
     margin-top: 10px;
+    width: 15rem;
+    margin-bottom: 0.5rem;
   }
-  .Button {
-    margin-top: 10px;
+  
+  .SearchButton {
+    background-color: #008dc8;
+    border: none;
+    color: white;
+    padding: 4px 10px 4px 10px;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 20px;
+    position: relative;
+    transition: all 0.5s;
+    width: 15rem;
   }
+  .Search {
+    width: 15rem;
+   
+  }
+  
+ 
 }

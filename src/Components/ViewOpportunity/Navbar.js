@@ -20,20 +20,24 @@ function navbar() {
           It
         </a>
       </Navbar.Brand>
+     
+        <Form inline >
+         
+         <FormControl
+           type="text"
+           placeholder="Search"
+           className={styles.Search}
+         />
+         <Button >
+           <AiOutlineSearch />
+         </Button>
+    
+     </Form>
+       
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
-        <Form inline>
-         
-            <FormControl
-              type="text"
-              placeholder="Search"
-              className={styles.Search}
-            />
-            <Button className={styles.SearchButton}>
-              <AiOutlineSearch />
-            </Button>
-       
-        </Form>
+      
+      
         <Nav className="mr-auto">
           <NavDropdown
             title={<span className={styles.Title}>Opportunities</span>}

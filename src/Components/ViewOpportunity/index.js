@@ -72,29 +72,39 @@ export function ViewOpportunity(props) {
           <Jumbotron style={{ backgroundColor: 'white' }}>
             <Container>
               <Row>
-                <Col style={{ marginTop: '20px' }}>
+                <Col style={{ marginTop: '20px' }} sm={8}>
                   {data.map((item) => {
                     return <OpportunityCard key={item.id} item={item} />;
                   })}
                 </Col>
-                <Col style={{ marginLeft: '700px', marginTop: '20px' }}>
-                  <Image
+                <Col  sm={4}>
+                  <Container>
+                    <Row>
+                      
+                      <Image
                     className={styles.BannerImage}
                     src={imgSrc}
                     alt="TechConfImage"
                   ></Image>
-                  <Button
+                  </Row>
+                   
+                      <Row>
+                      <Button
                     className={styles.Button}
                     href={postOpportunityPath}
                     style={{
-                      padding: '5px 18px 5px 18px',
-                      marginTop: '50px',
-                      fontSize: '20px',
-                      marginRight: '-5px',
+                     
+                      fontSize: '1rem',
+                     marginLeft: '150px'
                     }}
                   >
                     Post Opportunity
                   </Button>
+                      </Row>
+                    
+                  </Container>
+                 
+                  
                 </Col>
               </Row>
             </Container>

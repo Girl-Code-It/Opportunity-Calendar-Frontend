@@ -62,8 +62,8 @@ a:hover {
   border-radius: 5px;
   font-size: 20px;
   padding: 5px 30px 5px 30px;
-  margin-top: 3px;
-  margin-right: 4%;
+  margin-top: 1px;
+   
   position: relative;
   float: right;
   transition: all 0.5s;
@@ -72,8 +72,21 @@ a:hover {
   align-self: center;
 }
 .BannerImage {
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-  padding-bottom: 0px;
+  height: 15rem;
+  width: 7rem;
+  margin-left: 200px;
+  margin-top: 100px;
+ 
+}
+@media (max-width: 992px) {
+  .BannerImage{
+     width: 15rem;
+     margin-left: 0;
+  }
+  .Button {
+    margin-left: 0;
+    width: 15rem;
+
+  }
+
 }
