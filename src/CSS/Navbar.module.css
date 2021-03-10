@@ -37,12 +37,19 @@ a:global(.active) {
 }
 
 .Middle {
-  margin-left: 480px;
+  display: flex;
+}
+
+.ShiftRight{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .Search {
   border-radius: 8px 0px 0px 8px;
 }
+
+
 
 .SearchButton {
   background-color: #008dc8;
@@ -90,7 +97,68 @@ a:global(.active) {
   cursor: pointer;
 }
 
-@media (max-width: 360px) {
+
+@media only screen and (max-width: 993px) {
+  .Middle {
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .Middle {
+    margin-left: 0px;
+    margin-right: 0;
+  }
+  .ShiftRight {
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    justify-content: space-between;
+  }
+  .Dropdown {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .Button {
+    margin-top: 10px;
+    /* font-size: 1rem; */
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .ShiftRight {
+    padding-left: 10px;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .Button, .Middle{
+    font-size: 1rem;
+  }
+  .Middle{
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .NavBar a{
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+  .Title{
+    font-size: 1rem;
+    padding: 0;
+  }
+  .SearchButton{
+    padding: 3px 5px;
+    width: 10%;
+  }
+  .Search{
+    padding: 10px 5px;
+    width: 50%;
+  }
+  .SearchForm{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 360px) {
   .Logo {
     position: relative;
     left: -20px;
@@ -99,23 +167,7 @@ a:global(.active) {
   button {
     position: absolute;
     top: 16px;
-    right: 0;
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 992px) {
-  .Middle {
-    margin-left: 0px;
-  }
-  .ShiftRight {
-    margin-left: 0px;
-  }
-  .Dropdown {
-    margin-left: 0px;
-    margin-top: 10px;
-  }
-  .Button {
-    margin-top: 10px;
+    right: 20px;
+    /* margin-top: 10px; */
   }
 }

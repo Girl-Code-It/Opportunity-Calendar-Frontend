@@ -4,7 +4,7 @@ body, html{
 .Jumbotron {
   margin: 0px;
   padding: 20px;
-  /* padding-left: 0px; */
+  padding-left: 0px;
   /* padding-bottom: 0px; */
 }
 .ImgColumn {
@@ -209,6 +209,9 @@ p {
   }
   .Top2{
     margin-top: 10px;
+  }
+  .Jumbotron{
+    padding-left: 20px;
   }
 }
 @media (max-width: 505px) {

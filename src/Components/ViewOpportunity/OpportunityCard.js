@@ -9,7 +9,7 @@ export function OpportunityCard(props) {
   return (
     <div id="CodingComp" className={styles.Box}>
       <Card className={styles.Card}>
-        <Row>
+        <Row className={styles.HeadingRow}>
           <Card.Img
             variant="top"
             src={logo}
@@ -24,7 +24,7 @@ export function OpportunityCard(props) {
         </Row>
         <Container>
           <Row>
-            <Col md={4} lg={4}>
+            <Col md={6} lg={6}>
               <Row>
                 <h5 className={styles.Heading} style={{ marginLeft: '20px' }}>
                   Date :
@@ -33,7 +33,14 @@ export function OpportunityCard(props) {
               </Row>
             </Col>
 
-            <Col md={4} lg={4}>
+            <Col md={6} lg={6}>
+              <Row>
+                <h5 className={styles.Heading} style={{ marginLeft: '20px' }}>Deadline :</h5>
+                <h5 className={styles.Value}>{item.deadline}</h5>
+              </Row>
+            </Col>
+
+            <Col md={6} lg={6}>
               <Row>
                 <h5 className={styles.Heading} style={{ marginLeft: '20px' }}>
                   Location :
@@ -42,12 +49,7 @@ export function OpportunityCard(props) {
               </Row>
             </Col>
 
-            <Col md={4} lg={4}>
-              <Row>
-                <h5 className={styles.Heading}>Deadline :</h5>
-                <h5 className={styles.Value}>{item.deadline}</h5>
-              </Row>
-            </Col>
+            
           </Row>
           <Row>
             <Col md={12} lg={12}>
@@ -61,7 +63,7 @@ export function OpportunityCard(props) {
               </Row>
             </Col>
           </Row>
-          <Row>
+          <Row className="mt-3">
             <Col md={0} lg={12}>
               <a href={item.url}>
                 <button className={styles.Button}>Apply</button>
