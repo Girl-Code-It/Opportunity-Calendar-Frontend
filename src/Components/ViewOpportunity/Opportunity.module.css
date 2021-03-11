@@ -16,7 +16,7 @@
  
   border-radius: 15px;
   /* margin-left: 50%; */
-  margin-top: 5rem;
+  margin-top: 1rem;
   box-shadow: 0px 2px 2px 0px #ccc;
 }
 
@@ -51,7 +51,7 @@ a:hover {
 }
 
 .Title {
-  margin-top: 5px;
+  
 
   color: #008dc8;
   font-size: 30px;
@@ -117,7 +117,7 @@ a:hover {
 .Dropdown {
  color: #fff;
 background-color: #e4fbff;
-  margin-top: 50px;
+
   border-radius: 5px 5px 5px 5px;
   border-color: #008dc8;
   font-size: 10px;

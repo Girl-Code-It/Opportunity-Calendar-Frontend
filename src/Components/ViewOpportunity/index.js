@@ -71,7 +71,7 @@ export function ViewOpportunity(props) {
         <div>
         <Card className="text-center" >
  
- <Card.Body style={{backgroundColor: '#BD6997', marginTop: '5rem' , height:'10rem'}}>
+ <Card.Body style={{backgroundColor: '#BD6997', marginTop: '7rem' , height:'10rem'}}>
    <Card.Title> 
      
                  </Card.Title>
