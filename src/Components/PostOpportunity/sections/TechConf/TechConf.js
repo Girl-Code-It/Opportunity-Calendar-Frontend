@@ -1,14 +1,15 @@
-import React, { Component } from "react";
-import Navbar from "../Navbar";
-import TechConfForm from "./TechConfForm";
+import React, { Component } from 'react';
+import Navbar from '../Navbar';
+import TechConfForm from './TechConfForm';
+import styles from '../../../../CSS/FullTimeForm.module.css';
 
 class TechConf extends Component {
   render() {
     return (
       <div>
-        <Navbar/>
-        <div style={{marginTop:"120px" , marginLeft:"300px", marginRight:"300px"}}>
-            <TechConfForm/>
+        <Navbar />
+        <div className={styles.FullTimeComponent}  >
+          <TechConfForm />
         </div>
       </div>
     );
