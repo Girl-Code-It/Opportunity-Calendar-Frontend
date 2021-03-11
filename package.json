@@ -15,7 +15,8 @@
     "react-icons": "^3.11.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "react-scroll": "^1.8.1"
+    "react-scroll": "^1.8.1",
+    "react-scroll-to-top": "^1.0.5"
   },
   "scripts": {
     "start": "react-scripts start",

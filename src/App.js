@@ -8,6 +8,7 @@ import TechConfForm from './Components/PostOpportunity/sections/TechConf/TechCon
 import HackathonForm from './Components/PostOpportunity/sections/Hackathons/Hackathons';
 import CodingCompForm from './Components/PostOpportunity/sections/CodingComp/CodingComp';
 import ScholarshipForm from './Components/PostOpportunity/sections/Scholarships/Scholarships';
+import ScrollToTop from "react-scroll-to-top";
 
 import { ViewOpportunity } from './Components/ViewOpportunity/';
 
@@ -17,6 +18,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
     <Router>
+      <ScrollToTop smooth color="#008dc8"/>
       <div className="App">
         <Switch>
           <Route
