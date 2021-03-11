@@ -1,0 +1,109 @@
+.body {
+    padding-top: 0px;
+    background-color: #ffffff;
+  }
+  
+.AboutUs_heading__3Gzv2{
+    letter-spacing: 0;
+    font-size: 2.3rem;
+    font-weight: 390;
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+    
+.AboutUs_About__3C3xP{
+    letter-spacing: 0;
+    color: #000;
+    margin: 10px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.AboutUs_Us__Embxm{
+    letter-spacing: 0;
+    color: #008dc8;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.AboutUs_AboutImage__11ku5{ margin-top:15% }
+
+.AboutUs_description__CsHNn{
+    text-align: justify;
+    font-family: "Inter",sans-serif;
+    font-size: 1.1rem;
+}
+
+.AboutUs_rectangle__3IQSc{
+    height: 5px;
+    width: 170px;
+    background-color: #008dc8;
+    position: relative;
+    bottom: 22px;
+    margin-left: 83%;
+    float: right;
+}
+
+.AboutUs_knowMore__1JOiJ{
+    background-color: #008dc8;
+    border: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 5px 15px;
+    position: relative;
+    float: left;
+    transition: all .5s;
+    cursor: pointer;
+    font-family: "Inter",sans-serif;
+    font-size: 1.2rem;
+    box-shadow: 0 10px 20px -8px rgba(0,0,0,.7);
+}
+
+a:hover{ border:none }
+
+.AboutUs_knowMore__1JOiJ:active,.AboutUs_knowMore__1JOiJ:focus,.AboutUs_knowMore__1JOiJ:hover{
+    background-color: #008dc8;
+    color: #fff;
+    padding: 5px 25px;
+}
+
+@media screen and (max-width:430px){
+    .AboutUs_AboutImage__11ku5{ margin-top:0 }
+    
+    .AboutUs_rectangle__3IQSc{ display:none }
+    
+    .AboutUs_knowMore__1JOiJ{
+        position: absolute;
+        right: 35%;
+    }
+}
+    
+@media screen and (max-width:991px){
+    .AboutUs_AboutImage__11ku5{ margin-top:0 }
+    
+    .AboutUs_description__CsHNn{ margin-top:10% } 
+}
+
+@media screen and (max-width:320px){
+    .AboutUs_AboutImage__11ku5{ margin-top:0 }
+    
+    .AboutUs_knowMore__1JOiJ{ 
+        position: absolute;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width:360px){
+    .AboutUs_AboutImage__11ku5{ margin-top:0 }
+    
+    .AboutUs_knowMore__1JOiJ{ top:100% }
+}
+
+@media screen and (max-width:1192px) and (min-width:992px){
+    .AboutUs_AboutImage__11ku5{ margin-top:0 }
+    
+    .AboutUs_description__CsHNn{ font-size:90% }
+}
