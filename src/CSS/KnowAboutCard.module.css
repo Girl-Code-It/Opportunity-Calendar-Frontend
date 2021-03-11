@@ -53,8 +53,3 @@ a:hover {
     }
 }
 
-@media (min-width: 300px) and (max-width: 531px) {
-    .Box {
-        width: 100%;
-    }
-}

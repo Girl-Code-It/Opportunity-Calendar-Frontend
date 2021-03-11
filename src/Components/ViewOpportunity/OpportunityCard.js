@@ -18,7 +18,7 @@ export function OpportunityCard(props) {
             className={styles.CardImage}
           />
           <Card.Body>
-          <Card.Title><h1 className={styles.Title}>{item.title}</h1></Card.Title>
+          <Card.Title className={styles.Title}>{item.title}</Card.Title>
             <Card.Text>
           <p className={styles.Description}>{item.description}</p>
        

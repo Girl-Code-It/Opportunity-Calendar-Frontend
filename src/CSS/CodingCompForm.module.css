@@ -58,3 +58,49 @@ a:hover {
   cursor: pointer;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }
+
+
+.CodingCompComponent{
+  width: 55%; 
+  margin: 120px auto 20px;
+  padding-left: 3%;
+}
+
+@media only screen and (max-width: 1113px){
+  .CodingCompComponent{
+    width: 60%; 
+    margin: 120px auto 20px;
+    padding-left: 3%;
+  }
+}
+@media only screen and (max-width: 1000px){
+  .CodingCompComponent{
+    width: 65%; 
+    margin: 120px auto 20px;
+    padding-left: 2%;
+  }
+}
+@media only screen and (max-width: 801px){
+  .CodingCompComponent{
+    width: 70%; 
+    margin: 120px auto 20px;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 650px){
+  .CodingCompComponent{
+    width: 75%; 
+    margin: 120px auto 20px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .CodingCompComponent{
+    width: 80%; 
+    margin: 120px auto 20px;
+    padding-right: 0px;
+  }
+  .Input, textarea{
+    margin-left: 0px !important;
+  }
+}

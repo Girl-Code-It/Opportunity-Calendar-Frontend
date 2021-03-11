@@ -31,7 +31,7 @@ class KnowAbout extends Component {
             <span className={styles.About}> About </span>
           </h2>
           <Row
-            className="justify-content-md-center"
+            className="justify-content-center"
             style={{ marginTop: '50px' }}
           >
             {KnowAboutData}

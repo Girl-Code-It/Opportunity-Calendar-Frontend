@@ -90,7 +90,7 @@ export function ViewOpportunity(props) {
 </Card>
             <Container>
               <Row>
-                <Col style={{ marginTop: '20px' }} sm={12}>
+                <Col style={{ marginTop: '20px' }} md={12}>
                   {data.map((item) => {
                     return <OpportunityCard key={item.id} item={item} />;
                   })}
