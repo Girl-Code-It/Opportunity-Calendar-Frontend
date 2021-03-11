@@ -8,6 +8,7 @@ import TechConfForm from './Components/PostOpportunity/sections/TechConf/TechCon
 import HackathonForm from './Components/PostOpportunity/sections/Hackathons/Hackathons';
 import CodingCompForm from './Components/PostOpportunity/sections/CodingComp/CodingComp';
 import ScholarshipForm from './Components/PostOpportunity/sections/Scholarships/Scholarships';
+import ScrollTop from './Components/ScrollTop/ScrollTop';
 
 import { ViewOpportunity } from './Components/ViewOpportunity/';
 
@@ -159,6 +160,7 @@ function App() {
             )}
           />
         </Switch>
+        <ScrollTop/>
         <Footer />
       </div>
     </Router>

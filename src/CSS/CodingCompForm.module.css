@@ -14,35 +14,41 @@ a:hover {
   padding: 20px;
   padding-bottom: 0px;
 }
+
 .Input {
   border-left-width: 0in;
   border-top-width: 0in;
   border-right-width: 0in;
 }
+
 .RectangleEligibility {
   height: 5px;
   width: 105px;
   background-color: #008dc8;
   margin-bottom: 20px;
 }
+
 .RectangleBasicDetails {
   height: 3px;
   width: 360px;
   background-color: #008dc8;
   margin-bottom: 20px;
 }
+
 .RectangleJobDescription {
   height: 5px;
   width: 195px;
   background-color: #008dc8;
   margin-bottom: 20px;
 }
+
 .RectangleRounds {
   height: 5px;
   width: 95px;
   background-color: #008dc8;
   margin-bottom: 20px;
 }
+
 .Button {
   background-color: #008dc8;
   border: none;
@@ -59,48 +65,58 @@ a:hover {
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }
 
+/* make outline none when button gets clicked */
+.Button:focus {
+  outline: none;
+}
 
-.CodingCompComponent{
-  width: 55%; 
+.CodingCompComponent {
+  width: 55%;
   margin: 120px auto 20px;
   padding-left: 3%;
 }
 
-@media only screen and (max-width: 1113px){
-  .CodingCompComponent{
-    width: 60%; 
+@media only screen and (max-width: 1113px) {
+  .CodingCompComponent {
+    width: 60%;
     margin: 120px auto 20px;
     padding-left: 3%;
   }
 }
-@media only screen and (max-width: 1000px){
-  .CodingCompComponent{
-    width: 65%; 
+
+@media only screen and (max-width: 1000px) {
+  .CodingCompComponent {
+    width: 65%;
     margin: 120px auto 20px;
     padding-left: 2%;
   }
 }
-@media only screen and (max-width: 801px){
-  .CodingCompComponent{
-    width: 70%; 
+
+@media only screen and (max-width: 801px) {
+  .CodingCompComponent {
+    width: 70%;
     margin: 120px auto 20px;
     padding-left: 0;
   }
 }
-@media only screen and (max-width: 650px){
-  .CodingCompComponent{
-    width: 75%; 
+
+@media only screen and (max-width: 650px) {
+  .CodingCompComponent {
+    width: 75%;
     margin: 120px auto 20px;
     padding-right: 40px;
   }
 }
-@media only screen and (max-width: 500px){
-  .CodingCompComponent{
-    width: 80%; 
+
+@media only screen and (max-width: 500px) {
+  .CodingCompComponent {
+    width: 80%;
     margin: 120px auto 20px;
     padding-right: 0px;
   }
-  .Input, textarea{
+
+  .Input,
+  textarea {
     margin-left: 0px !important;
   }
 }

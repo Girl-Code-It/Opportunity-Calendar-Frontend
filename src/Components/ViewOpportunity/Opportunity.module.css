@@ -1,13 +1,8 @@
-.Box {
-  /* justify-content: center; */
-  /* margin: 5% 5% 5% 5%; */
-  margin: 5%;
-  /* margin-bottom: 5%; */
-}
 
 .ColumnCard {
   max-width: 80%;
 }
+
 .ColumnPost {
   max-width: 20%;
   padding-top: 20px;
@@ -16,44 +11,50 @@
   justify-content: start;
   align-items: center;
 }
+
 .Card {
-  width: 100%;
-  min-height: 330px;
+ 
   border-radius: 15px;
   /* margin-left: 50%; */
-  padding: 20px 10px;
-
+  margin-top: 1rem;
   box-shadow: 0px 2px 2px 0px #ccc;
 }
+
 .CardTitle {
   font-size: 23px;
   text-align: left;
   color: black;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 .CardImage {
   height: 100px;
-  width: 120px;
+  width: 180px;
   padding: 20px;
   margin-left: 20px;
   padding-bottom: 0px;
 }
+
 .Rectangle {
   height: 3px;
   width: 155px;
   background-color: #008dc8;
   margin-bottom: 20px;
 }
+
 .HeadingRow {
   flex-wrap: nowrap;
   align-items: center;
 }
+
 .Title {
-  margin-top: 35px;
-  /* margin-left: 15px; */
+  
+
   color: #008dc8;
+  font-size: 30px;
   /* display: inline-block;
   word-break: break-word; */
   width: 65%;
@@ -61,16 +62,18 @@ a:hover {
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: normal;
-  line-break:auto;
+  line-break: auto;
   hyphens: none;
   -webkit-hyphens: none;
   -moz-hyphens: none;
 }
+
 .Description {
   margin-top: 15px;
   margin-left: 35px;
   margin-right: 25px;
 }
+
 .Heading {
   margin-top: 5px;
   margin-left: 0px;
@@ -81,30 +84,62 @@ a:hover {
   margin-left: 5px;
   color: black;
 }
-.Button {
-  background-color: #008dc8;
-  border: none;
-  color: #fff;
-  text-align: center;
-  border-radius: 50px;
-  font-size: 20px;
-  padding: 5px 30px 5px 30px;
-  margin-top: 3px;
-  margin-right: 4%;
-  position: relative;
-  float: right;
+
+
+  .Button {
+    background-color: #008dc8;
+    border: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 5px 30px 5px 30px;
+    margin-top: 20px;
+   
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  
+}
+
+/* make outline none when button gets clicked */
+.Button:focus {
+  outline: none;
+}
+
+.BannerImage {
+  height: 15rem;
+  width: 7rem;
+  margin-left: 200px;
+  margin-top: 100px;
+ 
+}
+.Dropdown {
+ color: #fff;
+background-color: #e4fbff;
+
+  border-radius: 5px 5px 5px 5px;
+  border-color: #008dc8;
+  font-size: 10px;
   transition: all 0.5s;
   cursor: pointer;
-  box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 0.7);
-  align-self: center;
-  /* width: 100%; */
+  
+  
+  width: 15rem;
+ 
+ 
 }
-.BannerImage {
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-  padding-bottom: 0px;
-  /* margin: auto; */
+@media (max-width: 992px) {
+  .BannerImage{
+     width: 15rem;
+     margin-left: 0;
+  }
+  .Button {
+    margin-left: 0;
+    width: 15rem;
+
+  }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -113,63 +148,76 @@ a:hover {
     justify-content: center;
     align-items: center;
   }
+
   .ColumnCard {
     max-width: 100%;
   }
+
   .ColumnPost {
     max-width: 90%;
   }
 }
+
 @media only screen and (max-width: 530px) {
   .Title {
     font-size: 30px;
     margin-top: 10px;
   }
+
   .CardImage {
     height: 90px;
     width: 100px;
     padding: 15px;
     margin-left: 15px;
   }
+
   .Heading,
   .Value {
     font-size: 1.1rem;
   }
 }
+
 @media only screen and (max-width: 450px) {
   .Title {
     font-size: 25px;
     margin-top: 10px;
   }
+
   .CardImage {
     height: 80px;
     width: 80px;
     padding: 15px;
     margin-left: 15px;
   }
+
   .Heading,
   .Value {
     font-size: 1rem;
   }
 }
+
 @media only screen and (max-width: 355px) {
   .Title {
     font-size: 20px;
     margin-top: 10px;
   }
+
   .CardImage {
     height: 80px;
     width: 80px;
     padding: 15px;
     margin-left: 15px;
   }
+
   .Heading,
   .Value {
     font-size: 1rem;
   }
+
   .Card {
     padding: 5px;
   }
+
   .ColumnCard {
     padding: 0;
   }
