@@ -71,8 +71,8 @@ export function ViewOpportunity(props) {
         <div>
           <Jumbotron style={{ backgroundColor: 'white' , marginTop:'5rem'}}>
           <Card className="text-center">
-  <Card.Header style={{backgroundColor:'#e4fbff'}}></Card.Header>
-  <Card.Body style={{backgroundColor: '#b8b5ff'}}>
+ 
+  <Card.Body style={{backgroundColor: '#BD6997'}}>
     <Card.Title>  <Image
                    style={{height: '5rem'}}
                     src={imgSrc}
@@ -89,7 +89,7 @@ export function ViewOpportunity(props) {
     </Card.Text>
    
   </Card.Body>
-  <Card.Footer className="text-muted"  style={{backgroundColor:'#e4fbff'}}></Card.Footer>
+
 
 </Card>
             <Container>

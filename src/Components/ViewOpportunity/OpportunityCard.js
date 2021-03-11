@@ -39,13 +39,7 @@ export function OpportunityCard(props) {
                 </h5>
                
             </Col>
-            <Col>
-                <h5 className={styles.Heading} >
-              Location :
-              <span className={styles.Value}>{item.location}</span>
-            </h5>
-           
-        </Col>
+          
             
          
             
