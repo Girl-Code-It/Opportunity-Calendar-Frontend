@@ -60,7 +60,7 @@ a:hover {
   float: right;
   transition: all 0.5s;
   cursor: pointer;
-  box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 0.7);
+  
   align-self: center;
 }
 .BannerImage {

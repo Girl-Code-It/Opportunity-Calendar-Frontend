@@ -80,7 +80,7 @@ export function ViewOpportunity(props) {
                   ></Image></Card.Title>
     <Card.Text>
                 
-    <Button variant="outline-info" href={postOpportunityPath} style={{backgroundColor:'#e4fbff'}}><span style={{backgroundColor:'#e4fbff', padding: '2px 5px 5px 5px' ,color: '#008dc8', fontWeight:'bold'}} >
+    <Button  href={postOpportunityPath} style={{backgroundColor:'#e4fbff'}}><span style={{ color: '#008dc8', fontWeight:'bold'}} >
     Post Opportunity
       </span></Button>
   

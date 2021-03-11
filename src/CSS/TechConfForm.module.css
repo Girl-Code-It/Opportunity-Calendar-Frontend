@@ -58,3 +58,49 @@ a:hover {
   cursor: pointer;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }
+
+
+.TEchConfComponent{
+  width: 55%; 
+  margin: 120px auto 20px;
+  padding-left: 3%;
+}
+
+@media only screen and (max-width: 1113px){
+  .TEchConfComponent{
+    width: 60%; 
+    margin: 120px auto 20px;
+    padding-left: 3%;
+  }
+}
+@media only screen and (max-width: 1000px){
+  .TEchConfComponent{
+    width: 65%; 
+    margin: 120px auto 20px;
+    padding-left: 2%;
+  }
+}
+@media only screen and (max-width: 801px){
+  .TEchConfComponent{
+    width: 70%; 
+    margin: 120px auto 20px;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 650px){
+  .TEchConfComponent{
+    width: 75%; 
+    margin: 120px auto 20px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .TEchConfComponent{
+    width: 80%; 
+    margin: 120px auto 20px;
+    padding-right: 0px;
+  }
+  .Input, textarea{
+    margin-left: 0px !important;
+  }
+}

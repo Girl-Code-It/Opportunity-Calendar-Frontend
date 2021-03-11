@@ -12,25 +12,32 @@ export function OpportunityCard(props) {
        
       <Card className={styles.Card}>
       
-      <Card.Img
-        variant="top"
-        src={logo}
-        // src = {item.imgURL}
-        alt={item.title}
-        className={styles.CardImage}
-      />
-      <Card.Body>
-      <Card.Title className={styles.Title}>{item.title}</Card.Title>
-        <Card.Text>
-      <p className={styles.Description}>{item.description}</p>
-   
-        <Container>
-          <Row>
-            <Col>
-            <h5 className={styles.Heading} >
-              Date :
-           
-            <span className={styles.Value}>{item.date} </span></h5>
+          <Card.Img
+            variant="top"
+            src={logo}
+            // src = {item.imgURL}
+            alt={item.title}
+            className={styles.CardImage}
+          />
+          <Card.Body>
+          <Card.Title className={styles.Title}>{item.title}</Card.Title>
+            <Card.Text>
+          <p className={styles.Description}>{item.description}</p>
+       
+            <Container>
+              <Row>
+                <Col>
+                <h5 className={styles.Heading} >
+                  Date :
+               
+                <span className={styles.Value}>{item.date} </span></h5>
+                </Col>
+                <Col>
+                    <h5 className={styles.Heading} >
+                  Location :
+                  <span className={styles.Value}>{item.location}</span>
+                </h5>
+               
             </Col>
             <Col>
                 <h5 className={styles.Heading} >
