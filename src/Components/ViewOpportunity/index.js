@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { OpportunityCard } from './OpportunityCard';
-import {Card, Col, Container, Jumbotron, Row, Image, Button } from 'react-bootstrap';
+import {Card, Col, Container, Jumbotron, Row, Image, Button , NavDropdown,} from 'react-bootstrap';
 import styles from './Opportunity.module.css';
 import Navbar from './Navbar';
 
@@ -71,8 +71,8 @@ export function ViewOpportunity(props) {
         <div>
           <Jumbotron style={{ backgroundColor: 'white' , marginTop:'5rem'}}>
           <Card className="text-center">
-  <Card.Header style={{backgroundColor:'#008dc8'}}></Card.Header>
-  <Card.Body>
+  <Card.Header style={{backgroundColor:'#e4fbff'}}></Card.Header>
+  <Card.Body style={{backgroundColor: '#b8b5ff'}}>
     <Card.Title>  <Image
                    style={{height: '5rem'}}
                     src={imgSrc}
@@ -80,17 +80,55 @@ export function ViewOpportunity(props) {
                   ></Image></Card.Title>
     <Card.Text>
                 
-                  
+    <Button variant="outline-info" href={postOpportunityPath} style={{backgroundColor:'#e4fbff'}}><span style={{backgroundColor:'#e4fbff', padding: '2px 5px 5px 5px' ,color: '#008dc8', fontWeight:'bold'}} >
+    Post Opportunity
+      </span></Button>
+  
 
 
     </Card.Text>
-    <Button variant="primary"  href={postOpportunityPath}>Post Opportunity</Button>
+   
   </Card.Body>
-  <Card.Footer className="text-muted"  style={{backgroundColor:'#008dc8'}}></Card.Footer>
+  <Card.Footer className="text-muted"  style={{backgroundColor:'#e4fbff'}}></Card.Footer>
+
 </Card>
             <Container>
               <Row>
-                <Col style={{ marginTop: '20px' }} sm={12}>
+              <NavDropdown
+            title={<span className={styles.Title} style={{fontSize:'20px' , fontFamily: 'Arial, Helvetica, sans-serif',
+            marginRight: '10px' }}>Opportunities</span>}
+            id="dropdown-basic-button" 
+            className={styles.Dropdown}
+          >
+            <NavDropdown.Item href="/viewopportunity/fulltime">
+              {' '}
+              Full Time Jobs{' '} 
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/viewopportunity/hackathon">
+              {' '}
+              Hackathons{' '}
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/viewopportunity/scholarship">
+              {' '}
+              Scholarships{' '}
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/viewopportunity/codingcomp">
+              {' '}
+              Coding Competitions{' '}
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/viewopportunity/techconf">
+              {' '}
+              Tech Conferences{' '}
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/viewopportunity/internships">
+              {' '}
+              Internship Opportunities{' '}
+            </NavDropdown.Item>
+          </NavDropdown>
+              </Row>
+            
+              <Row>
+                <Col style={{ marginTop: '20px' }} md={12}>
                   {data.map((item) => {
                     return <OpportunityCard key={item.id} item={item} />;
                   })}
@@ -98,6 +136,7 @@ export function ViewOpportunity(props) {
                 
               </Row>
             </Container>
+
           </Jumbotron>
         </div>
       </div>
