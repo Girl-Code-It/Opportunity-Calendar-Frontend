@@ -41,6 +41,13 @@ const useStyles = makeStyles(() => ({
         padding: 5,
         
     },
+    button:{
+        padding:10,
+        borderRadius: 20 
+        ,outline:"none",
+        border:"none",
+        width:250
+    }
 }));
 
 const SignUp = () => {
@@ -116,7 +123,7 @@ const SignUp = () => {
                             </Typography>
                         }
                     />
-                    <Button variant="contained" color="primary" style={{ borderRadius: 20 ,outline:"none",border:"none"}}>
+                    <Button variant="contained" color="primary" className={classes.button}>
                         Sign Up
                     </Button>
 
