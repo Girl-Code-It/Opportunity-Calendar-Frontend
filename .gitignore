@@ -25,10 +25,17 @@ yarn-error.log*
 # Local Netlify folder
 .netlify
 
+# project uses npm. so ignore yarn.lock
+yarn.lock
+
 # editor sessions
 .vim-session.vim
+<<<<<<< HEAD
+yarn.lock
+=======
 
 # yarn.lock
 yarn.lock
 
 .idea/
+>>>>>>> upstream/develop

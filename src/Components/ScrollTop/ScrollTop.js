@@ -1,29 +1,29 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import styles from '../../CSS/ScrollTop.module.css';
 
 export default class ScrollTop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isVisible: false
+      isVisible: false,
     };
   }
 
   componentDidMount() {
     var scrollComponent = this;
-    document.addEventListener("scroll", function(e) {
+    document.addEventListener('scroll', function (e) {
       scrollComponent.toggleVisibility();
     });
   }
 
-  toggleVisibility() {  
+  toggleVisibility() {
     if (window.pageYOffset > 50) {
       this.setState({
-        isVisible: true
+        isVisible: true,
       });
     } else {
       this.setState({
-        isVisible: false
+        isVisible: false,
       });
     }
   }
@@ -31,14 +31,14 @@ export default class ScrollTop extends Component {
   scrollToTop() {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: 'smooth',
     });
   }
 
   render() {
     return (
       <div className={styles.scrollTop}>
-       {this.state.isVisible && (
+        {this.state.isVisible && (
           <div onClick={() => this.scrollToTop()}>
             <button className={styles.scrollTopButton}>
               <i className={styles.upArrow}></i>

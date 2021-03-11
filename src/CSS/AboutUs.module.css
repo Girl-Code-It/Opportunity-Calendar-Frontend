@@ -1,109 +1,133 @@
 .body {
-    padding-top: 0px;
-    background-color: #ffffff;
+  padding-top: 0px;
+  background-color: #ffffff;
+}
+
+.AboutUs_heading {
+  margin-bottom: 50px;
+  font-weight: 390;
+  font-size: 2.3rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.AboutUs_About {
+  margin: 10px;
+  color: #000;
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: 0;
+}
+
+.AboutUs_Us {
+  color: #008dc8;
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: 0;
+}
+
+.AboutUs_AboutImage {
+  margin-top: 15%;
+}
+
+.AboutUs_description {
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  text-align: justify;
+}
+
+.AboutUs_rectangle {
+  position: relative;
+  bottom: 22px;
+  float: right;
+  width: 170px;
+  height: 5px;
+  margin-left: 83%;
+  background-color: #008dc8;
+}
+
+.AboutUs_knowMore {
+  position: relative;
+  float: left;
+  padding: 5px 15px;
+  color: #fff;
+  font-size: 16px;
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  background-color: #008dc8;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+a:hover {
+  border: none;
+}
+
+.AboutUs_knowMore:active,
+.AboutUs_knowMore:focus,
+.AboutUs_knowMore:hover {
+  padding: 5px 25px;
+  color: #fff;
+  background-color: #008dc8;
+}
+
+@media screen and (max-width: 430px) {
+  .AboutUs_AboutImage {
+    margin-top: 0;
   }
-  
-.AboutUs_heading{
-    letter-spacing: 0;
-    font-size: 2.3rem;
-    font-weight: 390;
-    font-family: "Poppins",sans-serif;
-    text-align: center;
-    margin-bottom: 50px;
-}
-    
-.AboutUs_About{
-    letter-spacing: 0;
-    color: #000;
-    margin: 10px;
-    font-size: 50px;
-    font-weight: 500;
+
+  .AboutUs_rectangle {
+    display: none;
+  }
+
+  .AboutUs_knowMore {
+    position: absolute;
+    right: 35%;
+  }
 }
 
-.AboutUs_Us{
-    letter-spacing: 0;
-    color: #008dc8;
-    font-size: 50px;
-    font-weight: 500;
+@media screen and (max-width: 991px) {
+  .AboutUs_AboutImage {
+    margin-top: 0;
+  }
+
+  .AboutUs_description {
+    margin-top: 10%;
+  }
 }
 
-.AboutUs_AboutImage{ margin-top:15% }
+@media screen and (max-width: 320px) {
+  .AboutUs_AboutImage {
+    margin-top: 0;
+  }
 
-.AboutUs_description{
-    text-align: justify;
-    font-family: "Inter",sans-serif;
-    font-size: 1.1rem;
+  .AboutUs_knowMore {
+    position: absolute;
+    left: 20%;
+  }
 }
 
-.AboutUs_rectangle{
-    height: 5px;
-    width: 170px;
-    background-color: #008dc8;
-    position: relative;
-    bottom: 22px;
-    margin-left: 83%;
-    float: right;
+@media screen and (max-width: 360px) {
+  .AboutUs_AboutImage {
+    margin-top: 0;
+  }
+
+  .AboutUs_knowMore {
+    top: 100%;
+  }
 }
 
-.AboutUs_knowMore{
-    background-color: #008dc8;
-    border: none;
-    color: #fff;
-    text-align: center;
-    border-radius: 50px;
-    font-size: 16px;
-    padding: 5px 15px;
-    position: relative;
-    float: left;
-    transition: all .5s;
-    cursor: pointer;
-    font-family: "Inter",sans-serif;
-    font-size: 1.2rem;
-    box-shadow: 0 10px 20px -8px rgba(0,0,0,.7);
-}
+@media screen and (max-width: 1192px) and (min-width: 992px) {
+  .AboutUs_AboutImage {
+    margin-top: 0;
+  }
 
-a:hover{ border:none }
-
-.AboutUs_knowMore:active,.AboutUs_knowMore:focus,.AboutUs_knowMore:hover{
-    background-color: #008dc8;
-    color: #fff;
-    padding: 5px 25px;
-}
-
-@media screen and (max-width:430px){
-    .AboutUs_AboutImage{ margin-top:0 }
-    
-    .AboutUs_rectangle{ display:none }
-    
-    .AboutUs_knowMore{
-        position: absolute;
-        right: 35%;
-    }
-}
-    
-@media screen and (max-width:991px){
-    .AboutUs_AboutImage{ margin-top:0 }
-    
-    .AboutUs_description{ margin-top:10% } 
-}
-
-@media screen and (max-width:320px){
-    .AboutUs_AboutImage{ margin-top:0 }
-    
-    .AboutUs_knowMore{ 
-        position: absolute;
-        left: 20%;
-    }
-}
-
-@media screen and (max-width:360px){
-    .AboutUs_AboutImage{ margin-top:0 }
-    
-    .AboutUs_knowMore{ top:100% }
-}
-
-@media screen and (max-width:1192px) and (min-width:992px){
-    .AboutUs_AboutImage{ margin-top:0 }
-    
-    .AboutUs_description{ font-size:90% }
+  .AboutUs_description {
+    font-size: 90%;
+  }
 }

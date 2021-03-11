@@ -6,6 +6,7 @@ import Faq from './Sections/FAQ_main';
 import AboutUs from "./Sections/AboutUs"; 
 import ContactUs from "./Sections/ContactUs"; 
 
+
 class HomePage extends Component {
   render() {
     return (
@@ -13,8 +14,8 @@ class HomePage extends Component {
         <Navbar />
         <Banner />
         <AboutUs/>
-	      <Faq/>
         <KnowAbout />
+	      <Faq/>
         <ContactUs />
       </div>
     );

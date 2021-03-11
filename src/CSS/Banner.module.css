@@ -1,43 +1,43 @@
 .Jumbotron {
-  background-color: white;
   margin-top: 30px;
   padding-top: 80px;
+  background-color: white;
 }
 
 .Heading {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 70px;
-  font-weight: 700;
   z-index: 100;
+  font-weight: 700;
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .TagLine {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .Rectangle {
-  height: 5px;
   width: 250px;
-  background-color: #008dc8;
+  height: 5px;
   margin-bottom: 20px;
+  background-color: #008dc8;
 }
 
 .Button {
-  background-color: #008dc8;
-  border: none;
-  color: #fff;
-  text-align: center;
-  border-radius: 50px;
-  font-size: 20px;
-  padding: 5px 30px 5px 30px;
-  margin-top: 20px;
-  margin-right: 10%;
   position: relative;
   float: right;
-  transition: all 0.5s;
-  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 10%;
+  padding: 5px 30px 5px 30px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  background-color: #008dc8;
+  border: none;
+  border-radius: 50px;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
 /* make outline none when button gets clicked */
@@ -46,9 +46,9 @@
 }
 
 .BannerImage {
-  height: 400px;
-  width: 700px;
   z-index: 10;
+  width: 700px;
+  height: 400px;
 }
 
 .BannerImage2 {
@@ -58,10 +58,9 @@
 @media only screen and (max-width: 767px) {
   .BannerRow {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin-left: 20px;
-
   }
 
   .BannerImage {
@@ -70,9 +69,9 @@
 
   .BannerImage2 {
     display: block;
-    margin: 20px;
     width: 80%;
     height: auto;
+    margin: 20px;
   }
 
   .Button {
@@ -82,21 +81,19 @@
 
 @media only screen and (max-width: 700px) {
   .Heading {
-    font-size: 50px;
     font-weight: 700;
-
+    font-size: 50px;
   }
 
   .TagLine {
     font-size: 30px;
   }
-
 }
 
 @media only screen and (max-width: 500px) {
   .Heading {
-    font-size: 40px;
     font-weight: 700;
+    font-size: 40px;
   }
 
   .TagLine {
@@ -106,8 +103,8 @@
 
 @media only screen and (max-width: 400px) {
   .Heading {
-    font-size: 35px;
     font-weight: 700;
+    font-size: 35px;
   }
 
   .TagLine {

@@ -1,28 +1,28 @@
 .scrollTopButton {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #008dc8;
-    cursor: pointer;
-    height:45px;
-    width:45px;
-    border-radius: 50px;
-  }
-  
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  z-index: 99;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  background-color: #008dc8;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+}
+
 .scrollTopButton:hover {
-    background-color: #000000;
-    outline: none;
-  }
+  background-color: #000000;
+  outline: none;
+}
 
 .upArrow {
-  border: solid white;
-  border-width: 0 5px 5px 0;
   display: inline-block;
   padding: 3px;
-  transform: rotate(-135deg);
+  border: solid white;
+  border-width: 0 5px 5px 0;
   -webkit-transform: rotate(-135deg);
-  }  
+  transform: rotate(-135deg);
+}
