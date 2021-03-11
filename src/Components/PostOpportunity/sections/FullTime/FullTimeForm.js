@@ -1,22 +1,22 @@
-import React, { Component } from "react";
-import axios from "axios";
-import { Button, Form } from "react-bootstrap";
-import styles from "../../../../CSS/FullTimeForm.module.css";
+import React, { Component } from 'react';
+import axios from 'axios';
+import { Button, Form } from 'react-bootstrap';
+import styles from '../../../../CSS/FullTimeForm.module.css';
 
 class FullTimeForm extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      jobId: "",
-      jobURL: "",
-      title: "",
-      company: "",
-      image: "",
-      jobDescription: "",
-      location: "",
-      eligibility: "",
-      deadline: "",
+      jobId: '',
+      jobURL: '',
+      title: '',
+      company: '',
+      image: '',
+      jobDescription: '',
+      location: '',
+      eligibility: '',
+      deadline: '',
     };
 
     this.data = {};
@@ -31,19 +31,22 @@ class FullTimeForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log("From handleSubmit", this.state.jobId);
+    console.log('From handleSubmit', this.state.jobId);
     axios
-      .post("https://opportunitycalendar.herokuapp.com/opportunities/job/create/", {
-        jobId: this.state.jobId,
-        jobURL: this.state.jobURL,
-        title: this.state.title, 
-        company: this.state.company,
-        image: this.state.image,
-        jobDescription: this.state.jobDescription,
-        location: this.state.location,
-        eligibility: this.state.eligibility,
-        deadline: this.state.deadline
-      })
+      .post(
+        'https://opportunitycalendar.herokuapp.com/opportunities/job/create/',
+        {
+          jobId: this.state.jobId,
+          jobURL: this.state.jobURL,
+          title: this.state.title,
+          company: this.state.company,
+          image: this.state.image,
+          jobDescription: this.state.jobDescription,
+          location: this.state.location,
+          eligibility: this.state.eligibility,
+          deadline: this.state.deadline,
+        }
+      )
       .then(
         (res) => {
           const data = res.data;
@@ -55,15 +58,15 @@ class FullTimeForm extends Component {
         }
       );
     this.setState({
-      jobId: "",
-      jobURL: "",
-      title: "",
-      company: "",
-      image: "",
-      jobDescription: "",
-      location: "",
-      eligibility: "",
-      deadline: "",
+      jobId: '',
+      jobURL: '',
+      title: '',
+      company: '',
+      image: '',
+      jobDescription: '',
+      location: '',
+      eligibility: '',
+      deadline: '',
     });
   };
 
@@ -81,7 +84,7 @@ class FullTimeForm extends Component {
     } = this.state;
 
     return (
-      <div style={{ marginBottom: "80px" }}>
+      <div style={{ marginBottom: '80px' }}>
         <Form onSubmit={this.handleSubmit}>
           <Form.Label className={styles.CardTitle}>
             Post a Job Opportunity
@@ -91,7 +94,7 @@ class FullTimeForm extends Component {
 
           <Form.Group>
             <Form.Control
-              style={{ marginLeft: "40px" }}
+              style={{ marginLeft: '40px' }}
               className={styles.Input}
               type="text"
               name="company"
@@ -109,7 +112,7 @@ class FullTimeForm extends Component {
               value={image}
               placeholder="Company Logo URL"
               onChange={this.handleChange}
-              style={{ marginLeft: "40px", marginTop: "30px" }}
+              style={{ marginLeft: '40px', marginTop: '30px' }}
             />
           </Form.Group>
 
@@ -121,7 +124,7 @@ class FullTimeForm extends Component {
               value={title}
               placeholder="Opportunity Title"
               onChange={this.handleChange}
-              style={{ marginTop: "30px", marginLeft: "40px" }}
+              style={{ marginTop: '30px', marginLeft: '40px' }}
             />
           </Form.Group>
 
@@ -133,7 +136,7 @@ class FullTimeForm extends Component {
               value={jobId}
               placeholder="Job ID"
               onChange={this.handleChange}
-              style={{ marginTop: "30px", marginLeft: "40px" }}
+              style={{ marginTop: '30px', marginLeft: '40px' }}
             />
           </Form.Group>
 
@@ -141,7 +144,7 @@ class FullTimeForm extends Component {
             <Form.Control
               as="textarea"
               rows={4}
-              style={{ marginTop: "35px", marginLeft: "40px" }}
+              style={{ marginTop: '35px', marginLeft: '40px' }}
               name="jobDescription"
               value={jobDescription}
               placeholder="Short Description"
@@ -156,7 +159,7 @@ class FullTimeForm extends Component {
               name="deadline"
               value={deadline}
               placeholder="Last Date to Apply"
-              style={{ marginTop: "30px", marginLeft: "40px" }}
+              style={{ marginTop: '30px', marginLeft: '40px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -168,7 +171,7 @@ class FullTimeForm extends Component {
               name="location"
               value={location}
               placeholder="Location"
-              style={{ marginLeft: "40px", marginTop: "30px" }}
+              style={{ marginLeft: '40px', marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -180,7 +183,7 @@ class FullTimeForm extends Component {
               name="eligibility"
               value={eligibility}
               placeholder="Eligibility"
-              style={{ marginLeft: "40px", marginTop: "30px" }}
+              style={{ marginLeft: '40px', marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -192,7 +195,7 @@ class FullTimeForm extends Component {
               name="jobURL"
               value={jobURL}
               placeholder="Website"
-              style={{ marginLeft: "40px", marginTop: "30px" }}
+              style={{ marginLeft: '40px', marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>

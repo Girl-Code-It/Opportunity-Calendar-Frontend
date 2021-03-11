@@ -1,14 +1,16 @@
-import React, { Component } from "react";
-import Navbar from "../Navbar";
-import InternshipForm from "./InternshipForm";
+import React, { Component } from 'react';
+import Navbar from '../Navbar';
+import InternshipForm from './InternshipForm';
+import styles from '../../../../CSS/FullTimeForm.module.css';
+
 
 class FullTime extends Component {
   render() {
     return (
       <div>
-        <Navbar/>
-        <div style={{marginTop:"120px" , marginLeft:"300px", marginRight:"300px"}}>
-            <InternshipForm/>
+        <Navbar />
+        <div className={styles.FullTimeComponent}   >
+          <InternshipForm />
         </div>
       </div>
     );
