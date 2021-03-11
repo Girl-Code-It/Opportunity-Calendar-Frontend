@@ -38,6 +38,12 @@ a:global(.active) {
 
 .Middle {
   margin-left: 480px;
+  display: flex;
+}
+
+.ShiftRight {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .Search {
@@ -104,13 +110,27 @@ a:global(.active) {
 }
 
 @media (max-width: 992px) {
+/* make outline none when button gets clicked */
+.Button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 993px) {
+  .Middle {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
   .Middle {
     margin-left: 0px;
   }
+
   .ShiftRight {
     margin-left: 0px;
     margin-top: 10px;
   }
+
   .Dropdown {
     margin-left: 0px;
     margin-top: 10px;
@@ -125,14 +145,63 @@ a:global(.active) {
     padding: 4px 10px 4px 10px;
     border-radius: 0px 8px 8px 0px;
     font-size: 20px;
+    width: 5rem;
+  }
+
+  .Button {
+    margin-top: 10px;
+  }
+  .Search {
+    width: 7rem;
+   
+  }
+  
+}
+
+@media only screen and (max-width: 450px) {
+  .ShiftRight {
+    padding-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .Button,
+  .Middle {
+    font-size: 1rem;
+  }
+
+  .NavBar a {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  .Title {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .Search {
+    width: 7rem;
+   
+  }
+  
+}
+
+@media only screen and (max-width: 360px) {
+  .Logo {
     position: relative;
     transition: all 0.5s;
     width: 15rem;
   }
   .Search {
-    width: 15rem;
+    width: 5rem;
    
   }
   
  
+}
+}
+
+@media only screen and (max-width: 3280px) {
+  .NavBar {
+    padding: 8px 10px 8px 4px;
+  }
 }

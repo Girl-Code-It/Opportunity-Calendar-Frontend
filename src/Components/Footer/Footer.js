@@ -117,21 +117,21 @@ function Footer() {
             </p>
           </Col>
           <Col className={styles.SocialLinks}>
-            <a
+            <a data-testid="linkedin"
               href="https://www.linkedin.com/company/14568052/admin/"
               className={styles.Shift}
             >
               {' '}
               <FaLinkedinIn />{' '}
             </a>
-            <a
+            <a data-testid="instagram"
               href="https://www.instagram.com/girlcodeit/"
               className={styles.Shift}
             >
               {' '}
               <FaInstagram />{' '}
             </a>
-            <a href="https://twitter.com/GirlCodeIt1" className={styles.Shift}>
+            <a data-testid="twitter" href="https://twitter.com/GirlCodeIt1" className={styles.Shift}>
               {' '}
               <FaTwitter />{' '}
             </a>
@@ -139,7 +139,7 @@ function Footer() {
         </Row>
         <Row className={styles.Bottom2}>
           <Col>
-            <p className={styles.Para}>
+            <p data-testid="copyright" className={styles.Para}>
               {' '}
               <BiCopyright /> 2020 Girl Code It | All rights reserved.
             </p>
