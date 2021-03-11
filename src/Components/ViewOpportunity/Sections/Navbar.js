@@ -45,9 +45,14 @@ function navbar() {
                     <NavDropdown.Item href = "/viewopportunity/internships"> Internship Opportunities </NavDropdown.Item>
                 </NavDropdown>
             </Nav>
-            <button className = {styles.Button}>
-                Login / SignUp
-            </button>
+
+            {/*  Added Signup link. */}
+            <a href="/signup">
+                <button className = {styles.Button}>
+                    Login / SignUp
+                </button>
+            </a>
+            
         </Navbar.Collapse>
     </Navbar>
   );
