@@ -70,7 +70,7 @@ function navbar() {
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
-        <button className={styles.Button}>Login / SignUp</button>
+        <button className={styles.Button}><a href="/signup">Login / SignUp</a></button>
       </Navbar.Collapse>
     </Navbar>
   );
