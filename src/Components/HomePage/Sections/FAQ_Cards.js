@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "../../../CSS/FAQ.module.css";
-import { Container, Row, Col } from "react-bootstrap";
-import arrow from "../../../Assets/arrow.png";
-import arrowup from "../../../Assets/arrowup.png";
+import React from 'react';
+import styles from '../../../CSS/FAQ.module.css';
+import { Container, Row, Col } from 'react-bootstrap';
+import arrow from '../../../Assets/arrow.png';
+import arrowup from '../../../Assets/arrowup.png';
 
 function FAQCard(props) {
   const { open } = props.item;
