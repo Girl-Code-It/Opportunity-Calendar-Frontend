@@ -35,6 +35,13 @@ const useStyles = makeStyles(() => ({
     label: {
         padding: 10,
         width: "100%",
+    },
+    button:{
+        padding:10,
+        borderRadius: 20,
+        outline:"none",
+        border:"none",
+        width:250,
     }
 }));
 
@@ -69,10 +76,10 @@ const Login = () => {
                             label="Password"
                         />)}
                     />
+                    
+                    <Typography color="primary" variant="body2" style={{paddingBottom: 10 }}>Forgot Password?</Typography>
 
-                    <Typography color="primary" variant="body2" style={{ paddingBottom: 10 }}>Forgot Password?</Typography>
-
-                    <Button variant="contained" color="primary" style={{ borderRadius: 20,outline:"none",border:"none"}}>
+                    <Button variant="contained" color="primary" className={classes.button}>
                         Login
                     </Button>
 
