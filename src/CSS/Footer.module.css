@@ -1,13 +1,23 @@
+body, html{
+  overflow-x: hidden;
+}
 .Jumbotron {
   margin: 0px;
   padding: 20px;
   padding-left: 0px;
-  padding-bottom: 0px;
+  /* padding-bottom: 0px; */
+}
+.ImgColumn {
+  display: flex;
+  justify-content: center;
 }
 
 .Logo {
-  height: 180px;
-  width: 200px;
+  /* height: 180px; */
+  width: 80%;
+}
+.Top1 {
+  align-items: center;
 }
 
 .Bottom2,
@@ -15,9 +25,9 @@
   display: none;
 }
 
-.Column {
+/* .Column {
   margin-top: 30px;
-}
+} */
 
 h5 {
   color: #008dc8;
@@ -77,7 +87,92 @@ p {
   border: none;
 }
 
+@media only screen and (max-width: 1211px) {
+  .Column1,
+  .Column2,
+  .ImgColumn {
+    max-width: 22%;
+  }
+  .Column3 {
+    max-width: 35%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .ContainerFooter {
+    max-width: 90% !important;
+  }
+  .line2 {
+    margin-right: 0%;
+  }
+  .Column1,
+  .Column2,
+  .ImgColumn {
+    max-width: 21%;
+  }
+  .Column3 {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 982px) {
+  .ContainerFooter {
+    max-width: 95% !important;
+  }
+  .Column1 p, .Column2 p, .Column3 p{
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 862px) {
+  .Column1{
+    max-width: 25%;
+    padding: 10px;
+  }
+  .Column2{
+    max-width: 26%;
+    padding: 15px;
+  }
+  .ImgColumn {
+    max-width: 19%;
+    padding: 5px;
+  }
+  .Column3 {
+    max-width: 30%;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 862px) {
+  .Column1,
+  .Column2{
+    max-width: 25%;
+
+  }
+  .ImgColumn {
+    max-width: 19%;
+  }
+  .Column3 {
+    max-width: 31%;
+  }
+}
 @media (max-width: 767px) {
+  .ContainerFooter {
+    max-width: 75% !important;
+  }
+  .RectangleContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .Rectangle2 {
+    border-bottom: 2px #008dc8 solid;
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
+  }
+  .Rectangle3 {
+    border-bottom: 2px #008dc8 solid;
+    position: absolute;
+    margin: auto;
+  }
   .Bottom1,
   .Top1,
   .Phone,
@@ -105,5 +200,36 @@ p {
 
   .SocialLinks {
     text-align: center;
+  }
+}
+@media only screen and (max-width: 562px){
+  .ContactRow{
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .Top2{
+    margin-top: 10px;
+  }
+  .Jumbotron{
+    padding-left: 20px;
+  }
+}
+@media (max-width: 505px) {
+  .ContainerFooter {
+    max-width: 90% !important;
+  }
+}
+@media (max-width: 505px) {
+  .ContainerFooter {
+    max-width: 90% !important;
+  }
+  .ContainerFooter p{
+    font-size: 0.9rem;
+  }
+  .SocialLinks a{
+    font-size: 1rem;
+  }
+  .Para{
+    padding-bottom: 5px;
   }
 }

@@ -4,11 +4,24 @@
   margin: 5%;
   /* margin-bottom: 5%; */
 }
+
+.ColumnCard {
+  max-width: 80%;
+}
+.ColumnPost {
+  max-width: 20%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
 .Card {
-  width: 800px;
-  height: 330px;
+  width: 100%;
+  min-height: 330px;
   border-radius: 15px;
   /* margin-left: 50%; */
+  padding: 20px 10px;
 
   box-shadow: 0px 2px 2px 0px #ccc;
 }
@@ -33,10 +46,25 @@ a:hover {
   background-color: #008dc8;
   margin-bottom: 20px;
 }
+.HeadingRow {
+  flex-wrap: nowrap;
+  align-items: center;
+}
 .Title {
   margin-top: 35px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   color: #008dc8;
+  /* display: inline-block;
+  word-break: break-word; */
+  width: 65%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: normal;
+  line-break:auto;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
 }
 .Description {
   margin-top: 15px;
@@ -69,10 +97,80 @@ a:hover {
   cursor: pointer;
   box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 0.7);
   align-self: center;
+  /* width: 100%; */
 }
 .BannerImage {
   height: 200px;
   width: 200px;
   padding: 20px;
   padding-bottom: 0px;
+  /* margin: auto; */
+}
+
+@media only screen and (max-width: 800px) {
+  .RowCard {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .ColumnCard {
+    max-width: 100%;
+  }
+  .ColumnPost {
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .Title {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .CardImage {
+    height: 90px;
+    width: 100px;
+    padding: 15px;
+    margin-left: 15px;
+  }
+  .Heading,
+  .Value {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .Title {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .CardImage {
+    height: 80px;
+    width: 80px;
+    padding: 15px;
+    margin-left: 15px;
+  }
+  .Heading,
+  .Value {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .Title {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .CardImage {
+    height: 80px;
+    width: 80px;
+    padding: 15px;
+    margin-left: 15px;
+  }
+  .Heading,
+  .Value {
+    font-size: 1rem;
+  }
+  .Card {
+    padding: 5px;
+  }
+  .ColumnCard {
+    padding: 0;
+  }
 }

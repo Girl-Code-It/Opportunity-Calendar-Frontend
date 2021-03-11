@@ -12,3 +12,8 @@
 .About {
   color: #008dc8;
 }
+@media only screen and (max-width: 531px){
+  .Heading{
+    font-size: 40px;
+  }
+}
