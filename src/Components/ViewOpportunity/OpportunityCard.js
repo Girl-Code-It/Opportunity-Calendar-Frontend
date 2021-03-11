@@ -7,7 +7,7 @@ export function OpportunityCard(props) {
   const { item } = props;
 
   return (
-    <div id="CodingComp" className={styles.Box}>
+
       <Card className={styles.Card}>
       
           <Card.Img
@@ -71,7 +71,7 @@ export function OpportunityCard(props) {
             
               </Card.Body>
      </Card>
-     </div>
+     
    
   );
 }

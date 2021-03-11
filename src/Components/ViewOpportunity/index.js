@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { OpportunityCard } from './OpportunityCard';
-import { Col, Container, Jumbotron, Row, Image, Button } from 'react-bootstrap';
+import {Card, Col, Container, Jumbotron, Row, Image, Button } from 'react-bootstrap';
 import styles from './Opportunity.module.css';
 import Navbar from './Navbar';
 
@@ -69,43 +69,33 @@ export function ViewOpportunity(props) {
       <div>
         <Navbar />
         <div>
-          <Jumbotron style={{ backgroundColor: 'white' }}>
+          <Jumbotron style={{ backgroundColor: 'white' , marginTop:'5rem'}}>
+          <Card className="text-center">
+  <Card.Header style={{backgroundColor:'#008dc8'}}></Card.Header>
+  <Card.Body>
+    <Card.Title>  <Image
+                   style={{height: '5rem'}}
+                    src={imgSrc}
+                    alt="TechConfImage"
+                  ></Image></Card.Title>
+    <Card.Text>
+                
+                  
+
+
+    </Card.Text>
+    <Button variant="primary"  href={postOpportunityPath}>Post Opportunity</Button>
+  </Card.Body>
+  <Card.Footer className="text-muted"  style={{backgroundColor:'#008dc8'}}></Card.Footer>
+</Card>
             <Container>
               <Row>
-                <Col style={{ marginTop: '20px' }} sm={8}>
+                <Col style={{ marginTop: '20px' }} sm={12}>
                   {data.map((item) => {
                     return <OpportunityCard key={item.id} item={item} />;
                   })}
                 </Col>
-                <Col  sm={4}>
-                  <Container>
-                    <Row>
-                      
-                      <Image
-                    className={styles.BannerImage}
-                    src={imgSrc}
-                    alt="TechConfImage"
-                  ></Image>
-                  </Row>
-                   
-                      <Row>
-                      <Button
-                    className={styles.Button}
-                    href={postOpportunityPath}
-                    style={{
-                     
-                      fontSize: '1rem',
-                     marginLeft: '150px'
-                    }}
-                  >
-                    Post Opportunity
-                  </Button>
-                      </Row>
-                    
-                  </Container>
-                 
-                  
-                </Col>
+                
               </Row>
             </Container>
           </Jumbotron>
