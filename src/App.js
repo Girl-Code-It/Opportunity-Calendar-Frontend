@@ -1,5 +1,6 @@
 import React from 'react';
 // import axios from 'axios'
+
 import HomePage from "./Components/HomePage/HomePage"
 import ViewOpportunity from "./Components/ViewOpportunity/ViewOpportunity"
 import PostOpportunity from "./Components/PostOpportunity/PostOpportunity"
@@ -15,9 +16,10 @@ import TechConfForm from "./Components/PostOpportunity/sections/TechConf/TechCon
 import HackathonForm from "./Components/PostOpportunity/sections/Hackathons/Hackathons"
 import CodingCompForm from "./Components/PostOpportunity/sections/CodingComp/CodingComp"
 import ScholarshipForm from "./Components/PostOpportunity/sections/Scholarships/Scholarships"
-
 import Footer from "./Components/Footer/Footer"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import SignUp from './Components/Signup-Login/SignUp';
+import Login from './Components/Signup-Login/Login';
 
 function App() {
   return (
@@ -32,6 +34,16 @@ function App() {
                 <HomePage />
               </div>
             )}
+          />
+          <Route
+            exact
+            path="/signup"
+            component={SignUp}
+          />
+          <Route
+            exact
+            path="/login"
+            component={Login}
           />
           <Route 
             exact
