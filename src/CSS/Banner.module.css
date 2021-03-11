@@ -40,7 +40,6 @@
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }
 
-<<<<<<< HEAD
 .Button:hover {
   background: #55b1eb;
   background-image: -webkit-linear-gradient(top, #55b1eb, #2389c4);
@@ -49,11 +48,11 @@
   background-image: -o-linear-gradient(top, #55b1eb, #2389c4);
   background-image: linear-gradient(to bottom, #55b1eb, #2389c4);
   text-decoration: none;
-=======
+}
+
 /* make outline none when button gets clicked */
 .Button:focus {
   outline: none;
->>>>>>> f3de061a705b4cfc4842462bba10e304b237383a
 }
 
 .BannerImage {
