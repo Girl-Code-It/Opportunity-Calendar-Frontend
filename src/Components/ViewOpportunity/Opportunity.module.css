@@ -1,76 +1,77 @@
-.Box {
-  /* justify-content: center; */
-  /* margin: 5% 5% 5% 5%; */
-  margin: 5%;
-  /* margin-bottom: 5%; */
-}
-
 .ColumnCard {
   max-width: 80%;
 }
+
 .ColumnPost {
-  max-width: 20%;
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: center;
+  justify-content: start;
+  max-width: 20%;
+  padding-top: 20px;
 }
-.Card {
-  width: 100%;
-  min-height: 330px;
-  border-radius: 15px;
-  /* margin-left: 50%; */
-  padding: 20px 10px;
 
+.Card {
+  /* margin-left: 50%; */
+  margin-top: 1rem;
+
+  border-radius: 15px;
   box-shadow: 0px 2px 2px 0px #ccc;
 }
+
 .CardTitle {
+  color: black;
   font-size: 23px;
   text-align: left;
-  color: black;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 .CardImage {
+  width: 180px;
   height: 100px;
-  width: 120px;
-  padding: 20px;
   margin-left: 20px;
+  padding: 20px;
   padding-bottom: 0px;
 }
+
 .Rectangle {
-  height: 3px;
   width: 155px;
-  background-color: #008dc8;
+  height: 3px;
   margin-bottom: 20px;
+  background-color: #008dc8;
 }
+
 .HeadingRow {
   flex-wrap: nowrap;
   align-items: center;
 }
+
 .Title {
-  margin-top: 35px;
-  /* margin-left: 15px; */
-  color: #008dc8;
+  display: inline-block;
   /* display: inline-block;
   word-break: break-word; */
   width: 65%;
-  display: inline-block;
-  overflow-wrap: break-word;
+
+  color: #008dc8;
+  font-size: 30px;
   word-wrap: break-word;
   word-break: normal;
-  line-break:auto;
-  hyphens: none;
+  overflow-wrap: break-word;
   -webkit-hyphens: none;
   -moz-hyphens: none;
+  hyphens: none;
+  line-break: auto;
 }
+
 .Description {
   margin-top: 15px;
-  margin-left: 35px;
   margin-right: 25px;
+  margin-left: 35px;
 }
+
 .Heading {
   margin-top: 5px;
   margin-left: 0px;
@@ -81,95 +82,131 @@ a:hover {
   margin-left: 5px;
   color: black;
 }
+
 .Button {
+  margin-top: 20px;
+  padding: 5px 30px 5px 30px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
   background-color: #008dc8;
   border: none;
-  color: #fff;
-  text-align: center;
   border-radius: 50px;
-  font-size: 20px;
-  padding: 5px 30px 5px 30px;
-  margin-top: 3px;
-  margin-right: 4%;
-  position: relative;
-  float: right;
-  transition: all 0.5s;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
   cursor: pointer;
-  box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 0.7);
-  align-self: center;
-  /* width: 100%; */
+
+  transition: all 0.5s;
 }
+
+/* make outline none when button gets clicked */
+.Button:focus {
+  outline: none;
+}
+
 .BannerImage {
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-  padding-bottom: 0px;
-  /* margin: auto; */
+  width: 7rem;
+  height: 15rem;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+.Dropdown {
+  width: 15rem;
+  color: #fff;
+  font-size: 10px;
+  background-color: #e4fbff;
+  border-color: #008dc8;
+
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+@media (max-width: 992px) {
+  .BannerImage {
+    width: 15rem;
+    margin-left: 0;
+  }
+  .Button {
+    width: 15rem;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .RowCard {
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
+
   .ColumnCard {
     max-width: 100%;
   }
+
   .ColumnPost {
     max-width: 90%;
   }
 }
+
 @media only screen and (max-width: 530px) {
   .Title {
-    font-size: 30px;
     margin-top: 10px;
+    font-size: 30px;
   }
+
   .CardImage {
-    height: 90px;
     width: 100px;
-    padding: 15px;
+    height: 90px;
     margin-left: 15px;
+    padding: 15px;
   }
+
   .Heading,
   .Value {
     font-size: 1.1rem;
   }
 }
+
 @media only screen and (max-width: 450px) {
   .Title {
-    font-size: 25px;
     margin-top: 10px;
+    font-size: 25px;
   }
+
   .CardImage {
-    height: 80px;
     width: 80px;
-    padding: 15px;
+    height: 80px;
     margin-left: 15px;
+    padding: 15px;
   }
+
   .Heading,
   .Value {
     font-size: 1rem;
   }
 }
+
 @media only screen and (max-width: 355px) {
   .Title {
-    font-size: 20px;
     margin-top: 10px;
+    font-size: 20px;
   }
+
   .CardImage {
-    height: 80px;
     width: 80px;
-    padding: 15px;
+    height: 80px;
     margin-left: 15px;
+    padding: 15px;
   }
+
   .Heading,
   .Value {
     font-size: 1rem;
   }
+
   .Card {
     padding: 5px;
   }
+
   .ColumnCard {
     padding: 0;
   }

@@ -28,7 +28,7 @@ function Banner() {
               <br></br>
               at the right time!
             </h2>
-            <a href="/viewopportunity/fulltime">
+            <a data-testid="explore-btn" href="/viewopportunity/fulltime">
               <button className={styles.Button}>Explore</button>
             </a>
           </Col>

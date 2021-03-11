@@ -47,19 +47,20 @@ Updates about following opportunities are available:
 
 <h2 align="center">Guidelines for GSSOC Participants</h2>
 
-We are glad to have your contributions to the project, Please make sure to read the following guidelines for the contributors. 
-### Community 
+We are glad to have your contributions to the project, Please make sure to read the following guidelines for the contributors.
 
-- Join #opportunity-calendar-frontend channel on Discord Server and feel free to ask any doubts regarding the project. 
+### Community
+
+- Join #opportunity-calendar-frontend channel on Discord Server and feel free to ask any doubts regarding the project.
 - Mentors are happy to help if you get stuck while making a PR, all of them are available on Discord channel.
 
-| GitHub Usernames                                     | Domain                              |
-| ---------------------------------------------------- | ----------------------------------- |
-| [@abdus](https://github.com/abdus)   | FullStack                           |
-| [@Surajbokde](https://github.com/Surajbokde)           | Frontend Development           |
-| [@DeepanshiD](https://github.com/DeepanshiD)           | Design             |
-| [@vaishali614](https://github.com/vaishali614)       |  Frontend Development       |
-| [@Manvityagi](https://github.com/Manvityagi)         | FullStack |
+| GitHub Usernames                               | Domain               |
+| ---------------------------------------------- | -------------------- |
+| [@abdus](https://github.com/abdus)             | FullStack            |
+| [@Surajbokde](https://github.com/Surajbokde)   | Frontend Development |
+| [@DeepanshiD](https://github.com/DeepanshiD)   | Design               |
+| [@vaishali614](https://github.com/vaishali614) | Frontend Development |
+| [@Manvityagi](https://github.com/Manvityagi)   | FullStack            |
 
 ### Rules
 

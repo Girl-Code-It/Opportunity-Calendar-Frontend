@@ -12,15 +12,15 @@
   box-shadow: 0px 3px 4px 0px #ccc;
 }
 
-.Card:hover{
-    animation: card-ani 3s infinite;
-    background-color: grey;
+.Card:hover {
+  background-color: grey;
+  animation: card-ani 3s infinite;
 }
 
 .CardTitle {
+  color: black;
   font-size: 23px;
   text-align: left;
-  color: black;
 }
 
 a:hover {
@@ -28,28 +28,27 @@ a:hover {
 }
 
 .CardImage {
-  height: 200px;
   width: 200px;
+  height: 200px;
   padding: 20px;
   padding-bottom: 0px;
 }
 
 .Rectangle {
-  height: 3px;
   width: 155px;
-  background-color: #008dc8;
+  height: 3px;
   margin-bottom: 20px;
+  background-color: #008dc8;
 }
 
-@keyframes card-ani{
-    0%{
-        transform: translateY(-20px);
-    }
-    50%{
-        transform: translateY(10px);
-    }
-    100%{
-        transform: translateY(-20px);
-    }
+@keyframes card-ani {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
-
