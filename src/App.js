@@ -8,12 +8,9 @@ import TechConfForm from './Components/PostOpportunity/sections/TechConf/TechCon
 import HackathonForm from './Components/PostOpportunity/sections/Hackathons/Hackathons';
 import CodingCompForm from './Components/PostOpportunity/sections/CodingComp/CodingComp';
 import ScholarshipForm from './Components/PostOpportunity/sections/Scholarships/Scholarships';
-
 import { ViewOpportunity } from './Components/ViewOpportunity/';
-
 import Footer from './Components/Footer/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import SignUp from './Components/Signup-Login/SignUp';
 import Login from './Components/Signup-Login/Login';
 
