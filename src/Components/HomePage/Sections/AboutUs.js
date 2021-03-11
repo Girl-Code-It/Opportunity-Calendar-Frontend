@@ -7,16 +7,16 @@ export default function AboutUs() {
 	return (
 		<Jumbotron id="about" className={styles.body} fluid>
 			<Container>
-				<h1 className={styles.AboutUs_heading__3Gzv2}>
-					<span className={styles.AboutUs_About__3C3xP}>About</span>
-					<span className={styles.AboutUs_Us__Embxm}>Us</span>
+				<h1 className={styles.AboutUs_heading}>
+					<span className={styles.AboutUs_About}>About</span>
+					<span className={styles.AboutUs_Us}>Us</span>
 				</h1>
 				<Row>
 					<Col md={"auto"} lg={7}>
-						<Image src={AboutUsImg} className={styles.AboutUs_AboutImage__11ku5} fluid />
+						<Image src={AboutUsImg} className={styles.AboutUs_AboutImage} fluid />
 					</Col>
 					<Col md={"auto"} lg={5}>
-						<p className={styles.AboutUs_description__CsHNn}>
+						<p className={styles.AboutUs_description}>
 							<i>"Knowledge is the only thing that grows when shared." </i>
 							<br/><br/>
 							Girl Code It aka GCI, is a group of people who firmly believe in this statement and are eager to build a healthy coding culture among young coders.
@@ -26,8 +26,8 @@ export default function AboutUs() {
 							So what are you waiting for? Come join us!
 						</p>
 						<br /><br />
-						<div className={styles.AboutUs_rectangle__3IQSc} />
-						<a href="/meettheteam" className={styles.AboutUs_knowMore__1JOiJ}>Meet our Team</a>
+						<div className={styles.AboutUs_rectangle} />
+						<a href="/meettheteam" className={styles.AboutUs_knowMore}>Meet our Team</a>
 					</Col>
 				</Row>
 			</Container>
