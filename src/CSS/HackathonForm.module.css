@@ -14,35 +14,41 @@ a:hover {
   padding: 20px;
   padding-bottom: 0px;
 }
+
 .Input {
   border-left-width: 0in;
   border-top-width: 0in;
   border-right-width: 0in;
 }
+
 .RectangleEligibility {
   height: 5px;
   width: 105px;
   background-color: #008dc8;
   margin-bottom: 20px;
 }
+
 .RectangleBasicDetails {
   height: 3px;
   width: 235px;
   background-color: #008dc8;
   margin-bottom: 20px;
 }
+
 .RectangleJobDescription {
   height: 5px;
   width: 195px;
   background-color: #008dc8;
   margin-bottom: 20px;
 }
+
 .RectangleRounds {
   height: 5px;
   width: 95px;
   background-color: #008dc8;
   margin-bottom: 20px;
 }
+
 .Button {
   background-color: #008dc8;
   border: none;
@@ -57,4 +63,9 @@ a:hover {
   transition: all 0.5s;
   cursor: pointer;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+/* make outline none when button gets clicked */
+.Button:focus {
+  outline: none;
 }

@@ -27,3 +27,8 @@ yarn-error.log*
 
 # editor sessions
 .vim-session.vim
+
+# yarn.lock
+yarn.lock
+
+.idea/
