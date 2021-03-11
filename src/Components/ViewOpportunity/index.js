@@ -5,6 +5,7 @@ import { Col, Container, Jumbotron, Row, Image, Button } from 'react-bootstrap';
 import styles from './Opportunity.module.css';
 import Navbar from './Navbar';
 
+
 const mapPathToResource = {
   conference: { image: import('../../Assets/conference-large.png') },
   competition: { image: import('../../Assets/coding-large.png') },
@@ -58,7 +59,7 @@ export function ViewOpportunity(props) {
             marginBottom: '200px',
           }}
         >
-          No opportunities, sorry!
+          Loading Opportunities if any...
         </h3>
       </div>
     );
