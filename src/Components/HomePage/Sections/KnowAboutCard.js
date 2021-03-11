@@ -5,7 +5,7 @@ import styles from '../../../CSS/KnowAboutCard.module.css';
 function KnowAbout(props) {
   return (
     <div id="knowAbout" className={styles.Box}>
-      <a href={props.knowAbout.link}>
+      <a  href={props.knowAbout.link}>
         <Card className={styles.Card}>
           <Card.Img
             variant="top"
