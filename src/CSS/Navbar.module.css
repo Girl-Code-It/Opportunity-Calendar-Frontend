@@ -37,6 +37,7 @@ a:global(.active) {
 }
 
 .Middle {
+  margin-left: 480px;
   display: flex;
 }
 
@@ -49,8 +50,6 @@ a:global(.active) {
   border-radius: 8px 0px 0px 8px;
 }
 
-
-
 .SearchButton {
   background-color: #008dc8;
   border: none;
@@ -58,7 +57,7 @@ a:global(.active) {
   padding: 4px 10px 4px 10px;
   border-radius: 0px 8px 8px 0px;
   font-size: 20px;
-  /* position: relative; */
+  position: relative;
   transition: all 0.5s;
 }
 
@@ -66,22 +65,20 @@ a:global(.active) {
   color: white;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 8px;
-  margin-right: 85px;
+  margin-right: 10px;
 }
 
 .Dropdown {
   background-color: #008dc8;
   border: none;
   color: #fff;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 10px 10px 0px 0px;
+  margin-left: 500px;
+  border-radius: 5px 5px 5px 5px;
   font-size: 20px;
   transition: all 0.5s;
   cursor: pointer;
   float: right;
-  width: 256px;
+ 
 }
 
 .Button {
@@ -89,7 +86,7 @@ a:global(.active) {
   border: none;
   color: #fff;
   text-align: center;
-  border-radius: 50px;
+ 
   font-size: 20px;
   padding: 5px 30px 5px 30px;
   margin-right: 2%;
@@ -98,6 +95,21 @@ a:global(.active) {
   cursor: pointer;
 }
 
+@media (max-width: 360px) {
+  .Logo {
+    position: relative;
+   
+    font-size: 2rem;
+  }
+  .Button {
+    position: absolute;
+    top: 16px;
+    right: 0;
+   
+  }
+}
+
+@media (max-width: 992px) {
 /* make outline none when button gets clicked */
 .Button:focus {
   outline: none;
@@ -112,25 +124,38 @@ a:global(.active) {
 @media only screen and (max-width: 991px) {
   .Middle {
     margin-left: 0px;
-    margin-right: 0;
   }
 
   .ShiftRight {
     margin-left: 0px;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 20px;
-    justify-content: space-between;
+    margin-top: 10px;
   }
 
   .Dropdown {
     margin-left: 0px;
     margin-top: 10px;
+    width: 15rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .SearchButton {
+    background-color: #008dc8;
+    border: none;
+    color: white;
+    padding: 4px 10px 4px 10px;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 20px;
+    width: 5rem;
   }
 
   .Button {
     margin-top: 10px;
   }
+  .Search {
+    width: 7rem;
+   
+  }
+  
 }
 
 @media only screen and (max-width: 450px) {
@@ -153,14 +178,26 @@ a:global(.active) {
     font-size: 1rem;
     padding: 0;
   }
+  .Search {
+    width: 7rem;
+   
+  }
+  
 }
 
 @media only screen and (max-width: 360px) {
   .Logo {
     position: relative;
-    left: -20px;
-    font-size: 2rem;
+    transition: all 0.5s;
+    width: 15rem;
   }
+  .Search {
+    width: 5rem;
+   
+  }
+  
+ 
+}
 }
 
 @media only screen and (max-width: 3280px) {

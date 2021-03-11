@@ -1,9 +1,3 @@
-.Box {
-  /* justify-content: center; */
-  /* margin: 5% 5% 5% 5%; */
-  margin: 5%;
-  /* margin-bottom: 5%; */
-}
 
 .ColumnCard {
   max-width: 80%;
@@ -19,12 +13,10 @@
 }
 
 .Card {
-  width: 100%;
-  min-height: 330px;
+ 
   border-radius: 15px;
   /* margin-left: 50%; */
-  padding: 20px 10px;
-
+  margin-top: 1rem;
   box-shadow: 0px 2px 2px 0px #ccc;
 }
 
@@ -40,7 +32,7 @@ a:hover {
 
 .CardImage {
   height: 100px;
-  width: 120px;
+  width: 180px;
   padding: 20px;
   margin-left: 20px;
   padding-bottom: 0px;
@@ -59,9 +51,10 @@ a:hover {
 }
 
 .Title {
-  margin-top: 35px;
-  /* margin-left: 15px; */
+  
+
   color: #008dc8;
+  font-size: 30px;
   /* display: inline-block;
   word-break: break-word; */
   width: 65%;
@@ -92,23 +85,21 @@ a:hover {
   color: black;
 }
 
-.Button {
-  background-color: #008dc8;
-  border: none;
-  color: #fff;
-  text-align: center;
-  border-radius: 50px;
-  font-size: 20px;
-  padding: 5px 30px 5px 30px;
-  margin-top: 3px;
-  margin-right: 4%;
-  position: relative;
-  float: right;
-  transition: all 0.5s;
-  cursor: pointer;
-  box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 0.7);
-  align-self: center;
-  /* width: 100%; */
+
+  .Button {
+    background-color: #008dc8;
+    border: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 5px 30px 5px 30px;
+    margin-top: 20px;
+   
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  
 }
 
 /* make outline none when button gets clicked */
@@ -117,11 +108,38 @@ a:hover {
 }
 
 .BannerImage {
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-  padding-bottom: 0px;
-  /* margin: auto; */
+  height: 15rem;
+  width: 7rem;
+  margin-left: 200px;
+  margin-top: 100px;
+ 
+}
+.Dropdown {
+ color: #fff;
+background-color: #e4fbff;
+
+  border-radius: 5px 5px 5px 5px;
+  border-color: #008dc8;
+  font-size: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+  
+  width: 15rem;
+ 
+ 
+}
+@media (max-width: 992px) {
+  .BannerImage{
+     width: 15rem;
+     margin-left: 0;
+  }
+  .Button {
+    margin-left: 0;
+    width: 15rem;
+
+  }
+
 }
 
 @media only screen and (max-width: 800px) {

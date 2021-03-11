@@ -27,8 +27,12 @@ yarn-error.log*
 
 # editor sessions
 .vim-session.vim
+<<<<<<< HEAD
+yarn.lock
+=======
 
 # yarn.lock
 yarn.lock
 
 .idea/
+>>>>>>> upstream/develop
