@@ -3,13 +3,23 @@ import { Card } from 'react-bootstrap';
 import styles from '../../../CSS/KnowAboutCard.module.css';
 
 function KnowAbout(props) {
+  const imgModule = import(`../../../Assets/${props.knowAbout.imgUrl}`);
+  const [imgSrc, setImgSrc] = React.useState('');
+
+  // load images
+  React.useEffect(() => {
+    imgModule.then((mod) => {
+      setImgSrc(mod.default);
+    });
+  }, []);
+
   return (
     <div id="knowAbout" className={styles.Box}>
-      <a  href={props.knowAbout.link}>
+      <a href={props.knowAbout.link}>
         <Card className={styles.Card}>
           <Card.Img
             variant="top"
-            src={require('../../../Assets/' + props.knowAbout.imgUrl)}
+            src={imgSrc}
             alt="Image"
             className={styles.CardImage}
           />
