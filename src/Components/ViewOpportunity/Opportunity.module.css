@@ -85,22 +85,21 @@ a:hover {
   color: black;
 }
 
-.Button {
-  background-color: #008dc8;
-  border: none;
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  font-size: 20px;
-  padding: 5px 30px 5px 30px;
-  margin-top: 1px;
+
+  .Button {
+    background-color: #008dc8;
+    border: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 5px 30px 5px 30px;
+    margin-top: 20px;
    
-  position: relative;
-  float: right;
-  transition: all 0.5s;
-  cursor: pointer;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
   
-  align-self: center;
 }
 
 /* make outline none when button gets clicked */

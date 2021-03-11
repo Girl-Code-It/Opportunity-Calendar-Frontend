@@ -69,27 +69,28 @@ export function ViewOpportunity(props) {
       <div>
         <Navbar />
         <div>
-          <Jumbotron style={{ backgroundColor: 'white' , marginTop:'5rem'}}>
-          <Card className="text-center">
+        <Card className="text-center" >
  
-  <Card.Body style={{backgroundColor: '#BD6997'}}>
-    <Card.Title> 
-      
-                  </Card.Title>
-    <Card.Text>
-                
-    <Button variant="primary"  href={postOpportunityPath} style={{ borderRadius:'5 5 5 5', borderWidth:'0 0 0 0'}}><span style={{fontWeight:'bold'}} >
-    Post Opportunity
-      </span></Button>
+ <Card.Body style={{backgroundColor: '#BD6997', marginTop: '5rem' , height:'10rem'}}>
+   <Card.Title> 
+     
+                 </Card.Title>
+   <Card.Text>
+               
+   <Button variant="primary"  href={postOpportunityPath} style={{ borderRadius:'5 5 5 5', borderWidth:'0 0 0 0'}} className={styles.Button}><span style={{fontWeight:'bold'}} >
+   Post Opportunity
+     </span></Button>
+ 
+
+
+   </Card.Text>
   
-
-
-    </Card.Text>
-   
-  </Card.Body>
+ </Card.Body>
 
 
 </Card>
+          <Jumbotron style={{ backgroundColor: 'white' , marginTop:'5rem'}}>
+          
             <Container>
               <Row>
               <NavDropdown
