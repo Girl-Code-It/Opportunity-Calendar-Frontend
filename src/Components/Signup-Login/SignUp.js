@@ -1,147 +1,55 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
-import { createMuiTheme } from '@material-ui/core/styles';
-import GoogleButton from 'react-google-button'
+import styles from './SignupLogin.css'
+import { Form,Card,Button, Row} from 'react-bootstrap';
+import { GoogleLogin } from 'react-google-login';
 
-/**
- * This is the SignUp Component.
- * 
- * @author sushi22
- */
-import { FormControlLabel, TextField, Button, Checkbox, Typography, Box } from '@material-ui/core';
+const SignUp = ()=>{
+    return(
+        <Row className="justify-content-md-center">
+            <Card className={styles.card}>
+            <h5>Sign Up</h5>
+            <small className="text-muted">Please fill this form to create your account.</small>
+            <Form>
+                <Form.Group controlId="fname">
+                 <Form.Label>First Name</Form.Label>
+                    <Form.Control type="text" placeholder="First Name" />
+                </Form.Group>
 
-const theme = createMuiTheme({
-    palette: {
-        primary: {
-            main: "#008dc8",
-        },
-        secondary: {
-            main: "#FFFFFF"
-        },
-    },
-});
+                <Form.Group controlId="lname">
+                    <Form.Label>Last Name</Form.Label>
+                    <Form.Control type="text" placeholder="Last Name" />
+                </Form.Group>
 
-const useStyles = makeStyles(() => ({
-    
-    form: {
-        boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-evenly",
-        paddingLeft: 30,
-        paddingRight: 30,
-        paddingTop: 10,
-        paddingBottom:10,
-        alignItems: "center",
-    },
-    label: {
-        display: "block",
-        width: "100%",
-        padding: 5,
-        
-    },
-    button:{
-        padding:10,
-        borderRadius: 20 
-        ,outline:"none",
-        border:"none",
-        width:250
-    }
-}));
+                <Form.Group controlId="email">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control type="email" placeholder="name@example.com" />
+                </Form.Group>
 
-const SignUp = () => {
-    const classes = useStyles();
-    return (
-        <ThemeProvider theme={theme}>
-            <Box
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                flexDirection="column"
-                height="100vh">
+                <Form.Group controlId="passWord">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control type="password" placeholder="Password"/>
+                </Form.Group>
 
-                <form className={classes.form}>
-                    <Typography variant="h5" >Sign Up</Typography>
-                    <Typography style={{ paddingBottom: 25 }}
-                        variant="caption"
-                        color="textSecondary"
-                    >Please fill this form to create your account.
-                    </Typography>
-                    <FormControlLabel className={classes.label}
-                        control={(<TextField
-                            fullWidth
-                            required
-                            id="standard-basic"
-                            label="First Name"
-                        />)}
-                    />
-                    <FormControlLabel className={classes.label}
-                        control={(<TextField
-                            fullWidth
-                            required
-                            id="standard-basic"
-                            label="Last Name"
-                        />)}
-                    />
-                    <FormControlLabel className={classes.label}
-                        control={(<TextField
-                            fullWidth
-                            required
-                            id="standard-basic"
-                            label="Email"
-                        />)}
-                    />
-                    <FormControlLabel className={classes.label}
-                        control={(<TextField
-                            fullWidth
-                            required
-                            type="password"
-                            id="standard-basic"
-                            label="Password"
-                        />)}
-                    />
-                    <FormControlLabel className={classes.label}
-                        control={(<TextField
-                            fullWidth
-                            required
-                            type="password"
-                            id="standard-basic"
-                            label="Confirm Password"
-                        />)}
-                    />
-                    <FormControlLabel
-                        control={
-                            <Checkbox
-                                name="checkedB"
-                                color="primary"
-                            />
-                        }
-                        label={
-                            <Typography variant="body2" color="textSecondary">
-                                I accept the <span style={{ color: "#008dc8" }}>Terms and Conditions </span>& <span style={{ color: "#008dc8" }}>Privacy Policy.</span>
-                            </Typography>
-                        }
-                    />
-                    <Button variant="contained" color="primary" className={classes.button}>
-                        Sign Up
-                    </Button>
+                <Form.Group controlId="c_passWord">
+                    <Form.Label>Confirm Password</Form.Label>
+                    <Form.Control type="password" placeholder="Confirm Password"/>
+                </Form.Group>
 
-                    <Typography color="textSecondary" variant="body2" style={{ padding: 10 }}>OR</Typography>
+                <input type="checkbox"/>
 
-                    <GoogleButton
-                        style={{outline:"none",border:"none"}}
-                        type="light"
-                        label="Sign Up with Google"
-                        onClick={() => { console.log('Google button clicked') }}
-                    />
-
-                    <Typography variant="body2" color="textSecondary" style={{ paddingTop: 5,paddingBottom:5 }}>
-                        Already have an account?<a href="/login" style={{ color: "#008dc8"}}> Login</a>
-                    </Typography>
-                </form>
-            </Box>
-        </ThemeProvider>
+                <small  style={{paddingLeft:10}}>I accept the 
+                    <a href="/tandc"> Terms and Conditions </a>
+                    & <a href="/tandc">Privacy Policy</a>
+                </small>
+            </Form>
+            <Button size="md" className="button">Sign Up</Button>
+                <p>OR</p>
+                <GoogleLogin
+                    buttonText="Sign in with Google"
+                />
+                <p >Already have an Account? <a href="/login">Login</a></p>
+        </Card>
+    </Row> 
     )
 }
 
