@@ -4,12 +4,12 @@
 }
 
 .ColumnPost {
-  max-width: 20%;
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: center;
+  justify-content: start;
+  max-width: 20%;
+  padding-top: 20px;
 }
 
 .Card {
@@ -17,6 +17,10 @@
   border-radius: 15px;
   /* margin-left: 50%; */
   margin-top: 5rem;
+  /* margin-left: 50%; */
+  
+
+  border-radius: 15px;
   box-shadow: 0px 2px 2px 0px #ccc;
   width: 40rem;
   margin-left: 15rem;
@@ -25,9 +29,10 @@
 }
 
 .CardTitle {
+
   font-size:  1rem;
+
   text-align: left;
-  color: black;
 }
 
 a:hover {
@@ -35,18 +40,20 @@ a:hover {
 }
 
 .CardImage {
+  width: 180px;
   height: 100px;
   width: 180px;
   padding: 20px;
   margin-left: 20px;
+  padding: 20px;
   padding-bottom: 0px;
 }
 
 .Rectangle {
-  height: 3px;
   width: 155px;
-  background-color: #008dc8;
+  height: 3px;
   margin-bottom: 20px;
+  background-color: #008dc8;
 }
 
 .HeadingRow {
@@ -64,19 +71,30 @@ a:hover {
   margin-top: 2rem;
   display: inline-block;
   overflow-wrap: break-word;
+
+ 
   word-wrap: break-word;
   word-break: normal;
-  line-break: auto;
-  hyphens: none;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
+  overflow-wrap: break-word;
+  -webkit-hyphen: none;
+  -moz-hyphen: none;
+
 
 }
 
 .Description {
   margin-top: 25px;
   margin-left: 35px;
+
+  hyphens: none;
+  line-break: auto;
+}
+
+.Description {
+  margin-top: 15px;
+
   margin-right: 25px;
+  margin-left: 35px;
 }
 
 .Heading {
@@ -104,8 +122,7 @@ a:hover {
     transition: all 0.5s;
     cursor: pointer;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-  
-}
+  }
 
 /* make outline none when button gets clicked */
 .Button:focus {
@@ -148,13 +165,35 @@ background-color: #e4fbff;
     margin-left: 0;
   }
 
+ 
+}
+.Dropdown {
+  width: 15rem;
+  color: #fff;
+  font-size: 10px;
+  background-color: #e4fbff;
+  border-color: #008dc8;
+
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+@media (max-width: 992px) {
+  .BannerImage {
+    width: 15rem;
+    margin-left: 0;
+  }
+  .Button {
+    width: 15rem;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .RowCard {
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 
   .ColumnCard {
@@ -172,15 +211,15 @@ background-color: #e4fbff;
 
 @media only screen and (max-width: 530px) {
   .Title {
-    font-size: 30px;
     margin-top: 10px;
+    font-size: 30px;
   }
 
   .CardImage {
-    height: 90px;
     width: 100px;
-    padding: 15px;
+    height: 90px;
     margin-left: 15px;
+    padding: 15px;
   }
 
   .Heading,
@@ -195,15 +234,15 @@ background-color: #e4fbff;
 
 @media only screen and (max-width: 450px) {
   .Title {
-    font-size: 25px;
     margin-top: 10px;
+    font-size: 25px;
   }
 
   .CardImage {
-    height: 80px;
     width: 80px;
-    padding: 15px;
+    height: 80px;
     margin-left: 15px;
+    padding: 15px;
   }
 
   .Heading,
@@ -218,15 +257,15 @@ background-color: #e4fbff;
 
 @media only screen and (max-width: 355px) {
   .Title {
-    font-size: 20px;
     margin-top: 10px;
+    font-size: 20px;
   }
 
   .CardImage {
-    height: 80px;
     width: 80px;
-    padding: 15px;
+    height: 80px;
     margin-left: 15px;
+    padding: 15px;
   }
 
   .Heading,

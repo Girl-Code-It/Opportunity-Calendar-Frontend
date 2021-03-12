@@ -160,7 +160,7 @@ function App() {
             )}
           />
         </Switch>
-        <ScrollTop/>
+        <ScrollTop />
         <Footer />
       </div>
     </Router>

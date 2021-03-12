@@ -1,5 +1,6 @@
 import React from 'react';
-import {NavDropdown, Card, Row, Col, Container } from 'react-bootstrap';
+
+import { NavDropdown, Card, Row, Col, Container } from 'react-bootstrap';
 import logo from '../../Assets/amdocs.png';
 import styles from './Opportunity.module.css';
 
@@ -8,7 +9,6 @@ export function OpportunityCard(props) {
 
   return (
 
-     <div>
        
       <Card className={styles.Card}>
         <Container>
@@ -86,8 +86,9 @@ export function OpportunityCard(props) {
           </Card.Body>
  </Card>
       
-     </div>
+     
        
    
+
   );
 }

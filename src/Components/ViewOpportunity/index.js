@@ -1,7 +1,16 @@
 import React from 'react';
 import axios from 'axios';
 import { OpportunityCard } from './OpportunityCard';
-import {Card, Col, Container, Jumbotron, Row, Image, Button , NavDropdown,} from 'react-bootstrap';
+import {
+  Card,
+  Col,
+  Container,
+  Jumbotron,
+  Row,
+  Image,
+  Button,
+  NavDropdown,
+} from 'react-bootstrap';
 import styles from './Opportunity.module.css';
 import Navbar from './Navbar';
 
@@ -69,6 +78,7 @@ export function ViewOpportunity(props) {
       <div>
         <Navbar />
         <div>
+
         <Card className="text-center" >
  
  <Card.Body style={{backgroundColor: '#BD6997', marginTop: '7rem' , height:'10rem'}}>
@@ -126,13 +136,14 @@ export function ViewOpportunity(props) {
           </NavDropdown>
               </Row>
             
+
               <Row>
                 <Col style={{ marginTop: '20px' }} md={12}>
                   {data.map((item) => {
                     return <OpportunityCard key={item.id} item={item} />;
                   })}
                 </Col>
-                
+
               </Row>
             </Container>
 

@@ -8,6 +8,7 @@ import {
   Button,
  
 } from 'react-bootstrap';
+
 import { AiOutlineSearch } from 'react-icons/ai';
 
 function navbar() {
@@ -20,6 +21,7 @@ function navbar() {
           It
         </a>
       </Navbar.Brand>
+
      
         <Form inline >
          
@@ -28,7 +30,7 @@ function navbar() {
            placeholder="Search"
            className={styles.Search}
          />
-         <Button >
+         <Button style={{height:'2.8rem'}}>
            <AiOutlineSearch />
          </Button>
     
@@ -41,6 +43,7 @@ function navbar() {
         <Nav className="mr-auto">
       
         </Nav>
+
         <Button variant="outline-info">Login/Signup</Button>{' '}
       </Navbar.Collapse>
     </Navbar>

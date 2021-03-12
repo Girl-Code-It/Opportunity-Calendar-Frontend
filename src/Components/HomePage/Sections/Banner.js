@@ -29,7 +29,7 @@ function Banner() {
               at the right time!
             </h2>
             <a data-testid="explore-btn" href="/viewopportunity/fulltime">
-              <button  className={styles.Button}>Explore</button>
+              <button className={styles.Button}>Explore</button>
             </a>
           </Col>
           <Col md={6} lg={6} className={styles.rightCol}>
