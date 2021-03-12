@@ -38,8 +38,8 @@ const SignUp = ()=>{
                 <input type="checkbox"/>
 
                 <small  style={{paddingLeft:10}}>I accept the 
-                    <a href="/tandc"> Terms and Conditions </a>
-                    & <a href="/tandc">Privacy Policy</a>
+                    <a href="#"> Terms and Conditions </a>
+                    & <a href="#">Privacy Policy</a>
                 </small>
             </Form>
             <Button size="md" className="button">Sign Up</Button>
