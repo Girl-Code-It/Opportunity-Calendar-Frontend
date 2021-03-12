@@ -11,16 +11,27 @@ export function OpportunityCard(props) {
      <div>
        
       <Card className={styles.Card}>
-      
-          <Card.Img
-            variant="top"
-            src={logo}
-            // src = {item.imgURL}
-            alt={item.title}
-            className={styles.CardImage}
-          />
+        <Container>
+          <Row>
+            <Col>
+            <Card.Img
+           
+           src={logo}
+           // src = {item.imgURL}
+           alt={item.title}
+           className={styles.CardImage}
+         />
+            </Col>
+            <Col>
+            <Card.Title className={styles.Title}>{item.title}</Card.Title>
+            </Col>
+          </Row>
+        </Container>
+     
+         
+          
           <Card.Body>
-          <Card.Title className={styles.Title}>{item.title}</Card.Title>
+         
             <Card.Text>
           <p className={styles.Description}>{item.description}</p>
        

@@ -16,12 +16,16 @@
  
   border-radius: 15px;
   /* margin-left: 50%; */
-  margin-top: 1rem;
+  margin-top: 5rem;
   box-shadow: 0px 2px 2px 0px #ccc;
+  width: 40rem;
+  margin-left: 15rem;
+   border-top-width: 20px;
+  border-top-color: #008dc8;
 }
 
 .CardTitle {
-  font-size: 23px;
+  font-size:  1rem;
   text-align: left;
   color: black;
 }
@@ -54,10 +58,10 @@ a:hover {
   
 
   color: #008dc8;
-  font-size: 30px;
+  font-size: 20px;
   /* display: inline-block;
   word-break: break-word; */
-  width: 65%;
+  margin-top: 2rem;
   display: inline-block;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -66,10 +70,11 @@ a:hover {
   hyphens: none;
   -webkit-hyphens: none;
   -moz-hyphens: none;
+
 }
 
 .Description {
-  margin-top: 15px;
+  margin-top: 25px;
   margin-left: 35px;
   margin-right: 25px;
 }
@@ -124,8 +129,6 @@ background-color: #e4fbff;
   transition: all 0.5s;
   cursor: pointer;
   
-  
-  width: 15rem;
  
  
 }
@@ -138,6 +141,11 @@ background-color: #e4fbff;
     margin-left: 0;
     width: 15rem;
 
+
+  }
+  .Card {
+    width:25rem;
+    margin-left: 0;
   }
 
 }
@@ -155,6 +163,10 @@ background-color: #e4fbff;
 
   .ColumnPost {
     max-width: 90%;
+  }
+  .Card {
+    width:25rem;
+    margin-left: 0;
   }
 }
 
@@ -175,6 +187,10 @@ background-color: #e4fbff;
   .Value {
     font-size: 1.1rem;
   }
+  .Card {
+    width:25rem;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -193,6 +209,10 @@ background-color: #e4fbff;
   .Heading,
   .Value {
     font-size: 1rem;
+  }
+  .Card {
+    width:25rem;
+    margin-left: 0;
   }
 }
 
@@ -215,7 +235,8 @@ background-color: #e4fbff;
   }
 
   .Card {
-    padding: 5px;
+    width:25rem;
+    margin-left: 0;
   }
 
   .ColumnCard {
