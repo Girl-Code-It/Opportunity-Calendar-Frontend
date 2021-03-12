@@ -1,103 +1,33 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
-import { createMuiTheme } from '@material-ui/core/styles';
-import GoogleButton from 'react-google-button';
-import { FormControlLabel, TextField, Button, Typography, Box } from '@material-ui/core';
+import styles from './SignupLogin.css'
+import { Form,Card,Button, Row} from 'react-bootstrap';
+import { GoogleLogin } from 'react-google-login';
 
-/**
- * This is the login component.
- * 
- * @author sushi22
- */
+const Login = ()=>{
+    return(
+        <Row className="justify-content-md-center">
+            <Card className={styles.card}>
+            <h5>Login</h5>
+            <Form>
+                <Form.Group controlId="email">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control type="email" placeholder="name@example.com" />
+                </Form.Group>
 
-const theme = createMuiTheme({
-    palette: {
-        primary: {
-            main: "#008dc8",
-        },
-        secondary: {
-            main: "#FFFFFF"
-        },
-    },
-});
-
-const useStyles = makeStyles(() => ({
-    form: {
-        boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-evenly",
-        padding: 30,
-        width: 380,
-        alignItems: "center",
-    },
-    label: {
-        padding: 10,
-        width: "100%",
-    },
-    button:{
-        padding:10,
-        borderRadius: 20,
-        outline:"none",
-        border:"none",
-        width:250,
-    }
-}));
-
-const Login = () => {
-    const classes = useStyles();
-    return (
-        <ThemeProvider theme={theme}>
-            
-            <Box
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                flexDirection="column"
-                height="100vh">
-
-                <form className={classes.form} noValidate>
-                    <Typography variant="h5" >Login</Typography>
-                    <FormControlLabel className={classes.label}
-                        control={(<TextField
-                            fullWidth
-                            required
-                            id="standard-basic"
-                            label="Email"
-                        />)}
-                    />
-                    <FormControlLabel className={classes.label}
-                        control={(<TextField
-                            fullWidth
-                            required
-                            type="password"
-                            id="standard-basic"
-                            label="Password"
-                        />)}
-                    />
-                    
-                    <Typography color="primary" variant="body2" style={{paddingBottom: 10 }}>Forgot Password?</Typography>
-
-                    <Button variant="contained" color="primary" className={classes.button}>
-                        Login
-                    </Button>
-
-                    <Typography color="textSecondary" variant="body2" style={{ padding: 10 }}>OR</Typography>
-
-                    <GoogleButton
-                        type="light"
-                        style={{outline:"none",border:"none"}}
-                        label="Login with Google"
-                        onClick={() => { console.log('Google button clicked') }}
-                    />
-
-                    <Typography variant="body1" color="textSecondary" style={{ paddingTop: 20 }}>
-                        Don't have an account?<a href="/signup" style={{ color: "#008dc8" }}> SignUp</a>
-                    </Typography>
-                </form>
-            </Box>
-        </ThemeProvider>
+                <Form.Group controlId="passWord">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control type="password" placeholder="Password"/>
+                    <a href="/forgotpassword"><small className={styles.link}>Forgot password ?</small></a>
+                </Form.Group>
+            </Form>
+            <Button size="md" className="button">Login</Button>
+                <p>OR</p>
+                <GoogleLogin
+                    buttonText="Login with Google"
+                />
+                <p>Don't have an Account ? <a href="/signup" className={styles.link}>Signup</a></p>
+        </Card>
+    </Row> 
     )
 }
 
