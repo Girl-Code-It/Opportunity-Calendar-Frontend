@@ -63,7 +63,7 @@ a:global(.active) {
   border-radius: 0px 8px 8px 0px;
 
   font-size: 20px;
-  position: relative;
+  position: relative; 
   height: 20px;
 
 }

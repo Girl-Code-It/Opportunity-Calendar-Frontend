@@ -123,6 +123,22 @@ a:hover {
     cursor: pointer;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
   }
+  .Button1 {
+    background-color: #008dc8;
+    border: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 5px 30px 5px 30px;
+    margin-top: 20px;
+   
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    margin-left: 500px;
+    margin-top: 50px;
+  }
 
 /* make outline none when button gets clicked */
 .Button:focus {
@@ -162,7 +178,8 @@ background-color: #e4fbff;
   }
   .Card {
     width:25rem;
-    margin-left: 0;
+    margin-left: 120px;
+   
   }
 
  
@@ -187,6 +204,14 @@ background-color: #e4fbff;
     width: 15rem;
     margin-left: 0;
   }
+  .Card {
+    width:25rem;
+    margin-left: 150px;
+  }
+  .Button1 {
+    margin-left: 250px;
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -205,8 +230,9 @@ background-color: #e4fbff;
   }
   .Card {
     width:25rem;
-    margin-left: 0;
+    margin-left: 0px;
   }
+
 }
 
 @media only screen and (max-width: 530px) {
@@ -235,29 +261,6 @@ background-color: #e4fbff;
 @media only screen and (max-width: 450px) {
   .Title {
     margin-top: 10px;
-    font-size: 25px;
-  }
-
-  .CardImage {
-    width: 80px;
-    height: 80px;
-    margin-left: 15px;
-    padding: 15px;
-  }
-
-  .Heading,
-  .Value {
-    font-size: 1rem;
-  }
-  .Card {
-    width:25rem;
-    margin-left: 0;
-  }
-}
-
-@media only screen and (max-width: 355px) {
-  .Title {
-    margin-top: 10px;
     font-size: 20px;
   }
 
@@ -272,13 +275,46 @@ background-color: #e4fbff;
   .Value {
     font-size: 1rem;
   }
+  .Card {
+    width:20rem;
+    margin-left: 0;
+  }
+  .Button1 {
+    margin-left: 150px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .Title {
+    margin-top: 10px;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .CardImage {
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+    padding: 15px;
+  }
+
+  .Heading,
+  .Value {
+    font-size: 1rem;
+  }
 
   .Card {
-    width:25rem;
+    width:17rem;
     margin-left: 0;
   }
 
   .ColumnCard {
     padding: 0;
   }
+  .Button1 {
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+ 
 }

@@ -80,7 +80,7 @@ export function OpportunityCard(props) {
         
               </Card.Text>
           <a href={item.url}>
-            <button className={styles.Button}>Apply</button>
+            <button className={styles.Button1}>Apply</button>
           </a>
         
           </Card.Body>

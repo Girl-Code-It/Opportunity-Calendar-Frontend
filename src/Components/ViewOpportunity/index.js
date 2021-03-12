@@ -104,7 +104,7 @@ export function ViewOpportunity(props) {
             <Container>
               <Row>
               <NavDropdown
-            title={<span className={styles.Title} style={{fontSize:'20px' , fontFamily: 'Arial, Helvetica, sans-serif',
+            title={<span className={styles.Title} style={{fontSize:'30px' , fontFamily: 'Arial, Helvetica, sans-serif',
             marginRight: '10px', marginTop:'0' }}>Opportunities</span>}
             id="dropdown-basic-button" 
             className={styles.Dropdown}
