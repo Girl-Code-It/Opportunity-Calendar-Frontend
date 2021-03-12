@@ -66,7 +66,9 @@ function navbar() {
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
-        <button className={styles.Button}>Login / SignUp</button>
+        <button data-testid="login-btn" className={styles.Button}>
+          Login / SignUp
+        </button>
       </Navbar.Collapse>
     </Navbar>
   );

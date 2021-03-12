@@ -1,4 +1,5 @@
-body, html{
+body,
+html {
   overflow-x: hidden;
 }
 .Jumbotron {
@@ -30,42 +31,42 @@ body, html{
 } */
 
 h5 {
+  margin-bottom: 0px;
   color: #008dc8;
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 0px;
 }
 
 .Rectangle {
-  border-bottom: 2px #008dc8 solid;
   position: absolute;
   right: 50%;
   left: 0;
   margin-left: 25px;
+  border-bottom: 2px #008dc8 solid;
 }
 
 .line1 {
   width: 100%;
   height: 1px;
-  background-color: grey;
-  opacity: 1;
-  border: none;
   margin-top: 0px;
+  background-color: grey;
+  border: none;
+  opacity: 1;
 }
 
 .line2 {
   width: 1px;
   height: 140px;
-  background-color: grey;
-  opacity: 1;
-  border: none;
-  margin-left: 0px;
   margin-right: 2%;
+  margin-left: 0px;
+  background-color: grey;
+  border: none;
+  opacity: 1;
 }
 
 p {
+  margin-top: 10px;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 10px;
 }
 
 .Bottom1 {
@@ -77,10 +78,10 @@ p {
 }
 
 .Shift {
-  margin-left: 40px;
   margin-top: 0px;
-  font-size: 22px;
+  margin-left: 40px;
   color: black;
+  font-size: 22px;
 }
 
 .Shift:hover {
@@ -118,16 +119,18 @@ p {
   .ContainerFooter {
     max-width: 95% !important;
   }
-  .Column1 p, .Column2 p, .Column3 p{
+  .Column1 p,
+  .Column2 p,
+  .Column3 p {
     font-size: 0.9rem;
   }
 }
 @media (max-width: 862px) {
-  .Column1{
+  .Column1 {
     max-width: 25%;
     padding: 10px;
   }
-  .Column2{
+  .Column2 {
     max-width: 26%;
     padding: 15px;
   }
@@ -142,9 +145,8 @@ p {
 }
 @media (max-width: 862px) {
   .Column1,
-  .Column2{
+  .Column2 {
     max-width: 25%;
-
   }
   .ImgColumn {
     max-width: 19%;
@@ -157,21 +159,21 @@ p {
   .ContainerFooter {
     max-width: 75% !important;
   }
-  .RectangleContainer{
+  .RectangleContainer {
     display: flex;
     justify-content: center;
     width: 100%;
   }
   .Rectangle2 {
-    border-bottom: 2px #008dc8 solid;
     position: absolute;
     right: 0;
     margin-right: 25px;
+    border-bottom: 2px #008dc8 solid;
   }
   .Rectangle3 {
-    border-bottom: 2px #008dc8 solid;
     position: absolute;
     margin: auto;
+    border-bottom: 2px #008dc8 solid;
   }
   .Bottom1,
   .Top1,
@@ -194,23 +196,23 @@ p {
   }
 
   .Para {
-    text-align: center;
     margin-bottom: 0px;
+    text-align: center;
   }
 
   .SocialLinks {
     text-align: center;
   }
 }
-@media only screen and (max-width: 562px){
-  .ContactRow{
+@media only screen and (max-width: 562px) {
+  .ContactRow {
     flex-direction: column;
     margin-bottom: 15px;
   }
-  .Top2{
+  .Top2 {
     margin-top: 10px;
   }
-  .Jumbotron{
+  .Jumbotron {
     padding-left: 20px;
   }
 }
@@ -223,13 +225,13 @@ p {
   .ContainerFooter {
     max-width: 90% !important;
   }
-  .ContainerFooter p{
+  .ContainerFooter p {
     font-size: 0.9rem;
   }
-  .SocialLinks a{
+  .SocialLinks a {
     font-size: 1rem;
   }
-  .Para{
+  .Para {
     padding-bottom: 5px;
   }
 }

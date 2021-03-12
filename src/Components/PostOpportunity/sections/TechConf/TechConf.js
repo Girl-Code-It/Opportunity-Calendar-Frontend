@@ -8,7 +8,7 @@ class TechConf extends Component {
     return (
       <div>
         <Navbar />
-        <div className={styles.FullTimeComponent}  >
+        <div className={styles.FullTimeComponent}>
           <TechConfForm />
         </div>
       </div>

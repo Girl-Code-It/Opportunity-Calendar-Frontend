@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "audit": "^0.0.6",
     "axios": "^0.21.0",
-    "node-modules": "^1.0.1",
+    "node-modules": "^0.0.1",
     "prettier": "^2.2.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.3.0",
@@ -40,6 +39,8 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
     "gh-pages": "^3.1.0"
   }
 }

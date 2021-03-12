@@ -4,16 +4,16 @@
 }
 
 .NavBar a {
+  margin: auto 8px;
   color: black !important;
-  letter-spacing: 0px;
   font-weight: 500;
   font-size: 17px;
-  margin: auto 8px;
+  letter-spacing: 0px;
 }
 
 .Brand:hover {
-  border: none;
   text-decoration: none;
+  border: none;
 }
 
 .navbar-default {
@@ -22,135 +22,255 @@
 }
 
 .Logo {
-  letter-spacing: 0px;
-  font-size: 2.3rem;
-  font-weight: 390;
-  font-family: Arial;
   padding-left: 20px;
+  font-weight: 390;
+  font-size: 2.3rem;
+  font-family: Arial;
+  letter-spacing: 0px;
 }
 
 a:hover,
 a:active,
 a:global(.active) {
-  cursor: pointer;
   border-bottom: 2px solid #008dc8;
+  cursor: pointer;
 }
 
 .Middle {
+  margin-left: 480px;
   display: flex;
+  margin-left: 480px;
 }
 
-.ShiftRight{
+.ShiftRight {
   display: flex;
   justify-content: flex-end;
 }
 
 .Search {
   border-radius: 8px 0px 0px 8px;
+  
+  height: 2.9rem;
 }
 
-
-
 .SearchButton {
+  position: relative;
+  padding: 4px 10px 4px 10px;
+  color: white;
+  font-size: 20px;
   background-color: #008dc8;
   border: none;
-  color: white;
-  padding: 4px 10px 4px 10px;
   border-radius: 0px 8px 8px 0px;
+
   font-size: 20px;
-  /* position: relative; */
-  transition: all 0.5s;
+  position: relative; 
+  height: 20px;
+
 }
 
 .Title {
+  margin-right: 10px;
   color: white;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 8px;
-  margin-right: 85px;
+
+  margin-right: 10px;
+
 }
 
 .Dropdown {
+  float: right;
+  margin-left: 500px;
+  color: #fff;
+
+  margin-left: 500px;
+  border-radius: 5px 5px 5px 5px;
+
+  font-size: 20px;
   background-color: #008dc8;
   border: none;
-  color: #fff;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 10px 10px 0px 0px;
-  font-size: 20px;
-  transition: all 0.5s;
+  border-radius: 5px 5px 5px 5px;
   cursor: pointer;
+
   float: right;
-  width: 256px;
+
 }
 
 .Button {
+  position: relative;
+  margin-right: 2%;
+  padding: 5px 30px 5px 30px;
+  color: #fff;
+
+  text-align: center;
+ 
+  font-size: 20px;
+  text-align: center;
   background-color: #008dc8;
   border: none;
-  color: #fff;
-  text-align: center;
-  border-radius: 50px;
-  font-size: 20px;
-  padding: 5px 30px 5px 30px;
-  margin-right: 2%;
-  position: relative;
-  transition: all 0.5s;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
+@media (max-width: 360px) {
+  .Logo {
+    position: relative;
+
+   
+    font-size: 2rem;
+  }
+  .Button {
+    position: absolute;
+    top: 16px;
+    right: 0;
+   
+  }
+}
+
+@media (max-width: 992px) {
+/* make outline none when button gets clicked */
+.Button:focus {
+  outline: none;
+}
 
 @media only screen and (max-width: 993px) {
   .Middle {
     margin-right: 10px;
   }
 }
+
 @media only screen and (max-width: 991px) {
   .Middle {
     margin-left: 0px;
-    margin-right: 0;
   }
+
   .ShiftRight {
     margin-left: 0px;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 20px;
-    justify-content: space-between;
+    margin-top: 10px;
   }
+
   .Dropdown {
     margin-left: 0px;
     margin-top: 10px;
+    width: 15rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .SearchButton {
+    background-color: #008dc8;
+    border: none;
+    color: white;
+    padding: 4px 10px 4px 10px;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 20px;
+    width: 7rem;
+
   }
   .Button {
-    margin-top: 10px;
+    position: absolute;
+    top: 16px;
+    right: 0;
   }
+  .Search {
+    width: 4rem;
+   
+  }
+  
 }
 
-@media only screen and (max-width: 450px) {
-  .ShiftRight {
-    padding-left: 10px;
-    font-size: 0.9rem;
+@media (max-width: 992px) {
+  /* make outline none when button gets clicked */
+  .Button:focus {
+    outline: none;
   }
-  .Button, .Middle{
-    font-size: 1rem;
+
+  @media only screen and (max-width: 993px) {
+    .Middle {
+      margin-right: 10px;
+    }
   }
-  .NavBar a{
-    font-size: 0.9rem;
-    padding: 5px;
+
+  @media only screen and (max-width: 991px) {
+    .Middle {
+      margin-left: 0px;
+    }
+
+    .ShiftRight {
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+
+    .Dropdown {
+      width: 15rem;
+      margin-top: 10px;
+      margin-bottom: 0.5rem;
+      margin-left: 0px;
+    }
+
+    .SearchButton {
+      width: 5rem;
+      padding: 4px 10px 4px 10px;
+      color: white;
+      font-size: 20px;
+      background-color: #008dc8;
+      border: none;
+      border-radius: 0px 8px 8px 0px;
+    }
+
+    .Button {
+      margin-top: 10px;
+    }
+    .Search {
+      width: 7rem;
+    }
   }
-  .Title{
-    font-size: 1rem;
-    padding: 0;
+
+  @media only screen and (max-width: 450px) {
+    .ShiftRight {
+      padding-left: 10px;
+      font-size: 0.9rem;
+    }
+
+    .Button,
+    .Middle {
+      font-size: 1rem;
+    }
+
+    .NavBar a {
+      padding: 5px;
+      font-size: 0.9rem;
+    }
+
+    .Title {
+      padding: 0;
+      font-size: 1rem;
+    }
+    .Search {
+      width: 5rem;
+    }
   }
+
+ 
+  
 }
+
 @media only screen and (max-width: 360px) {
   .Logo {
     position: relative;
-    left: -20px;
-    font-size: 2rem;
+    transition: all 0.5s;
+    width: 15rem;
   }
+  .Search {
+    width: 5rem;
+
+  }
+  
+ 
 }
+}
+
 @media only screen and (max-width: 3280px) {
-  .NavBar{
+  .NavBar {
     padding: 8px 10px 8px 4px;
   }
 }

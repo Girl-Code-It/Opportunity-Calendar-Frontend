@@ -13,7 +13,6 @@ import { GrMail } from 'react-icons/gr';
 
 function Footer() {
   return (
-
     <Jumbotron className={styles.Jumbotron}>
       <Container className={styles.ContainerFooter}>
         <Row className={styles.Top1}>
@@ -29,7 +28,10 @@ function Footer() {
           <hr className={styles.line2} />
           <Col className={styles.Column2}>
             <h5> Products </h5>
-            <div className={`${styles.Rectangle} ${styles.Rectangle3}`} style={{ width: '80px' }}></div>
+            <div
+              className={`${styles.Rectangle} ${styles.Rectangle3}`}
+              style={{ width: '80px' }}
+            ></div>
             <p> CodeMaps </p>
             <p> Opportuntiy Calendar </p>
           </Col>
@@ -74,10 +76,7 @@ function Footer() {
           {/* <hr className = {styles.line2}/> */}
           <Col style={{ textAlign: 'end' }}>
             <h5> Products </h5>
-            <div
-              className={styles.Rectangle2}
-              style={{ width: '80px' }}
-            ></div>
+            <div className={styles.Rectangle2} style={{ width: '80px' }}></div>
             <p> CodeMaps </p>
             <p> Opportuntiy Calendar </p>
           </Col>
@@ -118,6 +117,7 @@ function Footer() {
           </Col>
           <Col className={styles.SocialLinks}>
             <a
+              data-testid="linkedin"
               href="https://www.linkedin.com/company/14568052/admin/"
               className={styles.Shift}
             >
@@ -125,13 +125,18 @@ function Footer() {
               <FaLinkedinIn />{' '}
             </a>
             <a
+              data-testid="instagram"
               href="https://www.instagram.com/girlcodeit/"
               className={styles.Shift}
             >
               {' '}
               <FaInstagram />{' '}
             </a>
-            <a href="https://twitter.com/GirlCodeIt1" className={styles.Shift}>
+            <a
+              data-testid="twitter"
+              href="https://twitter.com/GirlCodeIt1"
+              className={styles.Shift}
+            >
               {' '}
               <FaTwitter />{' '}
             </a>
@@ -139,7 +144,7 @@ function Footer() {
         </Row>
         <Row className={styles.Bottom2}>
           <Col>
-            <p className={styles.Para}>
+            <p data-testid="copyright" className={styles.Para}>
               {' '}
               <BiCopyright /> 2020 Girl Code It | All rights reserved.
             </p>

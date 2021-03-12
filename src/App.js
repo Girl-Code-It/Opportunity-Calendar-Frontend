@@ -8,6 +8,7 @@ import TechConfForm from './Components/PostOpportunity/sections/TechConf/TechCon
 import HackathonForm from './Components/PostOpportunity/sections/Hackathons/Hackathons';
 import CodingCompForm from './Components/PostOpportunity/sections/CodingComp/CodingComp';
 import ScholarshipForm from './Components/PostOpportunity/sections/Scholarships/Scholarships';
+import ScrollTop from './Components/ScrollTop/ScrollTop';
 import { ViewOpportunity } from './Components/ViewOpportunity/';
 import Footer from './Components/Footer/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -134,7 +135,7 @@ function App() {
           />
           <Route
             exact
-            path="/postopportunity/Hackathons"
+            path="/postopportunity/Hackathon" // just changed the path to make the hackathon table visible
             render={(props) => (
               <div>
                 <HackathonForm />
@@ -152,7 +153,7 @@ function App() {
           />
           <Route
             exact
-            path="/postopportunity/Scholarships"
+            path="/postopportunity/Scholarship" // changed the path from Scholarships to Scholarship to make the scholaeship table visible and also the navbar to visible 
             render={(props) => (
               <div>
                 <ScholarshipForm />
@@ -169,6 +170,7 @@ function App() {
             )}
           />
         </Switch>
+        <ScrollTop />
         <Footer />
       </div>
     </Router>

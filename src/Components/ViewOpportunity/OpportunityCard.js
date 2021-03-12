@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Row, Col, Container } from 'react-bootstrap';
+
+import { NavDropdown, Card, Row, Col, Container } from 'react-bootstrap';
 import logo from '../../Assets/amdocs.png';
 import styles from './Opportunity.module.css';
 
@@ -7,71 +8,87 @@ export function OpportunityCard(props) {
   const { item } = props;
 
   return (
-    <div id="CodingComp" className={styles.Box}>
+
+       
       <Card className={styles.Card}>
-        <Row className={styles.HeadingRow}>
-          <Card.Img
-            variant="top"
-            src={logo}
-            // src = {item.imgURL}
-            alt={item.title}
-            className={styles.CardImage}
-          />
-          <h1 className={styles.Title}>{item.title}</h1>
-        </Row>
-        <Row>
-          <p className={styles.Description}>{item.description}</p>
-        </Row>
         <Container>
           <Row>
-            <Col md={6} lg={6}>
-              <Row>
-                <h5 className={styles.Heading} style={{ marginLeft: '20px' }}>
-                  Date :
-                </h5>
-                <h5 className={styles.Value}>{item.date}</h5>
-              </Row>
+            <Col>
+            <Card.Img
+           
+           src={logo}
+           // src = {item.imgURL}
+           alt={item.title}
+           className={styles.CardImage}
+         />
             </Col>
-
-            <Col md={6} lg={6}>
-              <Row>
-                <h5 className={styles.Heading} style={{ marginLeft: '20px' }}>Deadline :</h5>
-                <h5 className={styles.Value}>{item.deadline}</h5>
-              </Row>
-            </Col>
-
-            <Col md={6} lg={6}>
-              <Row>
-                <h5 className={styles.Heading} style={{ marginLeft: '20px' }}>
-                  Location :
-                </h5>
-                <h5 className={styles.Value}>{item.location}</h5>
-              </Row>
-            </Col>
-
-            
-          </Row>
-          <Row>
-            <Col md={12} lg={12}>
-              <Row>
-                <Container>
-                  <h5 className={styles.Heading} style={{ marginLeft: '5px' }}>
-                    Eligibility :
-                    <span className={styles.Value}>{item.eligibility}</span>
-                  </h5>
-                </Container>
-              </Row>
-            </Col>
-          </Row>
-          <Row className="mt-3">
-            <Col md={0} lg={12}>
-              <a href={item.url}>
-                <button className={styles.Button}>Apply</button>
-              </a>
+            <Col>
+            <Card.Title className={styles.Title}>{item.title}</Card.Title>
             </Col>
           </Row>
         </Container>
-      </Card>
-    </div>
+     
+         
+          
+          <Card.Body>
+         
+            <Card.Text>
+          <p className={styles.Description}>{item.description}</p>
+       
+            <Container>
+              <Row>
+                <Col>
+                <h5 className={styles.Heading} >
+                  Date :
+               
+                <span className={styles.Value}>{item.date} </span></h5>
+                </Col>
+                <Col>
+                    <h5 className={styles.Heading} >
+                  Location :
+                  <span className={styles.Value}>{item.location}</span>
+                </h5>
+               
+            </Col>
+          
+            
+         
+            
+          </Row>
+        
+           <Row>
+             <Col>
+             <h5 className={styles.Heading}>Deadline :
+            <span className={styles.Value}>{item.deadline}</span>
+            </h5>
+             </Col>
+             <Col>
+             <h5 className={styles.Heading}>
+                Eligibility :
+                <span className={styles.Value}>{item.eligibility}</span>
+              </h5>
+
+             </Col>
+           
+        
+             
+           </Row>
+        
+          
+
+        </Container>
+        
+              </Card.Text>
+          <a href={item.url}>
+            <button className={styles.Button1}>Apply</button>
+          </a>
+        
+          </Card.Body>
+ </Card>
+      
+     
+       
+   
+
   );
 }

@@ -1,8 +1,8 @@
-import React from "react";
-import FAQCard from "./FAQ_Cards";
-import Data from "./FAQ_Data";
-import styles from "../../../CSS/FAQ.module.css";
-import { Container, Row } from "react-bootstrap";
+import React from 'react';
+import FAQCard from './FAQ_Cards';
+import Data from './FAQ_Data';
+import styles from '../../../CSS/FAQ.module.css';
+import { Container, Row } from 'react-bootstrap';
 
 class FAQS extends React.Component {
   constructor() {
@@ -31,13 +31,13 @@ class FAQS extends React.Component {
     ));
 
     return (
-      <div id="faqs" style={{ marginBottom: "100px" }}>
+      <div id="faqs" style={{ marginBottom: '100px' }}>
         <Container sm="fluid">
           <h1 className={`${styles.head}`}>
-            Frequently Asked{" "}
-            <span style={{ color: "#008dc8" }}> Questions</span>
+            Frequently Asked{' '}
+            <span style={{ color: '#008dc8' }}> Questions</span>
           </h1>
-          <Row style={{ marginTop: "50px" }}>
+          <Row style={{ marginTop: '50px' }}>
             <div>{QCards}</div>
           </Row>
         </Container>

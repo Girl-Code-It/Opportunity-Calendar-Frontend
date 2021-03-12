@@ -6,13 +6,14 @@ import {
   Form,
   FormControl,
   Button,
-  NavDropdown,
+ 
 } from 'react-bootstrap';
+
 import { AiOutlineSearch } from 'react-icons/ai';
 
 function navbar() {
   return (
-    <Navbar fixed="top" bg="light" expand="lg" className={`${styles.NavBar}`}>
+    <Navbar fixed="top" bg="light" expand="lg" className={styles.NavBar}>
       <Navbar.Brand className={styles.Logo}>
         <a href="/" className={styles.Brand} style={{ fontSize: '35px' }}>
           Girl
@@ -20,57 +21,30 @@ function navbar() {
           It
         </a>
       </Navbar.Brand>
+
+     
+        <Form inline >
+         
+         <FormControl
+           type="text"
+           placeholder="Search"
+           className={styles.Search}
+         />
+         <Button style={{height:'2.8rem'}}>
+           <AiOutlineSearch />
+         </Button>
+    
+     </Form>
+       
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
-        <Form inline className={styles.SearchForm}>
-          <div className={styles.Middle}>
-            <div className={styles.SearchDiv}>
-              <FormControl
-                type="text"
-                placeholder="Search"
-                className={styles.Search}
-              />
-            </div>
-            <div className={styles.SearchButtonDiv}>
-              <Button className={styles.SearchButton}>
-                <AiOutlineSearch />
-              </Button>
-            </div>
-          </div>
-        </Form>
-        <Nav className="">
-          <NavDropdown
-            title={<span className={styles.Title}>Opportunities</span>}
-            id="basic-nav-dropdown"
-            className={styles.Dropdown}
-          >
-            <NavDropdown.Item href="/viewopportunity/fulltime">
-              {' '}
-              Full Time Jobs{' '}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="/viewopportunity/hackathon">
-              {' '}
-              Hackathons{' '}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="/viewopportunity/scholarship">
-              {' '}
-              Scholarships{' '}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="/viewopportunity/codingcomp">
-              {' '}
-              Coding Competitions{' '}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="/viewopportunity/techconf">
-              {' '}
-              Tech Conferences{' '}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="/viewopportunity/internships">
-              {' '}
-              Internship Opportunities{' '}
-            </NavDropdown.Item>
-          </NavDropdown>
+      
+      
+        <Nav className="mr-auto">
+      
         </Nav>
-        <button className={styles.Button}><a href="/signup">Login / SignUp</a></button>
+
+        <Button href="/signup" variant="outline-info">Login/Signup</Button>{' '}
       </Navbar.Collapse>
     </Navbar>
   );

@@ -1,9 +1,19 @@
 import React from 'react';
 import axios from 'axios';
 import { OpportunityCard } from './OpportunityCard';
-import { Col, Container, Jumbotron, Row, Image, Button } from 'react-bootstrap';
+import {
+  Card,
+  Col,
+  Container,
+  Jumbotron,
+  Row,
+  Image,
+  Button,
+  NavDropdown,
+} from 'react-bootstrap';
 import styles from './Opportunity.module.css';
 import Navbar from './Navbar';
+
 
 const mapPathToResource = {
   conference: { image: import('../../Assets/conference-large.png') },
@@ -47,7 +57,7 @@ export function ViewOpportunity(props) {
     lastChunk && setPostOpportunityPath(`/postopportunity/${lastChunk}`);
   }, []);
 
-  if (data.length === 0 || !data) {
+  if (data.length === 0 || !data) { 
     return (
       <div>
         <Navbar />
@@ -58,49 +68,105 @@ export function ViewOpportunity(props) {
             marginBottom: '200px',
           }}
         >
-          No opportunities, sorry!
+          Loading Opportunities if any...
         </h3>
       </div>
     );
   }
-
+  
+  const data_length = data.length // used to check whether opportunity count is 0
+    
   return (
     <>
+      { data_length === 0 ? (
+      <div>
+        <Navbar />
+        <h3
+          style={{
+            textAlign: 'center',
+            marginTop: '220px',
+            marginBottom: '200px',
+          }}
+        >
+          No opportunities found!!
+        </h3>
+      </div>) :
       <div>
         <Navbar />
         <div>
-          <Jumbotron style={{ backgroundColor: 'white' }}>
+
+        <Card className="text-center" >
+ 
+ <Card.Body style={{backgroundColor: '#BD6997', marginTop: '7rem' , height:'10rem'}}>
+   <Card.Title> 
+     
+                 </Card.Title>
+   <Card.Text>
+               
+   <Button variant="primary"  href={postOpportunityPath} style={{ borderRadius:'5 5 5 5', borderWidth:'0 0 0 0'}} className={styles.Button}><span style={{fontWeight:'bold'}} >
+   Post Opportunity
+     </span></Button>
+ 
+
+
+   </Card.Text>
+  
+ </Card.Body>
+
+
+</Card>
+          <Jumbotron style={{ backgroundColor: 'white' , marginTop:'5rem'}}>
+          
             <Container>
-              <Row className={styles.RowCard}>
-                <Col style={{ marginTop: '20px' }} className={styles.ColumnCard}>
+              <Row>
+              <NavDropdown
+            title={<span className={styles.Title} style={{fontSize:'30px' , fontFamily: 'Arial, Helvetica, sans-serif',
+            marginRight: '10px', marginTop:'0' }}>Opportunities</span>}
+            id="dropdown-basic-button" 
+            className={styles.Dropdown}
+          >
+            <NavDropdown.Item href="/viewopportunity/fulltime">
+              {' '}
+              Full Time Jobs{' '} 
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/viewopportunity/hackathon">
+              {' '}
+              Hackathons{' '}
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/viewopportunity/scholarship">
+              {' '}
+              Scholarships{' '}
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/viewopportunity/codingcomp">
+              {' '}
+              Coding Competitions{' '}
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/viewopportunity/techconf">
+              {' '}
+              Tech Conferences{' '}
+            </NavDropdown.Item>
+            <NavDropdown.Item href="/viewopportunity/internships">
+              {' '}
+              Internship Opportunities{' '}
+            </NavDropdown.Item>
+          </NavDropdown>
+              </Row>
+            
+
+              <Row>
+                <Col style={{ marginTop: '20px' }} md={12}>
                   {data.map((item) => {
                     return <OpportunityCard key={item.id} item={item} />;
                   })}
                 </Col>
-                <Col style={{ marginTop: '20px' }} className={styles.ColumnPost}>
-                  <Image
-                    className={styles.BannerImage}
-                    src={imgSrc}
-                    alt="TechConfImage"
-                  ></Image>
-                  <Button
-                    className={styles.Button}
-                    href={postOpportunityPath}
-                    style={{
-                      padding: '5px 18px 5px 18px',
-                      marginTop: '50px',
-                      fontSize: '20px',
-                      marginRight: '-5px',
-                    }}
-                  >
-                    Post Opportunity
-                  </Button>
-                </Col>
+
               </Row>
             </Container>
+
           </Jumbotron>
         </div>
       </div>
+      }
       );
     </>
   );
