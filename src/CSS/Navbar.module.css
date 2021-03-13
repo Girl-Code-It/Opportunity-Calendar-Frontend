@@ -38,7 +38,9 @@ a:global(.active) {
 
 .Middle {
 
+
   margin-left: 600px;
+
 
   
 }
@@ -50,6 +52,7 @@ a:global(.active) {
 
 .Search {
   border-radius: 8px 0px 0px 8px;
+
 
  margin-top: 10px;
 
@@ -69,7 +72,6 @@ a:global(.active) {
   position: relative; 
   height: 2.9rem;
   width: 2.9rem;
-
 
 }
 
