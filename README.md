@@ -56,6 +56,7 @@ Updates about following opportunities are available:
 <h2 align="center">Guidelines for GSSOC Participants</h2>
 
 We are glad to have your contributions to the project, Please make sure to read the following guidelines for the contributors.
+
 ### Community
 
 - Join #opportunity-calendar-frontend channel on Discord Server and feel free to ask any doubts regarding the project.
