@@ -28,7 +28,7 @@ a) To check if Node is installed, open the command prompt or similar command lin
 
 b) If you see an error, it means that Node is not installed in your OS. You can download Node.js from 'https://nodejs.org/en/download/'. After completing the installation repeat the part (a) of step 3.
 
-Step 4: On command prompt under your cloned folder directory path, run '$npm install' to install all the dependencies.
+Step 4: On command prompt under your cloned folder directory path, run 'npm install' to install all the dependencies.
 
 Step 5: Finally run '$npm start' to start the application.
 
