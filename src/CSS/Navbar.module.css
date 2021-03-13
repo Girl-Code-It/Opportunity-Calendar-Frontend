@@ -37,8 +37,9 @@ a:global(.active) {
 }
 
 .Middle {
+
   margin-left: 600px;
-  display: flex;
+
   
 }
 
@@ -49,8 +50,9 @@ a:global(.active) {
 
 .Search {
   border-radius: 8px 0px 0px 8px;
+
  margin-top: 10px;
-  height: 2.9rem;
+
 }
 
 .SearchButton {
@@ -61,11 +63,13 @@ a:global(.active) {
   background-color: #008dc8;
   border: none;
   border-radius: 0px 8px 8px 0px;
+
   margin-top: 10px;
   font-size: 20px;
   position: relative; 
   height: 2.9rem;
   width: 2.9rem;
+
 
 }
 
@@ -263,11 +267,13 @@ a:global(.active) {
     position: relative;
     transition: all 0.5s;
     width: 15rem;
+
   }
   .Search {
     width: 5rem;
 
   }
+
   
  
 }
