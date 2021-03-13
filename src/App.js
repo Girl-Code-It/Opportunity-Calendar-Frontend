@@ -125,7 +125,7 @@ function App() {
           />
           <Route
             exact
-            path="/postopportunity/Hackathons"
+            path="/postopportunity/Hackathon" // just changed the path to make the hackathon table visible
             render={(props) => (
               <div>
                 <HackathonForm />
@@ -143,7 +143,7 @@ function App() {
           />
           <Route
             exact
-            path="/postopportunity/Scholarships"
+            path="/postopportunity/Scholarship" // changed the path from Scholarships to Scholarship to make the scholaeship table visible and also the navbar to visible 
             render={(props) => (
               <div>
                 <ScholarshipForm />

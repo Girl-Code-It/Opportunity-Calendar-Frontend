@@ -1,21 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
-.Heading{
+.Heading {
     letter-spacing: 0px;
     font-size: 40px;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
     text-align: center;
-    
+
 }
 
-::placeholder, :placeholder-shown {
+::placeholder,
+:placeholder-shown {
     font-family: "Inter", sans-serif;
     font-size: 1.2rem;
 }
 
-.Button{
+.Button {
     background-color: #008dc8;
     border: none;
     color: #fff;
@@ -32,8 +33,14 @@
     box-shadow: 5px 10px 20px -8px rgba(0, 0, 0, 0.7);
 }
 
-.Button:hover, .Button:focus, .Button:active{
+.Button:hover,
+.Button:focus,
+.Button:active {
     background-color: #008dc8;
     padding-right: 30px;
     padding-left: 30px;
+}
+
+textarea {
+    resize: none;
 }

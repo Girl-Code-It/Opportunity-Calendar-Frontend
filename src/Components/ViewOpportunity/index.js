@@ -14,6 +14,7 @@ import {
 import styles from './Opportunity.module.css';
 import Navbar from './Navbar';
 
+
 const mapPathToResource = {
   conference: { image: import('../../Assets/conference-large.png') },
   competition: { image: import('../../Assets/coding-large.png') },
@@ -56,7 +57,7 @@ export function ViewOpportunity(props) {
     lastChunk && setPostOpportunityPath(`/postopportunity/${lastChunk}`);
   }, []);
 
-  if (data.length === 0 || !data) {
+  if (data.length === 0 || !data) { 
     return (
       <div>
         <Navbar />
@@ -67,14 +68,29 @@ export function ViewOpportunity(props) {
             marginBottom: '200px',
           }}
         >
-          No opportunities, sorry!
+          Loading Opportunities if any...
         </h3>
       </div>
     );
   }
-
+  
+  const data_length = data.length // used to check whether opportunity count is 0
+    
   return (
     <>
+      { data_length === 0 ? (
+      <div>
+        <Navbar />
+        <h3
+          style={{
+            textAlign: 'center',
+            marginTop: '220px',
+            marginBottom: '200px',
+          }}
+        >
+          No opportunities found!!
+        </h3>
+      </div>) :
       <div>
         <Navbar />
         <div>
@@ -150,6 +166,7 @@ export function ViewOpportunity(props) {
           </Jumbotron>
         </div>
       </div>
+      }
       );
     </>
   );
