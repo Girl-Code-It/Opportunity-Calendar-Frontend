@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from "../../../CSS/SignupLogin.module.css";
+import styles from "../../CSS/SignupLogin.module.css";
 import { Form,Card,Button, Row} from 'react-bootstrap';
 import { GoogleLogin } from 'react-google-login';
 
 const SignUp = ()=>{
     return(
-        <Row className="justify-content-md-center">
-            <Card className={styles.card}>
+    <Row className="justify-content-md-center">
+        <Card className={styles.card}>
             <h5>Sign Up</h5>
             <small className="text-muted">Please fill this form to create your account.</small>
             <Form>
@@ -42,11 +42,11 @@ const SignUp = ()=>{
                     & <a href="#">Privacy Policy</a>
                 </small>
             </Form>
-            <Button size="md" className="button">Sign Up</Button>
-                <p>OR</p>
-                <GoogleLogin
+            <Button size="md" className={styles.button}>Sign Up</Button>
+            <p>OR</p>
+            <GoogleLogin
                     buttonText="Sign in with Google"
-                />
+            />
                 <p >Already have an Account? <a href="/login">Login</a></p>
         </Card>
     </Row> 
