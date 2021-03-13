@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './SignupLogin.css'
+import styles from './SignupLogin.module.css'
 import { Form,Card,Button, Row} from 'react-bootstrap';
 import { GoogleLogin } from 'react-google-login';
 
