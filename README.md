@@ -18,18 +18,26 @@ Opportunity Calendar is the one-stop place to refer important opportunites avail
 <h2 align="center">Install</h2>
 
 ```
-# Clone the repository
-# Install dependencies
-$ npm install
+Step 1: Fork the project.
 
-# Start application
-$ npm start
+Step 2: Clone it to your local system.
 
-# Visit localhost:3000 in your browser
+Step 3: Check if Node is installed in your Operating system.
+
+a) To check if Node is installed, open the command prompt or similar command line tool and type 'node -v'. This should print a version number which means Node is successfully installed.
+
+b) If you see an error, it means that Node is not installed in your OS. You can download Node.js from 'https://nodejs.org/en/download/'. After completing the installation repeat the part (a) of step 3.
+
+Step 4: On command prompt under your cloned folder directory path, run 'npm install' to install all the dependencies.
+
+Step 5: Finally run 'npm start' to start the application.
+
+Step 6: Visit localhost:3000 in your browser.
+
 ```
 
 <h2 align="center">Introduction</h2>
-Opportunity Calendar provides instant information on newly posted opportunuties for techies. There are times when applicants miss deadlines or get to know about available opportunties only after the deadline of their application passes. 
+Opportunity Calendar provides instant information on newly posted opportunuties for techies. There are times when applicants miss deadlines or get to know about available opportunties only after the deadline of their application passes.
 Updates about following opportunities are available:
 
 - Full Time Job Opportunties
@@ -78,7 +86,7 @@ We are glad to have your contributions to the project, Please make sure to read 
 - If you fail to make a PR within the deadline, then the issue will be assigned to another person in the queue.
 
 <h2 align="center">Designs</h2>
- 
+
 -   [**HomePage**](https://xd.adobe.com/view/c0932765-884f-4cb5-7799-3d58ca6a1e8e-b6a2/?fullscreen)
 -   [**View Opportunities**](https://xd.adobe.com/view/c0932765-884f-4cb5-7799-3d58ca6a1e8e-b6a2/screen/6c24433f-7f7e-433d-9fbd-9b08bd8c47cf/?fullscreen)
 -   [**Post Opportunity**](https://xd.adobe.com/view/c0932765-884f-4cb5-7799-3d58ca6a1e8e-b6a2/screen/7bd973ee-1fab-4d8b-961c-028e2bf5296c/?fullscreen)

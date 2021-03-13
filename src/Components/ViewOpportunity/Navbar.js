@@ -44,7 +44,7 @@ function navbar() {
       
         </Nav>
 
-        <Button variant="outline-info">Login/Signup</Button>{' '}
+        <Button href="/signup" variant="outline-info">Login/Signup</Button>{' '}
       </Navbar.Collapse>
     </Navbar>
   );
