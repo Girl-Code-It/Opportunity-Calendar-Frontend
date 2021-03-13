@@ -3,6 +3,16 @@ import axios from "axios";
 import { Button, Form } from "react-bootstrap";
 import styles from "../../../../CSS/FullTimeForm.module.css";
 
+var pattern = new RegExp(
+  "^(https?:\\/\\/)?" + // protocol
+  "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name
+  "((\\d{1,3}\\.){3}\\d{1,3}))" + // OR ip (v4) address
+  "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // port and path
+  "(\\?[;&a-z\\d%_.~+=-]*)?" + // query string
+    "(\\#[-a-z\\d_]*)?$",
+  "i"
+);
+
 class FullTimeForm extends Component {
   constructor(props) {
     super(props);
@@ -17,6 +27,9 @@ class FullTimeForm extends Component {
       location: "",
       eligibility: "",
       deadline: "",
+      FieldEmptyError: "",
+      URLError: "",
+      //deadlineError: ""
     };
 
     this.data = {};
@@ -28,9 +41,30 @@ class FullTimeForm extends Component {
       [event.target.name]: itemValue,
     });
   };
+  validate=()=>{
+    let FieldEmptyError = "";
+    let URLError = "";
+    let deadlineError = "";
+    if ((!this.state.title) || (!this.state.jobDescription) || (!this.state.jobId) || (!this.state.eligibility) || (!this.state.location)){
+      FieldEmptyError = "cannot be blank";
+    }
+    if (!pattern.test(this.state.jobURL) || !pattern.test(this.state.image)) {
+      URLError = "Invalid URL";
+    }
+    if (FieldEmptyError || URLError) {
+      this.setState({ FieldEmptyError, URLError});
+      return false;
+    }
+      return true;
+  }
 
   handleSubmit = (event) => {
     event.preventDefault();
+    const isValid = this.validate();
+    if(isValid){
+      console.log(this.state);
+      this.setState(this.state);
+    }
     console.log("From handleSubmit", this.state.jobId);
     axios
       .post("https://opportunitycalendar.herokuapp.com/opportunities/job/create/", {
@@ -100,7 +134,10 @@ class FullTimeForm extends Component {
               onChange={this.handleChange}
             />
           </Form.Group>
-
+          <div style={{ fontSize: 12, color: "red" }}>
+            {this.state.FieldEmptyError}
+          </div>
+      
           <Form.Group>
             <Form.Control
               className={styles.Input}
@@ -112,7 +149,10 @@ class FullTimeForm extends Component {
               style={{ marginLeft: "40px", marginTop: "30px" }}
             />
           </Form.Group>
-
+          <div style={{ fontSize: 12, color: "red" }}>
+            {this.state.URLError}
+          </div>
+      
           <Form.Group>
             <Form.Control
               className={styles.Input}
@@ -124,7 +164,10 @@ class FullTimeForm extends Component {
               style={{ marginTop: "30px", marginLeft: "40px" }}
             />
           </Form.Group>
-
+          <div style={{ fontSize: 12, color: "red" }}>
+            {this.state.FieldEmptyError}
+          </div>
+      
           <Form.Group>
             <Form.Control
               className={styles.Input}
@@ -136,6 +179,10 @@ class FullTimeForm extends Component {
               style={{ marginTop: "30px", marginLeft: "40px" }}
             />
           </Form.Group>
+          <div style={{ fontSize: 12, color: "red" }}>
+            {this.state.FieldEmptyError}
+          </div>
+      
 
           <Form.Group>
             <Form.Control
@@ -148,7 +195,10 @@ class FullTimeForm extends Component {
               onChange={this.handleChange}
             />
           </Form.Group>
-
+          <div style={{ fontSize: 12, color: "red" }}>
+            {this.state.FieldEmptyError}
+          </div>
+      
           <Form.Group>
             <Form.Control
               className={styles.Input}
@@ -160,7 +210,10 @@ class FullTimeForm extends Component {
               onChange={this.handleChange}
             />
           </Form.Group>
-
+          <div style={{ fontSize: 12, color: "red" }}>
+            {this.state.FieldEmptyError}
+          </div>
+      
           <Form.Group>
             <Form.Control
               className={styles.Input}
@@ -172,7 +225,10 @@ class FullTimeForm extends Component {
               onChange={this.handleChange}
             />
           </Form.Group>
-
+          <div style={{ fontSize: 12, color: "red" }}>
+            {this.state.FieldEmptyError}
+          </div>
+      
           <Form.Group>
             <Form.Control
               className={styles.Input}
@@ -184,6 +240,9 @@ class FullTimeForm extends Component {
               onChange={this.handleChange}
             />
           </Form.Group>
+          <div style={{ fontSize: 12, color: "red" }}>
+            {this.state.FieldEmptyError}
+          </div>
 
           <Form.Group>
             <Form.Control
@@ -196,7 +255,10 @@ class FullTimeForm extends Component {
               onChange={this.handleChange}
             />
           </Form.Group>
-
+          <div style={{ fontSize: 12, color: "red" }}>
+            {this.state.URLError}
+          </div>
+      
           <Form.Group>
             <Button className={styles.Button} type="submit">
               Submit
