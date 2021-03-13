@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Button, Form } from "react-bootstrap";
 import styles from "../../../../CSS/FullTimeForm.module.css";
-
+//regex for url validation
 var pattern = new RegExp(
   "^(https?:\\/\\/)?" + // protocol
   "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name
@@ -11,7 +11,7 @@ var pattern = new RegExp(
   "(\\?[;&a-z\\d%_.~+=-]*)?" + // query string
     "(\\#[-a-z\\d_]*)?$",
   "i"
-);
+);  
 
 class FullTimeForm extends Component {
   constructor(props) {
@@ -29,7 +29,7 @@ class FullTimeForm extends Component {
       deadline: "",
       FieldEmptyError: "",
       URLError: "",
-      //deadlineError: ""
+      
     };
 
     this.data = {};
@@ -44,7 +44,7 @@ class FullTimeForm extends Component {
   validate=()=>{
     let FieldEmptyError = "";
     let URLError = "";
-    let deadlineError = "";
+    
     if ((!this.state.title) || (!this.state.jobDescription) || (!this.state.jobId) || (!this.state.eligibility) || (!this.state.location)){
       FieldEmptyError = "cannot be blank";
     }
