@@ -8,11 +8,8 @@ class FullTime extends Component {
       <div>
         <Navbar />
         <div
-          style={{
-            marginTop: '120px',
-            marginLeft: '300px',
-            marginRight: '300px',
-          }}
+          
+      
         >
           <HackathonsForm />
         </div>
