@@ -30,7 +30,7 @@ b) If you see an error, it means that Node is not installed in your OS. You can 
 
 Step 4: On command prompt under your cloned folder directory path, run 'npm install' to install all the dependencies.
 
-Step 5: Finally run '$npm start' to start the application.
+Step 5: Finally run 'npm start' to start the application.
 
 Step 6: Visit localhost:3000 in your browser.
 
