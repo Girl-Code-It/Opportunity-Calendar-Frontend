@@ -134,7 +134,7 @@ class FullTimeForm extends Component {
               onChange={this.handleChange}
             />
           </Form.Group>
-          <div style={{ fontSize: 12, color: "red" }}>
+          <div style={{ fontSize: 12, color: "red", marginLeft:'40px' }}>
             {this.state.FieldEmptyError}
           </div>
       
@@ -149,7 +149,7 @@ class FullTimeForm extends Component {
               style={{ marginLeft: "40px", marginTop: "30px" }}
             />
           </Form.Group>
-          <div style={{ fontSize: 12, color: "red" }}>
+          <div style={{ fontSize: 12, color: "red", marginLeft:'40px' }}>
             {this.state.URLError}
           </div>
       
@@ -164,7 +164,7 @@ class FullTimeForm extends Component {
               style={{ marginTop: "30px", marginLeft: "40px" }}
             />
           </Form.Group>
-          <div style={{ fontSize: 12, color: "red" }}>
+          <div style={{ fontSize: 12, color: "red", marginLeft:'40px' }}>
             {this.state.FieldEmptyError}
           </div>
       
@@ -179,7 +179,7 @@ class FullTimeForm extends Component {
               style={{ marginTop: "30px", marginLeft: "40px" }}
             />
           </Form.Group>
-          <div style={{ fontSize: 12, color: "red" }}>
+          <div style={{ fontSize: 12, color: "red", marginLeft:'40px' }}>
             {this.state.FieldEmptyError}
           </div>
       
@@ -195,7 +195,7 @@ class FullTimeForm extends Component {
               onChange={this.handleChange}
             />
           </Form.Group>
-          <div style={{ fontSize: 12, color: "red" }}>
+          <div style={{ fontSize: 12, color: "red", marginLeft:'40px' }}>
             {this.state.FieldEmptyError}
           </div>
       
@@ -210,7 +210,7 @@ class FullTimeForm extends Component {
               onChange={this.handleChange}
             />
           </Form.Group>
-          <div style={{ fontSize: 12, color: "red" }}>
+          <div style={{ fontSize: 12, color: "red", marginLeft:'40px' }}>
             {this.state.FieldEmptyError}
           </div>
       
@@ -225,7 +225,7 @@ class FullTimeForm extends Component {
               onChange={this.handleChange}
             />
           </Form.Group>
-          <div style={{ fontSize: 12, color: "red" }}>
+          <div style={{ fontSize: 12, color: "red", marginLeft:'40px' }}>
             {this.state.FieldEmptyError}
           </div>
       
@@ -240,7 +240,7 @@ class FullTimeForm extends Component {
               onChange={this.handleChange}
             />
           </Form.Group>
-          <div style={{ fontSize: 12, color: "red" }}>
+          <div style={{ fontSize: 12, color: "red", marginLeft:'40px' }}>
             {this.state.FieldEmptyError}
           </div>
 
@@ -255,7 +255,7 @@ class FullTimeForm extends Component {
               onChange={this.handleChange}
             />
           </Form.Group>
-          <div style={{ fontSize: 12, color: "red" }}>
+          <div style={{ fontSize: 12, color: "red", marginLeft: '40px' }}>
             {this.state.URLError}
           </div>
       
