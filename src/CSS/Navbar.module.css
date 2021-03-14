@@ -37,9 +37,12 @@ a:global(.active) {
 }
 
 .Middle {
-  margin-left: 480px;
-  display: flex;
-  margin-left: 480px;
+
+
+  margin-left: 600px;
+
+
+  
 }
 
 .ShiftRight {
@@ -49,8 +52,10 @@ a:global(.active) {
 
 .Search {
   border-radius: 8px 0px 0px 8px;
-  
-  height: 2.9rem;
+
+
+ margin-top: 10px;
+
 }
 
 .SearchButton {
@@ -62,9 +67,11 @@ a:global(.active) {
   border: none;
   border-radius: 0px 8px 8px 0px;
 
+  margin-top: 10px;
   font-size: 20px;
   position: relative; 
-  height: 20px;
+  height: 2.9rem;
+  width: 2.9rem;
 
 }
 
@@ -183,6 +190,9 @@ a:global(.active) {
   .Button:focus {
     outline: none;
   }
+  .Middle {
+    margin-right: 10px;
+  }
 
   @media only screen and (max-width: 993px) {
     .Middle {
@@ -259,11 +269,13 @@ a:global(.active) {
     position: relative;
     transition: all 0.5s;
     width: 15rem;
+
   }
   .Search {
     width: 5rem;
 
   }
+
   
  
 }
@@ -272,5 +284,9 @@ a:global(.active) {
 @media only screen and (max-width: 3280px) {
   .NavBar {
     padding: 8px 10px 8px 4px;
+  }
+  .Middle {
+    margin-right: 20px;
+    
   }
 }

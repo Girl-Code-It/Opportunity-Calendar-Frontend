@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Button, Form } from 'react-bootstrap';
-import styles from '../../../../CSS/FullTimeForm.module.css';
+import { Button, Form,Card } from 'react-bootstrap';
+import styles from '../../../../CSS/CodingCompForm.module.css';
 
 class TechConfForm extends Component {
   constructor(props) {
@@ -79,16 +79,22 @@ class TechConfForm extends Component {
 
     return (
       <div style={{ marginBottom: '80px' }}>
+         
         <Form onSubmit={this.handleSubmit}>
+        <Card className={styles.Card}>
+  <Card.Header as="h5">
           <Form.Label className={styles.CardTitle}>
             Post a Tech Conference
           </Form.Label>
 
-          <div className={styles.RectangleBasicDetails}></div>
-
+         
+          </Card.Header>
+          
+          <Card.Body>
+            
           <Form.Group>
             <Form.Control
-              style={{ marginLeft: '40px' }}
+          
               className={styles.Input}
               type="text"
               name="title"
@@ -105,7 +111,7 @@ class TechConfForm extends Component {
               name="image"
               value={image}
               placeholder="Logo URL"
-              style={{ marginLeft: '40px', marginTop: '30px' }}
+              style={{  marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -114,7 +120,7 @@ class TechConfForm extends Component {
             <Form.Control
               as="textarea"
               rows={4}
-              style={{ marginTop: '35px', marginLeft: '40px' }}
+              style={{ marginTop: '35px'}}
               name="description"
               value={description}
               placeholder="Short Description"
@@ -129,7 +135,7 @@ class TechConfForm extends Component {
               name="date"
               value={date}
               placeholder="Date of Event"
-              style={{ marginTop: '30px', marginLeft: '40px' }}
+              style={{ marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -141,7 +147,7 @@ class TechConfForm extends Component {
               name="location"
               value={location}
               placeholder="Location"
-              style={{ marginLeft: '40px', marginTop: '30px' }}
+              style={{ marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -153,7 +159,7 @@ class TechConfForm extends Component {
               name="deadline"
               value={deadline}
               placeholder="Last Date to Apply"
-              style={{ marginTop: '30px', marginLeft: '40px' }}
+              style={{ marginTop: '30px'}}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -165,7 +171,7 @@ class TechConfForm extends Component {
               name="eligibility"
               value={eligibility}
               placeholder="Eligibility"
-              style={{ marginLeft: '40px', marginTop: '30px' }}
+              style={{  marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -177,7 +183,7 @@ class TechConfForm extends Component {
               name="url"
               value={url}
               placeholder="Website"
-              style={{ marginLeft: '40px', marginTop: '30px' }}
+              style={{ marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -187,6 +193,9 @@ class TechConfForm extends Component {
               Submit
             </Button>
           </Form.Group>
+          </Card.Body>
+</Card>
+         
         </Form>
       </div>
     );

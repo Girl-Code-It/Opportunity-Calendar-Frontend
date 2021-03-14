@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Button, Form } from 'react-bootstrap';
-import styles from '../../../../CSS/FullTimeForm.module.css';
+import { Button, Form ,Card } from 'react-bootstrap';
+import styles from '../../../../CSS/CodingCompForm.module.css';
 
 class FullTimeForm extends Component {
   constructor(props) {
@@ -86,15 +86,19 @@ class FullTimeForm extends Component {
     return (
       <div style={{ marginBottom: '80px' }}>
         <Form onSubmit={this.handleSubmit}>
+        <Card className={styles.Card}>
+  <Card.Header as="h5">
           <Form.Label className={styles.CardTitle}>
             Post a Job Opportunity
           </Form.Label>
-
-          <div className={styles.RectangleBasicDetails}></div>
+          </Card.Header>
+          
+  <Card.Body>
+    
 
           <Form.Group>
             <Form.Control
-              style={{ marginLeft: '40px' }}
+            
               className={styles.Input}
               type="text"
               name="company"
@@ -112,7 +116,7 @@ class FullTimeForm extends Component {
               value={image}
               placeholder="Company Logo URL"
               onChange={this.handleChange}
-              style={{ marginLeft: '40px', marginTop: '30px' }}
+              style={{  marginTop: '30px' }}
             />
           </Form.Group>
 
@@ -124,7 +128,7 @@ class FullTimeForm extends Component {
               value={title}
               placeholder="Opportunity Title"
               onChange={this.handleChange}
-              style={{ marginTop: '30px', marginLeft: '40px' }}
+              style={{ marginTop: '30px' }}
             />
           </Form.Group>
 
@@ -136,7 +140,7 @@ class FullTimeForm extends Component {
               value={jobId}
               placeholder="Job ID"
               onChange={this.handleChange}
-              style={{ marginTop: '30px', marginLeft: '40px' }}
+              style={{ marginTop: '30px' }}
             />
           </Form.Group>
 
@@ -144,7 +148,7 @@ class FullTimeForm extends Component {
             <Form.Control
               as="textarea"
               rows={4}
-              style={{ marginTop: '35px', marginLeft: '40px' }}
+              style={{ marginTop: '35px'}}
               name="jobDescription"
               value={jobDescription}
               placeholder="Short Description"
@@ -159,7 +163,7 @@ class FullTimeForm extends Component {
               name="deadline"
               value={deadline}
               placeholder="Last Date to Apply"
-              style={{ marginTop: '30px', marginLeft: '40px' }}
+              style={{ marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -171,7 +175,7 @@ class FullTimeForm extends Component {
               name="location"
               value={location}
               placeholder="Location"
-              style={{ marginLeft: '40px', marginTop: '30px' }}
+              style={{  marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -183,7 +187,7 @@ class FullTimeForm extends Component {
               name="eligibility"
               value={eligibility}
               placeholder="Eligibility"
-              style={{ marginLeft: '40px', marginTop: '30px' }}
+              style={{  marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -195,7 +199,7 @@ class FullTimeForm extends Component {
               name="jobURL"
               value={jobURL}
               placeholder="Website"
-              style={{ marginLeft: '40px', marginTop: '30px' }}
+              style={{ marginTop: '30px' }}
               onChange={this.handleChange}
             />
           </Form.Group>
@@ -205,6 +209,9 @@ class FullTimeForm extends Component {
               Submit
             </Button>
           </Form.Group>
+          </Card.Body>
+</Card>
+         
         </Form>
       </div>
     );
