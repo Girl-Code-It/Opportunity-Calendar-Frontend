@@ -1,102 +1,49 @@
-
-.ColumnCard {
-  max-width: 80%;
+.Box {
+    /* justify-content: center; */
+    /* margin: 5% 5% 5% 5%; */
+      margin: 5%;
+    /* margin-bottom: 5%; */
 }
-
-.ColumnPost {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  max-width: 20%;
-  padding-top: 20px;
-}
-
 .Card {
- 
-  border-radius: 15px;
-  /* margin-left: 50%; */
-  margin-top: 5rem;
-  /* margin-left: 50%; */
-  
+    width: 800px;
+    height: 330px;
+    border-radius: 15px;
+    /* margin-left: 50%; */
 
-  border-radius: 15px;
-  box-shadow: 0px 2px 2px 0px #ccc;
-  width: 40rem;
-  margin-left: 15rem;
-   border-top-width: 20px;
-  border-top-color: #008dc8;
+    box-shadow: 0px 2px 2px 0px #ccc;
 }
-
 .CardTitle {
-
-  font-size:  1rem;
-
-  text-align: left;
+    font-size: 23px;
+    text-align: left;
+    color: black;
 }
-
-a:hover {
-  text-decoration: none;
+a:hover{
+    text-decoration: none;
 }
-
 .CardImage {
-  width: 180px;
-  height: 100px;
-  width: 180px;
-  padding: 20px;
-  margin-left: 20px;
-  padding: 20px;
-  padding-bottom: 0px;
+    height: 100px;
+    width: 120px;
+    padding: 20px;
+    margin-left: 20px;
+    padding-bottom: 0px;
 }
-
 .Rectangle {
-  width: 155px;
-  height: 3px;
-  margin-bottom: 20px;
-  background-color: #008dc8;
+    height: 3px;
+    width: 155px;
+    background-color: #008dc8;
+    margin-bottom: 20px;
 }
-
-.HeadingRow {
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
 .Title {
-  
-
+  margin-top: 35px;
+  margin-left: 15px;
   color: #008dc8;
-  font-size: 20px;
-  /* display: inline-block;
-  word-break: break-word; */
-  margin-top: 2rem;
-  display: inline-block;
-  overflow-wrap: break-word;
-
- 
-  word-wrap: break-word;
-  word-break: normal;
-  overflow-wrap: break-word;
-  -webkit-hyphen: none;
-  -moz-hyphen: none;
-
-
 }
-
-.Description {
-  margin-top: 25px;
-  margin-left: 35px;
-
-  hyphens: none;
-  line-break: auto;
-}
-
 .Description {
   margin-top: 15px;
-
-  margin-right: 25px;
   margin-left: 35px;
-}
+  margin-right: 25px;
 
+}
 .Heading {
   margin-top: 5px;
   margin-left: 0px;
@@ -107,9 +54,7 @@ a:hover {
   margin-left: 5px;
   color: black;
 }
-
-
-  .Button {
+.Button {
     background-color: #008dc8;
     border: none;
     color: #fff;
@@ -117,204 +62,19 @@ a:hover {
     border-radius: 50px;
     font-size: 20px;
     padding: 5px 30px 5px 30px;
-    margin-top: 20px;
-   
+    margin-top: 3px;
+    margin-right: 4%;
+    position: relative;
+    float: right;
     transition: all 0.5s;
     cursor: pointer;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-  }
-  .Button1 {
-    background-color: #008dc8;
-    border: none;
-    color: #fff;
-    text-align: center;
-    border-radius: 50px;
-    font-size: 20px;
-    padding: 5px 30px 5px 30px;
-    margin-top: 20px;
-   
-    transition: all 0.5s;
-    cursor: pointer;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-    margin-left: 500px;
-    margin-top: 50px;
-  }
+    box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 0.7);
+    align-self: center;
 
-/* make outline none when button gets clicked */
-.Button:focus {
-  outline: none;
 }
-
 .BannerImage {
-  height: 15rem;
-  width: 7rem;
-  margin-left: 200px;
-  margin-top: 100px;
- 
-}
-.Dropdown {
- color: #fff;
-background-color: #e4fbff;
-
-  border-radius: 5px 5px 5px 5px;
-  border-color: #008dc8;
-  font-size: 10px;
-  transition: all 0.5s;
-  cursor: pointer;
-  
- 
- 
-}
-@media (max-width: 992px) {
-  .BannerImage{
-     width: 15rem;
-     margin-left: 0;
-  }
-  .Button {
-    margin-left: 0;
-    width: 15rem;
-
-
-  }
-  .Card {
-    width:25rem;
-    margin-left: 120px;
-   
-  }
-
- 
-}
-.Dropdown {
-  width: 15rem;
-  color: #fff;
-  font-size: 10px;
-  background-color: #e4fbff;
-  border-color: #008dc8;
-
-  border-radius: 5px 5px 5px 5px;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-@media (max-width: 992px) {
-  .BannerImage {
-    width: 15rem;
-    margin-left: 0;
-  }
-  .Button {
-    width: 15rem;
-    margin-left: 0;
-  }
-  .Card {
-    width:25rem;
-    margin-left: 150px;
-  }
-  .Button1 {
-    margin-left: 250px;
-    margin-top: 10px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .RowCard {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .ColumnCard {
-    max-width: 100%;
-  }
-
-  .ColumnPost {
-    max-width: 90%;
-  }
-  .Card {
-    width:25rem;
-    margin-left: 0px;
-  }
-
-}
-
-@media only screen and (max-width: 530px) {
-  .Title {
-    margin-top: 10px;
-    font-size: 30px;
-  }
-
-  .CardImage {
-    width: 100px;
-    height: 90px;
-    margin-left: 15px;
-    padding: 15px;
-  }
-
-  .Heading,
-  .Value {
-    font-size: 1.1rem;
-  }
-  .Card {
-    width:25rem;
-    margin-left: 0;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .Title {
-    margin-top: 10px;
-    font-size: 20px;
-  }
-
-  .CardImage {
-    width: 80px;
-    height: 80px;
-    margin-left: 15px;
-    padding: 15px;
-  }
-
-  .Heading,
-  .Value {
-    font-size: 1rem;
-  }
-  .Card {
-    width:20rem;
-    margin-left: 0;
-  }
-  .Button1 {
-    margin-left: 150px;
-    margin-top: 10px;
-  }
-}
-
-@media only screen and (max-width: 355px) {
-  .Title {
-    margin-top: 10px;
-    font-size: 18px;
-    margin-right: 10px;
-  }
-
-  .CardImage {
-    width: 80px;
-    height: 80px;
-    margin-left: 15px;
-    padding: 15px;
-  }
-
-  .Heading,
-  .Value {
-    font-size: 1rem;
-  }
-
-  .Card {
-    width:17rem;
-    margin-left: 0;
-  }
-
-  .ColumnCard {
-    padding: 0;
-  }
-  .Button1 {
-    margin-left: 100px;
-    margin-top: 10px;
-  }
- 
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    padding-bottom: 0px;
 }

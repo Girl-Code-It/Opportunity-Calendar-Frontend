@@ -1,122 +1,60 @@
 .CardTitle {
-  color: black;
-  font-size: 33px;
-  text-align: left;
+    font-size: 33px;
+    text-align: left;
+    color: black;
 }
 
-a:hover {
-  text-decoration: none;
+a:hover{
+    text-decoration: none;
 }
 
 .CardImage {
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-  padding-bottom: 0px;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    padding-bottom: 0px;
 }
-
-.Input {
-  border-top-width: 0in;
-  border-right-width: 0in;
-  border-left-width: 0in;
+.Input{
+    border-left-width: 0in;
+    border-top-width: 0in;
+    border-right-width: 0in;
 }
-
 .RectangleEligibility {
-  width: 105px;
-  height: 5px;
-  margin-bottom: 20px;
-  background-color: #008dc8;
+    height: 5px;
+    width: 105px;
+    background-color: #008dc8;
+    margin-bottom: 20px;
 }
-
 .RectangleBasicDetails {
-  width: 300px;
-  height: 3px;
-  margin-bottom: 20px;
-  background-color: #008dc8;
+    height: 3px;
+    width: 300px;
+    background-color: #008dc8;
+    margin-bottom: 20px;
 }
-
 .RectangleJobDescription {
-  width: 195px;
-  height: 5px;
-  margin-bottom: 20px;
-  background-color: #008dc8;
+    height: 5px;
+    width: 195px;
+    background-color: #008dc8;
+    margin-bottom: 20px;
 }
-
 .RectangleRounds {
-  width: 95px;
-  height: 5px;
-  margin-bottom: 20px;
-  background-color: #008dc8;
+    height: 5px;
+    width: 95px;
+    background-color: #008dc8;
+    margin-bottom: 20px;
 }
-
-.Button {
-  position: relative;
-  float: right;
-  margin-top: 5px;
-  padding: 5px 20px 5px 20px;
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
-  background-color: #008dc8;
-  border: none;
-  border-radius: 50px;
-  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-/* make outline none when button gets clicked */
-.Button:focus {
-  outline: none;
-}
-
-.FullTimeComponent {
-  width: 55%;
-  margin: 120px auto 20px;
-  padding-left: 3%;
-}
-
-@media only screen and (max-width: 1113px) {
-  .FullTimeComponent {
-    width: 60%;
-    margin: 120px auto 20px;
-    padding-left: 3%;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .FullTimeComponent {
-    width: 65%;
-    margin: 120px auto 20px;
-    padding-left: 2%;
-  }
-}
-
-@media only screen and (max-width: 801px) {
-  .FullTimeComponent {
-    width: 70%;
-    margin: 120px auto 20px;
-    padding-left: 0;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .FullTimeComponent {
-    width: 75%;
-    margin: 120px auto 20px;
-    padding-right: 40px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .FullTimeComponent {
-    width: 80%;
-    margin: 120px auto 20px;
-    padding-right: 0px;
-  }
-
-  .Input,
-  textarea {
-    margin-left: 0px !important;
-  }
+.Button{
+    background-color: #008dc8;
+    border: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 5px 20px 5px 20px;
+    margin-top: 5px;
+    position: relative;
+    float: right;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }

@@ -1,54 +1,43 @@
 .Box {
-  /* justify-content: center; */
-  /* margin: 5% 5% 5% 5%; */
-  margin: 5%;
-  /* margin-bottom: 5%; */
+    /* justify-content: center; */
+    /* margin: 5% 5% 5% 5%; */
+    margin: 5%;
+    /* margin-bottom: 5%; */
 }
 
 .Card {
-  width: 200px;
-  border-radius: 5%;
-  /* margin-left: 50%; */
-  box-shadow: 0px 3px 4px 0px #ccc;
-}
-
-.Card:hover {
-  background-color: grey;
-  animation: card-ani 3s infinite;
+    width: 200px;
+    border-radius: 5%;
+    /* margin-left: 50%; */
+    box-shadow: 0px 3px 4px 0px #ccc;
 }
 
 .CardTitle {
-  color: black;
-  font-size: 23px;
-  text-align: left;
+    font-size: 23px;
+    text-align: left;
+    color: black;
 }
 
-a:hover {
-  text-decoration: none;
+a:hover{
+    text-decoration: none;
 }
 
 .CardImage {
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-  padding-bottom: 0px;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    padding-bottom: 0px;
 }
 
 .Rectangle {
-  width: 155px;
-  height: 3px;
-  margin-bottom: 20px;
-  background-color: #008dc8;
+    height: 3px;
+    width: 155px;
+    background-color: #008dc8;
+    margin-bottom: 20px;
 }
 
-@keyframes card-ani {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
+@media (min-width: 300px) (max-width: 531px) {
+    .Box {
+        width: 100%;
+    }
 }

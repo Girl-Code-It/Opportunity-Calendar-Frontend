@@ -1,133 +1,60 @@
 .CardTitle {
-  color: rgb(65, 76, 224);
-  font-size: 33px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 10px;
-} 
-
-a:hover {
-  text-decoration: none;
+    font-size: 33px;
+    text-align: left;
+    color: black;
 }
-.Card {
-  box-shadow: 0 10px 20px -8px rgba(6, 120, 124, 0.7);
-  border-radius: 10px 10px 10px 10px;
-  margin-top: 100px;
-  border-top-width: 20px;
-  border-top-color: #008dc8;
 
+a:hover{
+    text-decoration: none;
 }
+
 .CardImage {
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-  padding-bottom: 0px;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    padding-bottom: 0px;
 }
-
-.Input {
-  border-top-width: 0in;
-  border-right-width: 0in;
-  border-left-width: 0in;
+.Input{
+    border-left-width: 0in;
+    border-top-width: 0in;
+    border-right-width: 0in;
 }
-
 .RectangleEligibility {
-  width: 105px;
-  height: 5px;
-  margin-bottom: 20px;
-  background-color: #008dc8;
+    height: 5px;
+    width: 105px;
+    background-color: #008dc8;
+    margin-bottom: 20px;
 }
-
 .RectangleBasicDetails {
-  width: 360px;
-  height: 3px;
-  margin-bottom: 20px;
-  background-color: #008dc8;
+    height: 3px;
+    width: 360px;
+    background-color: #008dc8;
+    margin-bottom: 20px;
 }
-
 .RectangleJobDescription {
-  width: 195px;
-  height: 5px;
-  margin-bottom: 20px;
-  background-color: #008dc8;
+    height: 5px;
+    width: 195px;
+    background-color: #008dc8;
+    margin-bottom: 20px;
 }
-
 .RectangleRounds {
-  width: 95px;
-  height: 5px;
-  margin-bottom: 20px;
-  background-color: #008dc8;
+    height: 5px;
+    width: 95px;
+    background-color: #008dc8;
+    margin-bottom: 20px;
 }
-
-.Button {
-  position: relative;
-  float: right;
-  margin-top: 5px;
-  padding: 5px 20px 5px 20px;
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
-  background-color: #008dc8;
-  border: none;
-  border-radius: 50px;
-  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-/* make outline none when button gets clicked */
-.Button:focus {
-  outline: none;
-}
-
-.CodingCompComponent {
-  width: 55%;
-  margin: 120px auto 20px;
-  padding-left: 3%;
-}
-
-@media only screen and (max-width: 1113px) {
-  .CodingCompComponent {
-    width: 60%;
-    margin: 120px auto 20px;
-    padding-left: 3%;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .CodingCompComponent {
-    width: 65%;
-    margin: 120px auto 20px;
-    padding-left: 2%;
-  }
-}
-
-@media only screen and (max-width: 801px) {
-  .CodingCompComponent {
-    width: 70%;
-    margin: 120px auto 20px;
-    padding-left: 0;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .CodingCompComponent {
-    width: 75%;
-    margin: 120px auto 20px;
-    padding-right: 40px;
-  }
-  .Card {
-    margin-top: 200px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .CodingCompComponent {
-    width: 80%;
-    margin: 120px auto 20px;
-    padding-right: 0px;
-  }
-
-  .Input,
-  textarea {
-    margin-left: 0px !important;
-  }
+.Button{
+    background-color: #008dc8;
+    border: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 5px 20px 5px 20px;
+    margin-top: 5px;
+    position: relative;
+    float: right;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }

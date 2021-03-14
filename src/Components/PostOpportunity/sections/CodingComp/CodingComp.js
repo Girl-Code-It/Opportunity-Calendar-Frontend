@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
-import Navbar from '../Navbar';
-import CodingCompForm from './CodingCompForm';
-import styles from '../../../../CSS/CodingCompForm.module.css';
+import React, { Component } from "react";
+import Navbar from "../Navbar";
+import CodingCompForm from "./CodingCompForm";
 
 class CodingComp extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <div className={styles.CodingCompComponent}>
-          <CodingCompForm />
+        <Navbar/>
+        <div style={{marginTop:"120px" , marginLeft:"300px", marginRight:"300px"}}>
+            <CodingCompForm/>
         </div>
       </div>
     );
