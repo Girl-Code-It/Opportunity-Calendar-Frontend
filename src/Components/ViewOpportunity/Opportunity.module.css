@@ -6,8 +6,8 @@
 .ColumnPost {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: start;
   max-width: 20%;
   padding-top: 20px;
 }
