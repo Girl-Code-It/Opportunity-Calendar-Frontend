@@ -1,18 +1,19 @@
-import React from "react";
+import React from 'react';
 // import axios from 'axios'
-import HomePage from "./Components/HomePage/HomePage";
-import PostOpportunity from "./Components/PostOpportunity/PostOpportunity";
-import FullTimeForm from "./Components/PostOpportunity/sections/FullTime/FullTime";
-import InternshipForm from "./Components/PostOpportunity/sections/Internships/Internships";
-import TechConfForm from "./Components/PostOpportunity/sections/TechConf/TechConf";
-import HackathonForm from "./Components/PostOpportunity/sections/Hackathons/Hackathons";
-import CodingCompForm from "./Components/PostOpportunity/sections/CodingComp/CodingComp";
-import ScholarshipForm from "./Components/PostOpportunity/sections/Scholarships/Scholarships";
-
-import { ViewOpportunity } from "./Components/ViewOpportunity/";
-
-import Footer from "./Components/Footer/Footer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import HomePage from './Components/HomePage/HomePage';
+import PostOpportunity from './Components/PostOpportunity/PostOpportunity';
+import FullTimeForm from './Components/PostOpportunity/sections/FullTime/FullTime';
+import InternshipForm from './Components/PostOpportunity/sections/Internships/Internships';
+import TechConfForm from './Components/PostOpportunity/sections/TechConf/TechConf';
+import HackathonForm from './Components/PostOpportunity/sections/Hackathons/Hackathons';
+import CodingCompForm from './Components/PostOpportunity/sections/CodingComp/CodingComp';
+import ScholarshipForm from './Components/PostOpportunity/sections/Scholarships/Scholarships';
+import ScrollTop from './Components/ScrollTop/ScrollTop';
+import { ViewOpportunity } from './Components/ViewOpportunity/';
+import Footer from './Components/Footer/Footer';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import SignUp from './Components/SignupLogin/SignUp';
+import Login from './Components/SignupLogin/Login';
 
 function App() {
   return (
@@ -29,6 +30,16 @@ function App() {
             )}
           />
           <Route
+            exact
+            path="/signup"
+            component={SignUp}
+          />
+          <Route
+            exact
+            path="/login"
+            component={Login}
+          />
+          <Route 
             exact
             path="/viewopportunity"
             render={(props) => (
@@ -124,7 +135,7 @@ function App() {
           />
           <Route
             exact
-            path="/postopportunity/Hackathons"
+            path="/postopportunity/Hackathon" // just changed the path to make the hackathon table visible
             render={(props) => (
               <div>
                 <HackathonForm />
@@ -142,7 +153,7 @@ function App() {
           />
           <Route
             exact
-            path="/postopportunity/Scholarships"
+            path="/postopportunity/Scholarship" // changed the path from Scholarships to Scholarship to make the scholaeship table visible and also the navbar to visible 
             render={(props) => (
               <div>
                 <ScholarshipForm />
@@ -159,6 +170,7 @@ function App() {
             )}
           />
         </Switch>
+        <ScrollTop />
         <Footer />
       </div>
     </Router>

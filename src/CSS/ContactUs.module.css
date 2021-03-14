@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.Heading {
+    letter-spacing: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+
+}
+
+::placeholder,
+:placeholder-shown {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+}
+
+.Button {
+    background-color: #008dc8;
+    border: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 5px 15px 5px 15px;
+    margin-top: 5px;
+    position: relative;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    box-shadow: 5px 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+.Button:hover,
+.Button:focus,
+.Button:active {
+    background-color: #008dc8;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+textarea {
+    resize: none;
+}

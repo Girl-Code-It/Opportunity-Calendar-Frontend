@@ -1,124 +1,131 @@
 .Jumbotron {
-    background-color: white;
-    margin-top: 30px;
-    padding-top: 80px;
+  margin-top: 30px;
+  padding-top: 80px;
+  background-color: white;
 }
 
 .Heading {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 70px;
-    font-weight: 700;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .TagLine {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .Rectangle {
-    height: 5px;
-    width: 250px;
-    background-color: #008dc8;
-    margin-bottom: 20px;
+  width: 250px;
+  height: 5px;
+  margin-bottom: 20px;
+  background-color: #008dc8;
 }
 
 .Button {
-    background-color: #008dc8;
-    border: none;
-    color: #fff;
-    text-align: center;
-    border-radius: 50px;
-    font-size: 20px;
-    padding: 5px 30px 5px 30px;
-    margin-top: 20px;
-    margin-right: 10%;
-    position: relative;
-    float: right;
-    transition: all 0.5s;
-    cursor: pointer;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  position: relative;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10%;
+  padding: 5px 30px 5px 30px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  background-color: #008dc8;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.Button:hover {
+  background: #55b1eb;
+  background-image: -webkit-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: -moz-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: -ms-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: -o-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: linear-gradient(to bottom, #55b1eb, #2389c4);
+  text-decoration: none;
+}
+
+/* make outline none when button gets clicked */
+.Button:focus {
+  outline: none;
 }
 
 .BannerImage {
-    height: 400px;
-    width: 700px;
+  z-index: 10;
+  width: 700px;
+  height: 400px;
 }
 
-@media (min-width: 150px) and (max-width: 355px){
-    .TagLine {
-        margin-top: 140%;
-    }
-
-    .rightCol {
-        margin-top: -200%;
-    }
-
-    .Button {
-        float: left;
-    }
+.BannerImage2 {
+  display: none;
 }
 
-@media (min-width: 355px) and (max-width: 425px){
-    .TagLine {
-        margin-top: 120%;
-    }
+@media only screen and (max-width: 767px) {
+  .BannerRow {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+  }
 
-    .rightCol {
-        margin-top: -160%;
-    }
+  .BannerImage {
+    display: none;
+  }
 
-    .Button {
-        float: left;
-    }
+  .BannerImage2 {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 20px;
+  }
+
+  .Button {
+    float: left;
+  }
 }
 
-@media (min-width: 427px) and (max-width: 455px){
-    .TagLine {
-        margin-top: 120%;
-    }
+@media only screen and (max-width: 700px) {
+  .Heading {
+    font-weight: 700;
+    font-size: 50px;
+  }
 
-    .rightCol {
-        margin-top: -150%;
-    }
-
-    .Button {
-        float: left;
-    }
+  .TagLine {
+    font-size: 30px;
+  }
 }
 
-@media (min-width: 455px) and (max-width: 512px){
-    .TagLine {
-        margin-top: 120%;
-    }
+@media only screen and (max-width: 500px) {
+  .Heading {
+    font-weight: 700;
+    font-size: 40px;
+  }
 
-    .rightCol {
-        margin-top: -150%;
-    }
-
-    .Button {
-        float: left;
-    }
+  .TagLine {
+    font-size: 25px;
+  }
 }
 
-@media (min-width: 513px) and (max-width: 767px) {
-    .TagLine {
-        margin-top: 100%;
-    }
+@media only screen and (max-width: 400px) {
+  .Heading {
+    font-weight: 700;
+    font-size: 35px;
+  }
 
-    .rightCol {
-        margin-top: -115%;
-        height: 300px;
-        width: 600px;
-    }
+  .TagLine {
+    font-size: 20px;
+  }
 
-    .Button {
-        float: left;
-    }
-}
+  .BannerRow {
+    margin-left: 0;
+  }
 
-@media (min-width: 768px) and (max-width: 1200px) {
-    .Button {
-      float: left;
-      margin-top: 20px;
-    }
+  .Button {
+    margin-left: 10px;
+  }
 }

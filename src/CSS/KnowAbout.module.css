@@ -1,14 +1,19 @@
 .Jumbotron {
-    background-color: white;
-    padding-top: 0px;
-    /* justify-content: center; */
+  padding-top: 0px;
+  background-color: white;
+  /* justify-content: center; */
 }
 
 .Heading {
-    text-align: center;
-    font-size: 50px;
+  font-size: 50px;
+  text-align: center;
 }
 
 .About {
-    color: #008dc8;
+  color: #008dc8;
+}
+@media only screen and (max-width: 531px) {
+  .Heading {
+    font-size: 40px;
+  }
 }
