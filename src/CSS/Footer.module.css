@@ -11,14 +11,22 @@ html {
 .ImgColumn {
   display: flex;
   justify-content: center;
+  margin-left: 12px;
 }
 
+.ContactCol {
+  justify-content: center;
+  margin-left: 12px;
+  margin-top: 6px;
+}
 .Logo {
   /* height: 180px; */
-  width: 80%;
+  width: 70%;
+  justify-content: center;
 }
 .Top1 {
   align-items: center;
+  margin-bottom: 1px;
 }
 
 .Bottom2,
@@ -40,7 +48,7 @@ h5 {
   position: absolute;
   right: 50%;
   left: 0;
-  margin-left: 25px;
+  margin-left: 90px;
   border-bottom: 2px #008dc8 solid;
 }
 
@@ -71,17 +79,20 @@ p {
 
 .Bottom1 {
   padding: 0px;
+  margin-top: 1px
 }
 
 .SocialLinks {
   text-align: end;
+  justify-content: center;
+  margin-right: 2px;
 }
 
 .Shift {
   margin-top: 0px;
   margin-left: 40px;
   color: black;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .Shift:hover {
