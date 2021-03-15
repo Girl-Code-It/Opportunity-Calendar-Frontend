@@ -105,7 +105,7 @@ To get started have a look at our [documentation on contributing](https://github
 Code released under the [MIT License](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/blob/develop/LICENSE).
 
 <h2 align="center">Contributor</h2>
-### Credit goes to these people:✨
+<h3> Credit goes to these people:✨</h3>
 
 <table>
 	<tr>
