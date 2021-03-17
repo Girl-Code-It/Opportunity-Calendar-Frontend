@@ -1,4 +1,4 @@
-const FAQData = [
+var FAQData = [
   {
     id: 1,
     open: false,
