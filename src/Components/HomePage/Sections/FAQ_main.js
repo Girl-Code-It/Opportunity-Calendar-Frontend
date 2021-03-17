@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import FAQCard from './FAQ_Cards';
 import Data from './FAQ_Data';
 import styles from '../../../CSS/FAQ.module.css';
@@ -13,12 +13,15 @@ class FAQS extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+
   handleChange(id) {
     const prevcards = [...this.state.cards];
     const cards = prevcards.map((c) => {
       const u = { ...c };
       if (c.id === id) {
         u.open = !u.open;
+      } else {
+        u.open = false;
       }
       return u;
     });

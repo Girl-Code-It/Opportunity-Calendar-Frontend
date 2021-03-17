@@ -10,7 +10,7 @@
 .image {
   margin-left: 25%;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.6s ease;
   zoom: 0.8;
 }
 .faqs {
@@ -28,11 +28,13 @@
   font-weight: 370;
   font-size: 1.5rem;
   letter-spacing: 0;
+  cursor: pointer;
+  transition: all 0.6s ease;
 }
 .answer {
   max-height: 0;
   opacity: 0;
-  transition: all ease;
+  transition: all 0.6s ease;
 }
 .answeropen {
   align-items: center;
@@ -46,7 +48,7 @@
   border: 0.1px solid #000029;
   border-radius: 10px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
-  transition: all ease;
+  transition: all 0.6s ease;
 }
 @media screen and (max-width: 991px) {
   .faqs {
