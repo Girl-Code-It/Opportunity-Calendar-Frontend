@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import FAQCard from './FAQ_Cards';
 import Data from './FAQ_Data';
 import styles from '../../../CSS/FAQ.module.css';
