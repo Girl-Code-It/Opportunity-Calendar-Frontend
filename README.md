@@ -104,3 +104,17 @@ To get started have a look at our [documentation on contributing](https://github
 <h2 align="center">Copyright and license</h2>
 
 Code released under the [MIT License](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/blob/develop/LICENSE).
+
+<h2 align="center">Contributor</h2>
+<h3> Credit goes to these people:✨</h3>
+
+<table>
+	<tr>
+		<td>
+			<a href="https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Girl-Code-It/Opportunity-Calendar-Frontend" />
+</a>
+		</td>
+	</tr>
+</table>
+
