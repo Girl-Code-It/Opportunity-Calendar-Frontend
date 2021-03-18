@@ -86,6 +86,13 @@ We are glad to have your contributions to the project, Please make sure to read 
 
 - If you fail to make a PR within the deadline, then the issue will be assigned to another person in the queue.
 
+[![Issues](https://img.shields.io/github/issues/Girl-Code-It/Opportunity-Calendar-Frontend)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/issues)
+[![PRs](https://img.shields.io/github/issues-pr/Girl-Code-It/Opportunity-Calendar-Frontend)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/pulls)
+[![Maintenance](https://img.shields.io/maintenance/yes/2021?color=green&logo=github)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend)
+[![Forks](https://img.shields.io/github/forks/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend) 
+[![Stars](https://img.shields.io/github/stars/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend) 
+[![Watchers](https://img.shields.io/github/watchers/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend)
+
 <h2 align="center">Designs</h2>
 
 -   [**HomePage**](https://xd.adobe.com/view/c0932765-884f-4cb5-7799-3d58ca6a1e8e-b6a2/?fullscreen)
