@@ -52,8 +52,9 @@ Updates about following opportunities are available:
 - **Wireframing & Designing** - AdobeXD
 - **Library** - ReactJs
 - **Framework** - React-Bootstrap
-
-<h2 align="center">Guidelines for GSSOC Participants</h2>
+<p align="center">
+<img alt="Adobe XD" src="https://img.shields.io/badge/adobe%20xd%20-%23FF26BE.svg?&style=for-the-badge&logo=adobe%20xd&logoColor=white"/>       <img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>        <img alt="React Bootstrap" src="https://img.shields.io/badge/react bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"/>    <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/> <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>       <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
+<h2 align="center">Guidelines for GSSOC Participants</h2></p>
 
 We are glad to have your contributions to the project, Please make sure to read the following guidelines for the contributors.
 
@@ -103,3 +104,17 @@ To get started have a look at our [documentation on contributing](https://github
 <h2 align="center">Copyright and license</h2>
 
 Code released under the [MIT License](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/blob/develop/LICENSE).
+
+<h2 align="center">Contributor</h2>
+<h3> Credit goes to these people:✨</h3>
+
+<table>
+	<tr>
+		<td>
+			<a href="https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Girl-Code-It/Opportunity-Calendar-Frontend" />
+</a>
+		</td>
+	</tr>
+</table>
+
