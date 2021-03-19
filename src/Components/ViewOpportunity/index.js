@@ -29,6 +29,18 @@ const mapPathToResource = {
  * @param {string} props.path - API path. something like `internships`
  */
 
+const URL = window.location.href;
+const splitUrl = URL.split('/viewopportunity/')[1];
+const mapUrlToName = {
+  techconf: 'Tech Conferences',
+  codingcomp: 'Coding Competitions',
+  scholarship: 'Scholarships' ,
+  hackathon: 'Hackathons',
+  internships: 'Internship Opportunities' ,
+  fulltime: 'Full Time Jobs',
+};
+
+
 export function ViewOpportunity(props) {
   const [data, setData] = React.useState([]);
   const [imgSrc, setImgSrc] = React.useState();
@@ -121,7 +133,7 @@ export function ViewOpportunity(props) {
               <Row>
               <NavDropdown
             title={<span className={styles.Title} style={{fontSize:'30px' , fontFamily: 'Arial, Helvetica, sans-serif',
-            marginRight: '10px', marginTop:'0' }}>Opportunities</span>}
+            marginRight: '10px', marginTop:'0' }}>{mapUrlToName[splitUrl]}</span>}
             id="dropdown-basic-button" 
             className={styles.Dropdown}
           >

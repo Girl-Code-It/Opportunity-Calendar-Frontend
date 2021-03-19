@@ -4,6 +4,14 @@
 
 Opportunity Calendar is the one-stop place to refer important opportunites available in tech-space like newly posted jobs, internships, hackathons, tech-conferences, scholarhsips etc.
 
+
+[![Issues](https://img.shields.io/github/issues/Girl-Code-It/Opportunity-Calendar-Frontend)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/issues)
+[![PRs](https://img.shields.io/github/issues-pr/Girl-Code-It/Opportunity-Calendar-Frontend)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/pulls)
+[![Maintenance](https://img.shields.io/maintenance/yes/2021?color=green&logo=github)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend)
+[![Forks](https://img.shields.io/github/forks/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend) 
+[![Stars](https://img.shields.io/github/stars/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend) 
+[![Watchers](https://img.shields.io/github/watchers/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend)
+
 ## Table of Contents
 
 1. [Install](#install)
@@ -86,6 +94,7 @@ We are glad to have your contributions to the project, Please make sure to read 
 
 - If you fail to make a PR within the deadline, then the issue will be assigned to another person in the queue.
 
+
 <h2 align="center">Designs</h2>
 
 -   [**HomePage**](https://xd.adobe.com/view/c0932765-884f-4cb5-7799-3d58ca6a1e8e-b6a2/?fullscreen)
@@ -104,3 +113,17 @@ To get started have a look at our [documentation on contributing](https://github
 <h2 align="center">Copyright and license</h2>
 
 Code released under the [MIT License](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/blob/develop/LICENSE).
+
+<h2 align="center">Contributor</h2>
+<h3> Credit goes to these people:✨</h3>
+
+<table>
+	<tr>
+		<td>
+			<a href="https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Girl-Code-It/Opportunity-Calendar-Frontend" />
+</a>
+		</td>
+	</tr>
+</table>
+
