@@ -1,5 +1,7 @@
 import Navbar from '../Navbar';
 import HackathonsForm from './HackathonsForm';
+import React, { Component }  from 'react';
+
 
 function FullTime() {
   return (
