@@ -10,7 +10,6 @@
 .image {
   margin-left: 25%;
   cursor: pointer;
-  transition: all 0.6s ease;
   zoom: 0.8;
 }
 .faqs {
@@ -29,17 +28,19 @@
   font-size: 1.5rem;
   letter-spacing: 0;
   cursor: pointer;
-  transition: all 0.6s ease;
+  transition: all 0.4s ease;
 }
 .answer {
   max-height: 0;
   opacity: 0;
-  transition: all 0.6s ease;
+  margin-left: 22%;
+  overflow-Y: hidden;
+  transition: all  0.4s ease-in;
+  width: 54%;
 }
 .answeropen {
   align-items: center;
   width: 54%;
-  max-height: none;
   margin-left: 22%;
   padding: 10px;
   color: #204967;
@@ -48,7 +49,7 @@
   border: 0.1px solid #000029;
   border-radius: 10px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
-  transition: all 0.6s ease;
+  transition: all  0.4s ease-out;
 }
 @media screen and (max-width: 991px) {
   .faqs {
