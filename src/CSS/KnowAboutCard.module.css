@@ -7,15 +7,20 @@
 
 .Card {
   width: 200px;
-  border-radius: 5%;
+  border-radius: 2%;
   /* margin-left: 50%; */
   box-shadow: 0px 3px 4px 0px #ccc;
+  transition: all 0.8s;
 }
 
+
 .Card:hover {
-  background-color: grey;
-  animation: card-ani 3s infinite;
+  transform: scale(1.2);
+  transition: all 1s;
+  z-index: 99;
+  box-shadow: 2px 2px 30px #ccc;
 }
+
 
 .CardTitle {
   color: black;
