@@ -4,6 +4,14 @@
 
 Opportunity Calendar is the one-stop place to refer important opportunites available in tech-space like newly posted jobs, internships, hackathons, tech-conferences, scholarhsips etc.
 
+
+[![Issues](https://img.shields.io/github/issues/Girl-Code-It/Opportunity-Calendar-Frontend)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/issues)
+[![PRs](https://img.shields.io/github/issues-pr/Girl-Code-It/Opportunity-Calendar-Frontend)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/pulls)
+[![Maintenance](https://img.shields.io/maintenance/yes/2021?color=green&logo=github)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend)
+[![Forks](https://img.shields.io/github/forks/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend) 
+[![Stars](https://img.shields.io/github/stars/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend) 
+[![Watchers](https://img.shields.io/github/watchers/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend)
+
 ## Table of Contents
 
 1. [Install](#install)
@@ -85,6 +93,7 @@ We are glad to have your contributions to the project, Please make sure to read 
 ```
 
 - If you fail to make a PR within the deadline, then the issue will be assigned to another person in the queue.
+
 
 <h2 align="center">Designs</h2>
 
