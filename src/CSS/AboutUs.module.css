@@ -64,7 +64,7 @@
   transition: all 0.5s;
 }
 
-a:hover {
+.AboutUs_knowMore a:hover {
   border: none;
 }
 
