@@ -17,7 +17,16 @@ html {
 .ContactCol {
   justify-content: center;
   margin-left: 12px;
-  margin-top: 6px;
+  margin-top: 20px;
+}
+
+.ContactRow {
+  justify-content: center;
+  margin-left: 2%;
+  margin-top: 20px;
+}
+.ContactRow p {
+  padding-right: 20px;
 }
 .Logo {
   /* height: 180px; */
@@ -34,10 +43,6 @@ html {
   display: none;
 }
 
-/* .Column {
-  margin-top: 30px;
-} */
-
 h5 {
   margin-bottom: 0px;
   color: #008dc8;
@@ -48,27 +53,15 @@ h5 {
   position: absolute;
   right: 50%;
   left: 0;
-  margin-left: 90px;
+  margin-left: 130px;
   border-bottom: 2px #008dc8 solid;
 }
-
-.line1 {
-  width: 100%;
-  height: 1px;
-  margin-top: 0px;
-  background-color: grey;
-  border: none;
-  opacity: 1;
-}
-
-.line2 {
-  width: 1px;
-  height: 140px;
-  margin-right: 2%;
-  margin-left: 0px;
-  background-color: grey;
-  border: none;
-  opacity: 1;
+.Rectangle2 {
+  position: absolute;
+  right: 60%;
+  left: 0;
+  margin-left: 153px;
+  border-bottom: 2px #008dc8 solid;
 }
 
 p {
@@ -79,13 +72,15 @@ p {
 
 .Bottom1 {
   padding: 0px;
-  margin-top: 1px
+  margin-top: 1px;
+  margin-left: 38%;
 }
 
 .SocialLinks {
   text-align: end;
   justify-content: center;
   margin-right: 2px;
+  margin-top: 0px;
 }
 
 .Shift {
@@ -99,150 +94,199 @@ p {
   border: none;
 }
 
-@media only screen and (max-width: 1211px) {
+@media only screen and (max-width: 1025px) {
   .Column1,
   .Column2,
-  .ImgColumn {
-    max-width: 22%;
+  .ImgColumn,
+  .Top1 {
+    max-width: 100%;
   }
-  .Column3 {
-    max-width: 35%;
+  .Column1 {
+    margin-left: 25px;
   }
-}
-@media only screen and (max-width: 991px) {
-  .ContainerFooter {
-    max-width: 90% !important;
+  .Bottom1 {
+    padding: 0px;
+    margin-top: 1px;
+    margin-left: 36%;
   }
-  .line2 {
-    margin-right: 0%;
+  .Rectangle {
+    position: absolute;
+    right: 50%;
+    left: 0;
+    margin-left: 90px;
+    border-bottom: 2px #008dc8 solid;
   }
-  .Column1,
-  .Column2,
-  .ImgColumn {
-    max-width: 21%;
+  .Rectangle2 {
+    margin-left: 112px;
+    border-bottom: 2px #008dc8 solid;
   }
-  .Column3 {
-    max-width: 30%;
+  .ContactCol {
+    margin-left: 50px;
   }
 }
 
-@media (max-width: 982px) {
+@media (max-width: 983px) {
   .ContainerFooter {
     max-width: 95% !important;
   }
   .Column1 p,
-  .Column2 p,
-  .Column3 p {
+  .Column2 p {
     font-size: 0.9rem;
   }
+  .Rectangle {
+    position: absolute;
+    right: 50%;
+    left: 0;
+    margin-left: 80px;
+    border-bottom: 2px #008dc8 solid;
+  }
 }
-@media (max-width: 862px) {
+@media (max-width: 863px) {
+  .ContainerFooter {
+    max-width: 95% !important;
+  }
+  .Column1 p,
+  .Column2 p {
+    font-size: 0.9rem;
+  }
   .Column1 {
     max-width: 25%;
     padding: 10px;
+    margin-left: 72px;
   }
   .Column2 {
     max-width: 26%;
     padding: 15px;
+    margin-left: 72px;
   }
   .ImgColumn {
     max-width: 19%;
-    padding: 5px;
+    padding: 0px;
+    margin-left: 72px;
   }
-  .Column3 {
-    max-width: 30%;
-    padding-right: 0px;
+  .Rectangle {
+    position: absolute;
+    right: 50%;
+    left: 0;
+    margin-left: 36px;
+    border-bottom: 2px #008dc8 solid;
+  }
+  .Rectangle2 {
+    margin-left: 66px;
+    border-bottom: 2px #008dc8 solid;
+  }
+  .Bottom1 {
+    padding: 0px;
+    margin-top: 1px;
+    margin-left: 32%;
   }
 }
-@media (max-width: 862px) {
+@media (max-width: 850px) {
   .Column1,
   .Column2 {
     max-width: 25%;
   }
   .ImgColumn {
-    max-width: 19%;
-  }
-  .Column3 {
-    max-width: 31%;
+    max-width: 25%;
   }
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 769px) {
   .ContainerFooter {
-    max-width: 75% !important;
+    max-width: 80% !important;
   }
-  .RectangleContainer {
-    display: flex;
+  .Column1,
+  .Column2,
+  .ImgColumn {
+    max-width: 30%;
     justify-content: center;
-    width: 100%;
+    margin-top: 20px;
+    padding-left: 20px;
+    margin-left: 40px;
+    text-align: center;
+  }
+
+  .Rectangle {
+    position: absolute;
+    right: 0%;
+    margin-left: 16px;
+    border-bottom: 2px #008dc8 solid;
   }
   .Rectangle2 {
     position: absolute;
-    right: 0;
-    margin-right: 25px;
-    border-bottom: 2px #008dc8 solid;
-  }
-  .Rectangle3 {
-    position: absolute;
-    margin: auto;
+    margin-left: 42px;
     border-bottom: 2px #008dc8 solid;
   }
   .Bottom1,
   .Top1,
   .Phone,
   .Mail {
-    display: none;
+    display: flex;
   }
 
   .Bottom2,
   .Top2 {
-    display: flex;
+    display: none;
   }
 
   .Top3 {
-    text-align: center;
+    display: none;
   }
 
-  #Prod {
-    margin-left: 180px;
+  .Bottom1 {
+    margin-left: 145px;
   }
-
-  .Para {
-    margin-bottom: 0px;
-    text-align: center;
-  }
-
   .SocialLinks {
     text-align: center;
   }
 }
-@media only screen and (max-width: 562px) {
-  .ContactRow {
+@media only screen and (max-width: 426px) {
+  .Top1 {
+    display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
   }
-  .Top2 {
-    margin-top: 10px;
+  .Bottom1 {
+    max-width: 100%;
+    text-align: center;
+    margin-left: 18px;
   }
-  .Jumbotron {
-    padding-left: 20px;
+  .Column1,
+  .Column2,
+  .ImgColumn {
+    max-width: 100%;
+    justify-content: stretch;
+    /* margin-top: 20px; */
+    /* padding-left: 20px; */
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .SocialLinks {
+    margin-left: 10px;
+  }
+  .ContactCol {
+    margin-left: 35px;
+  }
+  .ContactRow {
+    margin-left: 38px;
+  }
+  .Logo {
+    width: 90%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+  .Rectangle {
+    margin-left: 90px;
+  }
+  .Rectangle2 {
+    margin-left: 112px;
   }
 }
-@media (max-width: 505px) {
-  .ContainerFooter {
-    max-width: 90% !important;
+@media only screen and (max-width: 376px) {
+  .Rectangle {
+    margin-left: 74px;
   }
-}
-@media (max-width: 505px) {
-  .ContainerFooter {
-    max-width: 90% !important;
-  }
-  .ContainerFooter p {
-    font-size: 0.9rem;
-  }
-  .SocialLinks a {
-    font-size: 1rem;
-  }
-  .Para {
-    padding-bottom: 5px;
+  .Rectangle2 {
+    margin-left: 93px;
   }
 }
