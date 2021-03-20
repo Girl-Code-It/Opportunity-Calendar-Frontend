@@ -3,6 +3,14 @@
   background-color: white !important;
 }
 
+
+a:hover,
+a:active,
+a:global(.active) {
+  border-bottom: 2px solid #008dc8;
+  cursor: pointer;
+}
+
 .NavBar a {
   margin: auto 8px;
   color: black !important;
@@ -27,13 +35,6 @@
   font-size: 2.3rem;
   font-family: Arial;
   letter-spacing: 0px;
-}
-
-a:hover,
-a:active,
-a:global(.active) {
-  border-bottom: 2px solid #008dc8;
-  cursor: pointer;
 }
 
 .Middle {
