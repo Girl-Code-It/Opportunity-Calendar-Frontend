@@ -44,7 +44,7 @@ export default function AboutUs() {
             <br />
             <div className={styles.AboutUs_rectangle} />
             <a href="/meettheteam" className={styles.AboutUs_knowMore}>
-              Meet our Team
+              Know More
             </a>
           </Col>
         </Row>
