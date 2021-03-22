@@ -39,10 +39,10 @@ a:global(.active) {
 .Middle {
 
 
-  margin-left: 600px;
+  margin-left: inherit;
+  margin-right: inherit;
 
 
-  
 }
 
 .ShiftRight {
@@ -54,7 +54,7 @@ a:global(.active) {
   border-radius: 8px 0px 0px 8px;
 
 
- margin-top: 10px;
+ margin-top: auto;
 
 }
 
@@ -67,9 +67,9 @@ a:global(.active) {
   border: none;
   border-radius: 0px 8px 8px 0px;
 
-  margin-top: 10px;
+  margin-top: auto;
   font-size: 20px;
-  position: relative; 
+  position: relative;
   height: 2.9rem;
   width: 2.9rem;
 
@@ -110,7 +110,7 @@ a:global(.active) {
   color: #fff;
 
   text-align: center;
- 
+
   font-size: 20px;
   text-align: center;
   background-color: #008dc8;
@@ -123,14 +123,14 @@ a:global(.active) {
   .Logo {
     position: relative;
 
-   
+
     font-size: 2rem;
   }
   .Button {
     position: absolute;
     top: 16px;
     right: 0;
-   
+
   }
 }
 
@@ -162,7 +162,7 @@ a:global(.active) {
     width: 15rem;
     margin-bottom: 0.5rem;
   }
-  
+
   .SearchButton {
     background-color: #008dc8;
     border: none;
@@ -180,9 +180,9 @@ a:global(.active) {
   }
   .Search {
     width: 4rem;
-   
+
   }
-  
+
 }
 
 @media (max-width: 992px) {
@@ -260,8 +260,8 @@ a:global(.active) {
     }
   }
 
- 
-  
+
+
 }
 
 @media only screen and (max-width: 360px) {
@@ -276,8 +276,8 @@ a:global(.active) {
 
   }
 
-  
- 
+
+
 }
 }
 
@@ -286,7 +286,7 @@ a:global(.active) {
     padding: 8px 10px 8px 4px;
   }
   .Middle {
-    margin-right: 20px;
-    
+    margin-right: inherit;
+
   }
 }
