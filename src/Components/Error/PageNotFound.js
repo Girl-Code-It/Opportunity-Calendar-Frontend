@@ -5,7 +5,7 @@ import {
   Col,
   Image
 } from 'react-bootstrap';
-import Navbar from '../../Components/PostOpportunity/sections/Navbar';
+import Navbar from '../../Components/HomePage/Sections/Navbar';
 import {
   Link
 } from 'react-router-dom';
