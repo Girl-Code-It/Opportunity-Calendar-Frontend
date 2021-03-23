@@ -23,7 +23,6 @@ export default function AboutUs() {
             <p className={styles.AboutUs_description}>
               <br />
               <br />
-              <br />
               If you feel like you keep missing on good opportunities that others grab
               easily only because you never find out about them in time, we got you covered!!
               <br />
