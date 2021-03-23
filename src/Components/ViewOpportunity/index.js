@@ -10,10 +10,13 @@ import {
   Image,
   Button,
   NavDropdown,
+  Carousel,
 } from 'react-bootstrap';
 import styles from './Opportunity.module.css';
 import Navbar from './Navbar';
-
+import CarouselImage1 from '../../Assets/CarouselImages/CarouselImage1.png';
+import CarouselImage2 from '../../Assets/CarouselImages/CarouselImage2.jpg';
+import CarouselImage3 from '../../Assets/CarouselImages/CarouselImage3.jpg';
 
 const mapPathToResource = {
   conference: { image: import('../../Assets/conference-large.png') },
@@ -33,7 +36,10 @@ export function ViewOpportunity(props) {
   const [data, setData] = React.useState([]);
   const [imgSrc, setImgSrc] = React.useState();
   const [postOpportunityPath, setPostOpportunityPath] = React.useState();
-
+  const [index, setIndex] = React.useState(0);
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
   // whenever props.path changes, get latest data from backend
   React.useEffect(() => {
     axios
@@ -57,7 +63,7 @@ export function ViewOpportunity(props) {
     lastChunk && setPostOpportunityPath(`/postopportunity/${lastChunk}`);
   }, []);
 
-  if (data.length === 0 || !data) { 
+  if (data.length === 0 || !data) {
     return (
       <div>
         <Navbar />
@@ -73,100 +79,162 @@ export function ViewOpportunity(props) {
       </div>
     );
   }
-  
-  const data_length = data.length // used to check whether opportunity count is 0
-    
+
+  const data_length = data.length; // used to check whether opportunity count is 0
+
   return (
     <>
-      { data_length === 0 ? (
-      <div>
-        <Navbar />
-        <h3
-          style={{
-            textAlign: 'center',
-            marginTop: '220px',
-            marginBottom: '200px',
-          }}
-        >
-          No opportunities found!!
-        </h3>
-      </div>) :
-      <div>
-        <Navbar />
+      {data_length === 0 ? (
         <div>
-
-        <Card className="text-center" >
- 
- <Card.Body style={{backgroundColor: '#BD6997', marginTop: '7rem' , height:'10rem'}}>
-   <Card.Title> 
-     
-                 </Card.Title>
-   <Card.Text>
-               
-   <Button variant="primary"  href={postOpportunityPath} style={{ borderRadius:'5 5 5 5', borderWidth:'0 0 0 0'}} className={styles.Button}><span style={{fontWeight:'bold'}} >
-   Post Opportunity
-     </span></Button>
- 
-
-
-   </Card.Text>
-  
- </Card.Body>
-
-
-</Card>
-          <Jumbotron style={{ backgroundColor: 'white' , marginTop:'5rem'}}>
-          
-            <Container>
-              <Row>
-              <NavDropdown
-            title={<span className={styles.Title} style={{fontSize:'30px' , fontFamily: 'Arial, Helvetica, sans-serif',
-            marginRight: '10px', marginTop:'0' }}>Opportunities</span>}
-            id="dropdown-basic-button" 
-            className={styles.Dropdown}
+          <Navbar />
+          <h3
+            style={{
+              textAlign: 'center',
+              marginTop: '220px',
+              marginBottom: '200px',
+            }}
           >
-            <NavDropdown.Item href="/viewopportunity/fulltime">
-              {' '}
-              Full Time Jobs{' '} 
-            </NavDropdown.Item>
-            <NavDropdown.Item href="/viewopportunity/hackathon">
-              {' '}
-              Hackathons{' '}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="/viewopportunity/scholarship">
-              {' '}
-              Scholarships{' '}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="/viewopportunity/codingcomp">
-              {' '}
-              Coding Competitions{' '}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="/viewopportunity/techconf">
-              {' '}
-              Tech Conferences{' '}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="/viewopportunity/internships">
-              {' '}
-              Internship Opportunities{' '}
-            </NavDropdown.Item>
-          </NavDropdown>
-              </Row>
-            
-
-              <Row>
-                <Col style={{ marginTop: '20px' }} md={12}>
-                  {data.map((item) => {
-                    return <OpportunityCard key={item.id} item={item} />;
-                  })}
-                </Col>
-
-              </Row>
-            </Container>
-
-          </Jumbotron>
+            No opportunities found!!
+          </h3>
         </div>
-      </div>
-      }
+      ) : (
+        <div>
+          <Navbar />
+          <div>
+            <Carousel
+              activeIndex={index}
+              onSelect={handleSelect}
+              className="text-center"
+            >
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={CarouselImage1}
+                  style={{
+                    width: '100%',
+                    height: '500px',
+                  }}
+                  alt="First slide"
+                />
+                <Carousel.Caption>
+                  <Button
+                    variant="primary"
+                    href={postOpportunityPath}
+                    style={{
+                      borderRadius: '5 5 5 5',
+                      borderWidth: '0 0 0 0',
+                      marginBottom: '200px',
+                    }}
+                    className={styles.Button}
+                  >
+                    <span style={{ fontWeight: 'bold' }}>Post Opportunity</span>
+                  </Button>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={CarouselImage2}
+                  style={{ width: '100%', height: '500px' }}
+                  alt="Second slide"
+                />
+                <Carousel.Caption>
+                  <Button
+                    variant="primary"
+                    href={postOpportunityPath}
+                    style={{
+                      borderRadius: '5 5 5 5',
+                      borderWidth: '0 0 0 0',
+                      marginBottom: '200px',
+                    }}
+                    className={styles.Button}
+                  >
+                    <span style={{ fontWeight: 'bold' }}>Post Opportunity</span>
+                  </Button>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={CarouselImage3}
+                  style={{ width: '100%', height: '500px' }}
+                  alt="Third slide"
+                />
+                <Carousel.Caption>
+                  <Button
+                    variant="primary"
+                    href={postOpportunityPath}
+                    style={{
+                      borderRadius: '5 5 5 5',
+                      borderWidth: '0 0 0 0',
+                      marginBottom: '200px',
+                    }}
+                    className={styles.Button}
+                  >
+                    <span style={{ fontWeight: 'bold' }}>Post Opportunity</span>
+                  </Button>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+            <Jumbotron style={{ backgroundColor: 'white', marginTop: '5rem' }}>
+              <Container>
+                <Row>
+                  <NavDropdown
+                    title={
+                      <span
+                        className={styles.Title}
+                        style={{
+                          fontSize: '30px',
+                          fontFamily: 'Arial, Helvetica, sans-serif',
+                          marginRight: '10px',
+                          marginTop: '0',
+                        }}
+                      >
+                        Opportunities
+                      </span>
+                    }
+                    id="dropdown-basic-button"
+                    className={styles.Dropdown}
+                  >
+                    <NavDropdown.Item href="/viewopportunity/fulltime">
+                      {' '}
+                      Full Time Jobs{' '}
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/viewopportunity/hackathon">
+                      {' '}
+                      Hackathons{' '}
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/viewopportunity/scholarship">
+                      {' '}
+                      Scholarships{' '}
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/viewopportunity/codingcomp">
+                      {' '}
+                      Coding Competitions{' '}
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/viewopportunity/techconf">
+                      {' '}
+                      Tech Conferences{' '}
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/viewopportunity/internships">
+                      {' '}
+                      Internship Opportunities{' '}
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </Row>
+
+                <Row>
+                  <Col style={{ marginTop: '20px' }} md={12}>
+                    {data.map((item) => {
+                      return <OpportunityCard key={item.id} item={item} />;
+                    })}
+                  </Col>
+                </Row>
+              </Container>
+            </Jumbotron>
+          </div>
+        </div>
+      )}
       );
     </>
   );
