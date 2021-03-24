@@ -19,7 +19,6 @@ html {
   margin-left: 12px;
   margin-top: 20px;
 }
-
 .ContactRow {
   justify-content: center;
   margin-left: 2%;
@@ -37,18 +36,15 @@ html {
   align-items: center;
   margin-bottom: 1px;
 }
-
 .Bottom2,
 .Top2 {
   display: none;
 }
-
 h5 {
   margin-bottom: 0px;
   color: #008dc8;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .Rectangle {
   position: absolute;
   right: 50%;
@@ -63,230 +59,658 @@ h5 {
   margin-left: 153px;
   border-bottom: 2px #008dc8 solid;
 }
-
 p {
   margin-top: 10px;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .Bottom1 {
   padding: 0px;
   margin-top: 1px;
-  margin-left: 38%;
+  margin-left: 37%;
 }
-
 .SocialLinks {
   text-align: end;
   justify-content: center;
   margin-right: 2px;
   margin-top: 0px;
 }
-
 .Shift {
   margin-top: 0px;
   margin-left: 40px;
   color: black;
   font-size: 25px;
 }
-
 .Shift:hover {
   border: none;
 }
-
+@media only screen and (max-width: 1201px) {
+  .Rectangle {
+    margin-left: 128px;
+  }
+  .Rectangle2 {
+    margin-left: 152px;
+  }
+  .Bottom1 {
+    margin-left: 36.5%;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .Rectangle {
+    margin-left: 98px;
+  }
+  .Rectangle2 {
+    margin-left: 126px;
+  }
+  .Bottom1 {
+    margin-left: 34%;
+  }
+}
+@media only screen and (max-width: 1167x) {
+  .Bottom1 {
+    margin-left: 35%;
+  }
+}
+@media only screen and (max-width: 1163px) {
+  .Bottom1 {
+    margin-left: 34%;
+  }
+}
 @media only screen and (max-width: 1025px) {
-  .Column1,
-  .Column2,
-  .ImgColumn,
-  .Top1 {
-    max-width: 100%;
-  }
-  .Column1 {
-    margin-left: 25px;
-  }
   .Bottom1 {
     padding: 0px;
     margin-top: 1px;
-    margin-left: 36%;
+    margin-left: 35%;
   }
   .Rectangle {
-    position: absolute;
-    right: 50%;
-    left: 0;
-    margin-left: 90px;
-    border-bottom: 2px #008dc8 solid;
+    margin-left: 98px;
   }
   .Rectangle2 {
-    margin-left: 112px;
-    border-bottom: 2px #008dc8 solid;
+    margin-left: 122px;
   }
   .ContactCol {
+    margin-left: 22px;
+  }
+  .ContactRow {
     margin-left: 50px;
   }
 }
-
-@media (max-width: 983px) {
-  .ContainerFooter {
-    max-width: 95% !important;
+@media only screen and (max-width: 1010px) {
+  .Bottom1 {
+    margin-left: 35%;
   }
-  .Column1 p,
-  .Column2 p {
-    font-size: 0.9rem;
+  .Rectangle2 {
+    margin-left: 120px;
+  }
+}
+@media (max-width: 992px) {
+  .Rectangle2 {
+    margin-left: 116px;
   }
   .Rectangle {
-    position: absolute;
-    right: 50%;
-    left: 0;
+    margin-left: 92px;
+  }
+  .Bottom1 {
+    margin-left: 35%;
+  }
+}
+@media (max-width: 991px) {
+  .Rectangle2 {
     margin-left: 80px;
-    border-bottom: 2px #008dc8 solid;
-  }
-}
-@media (max-width: 863px) {
-  .ContainerFooter {
-    max-width: 95% !important;
-  }
-  .Column1 p,
-  .Column2 p {
-    font-size: 0.9rem;
-  }
-  .Column1 {
-    max-width: 25%;
-    padding: 10px;
-    margin-left: 72px;
-  }
-  .Column2 {
-    max-width: 26%;
-    padding: 15px;
-    margin-left: 72px;
-  }
-  .ImgColumn {
-    max-width: 19%;
-    padding: 0px;
-    margin-left: 72px;
   }
   .Rectangle {
-    position: absolute;
-    right: 50%;
-    left: 0;
-    margin-left: 36px;
-    border-bottom: 2px #008dc8 solid;
-  }
-  .Rectangle2 {
-    margin-left: 66px;
-    border-bottom: 2px #008dc8 solid;
+    margin-left: 56px;
   }
   .Bottom1 {
-    padding: 0px;
-    margin-top: 1px;
-    margin-left: 32%;
+    margin-left: 29%;
+  }
+  .Logo {
+    margin-left: 0px;
+    width: 95%;
+  }
+  .ContactCol {
+    margin-left: 14px;
   }
 }
-@media (max-width: 850px) {
-  .Column1,
-  .Column2 {
-    max-width: 25%;
+@media (max-width: 970px) {
+  .Rectangle2 {
+    margin-left: 82px;
   }
-  .ImgColumn {
-    max-width: 25%;
+  .Bottom1 {
+    margin-left: 29%;
+  }
+  .ContactCol {
+    margin-left: 12px;
+  }
+  .ContactRow {
+    margin-left: 46px;
   }
 }
-@media only screen and (max-width: 769px) {
-  .ContainerFooter {
-    max-width: 80% !important;
+@media (max-width: 966px) {
+  .Bottom1 {
+    margin-left: 29%;
   }
-  .Column1,
-  .Column2,
-  .ImgColumn {
-    max-width: 30%;
-    justify-content: center;
-    margin-top: 20px;
-    padding-left: 20px;
-    margin-left: 40px;
-    text-align: center;
+}
+@media (max-width: 956px) {
+  .Rectangle2 {
+    margin-left: 84px;
   }
-
+  .Bottom1 {
+    margin-left: 29.5%;
+  }
+}
+@media (max-width: 941px) {
   .Rectangle {
-    position: absolute;
-    right: 0%;
-    margin-left: 16px;
-    border-bottom: 2px #008dc8 solid;
+    margin-left: 60px;
+  }
+  .Bottom1 {
+    margin-left: 29%;
+  }
+}
+@media (max-width: 931px) {
+  .Rectangle {
+    margin-left: 60px;
   }
   .Rectangle2 {
-    position: absolute;
-    margin-left: 42px;
-    border-bottom: 2px #008dc8 solid;
+    margin-left: 82px;
   }
-  .Bottom1,
-  .Top1,
-  .Phone,
-  .Mail {
+  .Bottom1 {
+    margin-left: 30%;
+  }
+}
+@media (max-width: 866px) {
+  .Top1 {
     display: flex;
+    justify-content: center;
   }
-
-  .Bottom2,
-  .Top2 {
-    display: none;
+  .Rectangle {
+    margin-left: 60px;
   }
-
-  .Top3 {
-    display: none;
+  .Rectangle2 {
+    margin-left: 82px;
   }
-
   .Bottom1 {
-    margin-left: 145px;
+    margin-left: 30%;
   }
-  .SocialLinks {
-    text-align: center;
+  .ContactCol {
+    margin-left: 15px;
   }
 }
-@media only screen and (max-width: 426px) {
+@media (max-width: 851px) {
+  .Top1 {
+    margin-left: 1px;
+  }
+  .Rectangle {
+    margin-left: 56px;
+  }
+  .Rectangle2 {
+    margin-left: 80px;
+  }
+  .Bottom1 {
+    margin-left: 30%;
+  }
+  .ContactCol {
+    margin-left: 4px;
+  }
+  .ContactRow {
+    margin-left: 36px;
+  }
+}
+@media (max-width: 769px) {
+  .Top1 {
+    justify-content: space-evenly;
+  }
+  .Column1,
+  .Column2 {
+    font-size: 1px;
+  }
+  .Rectangle {
+    margin-left: 26px;
+  }
+  .Rectangle2 {
+    margin-left: 50px;
+  }
+  .Logo {
+    margin-left: 0px;
+    width: 165%;
+    padding: 20%;
+  }
+  .Bottom1 {
+    margin-left: 22%;
+  }
+}
+@media only screen and (max-width: 751px) {
+  .Bottom1 {
+    margin-left: 23%;
+  }
+  .ContactRow {
+    margin-left: 40px;
+  }
+}
+@media only screen and (max-width: 618px) {
   .Top1 {
     display: flex;
     flex-direction: column;
-  }
-  .Bottom1 {
-    max-width: 100%;
-    text-align: center;
-    margin-left: 18px;
+    justify-content: space-evenly;
   }
   .Column1,
-  .Column2,
-  .ImgColumn {
-    max-width: 100%;
-    justify-content: stretch;
-    /* margin-top: 20px; */
-    /* padding-left: 20px; */
-    margin-left: 30px;
-    margin-top: 0px;
+  .Column2 {
+    margin-left: 15px;
     margin-bottom: 0px;
+  }
+  .Bottom1 p {
+    max-width: 100%;
+    margin-left: 13px;
   }
   .SocialLinks {
-    margin-left: 10px;
+    margin-left: 18px;
   }
   .ContactCol {
-    margin-left: 35px;
+    margin-left: 18px;
   }
   .ContactRow {
-    margin-left: 38px;
+    margin-left: 78px;
+  }
+  .ImgColumn {
+    height: 10%;
+    width: 45%;
   }
   .Logo {
-    width: 90%;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    width: 150%;
+    height: 90%;
     margin-left: 10px;
   }
   .Rectangle {
-    margin-left: 90px;
+    margin-left: 200px;
   }
   .Rectangle2 {
-    margin-left: 112px;
+    margin-left: 226px;
+  }
+}
+@media (max-width: 596px) {
+  .Rectangle {
+    margin-left: 202px;
+  }
+  .Rectangle2 {
+    margin-left: 226px;
+  }
+  .ContactCol {
+    margin-left: 15px;
+  }
+  .ContactRow {
+    margin-left: 62px;
+  }
+  .Bottom1 p {
+    max-width: 100%;
+    margin-left: 4px;
+  }
+}
+@media (max-width: 576px) {
+  .Rectangle {
+    margin-left: 208px;
+  }
+  .Rectangle2 {
+    margin-left: 232px;
+  }
+  .Bottom1 p {
+    max-width: 100%;
+    margin-left: 8px;
+  }
+}
+@media (max-width: 565px) {
+  .Rectangle {
+    margin-left: 204px;
+  }
+  .Rectangle2 {
+    margin-left: 226px;
+  }
+  .Bottom1 p {
+    max-width: 100%;
+    margin-left: 1px;
+  }
+}
+@media (max-width: 554px) {
+  .Rectangle {
+    margin-left: 196px;
+  }
+  .Rectangle2 {
+    margin-left: 222px;
+  }
+  .Bottom1 p {
+    max-width: 100%;
+    margin-left: 1px;
+  }
+}
+@media (max-width: 546px) {
+  .Rectangle {
+    margin-left: 192px;
+  }
+  .Rectangle2 {
+    margin-left: 216px;
+  }
+  .Bottom1 p {
+    max-width: 100%;
+    margin-left: 1px;
+  }
+}
+@media (max-width: 539px) {
+  .Rectangle {
+    margin-left: 192px;
+  }
+  .Rectangle2 {
+    margin-left: 214px;
+  }
+  .Bottom1 p {
+    max-width: 100%;
+    margin-left: 1px;
+  }
+}
+@media (max-width: 530px) {
+  .Rectangle {
+    margin-left: 184px;
+  }
+  .Rectangle2 {
+    margin-left: 210px;
+  }
+  .Bottom1 p {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 523px) {
+  .Rectangle {
+    margin-left: 182px;
+  }
+  .Rectangle2 {
+    margin-left: 206px;
+  }
+  .Bottom1 p {
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 517px) {
+  .Rectangle {
+    margin-left: 178px;
+  }
+  .Rectangle2 {
+    margin-left: 204px;
+  }
+  .Bottom1 p {
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 510px) {
+  .Rectangle {
+    margin-left: 174px;
+  }
+  .Rectangle2 {
+    margin-left: 200px;
+  }
+  .Bottom1 p {
+    max-width: 100%;
+    margin-left: 0px;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+}
+@media (max-width: 507px) {
+  .Rectangle {
+    margin-left: 172px;
+  }
+  .Rectangle2 {
+    margin-left: 198px;
+  }
+  .Bottom1 p {
+    max-width: 100%;
+    margin-left: 0px;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 499px) {
+  .Rectangle {
+    margin-left: 170px;
+  }
+  .Rectangle2 {
+    margin-left: 194px;
+  }
+}
+@media (max-width: 490px) {
+  .Rectangle {
+    margin-left: 166px;
+  }
+  .Rectangle2 {
+    margin-left: 190px;
+  }
+}
+@media (max-width: 482px) {
+  .Rectangle {
+    margin-left: 160px;
+  }
+  .Rectangle2 {
+    margin-left: 186px;
+  }
+}
+@media (max-width: 470px) {
+  .Rectangle {
+    margin-left: 154px;
+  }
+  .Rectangle2 {
+    margin-left: 180px;
+  }
+  .ContactRow {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 460px) {
+  .Rectangle {
+    margin-left: 148px;
+  }
+  .Rectangle2 {
+    margin-left: 172px;
+  }
+}
+@media (max-width: 452px) {
+  .Rectangle {
+    margin-left: 144px;
+  }
+  .Rectangle2 {
+    margin-left: 170px;
+  }
+}
+@media (max-width: 444px) {
+  .Rectangle {
+    margin-left: 140px;
+  }
+  .Rectangle2 {
+    margin-left: 166px;
+  }
+}
+@media (max-width: 435px) {
+  .Rectangle {
+    margin-left: 138px;
+  }
+  .Rectangle2 {
+    margin-left: 162px;
+  }
+}
+@media (max-width: 430px) {
+  .Rectangle {
+    margin-left: 134px;
+  }
+  .Rectangle2 {
+    margin-left: 158px;
+  }
+}
+@media (max-width: 420px) {
+  .Rectangle {
+    margin-left: 129px;
+  }
+  .Rectangle2 {
+    margin-left: 154px;
+  }
+}
+@media (max-width: 415px) {
+  .Rectangle {
+    margin-left: 126px;
+  }
+  .Rectangle2 {
+    margin-left: 150px;
+  }
+}
+@media (max-width: 411px) {
+  .Rectangle {
+    margin-left: 124px;
+  }
+  .Rectangle2 {
+    margin-left: 150px;
+  }
+}
+@media (max-width: 396px) {
+  .Rectangle {
+    margin-left: 114px;
+  }
+  .Rectangle2 {
+    margin-left: 140px;
+  }
+}
+@media (max-width: 381px) {
+  .Rectangle {
+    margin-left: 110px;
+  }
+  .Rectangle2 {
+    margin-left: 136px;
   }
 }
 @media only screen and (max-width: 376px) {
   .Rectangle {
-    margin-left: 74px;
+    margin-left: 106px;
   }
   .Rectangle2 {
-    margin-left: 93px;
+    margin-left: 132px;
+  }
+  .Bottom1 p {
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 361px) {
+  .Rectangle {
+    margin-left: 100px;
+  }
+  .Rectangle2 {
+    margin-left: 128px;
+  }
+  .Bottom1 p {
+    margin-left: 16px;
+  }
+}
+@media only screen and (max-width: 351px) {
+  .Rectangle {
+    margin-left: 96px;
+  }
+  .Rectangle2 {
+    margin-left: 122px;
+  }
+  .Bottom1 p {
+    margin-left: 16px;
+  }
+}
+@media only screen and (max-width: 343px) {
+  .Rectangle {
+    margin-left: 90px;
+  }
+  .Rectangle2 {
+    margin-left: 118px;
+  }
+  .Bottom1 p {
+    margin-left: 16px;
+  }
+}
+@media only screen and (max-width: 333px) {
+  .Rectangle {
+    margin-left: 86px;
+  }
+  .Rectangle2 {
+    margin-left: 112px;
+  }
+  .Bottom1 p {
+    margin-left: 24px;
+  }
+}
+@media only screen and (max-width: 323px) {
+  .Rectangle {
+    margin-left: 80px;
+  }
+  .Rectangle2 {
+    margin-left: 106px;
+  }
+  .Bottom1 p {
+    margin-left: 24px;
+  }
+}
+@media only screen and (max-width: 313px) {
+  .Rectangle {
+    margin-left: 76px;
+  }
+  .Rectangle2 {
+    margin-left: 100px;
+  }
+  .Bottom1 p {
+    margin-left: 24px;
+  }
+}
+@media only screen and (max-width: 303px) {
+  .Rectangle {
+    margin-left: 68px;
+  }
+  .Rectangle2 {
+    margin-left: 94px;
+  }
+  .Bottom1 p {
+    margin-left: 24px;
+  }
+}
+@media only screen and (max-width: 291px) {
+  .Rectangle {
+    margin-left: 64px;
+  }
+  .Rectangle2 {
+    margin-left: 90px;
+  }
+  .ContactRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 35px;
+  }
+  .Bottom1 p {
+    margin-left: 24px;
+  }
+}
+@media only screen and (max-width: 281px) {
+  .Rectangle {
+    margin-left: 60px;
+  }
+  .Rectangle2 {
+    margin-left: 86px;
+  }
+}
+@media only screen and (max-width: 271px) {
+  .Rectangle {
+    margin-left: 52px;
+  }
+  .Rectangle2 {
+    margin-left: 80px;
+  }
+}
+@media only screen and (max-width: 271px) {
+  .Rectangle {
+    margin-left: 42px;
+  }
+  .Rectangle2 {
+    margin-left: 70px;
   }
 }
