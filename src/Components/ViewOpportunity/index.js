@@ -5,19 +5,18 @@ import {
   Card,
   Col,
   Container,
+  Carousel,
   Jumbotron,
   Row,
   Image,
   Button,
   NavDropdown,
-  Carousel,
 } from 'react-bootstrap';
 import styles from './Opportunity.module.css';
 import Navbar from './Navbar';
 import CarouselImage1 from '../../Assets/CarouselImages/CarouselImage1.png';
 import CarouselImage2 from '../../Assets/CarouselImages/CarouselImage2.jpg';
 import CarouselImage3 from '../../Assets/CarouselImages/CarouselImage3.jpg';
-
 const mapPathToResource = {
   conference: { image: import('../../Assets/conference-large.png') },
   competition: { image: import('../../Assets/coding-large.png') },
@@ -108,70 +107,82 @@ export function ViewOpportunity(props) {
             >
               <Carousel.Item>
                 <img
-                  className="d-block w-100"
+                  className="d-block w-100"
                   src={CarouselImage1}
                   style={{
                     width: '100%',
+
                     height: '500px',
                   }}
-                  alt="First slide"
+                  alt="First slide"
                 />
+
                 <Carousel.Caption>
                   <Button
                     variant="primary"
                     href={postOpportunityPath}
                     style={{
-                      borderRadius: '5 5 5 5',
-                      borderWidth: '0 0 0 0',
+                      borderRadius: '5 5 5 5',
+
+                      borderWidth: '0 0 0 0',
+
                       marginBottom: '200px',
                     }}
                     className={styles.Button}
                   >
-                    <span style={{ fontWeight: 'bold' }}>Post Opportunity</span>
+                    <span style={{ fontWeight: 'bold' }}>Post Opportunity</span>
                   </Button>
                 </Carousel.Caption>
               </Carousel.Item>
+
               <Carousel.Item>
                 <img
-                  className="d-block w-100"
+                  className="d-block w-100"
                   src={CarouselImage2}
                   style={{ width: '100%', height: '500px' }}
-                  alt="Second slide"
+                  alt="Second slide"
                 />
+
                 <Carousel.Caption>
                   <Button
                     variant="primary"
                     href={postOpportunityPath}
                     style={{
-                      borderRadius: '5 5 5 5',
-                      borderWidth: '0 0 0 0',
+                      borderRadius: '5 5 5 5',
+
+                      borderWidth: '0 0 0 0',
+
                       marginBottom: '200px',
                     }}
                     className={styles.Button}
                   >
-                    <span style={{ fontWeight: 'bold' }}>Post Opportunity</span>
+                    <span style={{ fontWeight: 'bold' }}>Post Opportunity</span>
                   </Button>
                 </Carousel.Caption>
               </Carousel.Item>
+
               <Carousel.Item>
                 <img
-                  className="d-block w-100"
+                  className="d-block w-100"
                   src={CarouselImage3}
                   style={{ width: '100%', height: '500px' }}
-                  alt="Third slide"
+                  alt="Third slide"
                 />
+
                 <Carousel.Caption>
                   <Button
                     variant="primary"
                     href={postOpportunityPath}
                     style={{
-                      borderRadius: '5 5 5 5',
-                      borderWidth: '0 0 0 0',
+                      borderRadius: '5 5 5 5',
+
+                      borderWidth: '0 0 0 0',
+
                       marginBottom: '200px',
                     }}
                     className={styles.Button}
                   >
-                    <span style={{ fontWeight: 'bold' }}>Post Opportunity</span>
+                    <span style={{ fontWeight: 'bold' }}>Post Opportunity</span>
                   </Button>
                 </Carousel.Caption>
               </Carousel.Item>
