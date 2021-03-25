@@ -1,21 +1,16 @@
-import React, { Component } from 'react';
 import Navbar from '../Navbar';
 import HackathonsForm from './HackathonsForm';
+import React from 'react';
 
-class FullTime extends Component {
-  render() {
-    return (
+function FullTime() {
+  return (
+    <div>
+      <Navbar />
       <div>
-        <Navbar />
-        <div
-          
-      
-        >
-          <HackathonsForm />
-        </div>
+        <HackathonsForm />
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default FullTime;

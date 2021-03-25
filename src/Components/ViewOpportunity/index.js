@@ -31,6 +31,18 @@ const mapPathToResource = {
  * @param {string} props.path - API path. something like `internships`
  */
 
+const URL = window.location.href;
+const splitUrl = URL.split('/viewopportunity/')[1];
+const mapUrlToName = {
+  techconf: 'Tech Conferences',
+  codingcomp: 'Coding Competitions',
+  scholarship: 'Scholarships' ,
+  hackathon: 'Hackathons',
+  internships: 'Internship Opportunities' ,
+  fulltime: 'Full Time Jobs',
+};
+
+
 export function ViewOpportunity(props) {
   const [data, setData] = React.useState([]);
   const [imgSrc, setImgSrc] = React.useState();
@@ -85,6 +97,7 @@ export function ViewOpportunity(props) {
     <>
       {data_length === 0 ? (
         <div>
+
           <Navbar />
           <h3
             style={{
@@ -92,6 +105,37 @@ export function ViewOpportunity(props) {
               marginTop: '220px',
               marginBottom: '200px',
             }}
+
+
+        <Card className="text-center" >
+ 
+ <Card.Body style={{backgroundColor: '#BD6997', marginTop: '7rem' , height:'10rem'}}>
+   <Card.Title> 
+     
+                 </Card.Title>
+   <Card.Text>
+               
+   <Button variant="primary"  href={postOpportunityPath} style={{ borderRadius:'5 5 5 5', borderWidth:'0 0 0 0'}} className={styles.Button}><span style={{fontWeight:'bold'}} >
+   Post Opportunity
+     </span></Button>
+ 
+
+
+   </Card.Text>
+  
+ </Card.Body>
+
+
+</Card>
+          <Jumbotron style={{ backgroundColor: 'white' , marginTop:'5rem'}}>
+          
+            <Container>
+              <Row>
+              <NavDropdown
+            title={<span className={styles.Title} style={{fontSize:'30px' , fontFamily: 'Arial, Helvetica, sans-serif',
+            marginRight: '10px', marginTop:'0' }}>{mapUrlToName[splitUrl]}</span>}
+            id="dropdown-basic-button" 
+            className={styles.Dropdown}
           >
             No opportunities found!!
           </h3>
