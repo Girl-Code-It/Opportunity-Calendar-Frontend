@@ -99,14 +99,15 @@ export function ViewOpportunity(props) {
         <div>
 
           <Navbar />
-          <h3
-            style={{
-              textAlign: 'center',
-              marginTop: '220px',
-              marginBottom: '200px',
-            }}
-
-
+        <h3
+          style={{
+            textAlign: 'center',
+            marginTop: '220px',
+            marginBottom: '200px',
+          }}
+        >
+          Loading Opportunities if any...
+        </h3>
         <Card className="text-center" >
  
  <Card.Body style={{backgroundColor: '#BD6997', marginTop: '7rem' , height:'10rem'}}>
