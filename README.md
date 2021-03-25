@@ -88,7 +88,7 @@ We are glad to have your contributions to the project, Please make sure to read 
 
 ```
 | Issue Level | Max. no. of days to submit a PR | Points  |
-|:----------- |:-------------------------------:|:-------:|
+|------------ |---------------------------------|---------|
 | Level 0     | 2                               |    5    |
 | Level 1     | 2                               |   10    |
 | Level 2     | 3                               |   15    | 
