@@ -16,39 +16,48 @@
 }
 
 .Button {
+  position: relative;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10%;
+  padding: 5px 30px 5px 30px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
   background-color: #008dc8;
   border: none;
-  color: #fff;
-  text-align: center;
   border-radius: 50px;
-  font-size: 16px;
-  padding: 5px 15px 5px 15px;
-  margin-top: 5px;
-  position: relative;
-  transition: all 0.5s;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
-  box-shadow: 5px 10px 20px -8px rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
 }
 
-.Button:hover,
-.Button:focus,
-.Button:active {
-  background-color: #008dc8;
-  padding-right: 30px;
-  padding-left: 30px;
+.Button:hover {
+  background: #55b1eb;
+  background-image: -webkit-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: -moz-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: -ms-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: -o-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: linear-gradient(to bottom, #55b1eb, #2389c4);
+  text-decoration: none;
+}
+
+.Button:focus {
+  outline: none;
 }
 
 textarea {
   resize: none;
 }
+
 .iconSpan {
   background-color: #008dc8;
   border: none;
   padding: 0.375rem 0.75rem;
-  border-radius: 0.3rem 0 0 0.3rem;;
+  border-radius: 0.3rem 0 0 0.3rem;
+  ;
 }
+
 .contactIcon {
   color: white;
 }

@@ -87,11 +87,13 @@ We are glad to have your contributions to the project, Please make sure to read 
 - If any issue is assigned to you, make sure you complete it before deadline.
 - Deadline for issues:
 
-```
-        LEVEL0/LEVEL1 : 2 days
-        LEVEL2 : 3 days
-        LEVEL3 : 5 days
-```
+| Issue Level | Max. no. of days to submit a PR | Points  |
+|------------ |---------------------------------|---------|
+| Level 0     | 2                               |    5    |
+| Level 1     | 2                               |   10    |
+| Level 2     | 3                               |   15    | 
+| Level 3     | 5                               |   25    | 
+
 
 - If you fail to make a PR within the deadline, then the issue will be assigned to another person in the queue.
 

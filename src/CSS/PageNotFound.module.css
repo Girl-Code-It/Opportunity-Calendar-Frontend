@@ -1,0 +1,107 @@
+.Jumbotron {
+  background-color: white;
+  padding: 6.5rem 2.5rem;
+  justify-content: center;
+}
+
+.Container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  margin-top: 8% auto auto;
+}
+
+@media (max-width: 993px) {
+  .Container {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .Container {
+    max-width: 100%;
+    height: auto;
+    margin-top: 12%;
+  }
+}
+
+@media (max-width: 993px) {
+  .NotFoundImage {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .NotFoundImage {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+.ImgColumn {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.NotFoundMessage {
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  font-size: 1.8rem;
+  line-height: 160%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (max-width: 993px) {
+  .NotFoundMessage {
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .NotFoundMessage {
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.NotFoundButtonDiv {
+  margin-top: 2.5rem;
+}
+
+.NotFoundButtonLink {
+  position: relative;
+  padding: 5px 30px 5px 30px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  background-color: #008dc8;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.NotFoundButtonLink:hover {
+  color: #fff;
+  background: #55b1eb;
+  background-image: -webkit-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: -moz-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: -ms-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: -o-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: linear-gradient(to bottom, #55b1eb, #2389c4);
+  text-decoration: none;
+}
+
+.NotFoundButtonLink:focus {
+  outline: none;
+}

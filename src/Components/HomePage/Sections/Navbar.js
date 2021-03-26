@@ -16,7 +16,7 @@ function navbar() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
-          <Link active smooth={true} duration={1000} to="home">
+          <Link smooth={true} duration={1000} to="home">
             Home
           </Link>
           <Link smooth={true} offset={-90} duration={1000} to="about">
