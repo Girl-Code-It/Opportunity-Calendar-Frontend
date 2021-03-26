@@ -14,6 +14,7 @@ Please check options that are relevant to your PR.
 
 # Checklist:
 
+- [ ] I have pulled the latest changes in the repository
 - [ ] I have squashed my commits
 - [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my own code
