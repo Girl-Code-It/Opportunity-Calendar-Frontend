@@ -83,14 +83,17 @@ We are glad to have your contributions to the project, Please make sure to read 
 
 - Only 1 issue will be assigned to a participant at a time on FCFS(first come first serve) basis.
 - Comment on a particular issue to get it assigned to you and start working on it after it is assigned to you.
+- If you are creating a new issue, then please also comment on it mentioning that You want to work on it.
 - If any issue is assigned to you, make sure you complete it before deadline.
 - Deadline for issues:
 
-```
-        LEVEL0/LEVEL1 : 2 days
-        LEVEL2 : 3 days
-        LEVEL3 : 5 days
-```
+| Issue Level | Max. no. of days to submit a PR | Points  |
+|------------ |---------------------------------|---------|
+| Level 0     | 2                               |    5    |
+| Level 1     | 2                               |   10    |
+| Level 2     | 3                               |   15    | 
+| Level 3     | 5                               |   25    | 
+
 
 - If you fail to make a PR within the deadline, then the issue will be assigned to another person in the queue.
 
