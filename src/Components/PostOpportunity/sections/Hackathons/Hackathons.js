@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
 import Navbar from '../Navbar';
 import HackathonsForm from './HackathonsForm';
+import React from 'react';
 
 function FullTime() {
   return (

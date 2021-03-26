@@ -7,14 +7,17 @@
 
 .Card {
   width: 200px;
-  border-radius: 5%;
+  border-radius: 2%;
   /* margin-left: 50%; */
+  transition: all 0.6s;
   box-shadow: 0px 3px 4px 0px #ccc;
 }
 
 .Card:hover {
-  background-color: grey;
-  animation: card-ani 3s infinite;
+  transform: scale(1.2);
+  transition: all 1s;
+  z-index: 99;
+  box-shadow: 2px 2px 30px #b9b9b9;
 }
 
 .CardTitle {

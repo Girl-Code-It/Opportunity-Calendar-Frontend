@@ -4,6 +4,14 @@
 
 Opportunity Calendar is the one-stop place to refer important opportunites available in tech-space like newly posted jobs, internships, hackathons, tech-conferences, scholarhsips etc.
 
+
+[![Issues](https://img.shields.io/github/issues/Girl-Code-It/Opportunity-Calendar-Frontend)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/issues)
+[![PRs](https://img.shields.io/github/issues-pr/Girl-Code-It/Opportunity-Calendar-Frontend)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/pulls)
+[![Maintenance](https://img.shields.io/maintenance/yes/2021?color=green&logo=github)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend)
+[![Forks](https://img.shields.io/github/forks/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend) 
+[![Stars](https://img.shields.io/github/stars/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend) 
+[![Watchers](https://img.shields.io/github/watchers/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend)
+
 ## Table of Contents
 
 1. [Install](#install)
@@ -52,8 +60,9 @@ Updates about following opportunities are available:
 - **Wireframing & Designing** - AdobeXD
 - **Library** - ReactJs
 - **Framework** - React-Bootstrap
-
-<h2 align="center">Guidelines for GSSOC Participants</h2>
+<p align="center">
+<img alt="Adobe XD" src="https://img.shields.io/badge/adobe%20xd%20-%23FF26BE.svg?&style=for-the-badge&logo=adobe%20xd&logoColor=white"/>       <img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>        <img alt="React Bootstrap" src="https://img.shields.io/badge/react bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white"/>    <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/> <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>       <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
+<h2 align="center">Guidelines for GSSOC Participants</h2></p>
 
 We are glad to have your contributions to the project, Please make sure to read the following guidelines for the contributors.
 
@@ -77,13 +86,16 @@ We are glad to have your contributions to the project, Please make sure to read 
 - If any issue is assigned to you, make sure you complete it before deadline.
 - Deadline for issues:
 
-```
-        LEVEL0/LEVEL1 : 2 days
-        LEVEL2 : 3 days
-        LEVEL3 : 5 days
-```
+| Issue Level | Max. no. of days to submit a PR | Points  |
+|------------ |---------------------------------|---------|
+| Level 0     | 2                               |    5    |
+| Level 1     | 2                               |   10    |
+| Level 2     | 3                               |   15    | 
+| Level 3     | 5                               |   25    | 
+
 
 - If you fail to make a PR within the deadline, then the issue will be assigned to another person in the queue.
+
 
 <h2 align="center">Designs</h2>
 
@@ -103,3 +115,17 @@ To get started have a look at our [documentation on contributing](https://github
 <h2 align="center">Copyright and license</h2>
 
 Code released under the [MIT License](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/blob/develop/LICENSE).
+
+<h2 align="center">Contributor</h2>
+<h3> Credit goes to these people:✨</h3>
+
+<table>
+	<tr>
+		<td>
+			<a href="https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Girl-Code-It/Opportunity-Calendar-Frontend" />
+</a>
+		</td>
+	</tr>
+</table>
+
