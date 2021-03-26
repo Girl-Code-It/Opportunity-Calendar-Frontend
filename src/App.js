@@ -14,6 +14,7 @@ import Footer from './Components/Footer/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SignUp from './Components/SignupLogin/SignUp';
 import Login from './Components/SignupLogin/Login';
+import PageNotFound from './Components/Error/PageNotFound';
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
             path="/login"
             component={Login}
           />
-          <Route 
+          <Route
             exact
             path="/viewopportunity"
             render={(props) => (
@@ -153,7 +154,7 @@ function App() {
           />
           <Route
             exact
-            path="/postopportunity/Scholarship" // changed the path from Scholarships to Scholarship to make the scholaeship table visible and also the navbar to visible 
+            path="/postopportunity/Scholarship" // changed the path from Scholarships to Scholarship to make the scholaeship table visible and also the navbar to visible
             render={(props) => (
               <div>
                 <ScholarshipForm />
@@ -169,6 +170,11 @@ function App() {
               </div>
             )}
           />
+          <Route render={(props) => (
+            <div>
+              <PageNotFound />
+            </div>
+          )}/>
         </Switch>
         <ScrollTop />
         <Footer />

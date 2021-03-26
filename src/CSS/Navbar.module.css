@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
 .NavBar {
   margin: 0 0;
   background-color: white !important;
@@ -39,10 +40,10 @@ a:global(.active) {
 .Middle {
 
 
-  margin-left: 600px;
+  margin-left: inherit;
+  margin-right: inherit;
 
 
-  
 }
 
 .ShiftRight {
@@ -50,15 +51,210 @@ a:global(.active) {
   justify-content: flex-end;
 }
 
-.Search {
-  border-radius: 8px 0px 0px 8px;
+/* New Search Bar */
 
-
- margin-top: 10px;
-
+.container {
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 50px;
 }
+  .search {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: #008DC8;
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 4;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+  }
+    .search:hover {
+      cursor: pointer;
+    }
+    .search::before {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: 22px;
+      right: 0;
+      bottom: 0;
+      left: 22px;
+      width: 15px;
+      height: 2px;
+      background: white;
+      transform: rotate(45deg);
+      transition: all .5s;
+    }
+    .search::after {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: -5px;
+      right: 0;
+      bottom: 0;
+      left: -5px;
+      width: 24.5px;
+      height: 24.5px;
+      border-radius: 50%;
+      border: 2px solid white;
+      transition: all .5s;
+    }
 
-.SearchButton {
+  .inp {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: white;
+    color: black;
+    text-shadow: 0 0 10px #82dcff;
+    padding: 0 80px 0 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 25px 0 #54cdff,
+                0 20px 25px 0 rgba(0, 0, 0, 0.2);
+    transition: all 1s;
+    opacity: 0;
+    z-index: 5;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+  }
+    .inp:hover {
+      cursor: pointer;
+    }
+    .inp:focus {
+      width: 260px;
+      opacity: 1;
+      cursor: text;
+    }
+    .inp:focus ~ .search {
+      right: -230px;
+      background: #008DC8;
+      opacity: 0;
+      /* z-index: 6; */
+    }
+    .inp::before {
+        top: 0;
+        left: 0;
+        width: 25px;
+      }
+
+    .inp::after {
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 2px;
+        border: none;
+        background: #008DC8;
+        border-radius: 0%;
+        transform: rotate(-45deg);
+      }
+
+    .inp::placeholder {
+      color: black;
+      text-shadow: 0 0 10px #82dcff;
+      opacity: 0.5;
+      font-weight: bolder;
+    }
+
+    @media screen and (max-width: 991px) {
+      .container {
+        width: 280px;
+        height: 45px;
+      }
+      .search {
+        width: 48px;
+        height: 48px;
+      }
+      .search::before{
+        width: 12px;
+        height: 1.5px;
+        top: 17px;
+        left: 18px;
+      }
+      .search::after{
+        width: 22.5px;
+        height: 21.5px;
+      }
+      .inp{
+        width: 30px;
+        height: 30px;
+      }
+      .inp:focus {
+        width: 200px;
+        opacity: 1;
+        cursor: text;
+      }
+      .inp:focus ~ .search {
+        right: -170px;
+        background: #008DC8;
+        opacity: 0;
+      }
+    }
+
+    @media screen and (max-width: 360px) {
+      .container {
+        width: 260px;
+        height: 37px;
+      }
+      .search {
+        width: 45px;
+        height: 45px;
+      }
+      .search::before{
+        width: 10px;
+        height: 1px;
+        top: 14px;
+        left: 20px;
+      }
+      .search::after{
+        width: 20.5px;
+        height: 19.5px;
+      }
+      .inp{
+        width: 30px;
+        height: 25px;
+      }
+      .inp:focus {
+        width: 180px;
+        opacity: 1;
+        cursor: text;
+      }
+      .inp:focus ~ .search {
+        right: -150px;
+        background: #008DC8;
+        opacity: 0;
+      }
+    }
+
+/* Older SearchButton: */
+
+
+/* .Search {
+  border-radius: 8px 0px 0px 8px;
+ margin-top: auto;
+
+} */
+
+
+
+/* .SearchButton {
   position: relative;
   padding: 4px 10px 4px 10px;
   color: white;
@@ -67,13 +263,13 @@ a:global(.active) {
   border: none;
   border-radius: 0px 8px 8px 0px;
 
-  margin-top: 10px;
+  margin-top: auto;
   font-size: 20px;
-  position: relative; 
+  position: relative;
   height: 2.9rem;
   width: 2.9rem;
 
-}
+} */
 
 .Title {
   margin-right: 10px;
@@ -110,7 +306,7 @@ a:global(.active) {
   color: #fff;
 
   text-align: center;
- 
+
   font-size: 20px;
   text-align: center;
   background-color: #008dc8;
@@ -123,14 +319,14 @@ a:global(.active) {
   .Logo {
     position: relative;
 
-   
+
     font-size: 2rem;
   }
   .Button {
     position: absolute;
     top: 16px;
     right: 0;
-   
+
   }
 }
 
@@ -162,7 +358,7 @@ a:global(.active) {
     width: 15rem;
     margin-bottom: 0.5rem;
   }
-  
+
   .SearchButton {
     background-color: #008dc8;
     border: none;
@@ -180,9 +376,9 @@ a:global(.active) {
   }
   .Search {
     width: 4rem;
-   
+
   }
-  
+
 }
 
 @media (max-width: 992px) {
@@ -260,8 +456,8 @@ a:global(.active) {
     }
   }
 
- 
-  
+
+
 }
 
 @media only screen and (max-width: 360px) {
@@ -276,8 +472,8 @@ a:global(.active) {
 
   }
 
-  
- 
+
+
 }
 }
 
@@ -286,7 +482,7 @@ a:global(.active) {
     padding: 8px 10px 8px 4px;
   }
   .Middle {
-    margin-right: 20px;
-    
+    margin-right: inherit;
+
   }
 }
