@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../../CSS/Navbar.module.css';
+
 import {
   Navbar,
   Nav,
@@ -20,24 +21,18 @@ function navbar() {
           It
         </a>
       </Navbar.Brand>
-      <Form inline>
-          <div className={styles.Middle}>
-            <FormControl
-              type="text"
-              placeholder="Search"
-              className={styles.Search}
-            />
-            <Button className={styles.SearchButton}>
-              <AiOutlineSearch />
-            </Button>
+      <Form inline >
+        <div className={styles.container}>
+          <input className={styles.inp} type="text" placeholder="Search..."/>
+          <div className={styles.search}></div>
           </div>
-        </Form>
+      </Form>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
-     
+
         <Button variant="outline-info">Login/Signup</Button>{' '}
-        
-   
+
+
       </Navbar.Collapse>
     </Navbar>
   );

@@ -6,7 +6,7 @@ import {
   Form,
   FormControl,
   Button,
- 
+
 } from 'react-bootstrap';
 
 import { AiOutlineSearch } from 'react-icons/ai';
@@ -22,26 +22,19 @@ function navbar() {
         </a>
       </Navbar.Brand>
 
-     
-        <Form inline >
-         
-         <FormControl
-           type="text"
-           placeholder="Search"
-           className={styles.Search}
-         />
-         <Button style={{height:'2.8rem'}}>
-           <AiOutlineSearch />
-         </Button>
-    
-     </Form>
-       
+      <Form inline >
+        <div className={styles.container}>
+          <input className={styles.inp} type="text" placeholder="Search..."/>
+          <div className={styles.search}></div>
+          </div>
+      </Form>
+
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
-      
-      
+
+
         <Nav className="mr-auto">
-      
+
         </Nav>
 
         <Button href="/signup" variant="outline-info">Login/Signup</Button>{' '}
