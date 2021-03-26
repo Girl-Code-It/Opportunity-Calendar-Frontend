@@ -40,8 +40,8 @@ export default function AboutUs() {
             <br />
             <br />
             <div className={styles.AboutUs_rectangle} />
-            <a href="/meettheteam" className={styles.AboutUs_knowMore}>
-              Meet our Team
+            <a href="https://girlcodeit.com" className={styles.AboutUs_knowMore}>
+              Know More
             </a>
           </Col>
         </Row>
