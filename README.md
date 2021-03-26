@@ -83,6 +83,7 @@ We are glad to have your contributions to the project, Please make sure to read 
 
 - Only 1 issue will be assigned to a participant at a time on FCFS(first come first serve) basis.
 - Comment on a particular issue to get it assigned to you and start working on it after it is assigned to you.
+- If you are creating a new issue, then please also comment on it mentioning that You want to work on it.
 - If any issue is assigned to you, make sure you complete it before deadline.
 - Deadline for issues:
 
