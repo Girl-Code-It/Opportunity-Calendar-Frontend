@@ -4,6 +4,14 @@ import { Form,Card,Button, Row} from 'react-bootstrap';
 import { GoogleLogin } from 'react-google-login';
 
 const SignUp = ()=>{
+    const googleError = () => alert('Google Sign In was unsuccessful. Try again later');
+
+    const googleSuccess = async (res) => {
+        const result = res?.profileObj
+        const token = res?.tokenId
+
+        console.log(result);
+    }
     return(
     <Row className="justify-content-md-center">
         <Card className={styles.card}>
@@ -45,7 +53,11 @@ const SignUp = ()=>{
             <Button size="md" className={styles.button}>Sign Up</Button>
             <p>OR</p>
             <GoogleLogin
-                    buttonText="Sign in with Google"
+                buttonText="Login with Google"
+                clientId="YOUR_CLIENT_ID"
+                onSuccess={googleSuccess}
+                onFailure={googleError}
+                cookiePolicy="single_host_origin"
             />
                 <p >Already have an Account? <a href="/login">Login</a></p>
         </Card>
