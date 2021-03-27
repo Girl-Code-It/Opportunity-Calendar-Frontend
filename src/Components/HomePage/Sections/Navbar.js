@@ -30,7 +30,7 @@ function navbar() {
           </Link>
           <Link smooth={true} offset={-90} duration={1000} to="contact">
             Contact Us
-          </Link >
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -13,7 +13,6 @@ class FAQS extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-
   handleChange(id) {
     const prevcards = [...this.state.cards];
     const cards = prevcards.map((c) => {

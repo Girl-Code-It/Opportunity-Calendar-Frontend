@@ -1,13 +1,6 @@
 import React from 'react';
 import styles from '../../CSS/Navbar.module.css';
-import {
-  Navbar,
-  Nav,
-  Form,
-  FormControl,
-  Button,
-
-} from 'react-bootstrap';
+import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 
 import { AiOutlineSearch } from 'react-icons/ai';
 
@@ -22,22 +15,19 @@ function navbar() {
         </a>
       </Navbar.Brand>
 
-      <Form inline >
+      <Form inline>
         <div className={styles.container}>
-          <input className={styles.inp} type="text" placeholder="Search..."/>
+          <input className={styles.inp} type="text" placeholder="Search..." />
           <div className={styles.search}></div>
-          </div>
+        </div>
       </Form>
 
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
-
-
-        <Nav className="mr-auto">
-
-        </Nav>
-
-        <Button href="/signup" variant="outline-info">Login/Signup</Button>{' '}
+        <Nav className="mr-auto"></Nav>
+        <Button href="/signup" variant="outline-info">
+          Login/Signup
+        </Button>{' '}
       </Navbar.Collapse>
     </Navbar>
   );

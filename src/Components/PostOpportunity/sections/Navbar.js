@@ -21,18 +21,15 @@ function navbar() {
           It
         </a>
       </Navbar.Brand>
-      <Form inline >
+      <Form inline>
         <div className={styles.container}>
-          <input className={styles.inp} type="text" placeholder="Search..."/>
+          <input className={styles.inp} type="text" placeholder="Search..." />
           <div className={styles.search}></div>
-          </div>
+        </div>
       </Form>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
-
         <Button variant="outline-info">Login/Signup</Button>{' '}
-
-
       </Navbar.Collapse>
     </Navbar>
   );

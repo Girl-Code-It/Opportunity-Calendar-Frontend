@@ -30,16 +30,8 @@ function App() {
               </div>
             )}
           />
-          <Route
-            exact
-            path="/signup"
-            component={SignUp}
-          />
-          <Route
-            exact
-            path="/login"
-            component={Login}
-          />
+          <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/login" component={Login} />
           <Route
             exact
             path="/viewopportunity"
@@ -170,11 +162,13 @@ function App() {
               </div>
             )}
           />
-          <Route render={(props) => (
-            <div>
-              <PageNotFound />
-            </div>
-          )}/>
+          <Route
+            render={(props) => (
+              <div>
+                <PageNotFound />
+              </div>
+            )}
+          />
         </Switch>
         <ScrollTop />
         <Footer />

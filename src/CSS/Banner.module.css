@@ -41,13 +41,13 @@
 }
 
 .Button:hover {
+  text-decoration: none;
   background: #55b1eb;
   background-image: -webkit-linear-gradient(top, #55b1eb, #2389c4);
   background-image: -moz-linear-gradient(top, #55b1eb, #2389c4);
   background-image: -ms-linear-gradient(top, #55b1eb, #2389c4);
   background-image: -o-linear-gradient(top, #55b1eb, #2389c4);
   background-image: linear-gradient(to bottom, #55b1eb, #2389c4);
-  text-decoration: none;
 }
 
 /* make outline none when button gets clicked */

@@ -16,23 +16,22 @@ function Footer() {
     <Jumbotron className={styles.Jumbotron}>
       <Container className={styles.ContainerFooter}>
         <Row className={styles.Top1}>
-
           <Col className={styles.Column1} style={{ textAlign: 'center' }}>
-            <h5 style={{ fontSize: '22px'}}> PRODUCTS </h5>
+            <h5 style={{ fontSize: '22px' }}> PRODUCTS </h5>
             <div className={styles.Rectangle} style={{ width: '120px' }}></div>
-            <p style={{ fontSize: '18px'}}> CodeMaps </p>
-            <p style={{ fontSize: '18px'}}> Opportuntiy Calendar </p>
+            <p style={{ fontSize: '18px' }}> CodeMaps </p>
+            <p style={{ fontSize: '18px' }}> Opportuntiy Calendar </p>
           </Col>
 
           <Col className={styles.ImgColumn}>
             <Image className={styles.Logo} src={Logo} alt="Logo" />
           </Col>
-          
+
           <Col className={styles.Column2} style={{ textAlign: 'center' }}>
-            <h5 style={{ fontSize: '22px'}}> LINKS </h5>
+            <h5 style={{ fontSize: '22px' }}> LINKS </h5>
             <div className={styles.Rectangle2} style={{ width: '70px' }}></div>
-            <p style={{ fontSize: '18px'}}> Terms and Condition </p>
-            <p style={{ fontSize: '18px'}}> Privacy Policy </p>
+            <p style={{ fontSize: '18px' }}> Terms and Condition </p>
+            <p style={{ fontSize: '18px' }}> Privacy Policy </p>
           </Col>
         </Row>
 
@@ -48,15 +47,15 @@ function Footer() {
           <a
             data-testid="instagram"
             href="https://www.instagram.com/girlcodeit/"
-              className={styles.Shift}
+            className={styles.Shift}
           >
             {' '}
             <FaInstagram />{' '}
           </a>
           <a
-              data-testid="twitter"
-              href="https://twitter.com/GirlCodeIt1"
-              className={styles.Shift}
+            data-testid="twitter"
+            href="https://twitter.com/GirlCodeIt1"
+            className={styles.Shift}
           >
             {' '}
             <FaTwitter />{' '}
@@ -69,15 +68,15 @@ function Footer() {
           </Col>
         </Row>
 
-        <Row className={styles.Top1, styles.ContactRow}>
-            <p>
-              {' '}
-              <FaPhoneAlt /> (+91) - 83848-13292{' '}
-            </p>
-            <p>
-              {' '}
-              <GrMail /> girlcodeit@gmail.com{' '}
-            </p>
+        <Row className={(styles.Top1, styles.ContactRow)}>
+          <p>
+            {' '}
+            <FaPhoneAlt /> (+91) - 83848-13292{' '}
+          </p>
+          <p>
+            {' '}
+            <GrMail /> girlcodeit@gmail.com{' '}
+          </p>
         </Row>
 
         <Row className={styles.Bottom1}>
