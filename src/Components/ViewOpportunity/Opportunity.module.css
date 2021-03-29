@@ -22,8 +22,31 @@
   /* margin-left: 50%; */
   border-radius: 15px;
   box-shadow: 0px 2px 2px 0px #ccc;
+
+  
+  position: relative;
+  animation: card;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+
+  cursor: pointer;
+  
+  background-color: #fff;
+  transform: scale(1);
+  transition:all 1s linear;
 }
 
+/* make animation for card from left:-1000px to left:0 */
+@keyframes card{
+  0%   {left: -1000px;}
+  100% {left: 0;}
+}
+/* make transform scale to 1.2 and using transition */
+/* change background color on hover to gray */
+.Card:hover{
+  transform: scale(1.2);
+  background-color: #cec9c9;
+}
 .CardTitle {
   font-size: 1rem;
   text-align: left;
