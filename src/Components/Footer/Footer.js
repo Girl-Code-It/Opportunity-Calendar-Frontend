@@ -83,7 +83,7 @@ function Footer() {
           <Col>
             <p>
               {' '}
-              <BiCopyright /> 2020 Girl Code It | All rights reserved.
+              <BiCopyright /> {new Date().getFullYear()} Girl Code It | All rights reserved.
             </p>
           </Col>
         </Row>
