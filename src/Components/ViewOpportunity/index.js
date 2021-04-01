@@ -37,6 +37,7 @@ const mapUrlToName = {
   hackathon: 'Hackathons',
   internships: 'Internship Opportunities',
   fulltime: 'Full Time Jobs',
+ 
 };
 
 export function ViewOpportunity(props) {
@@ -108,27 +109,29 @@ export function ViewOpportunity(props) {
             <Card className="text-center">
               <Card.Body
                 style={{
-                  backgroundColor: '#BD6997',
+                  backgroundColor: '#F0F0F0',
                   marginTop: '7rem',
                   height: '10rem',
                 }}
               >
                 <Card.Title></Card.Title>
-                <Card.Text>
-                  <Button
-                    variant="primary"
-                    href={postOpportunityPath}
-                    style={{ borderRadius: '5 5 5 5', borderWidth: '0 0 0 0' }}
-                    className={styles.Button}
-                  >
-                    <span style={{ fontWeight: 'bold' }}>Post Opportunity</span>
-                  </Button>
+                {/* Style on banner headeing */}
+                {/* The banner heading  changes accordingly. */}
+                <Card.Text className="CardText"> 
+                   <h3 
+                   style={{ fontWeight: 'bold' 
+                           ,color:'#0A91C8',
+                            textAlign: 'center',
+                            marginTop: '30px',
+                            fontSize:'55px',
+                          }}>{mapUrlToName[splitUrl]}</h3>
                 </Card.Text>
               </Card.Body>
             </Card>
             <Jumbotron style={{ backgroundColor: 'white', marginTop: '5rem' }}>
               <Container>
                 <Row>
+                {/* Select Opportunity dropdown */}
                   <NavDropdown
                     title={
                       <span
@@ -141,11 +144,14 @@ export function ViewOpportunity(props) {
                         }}
                       >
                         {mapUrlToName[splitUrl]}
+                        
                       </span>
                     }
+                    placeholder="Selectoppertunity.."
                     id="dropdown-basic-button"
                     className={styles.Dropdown}
                   >
+                    
                     <NavDropdown.Item href="/viewopportunity/fulltime">
                       {' '}
                       Full Time Jobs{' '}

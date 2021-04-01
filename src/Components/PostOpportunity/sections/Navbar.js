@@ -29,6 +29,10 @@ function navbar() {
       </Form>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
+      {/* Post Opportunity button  redirect to Post Opportunity page of respective opportunity */}
+      <Button  href="/viewopportunity/fulltime" variant="primary">
+        View Opportunity
+        </Button>{' '}
         <Button variant="outline-info">Login/Signup</Button>{' '}
       </Navbar.Collapse>
     </Navbar>
