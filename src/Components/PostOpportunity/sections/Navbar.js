@@ -11,7 +11,16 @@ import {
 } from 'react-bootstrap';
 import { AiOutlineSearch } from 'react-icons/ai';
 
-function navbar() {
+function Nnavbar() {
+
+  const [postOpportunityPath, setPostOpportunityPath] = React.useState();
+
+  React.useEffect(() => {
+    const pathname = window.location.pathname;
+    const lastChunk = pathname.split('/').pop();
+    lastChunk && setPostOpportunityPath(`/viewopportunity/${lastChunk}`);
+  }, []);
+
   return (
     <Navbar fixed="top" bg="light" expand="lg" className={styles.NavBar}>
       <Navbar.Brand className={styles.Logo}>
@@ -29,10 +38,13 @@ function navbar() {
       </Form>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
+        <Button href={postOpportunityPath} variant="primary" className="btn btn-info">
+          Find Opportunity
+        </Button>
         <Button variant="outline-info">Login/Signup</Button>{' '}
       </Navbar.Collapse>
     </Navbar>
   );
 }
 
-export default navbar;
+export default Nnavbar;

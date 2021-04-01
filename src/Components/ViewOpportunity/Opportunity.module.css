@@ -156,10 +156,58 @@ a:hover {
 .BannerImage {
   width: 7rem;
   height: 15rem;
-  margin-top: 100px;
   margin-left: 200px;
 }
 
+.drop{
+  background-color: white;
+  margin-top: 5rem ;
+  margin-bottom: -11rem ; 
+}
+@media (max-width : 661px) {
+  .drop{
+    margin-left: 0;
+    margin-top: 10rem;
+  }
+}
+@media (min-width: 662px) and (max-width: 830px){
+  .drop{
+    margin-left: 20rem;
+  }
+}
+@media (min-width: 831px) and (max-width: 1000px){
+  .drop{
+    margin-left: 30rem;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1200px){
+  .drop{
+    margin-left: 40rem;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px){
+  .drop{
+    margin-left: 50rem;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1600px){
+  .drop{
+    margin-left: 60rem;
+  }
+}
+
+@media (min-width: 1601px) {
+  .drop{
+    margin-left: 70rem;
+  }
+}
+@media (max-width: 570px){
+  .drop{
+    margin-top: 10rem;
+  }
+}
 @media (max-width: 992px) {
   .BannerImage {
     width: 15rem;
@@ -187,6 +235,7 @@ a:hover {
   border-radius: 5px 5px 5px 5px;
   cursor: pointer;
   transition: all 0.5s;
+
 }
 
 @media (max-width: 992px) {
