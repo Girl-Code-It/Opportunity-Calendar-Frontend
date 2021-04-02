@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 // import axios from 'axios'
 import HomePage from './Components/HomePage/HomePage';
 import PostOpportunity from './Components/PostOpportunity/PostOpportunity';
