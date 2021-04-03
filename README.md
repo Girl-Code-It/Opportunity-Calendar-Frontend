@@ -90,8 +90,8 @@ We are glad to have your contributions to the project, Please make sure to read 
 | ----------- | ------------------------------- | ------ |
 | Level 0     | 2                               | 5      |
 | Level 1     | 2                               | 10     |
-| Level 2     | 3                               | 15     |
-| Level 3     | 5                               | 25     |
+| Level 2     | 3                               | 25     |
+| Level 3     | 5                               | 45     |
 
 - If you fail to make a PR within the deadline, then the issue will be assigned to another person in the queue.
 
