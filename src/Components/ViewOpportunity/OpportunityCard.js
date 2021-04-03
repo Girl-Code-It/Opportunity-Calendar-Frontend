@@ -40,32 +40,32 @@ export function OpportunityCard(props) {
               <Row>
                 <Col className="col-lg-4 col-6">
                   <h5 className={styles.Heading}>
-                     <span className={styles.Value}><i className="fa fa-calendar"/>{item.date}</span>
+                     <span className={styles.Value}><i className="fa fa-calendar"/>23-3-2021</span>
                   </h5>
                 </Col>
 
                 <Col className="col-lg-4 col-6">
                   <h5 className={styles.Heading}>
-                    <span className={styles.Value}><i className="fas fa-calendar"/>{item.deadline}</span>
+                    <span className={styles.Value}><i className="fas fa-calendar"/>28-3-2021</span>
                   </h5>
                 </Col>
 
                 <Col className="col-lg-4 col-6">
                   <h5 className={styles.Heading}>
-                    <span className={styles.Value}><i className="fas fa-map-marker-alt"/>{item.location}</span>
+                    <span className={styles.Value}><i className="fas fa-map-marker-alt"/>Pure,Maharashtra</span>
                   </h5>
                 </Col>
 
                 <Col className="col-lg-6 col-6">
                   <h5 className={styles.Heading}>
-                    <span className={styles.Value}><i className="fas fa-briefcase"/>{item.eligibility}</span>
+                    <span className={styles.Value}><i className="fas fa-briefcase"/>CSE graduate</span>
                   </h5>
                 </Col>
                 
                 
               </Row>
             </Container>
-            <p className={styles.Description}>{item.description}</p>
+            <p className={styles.Description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies integer quis auctor elit sed. Pretium vulputate sapien nec sagittis.</p>
           </Card.Text>
 
          <div className={styles.btn}>
@@ -88,12 +88,12 @@ export function OpportunityCard(props) {
                   src={logo}
                   // src = {item.imgURL}
                   alt={item.title}
-                  className={styles.CardImage}
+                  className={styles.KnowImage}
                   
                 />
                 <div  className={styles.Know}>
                 <Card.Title className={styles.KnowTitle}>Abysess Solution</Card.Title>
-                <Card.Text className={styles.KnowHeading}>Software Development Enginner - l</Card.Text> 
+                <Card.Text className={styles.KnowHeadingp}>Software Development Enginner - l</Card.Text> 
                 </div>
                 
                 <div className={styles.close} onClick={toggleclick}>
@@ -109,7 +109,7 @@ export function OpportunityCard(props) {
               <Container>
                 <Row>
                   <Col>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies integer quis auctor elit sed. Pretium vulputate sapien nec sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies integer quis auctor elit sed. Pretium vulputate sapien nec sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
                   </Col>
                 </Row>
 
@@ -118,9 +118,10 @@ export function OpportunityCard(props) {
                     <h5 className={styles.KnowHeading}>
                     Responsiblities:
                     </h5>
-                    <p>-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <p>-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p>-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                     
+                    <p>- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p> - Ultricies integer quis auctor elit sed. Pretium vulputate sapien nec sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>- Ultricies integer quis auctor elit sed. Pretium vulputate sapien nec sagittis.
                     </p>
                   </Col>
                 </Row>
@@ -130,9 +131,9 @@ export function OpportunityCard(props) {
                     <h5 className={styles.KnowHeading}>
                     Qualification:
                     </h5>
-                    <p>-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <p>-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p>-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p>- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p> - Ultricies integer quis auctor elit sed. Pretium vulputate sapien nec sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>- Ultricies integer quis auctor elit sed. Pretium vulputate sapien nec sagittis.
                     </p>
                   </Col>
                 </Row>

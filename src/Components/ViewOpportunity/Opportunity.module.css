@@ -22,7 +22,8 @@ html {
 .Card {
   display: flex;
   justify-content: center;
-  width: 50rem;
+  width: 864px;
+  
   /* margin-left: 50%; */
   margin-top: 5rem;
   margin-left: 15rem;
@@ -44,7 +45,7 @@ html {
 
 .CardTitle {
   padding-top: 20px;
-  font-size: 1.5rem;
+  font-size: 24px;
   text-align: left;
 }
 
@@ -54,16 +55,26 @@ a:hover {
 }
 .CardInfo{
   color: #bbbbbb;
-  font-size: 1rem;
+  font-size: 20px;
 }
 .CardImage {
-  width: 100px;
-  height: 100px;
+  margin-top: -50px;
+  width: 80px;
+  height:80px;
+  padding-top: 0px;
   margin-left: 20px;
-  padding: 15px;
+ margin-right: 20px;
   border-radius: 50%;
 }
+.KnowImage{
+  margin-top: -50px;
+  width: 80px;
+  height:80px;
 
+  margin-left: 20px;
+ margin-right: 20px;
+  border-radius: 50%;
+}
 .Rectangle {
   width: 155px;
   height: 3px;
@@ -90,18 +101,16 @@ a:hover {
 }
 
 .Description {
-  margin-top: 25px;
-  margin-left: 35px;
+  margin-top: 28px;
+  margin-left: 18px;
   hyphens: none;
   line-break: auto;
   color: #bbbbbb;
-}
-
-.Description {
   margin-top: 15px;
   margin-right: 25px;
-  margin-left: 35px;
+
 }
+
 
 .Heading,
 .KnowHeading {
@@ -212,6 +221,10 @@ a:hover {
   font-size: 2rem;
   
 }
+.Heading,
+.Value {
+  font-size: 1rem;
+}
 /*********button apply in Know Card******/
 .KnowButton1{
   color: #fff;
@@ -223,9 +236,15 @@ a:hover {
 }
 .KnowHeading{
   color:#000;
+
+}
+.KnowHeadingp{
+  color: #000;
+  font-size: 25px;
 }
 .KnowHeading p{
-  color: #bbbbbb;
+  color: #7B7C7D;
+  font-size: 20px;
 }
 .KnowHeading p i{
   padding-right: 10px;
@@ -244,12 +263,12 @@ a:hover {
   opacity: 1;
   position: absolute;
   z-index: 10000;
-  top:35%;
-  left: 55%;
+  top:34%;
+  left: 60%;
   font-size: 1.5rem;
   bottom: 0;
  transform: translate(-50%,-50%);
-  width:60%;
+  width:70%;
 
 
 }
@@ -273,24 +292,46 @@ a:hover {
 @media (max-width: 1500px){
   .Card {
     width: 40rem;
-    margin-left: 120px;
+    margin-left: 100px;
+  }
+  .active{
+    left:45%;
+    width: 60%;
+    font-size: 1.1rem;
+  }
+  .KnowImage{
+    margin-left:0;
+
   }
 } 
 
 .Dropdown {
   width: auto;
   min-width: 200px;
-  color: #fff;
+  color: #A1AAB2;
   font-size: 10px;
-  background-color: #e4fbff;
+  background-color: #c4c4c4;
   border-color: #008dc8;
   border-radius: 5px 5px 5px 5px;
   cursor: pointer;
   transition: all 0.5s;
+  padding-top: 9px;
+}
+.dropdown-toggle::after {
+  color: #c4c4c4 !important;
+  background-color: #c4c4c4 !important;
 }
 
 
 @media (max-width: 992px) {
+  .KnowImage{
+    margin-top: 10px;
+  }
+  .active{
+    left: 60%;
+    width: 70%;
+    font-size: 1rem;
+  }
   .BannerImage {
     width: 15rem;
     margin-left: 0;
@@ -313,18 +354,35 @@ a:hover {
 }
 
 @media only screen and (max-width: 800px){
+  .CardImage{
+    margin-top: 5px;
+  }
   .Card {
-    width: 30rem;
+    width: 33rem;
     margin-left: 50px;
   }
+  .Heading,
+  .Value {
+    font-size: .9rem;
+  }
 }
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 660px) {
+  .active{
+    left: 40%;
+    width: 70%;
+    font-size: .7rem;
+  }
+  .KnowHeadingp{
+    font-size: 20px;
+  }
   .RowCard {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
-
+  .CardTitle{
+    font-size: 20px;
+  }
   .ColumnCard {
     max-width: 100%;
   }
@@ -334,17 +392,24 @@ a:hover {
   }
 
   .Card {
-    width: 30rem;
+    width: 25rem;
     margin-left: 0px;
   }
 }
 
 @media only screen and (max-width: 530px) {
+  .active{
+    left: 45%;
+    width: 80%;
+    font-size: .7rem;
+  }
   .Title {
     margin-top: 10px;
     font-size: 30px;
   }
-
+  .KnowHeadingp{
+    font-size: 15px;
+  }
   .CardImage {
     width: 100px;
     height: 90px;
@@ -354,7 +419,7 @@ a:hover {
 
   .Heading,
   .Value {
-    font-size: 1.1rem;
+    font-size:.9rem;
   }
 
   .Card {

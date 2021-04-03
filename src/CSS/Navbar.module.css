@@ -60,8 +60,9 @@ Form{
   
 }
 Form input{
-  background-color:#F0F0F0 !important;
+  background-color:#C4C4C4 !important;
   width: inherit;
+  font-size: 16px;
 }
 
 .container {
@@ -81,28 +82,31 @@ form .search {
   right: 0;
   bottom: 0;
   left: -15px;
-  color: rgb(134, 129, 129);
+  color: #C4C4C4;
   /* width: 15px;
   height: 2px; */
   z-index: 4;
-  width: 60px;
-  height: 60px;
-
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
   border-radius: 50%;
  
 }
 
-
+::placeholder{
+  font-size: .8rem;
+  font-family: sans-serif;
+}
 .search:hover {
   cursor: pointer;
 }
 .search::before {
   position: absolute;
-  top: 22px;
+  top: 33px;
   right: 0;
   bottom: 0;
-  left: 22px;
-  width: 13px;
+  left: -122px;
+  width: 10px;
   height: 2px;
   margin: auto;
   background: rgb(134, 129, 129);
@@ -112,12 +116,12 @@ form .search {
 }
 .search::after {
   position: absolute;
-  top: -5px;
+  top: 15px;
   right: 0;
   bottom: 0;
-  left: 0px;
-  width: 20px;
-  height: 20px;
+  left: -138px;
+  width: 15px;
+  height: 15px;
   margin: auto;
   border: 2px solid rgb(134, 129, 129);
   border-radius: 50%;

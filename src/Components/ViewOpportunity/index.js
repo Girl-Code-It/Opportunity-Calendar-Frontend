@@ -109,9 +109,9 @@ export function ViewOpportunity(props) {
             <Card className="text-center">
               <Card.Body
                 style={{
-                  backgroundColor: '#F0F0F0',
+                  backgroundColor: '#E2F3FB',
                   marginTop: '7rem',
-                  height: '10rem',
+                  height: '210px',
                 }}
               >
                 <Card.Title></Card.Title>
@@ -122,8 +122,9 @@ export function ViewOpportunity(props) {
                    style={{ fontWeight: 'bold' 
                            ,color:'#0A91C8',
                             textAlign: 'center',
-                            marginTop: '30px',
-                            fontSize:'55px',
+                            marginTop: '40px',
+                            fontSize:'60px',
+                            
                           }}>{mapUrlToName[splitUrl]}</h3>
                 </Card.Text>
               </Card.Body>
@@ -137,10 +138,13 @@ export function ViewOpportunity(props) {
                       <span
                         className={styles.Title}
                         style={{
-                          fontSize: '30px',
+                          fontSize: '16px',
                           fontFamily: 'Arial, Helvetica, sans-serif',
                           marginRight: '10px',
                           marginTop: '0',
+                          color:'#A1AAB2',
+                          paddingRight:'20px',
+
                         }}
                       >
                         {mapUrlToName[splitUrl]}
