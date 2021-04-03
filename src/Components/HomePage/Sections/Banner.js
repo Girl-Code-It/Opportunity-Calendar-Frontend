@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../../CSS/Banner.module.css';
 import { Container, Row, Col, Jumbotron, Image } from 'react-bootstrap';
-import BannerImage from '../../../Assets/banner.png';
+import BannerImage from '../../../Assets/banner.gif';
 
 function Banner() {
   return (

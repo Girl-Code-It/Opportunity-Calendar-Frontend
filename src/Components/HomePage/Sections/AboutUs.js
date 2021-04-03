@@ -1,7 +1,7 @@
 import React from 'react';
 import { Jumbotron, Container, Image, Row, Col } from 'react-bootstrap';
 import styles from '../../../CSS/AboutUs.module.css';
-import AboutUsImg from '../../../Assets/AboutUsImg.3bed171e.png';
+import AboutUsImg from '../../../Assets/AboutUs.gif';
 
 export default function AboutUs() {
   return (
