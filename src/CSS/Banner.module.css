@@ -2,6 +2,7 @@
   margin-top: 30px;
   padding-top: 80px;
   background-color: white;
+  padding-bottom: 0px;
 }
 
 .Heading {
@@ -58,7 +59,8 @@
 .BannerImage {
   z-index: 10;
   width: 100%;
-  height: 400px;
+  height: 525px;
+  margin-top: -15%;
 }
 
 .BannerImage2 {
