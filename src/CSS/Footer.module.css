@@ -16,21 +16,21 @@ html {
 
 .ContactCol {
   justify-content: center;
-  margin-left: 12px;
   margin-top: 20px;
+  margin-left: 12px;
 }
 .ContactRow {
   justify-content: center;
-  margin-left: 2%;
   margin-top: 20px;
+  margin-left: 2%;
 }
 .ContactRow p {
   padding-right: 20px;
 }
 .Logo {
+  justify-content: center;
   /* height: 180px; */
   width: 70%;
-  justify-content: center;
 }
 .Top1 {
   align-items: center;
@@ -65,15 +65,15 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 .Bottom1 {
-  padding: 0px;
   margin-top: 1px;
   margin-left: 37%;
+  padding: 0px;
 }
 .SocialLinks {
-  text-align: end;
   justify-content: center;
-  margin-right: 2px;
   margin-top: 0px;
+  margin-right: 2px;
+  text-align: end;
 }
 .Shift {
   margin-top: 0px;
@@ -118,9 +118,9 @@ p {
 }
 @media only screen and (max-width: 1025px) {
   .Bottom1 {
-    padding: 0px;
     margin-top: 1px;
     margin-left: 35%;
+    padding: 0px;
   }
   .Rectangle {
     margin-left: 98px;
@@ -165,8 +165,8 @@ p {
     margin-left: 29%;
   }
   .Logo {
-    margin-left: 0px;
     width: 95%;
+    margin-left: 0px;
   }
   .ContactCol {
     margin-left: 14px;
@@ -271,8 +271,8 @@ p {
     margin-left: 50px;
   }
   .Logo {
-    margin-left: 0px;
     width: 165%;
+    margin-left: 0px;
     padding: 20%;
   }
   .Bottom1 {
@@ -295,8 +295,8 @@ p {
   }
   .Column1,
   .Column2 {
-    margin-left: 15px;
     margin-bottom: 0px;
+    margin-left: 15px;
   }
   .Bottom1 p {
     max-width: 100%;
@@ -312,8 +312,8 @@ p {
     margin-left: 78px;
   }
   .ImgColumn {
-    height: 10%;
     width: 45%;
+    height: 10%;
   }
   .Logo {
     width: 150%;
@@ -426,8 +426,8 @@ p {
   }
   .Bottom1 p {
     max-width: 100%;
-    margin-left: 0px;
     margin-right: 10px;
+    margin-left: 0px;
   }
 }
 @media (max-width: 517px) {
@@ -439,8 +439,8 @@ p {
   }
   .Bottom1 p {
     max-width: 100%;
-    margin-left: 0px;
     margin-right: 50px;
+    margin-left: 0px;
   }
 }
 @media (max-width: 510px) {
@@ -451,9 +451,9 @@ p {
     margin-left: 200px;
   }
   .Bottom1 p {
+    justify-content: space-evenly;
     max-width: 100%;
     margin-left: 0px;
-    justify-content: space-evenly;
     text-align: center;
   }
 }
@@ -465,9 +465,9 @@ p {
     margin-left: 198px;
   }
   .Bottom1 p {
+    justify-content: space-evenly;
     max-width: 100%;
     margin-left: 0px;
-    justify-content: space-evenly;
   }
 }
 @media (max-width: 499px) {

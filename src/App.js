@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 // import axios from 'axios'
 import HomePage from './Components/HomePage/HomePage';
 import PostOpportunity from './Components/PostOpportunity/PostOpportunity';
@@ -30,16 +31,8 @@ function App() {
               </div>
             )}
           />
-          <Route
-            exact
-            path="/signup"
-            component={SignUp}
-          />
-          <Route
-            exact
-            path="/login"
-            component={Login}
-          />
+          <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/login" component={Login} />
           <Route
             exact
             path="/viewopportunity"
@@ -170,11 +163,13 @@ function App() {
               </div>
             )}
           />
-          <Route render={(props) => (
-            <div>
-              <PageNotFound />
-            </div>
-          )}/>
+          <Route
+            render={(props) => (
+              <div>
+                <PageNotFound />
+              </div>
+            )}
+          />
         </Switch>
         <ScrollTop />
         <Footer />

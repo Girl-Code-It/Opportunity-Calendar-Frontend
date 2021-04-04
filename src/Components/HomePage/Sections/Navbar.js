@@ -22,15 +22,15 @@ function navbar() {
           <Link smooth={true} offset={-90} duration={1000} to="about">
             About Us
           </Link>
-          <Link smooth={true} offset={-190} duration={1000} to="impact">
-            What we Do?
+          <Link smooth={true} offset={-90} duration={1000} to="knowAbout">
+            Opportunities
           </Link>
           <Link smooth={true} offset={-90} duration={1000} to="faqs">
             FAQs
           </Link>
           <Link smooth={true} offset={-90} duration={1000} to="contact">
             Contact Us
-          </Link >
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

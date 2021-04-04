@@ -4,12 +4,11 @@
 
 Opportunity Calendar is the one-stop place to refer important opportunites available in tech-space like newly posted jobs, internships, hackathons, tech-conferences, scholarhsips etc.
 
-
 [![Issues](https://img.shields.io/github/issues/Girl-Code-It/Opportunity-Calendar-Frontend)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/issues)
 [![PRs](https://img.shields.io/github/issues-pr/Girl-Code-It/Opportunity-Calendar-Frontend)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/pulls)
 [![Maintenance](https://img.shields.io/maintenance/yes/2021?color=green&logo=github)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend)
-[![Forks](https://img.shields.io/github/forks/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend) 
-[![Stars](https://img.shields.io/github/stars/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend) 
+[![Forks](https://img.shields.io/github/forks/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend)
+[![Stars](https://img.shields.io/github/stars/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend)
 [![Watchers](https://img.shields.io/github/watchers/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend)
 
 ## Table of Contents
@@ -87,22 +86,20 @@ We are glad to have your contributions to the project, Please make sure to read 
 - If any issue is assigned to you, make sure you complete it before deadline.
 - Deadline for issues:
 
-| Issue Level | Max. no. of days to submit a PR | Points  |
-|------------ |---------------------------------|---------|
-| Level 0     | 2                               |    5    |
-| Level 1     | 2                               |   10    |
-| Level 2     | 3                               |   15    | 
-| Level 3     | 5                               |   25    | 
-
+| Issue Level | Max. no. of days to submit a PR | Points |
+| ----------- | ------------------------------- | ------ |
+| Level 0     | 2                               | 5      |
+| Level 1     | 2                               | 10     |
+| Level 2     | 3                               | 25     |
+| Level 3     | 5                               | 45     |
 
 - If you fail to make a PR within the deadline, then the issue will be assigned to another person in the queue.
 
-
 <h2 align="center">Designs</h2>
 
--   [**HomePage**](https://xd.adobe.com/view/c0932765-884f-4cb5-7799-3d58ca6a1e8e-b6a2/?fullscreen)
--   [**View Opportunities**](https://xd.adobe.com/view/c0932765-884f-4cb5-7799-3d58ca6a1e8e-b6a2/screen/6c24433f-7f7e-433d-9fbd-9b08bd8c47cf/?fullscreen)
--   [**Post Opportunity**](https://xd.adobe.com/view/c0932765-884f-4cb5-7799-3d58ca6a1e8e-b6a2/screen/7bd973ee-1fab-4d8b-961c-028e2bf5296c/?fullscreen)
+- [**HomePage**](https://xd.adobe.com/view/c0932765-884f-4cb5-7799-3d58ca6a1e8e-b6a2/?fullscreen)
+- [**View Opportunities**](https://xd.adobe.com/view/c0932765-884f-4cb5-7799-3d58ca6a1e8e-b6a2/screen/6c24433f-7f7e-433d-9fbd-9b08bd8c47cf/?fullscreen)
+- [**Post Opportunity**](https://xd.adobe.com/view/c0932765-884f-4cb5-7799-3d58ca6a1e8e-b6a2/screen/7bd973ee-1fab-4d8b-961c-028e2bf5296c/?fullscreen)
 
 <h2 align="center">Bugs and Feature Requests</h2>
 
@@ -129,4 +126,3 @@ Code released under the [MIT License](https://github.com/Girl-Code-It/Opportunit
 		</td>
 	</tr>
 </table>
-
