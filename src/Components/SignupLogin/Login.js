@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../../CSS/SignupLogin.module.css';
-import { Form, Card, Button, Row } from 'react-bootstrap';
+import { Form, Card, Button, Row, InputGroup } from 'react-bootstrap';
 import { GoogleLogin } from 'react-google-login';
 
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
+  const handleShowPassword = () => setShowPassword(prevShowPassword => !prevShowPassword);
+
   return (
     <Row className="justify-content-md-center">
       <Card className={styles.card}>
@@ -16,7 +19,12 @@ const Login = () => {
 
           <Form.Group controlId="passWord">
             <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
+            <InputGroup>
+              <Form.Control type={showPassword ? 'text' : 'password'}  placeholder="Password" />
+              <InputGroup.Append>
+                <Button variant="secondary" onClick={handleShowPassword}>{showPassword ? 'Hide' : 'Show'}  </Button>
+              </InputGroup.Append>
+            </InputGroup>
 
             <a href="#">
               <small>Forgot password ?</small>
