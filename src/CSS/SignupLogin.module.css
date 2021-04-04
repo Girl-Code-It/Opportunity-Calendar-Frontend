@@ -60,3 +60,7 @@ Form {
 .card a:hover {
   text-decoration: none;
 }
+
+.reactIcons {
+  cursor: pointer;
+}
