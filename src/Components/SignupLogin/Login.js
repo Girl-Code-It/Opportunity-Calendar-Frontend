@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from '../../CSS/SignupLogin.module.css';
 import { Form, Card, Button, Row, InputGroup } from 'react-bootstrap';
 import { GoogleLogin } from 'react-google-login';
+import { BsEye, BsEyeSlash } from "react-icons/bs";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -21,8 +22,10 @@ const Login = () => {
             <Form.Label>Password</Form.Label>
             <InputGroup>
               <Form.Control type={showPassword ? 'text' : 'password'}  placeholder="Password" />
-              <InputGroup.Append>
-                <Button variant="secondary" onClick={handleShowPassword}>{showPassword ? 'Hide' : 'Show'}  </Button>
+              <InputGroup.Append onClick={handleShowPassword}>
+                <InputGroup.Text>
+                  {showPassword ? <BsEyeSlash /> : <BsEye />}
+                </InputGroup.Text>
               </InputGroup.Append>
             </InputGroup>
 
