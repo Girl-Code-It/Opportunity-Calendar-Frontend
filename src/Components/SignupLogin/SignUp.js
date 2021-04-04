@@ -35,7 +35,7 @@ const SignUp = () => {
             <Form.Label>Password</Form.Label>
             <InputGroup>
               <Form.Control type={showPassword ? 'text' : 'password'}  placeholder="Password" />
-              <InputGroup.Append onClick={handleShowPassword} >
+              <InputGroup.Append className={styles.reactIcons} onClick={handleShowPassword}>
                 <InputGroup.Text>
                   {showPassword ? <BsEyeSlash /> : <BsEye />}
                 </InputGroup.Text>
