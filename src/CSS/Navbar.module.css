@@ -9,6 +9,12 @@ a:active,
 a:global(.active) {
   border-bottom: 2px solid #008dc8;
   cursor: pointer;
+
+  /* background-color: #5cb3ff; */
+  /* border-radius: 10px; */
+  /* padding: 8px; */
+  transition: 0.4s;
+
 }
 
 .NavBar a {
@@ -18,6 +24,8 @@ a:global(.active) {
   font-size: 17px;
   letter-spacing: 0px;
 }
+
+
 
 .Brand:hover {
   text-decoration: none;
@@ -36,6 +44,11 @@ a:global(.active) {
   font-family: Arial;
   letter-spacing: 0px;
 }
+
+
+
+
+
 
 .Middle {
   margin-right: inherit;
