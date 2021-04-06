@@ -1,13 +1,16 @@
 import React from 'react';
 import styles from '../../../CSS/Navbar.module.css';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Image } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+import Logo from '../../../Assets/GCI.png';
 
 function navbar() {
   return (
     <Navbar fixed="top" bg="light" expand="lg" className={styles.NavBar}>
       <Navbar.Brand className={styles.Logo}>
         <a href="/" className={styles.Brand} style={{ fontSize: '35px' }}>
+        <Image  className={styles.Logo}  src={Logo} alt="Logo" width="110"
+          height="80" /> 
           Girl
           <span style={{ color: '#008dc8' }}> Code </span>
           It
