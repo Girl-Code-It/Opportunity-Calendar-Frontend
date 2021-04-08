@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../../CSS/SignupLogin.module.css';
-import { Form, Card, Button, Row } from 'react-bootstrap';
+import { Form, Card, Button, Row, InputGroup } from 'react-bootstrap';
 import { GoogleLogin } from 'react-google-login';
+import { BsEye, BsEyeSlash } from "react-icons/bs";
 
 const SignUp = () => {
+  const [showPassword, setShowPassword] = useState(false);
+  const handleShowPassword = () => setShowPassword(prevShowPassword => !prevShowPassword);
+
   return (
     <Row className="justify-content-md-center">
       <Card className={styles.card}>
@@ -29,7 +33,14 @@ const SignUp = () => {
 
           <Form.Group controlId="passWord">
             <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
+            <InputGroup>
+              <Form.Control type={showPassword ? 'text' : 'password'}  placeholder="Password" />
+              <InputGroup.Append className={styles.reactIcons} onClick={handleShowPassword}>
+                <InputGroup.Text>
+                  {showPassword ? <BsEyeSlash /> : <BsEye />}
+                </InputGroup.Text>
+              </InputGroup.Append>
+            </InputGroup>
           </Form.Group>
 
           <Form.Group controlId="c_passWord">
