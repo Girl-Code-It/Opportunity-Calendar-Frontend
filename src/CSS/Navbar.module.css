@@ -25,8 +25,6 @@ a:global(.active) {
   letter-spacing: 0px;
 }
 
-
-
 .Brand:hover {
   text-decoration: none;
   border: none;
@@ -45,14 +43,8 @@ a:global(.active) {
   letter-spacing: 0px;
 }
 
-
-
-
-
-
 .Middle {
   margin-right: inherit;
-
   margin-left: inherit;
 }
 
@@ -80,12 +72,12 @@ a:global(.active) {
   bottom: 0;
   left: 0;
   z-index: 4;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   margin: auto;
   background: #008dc8;
   border-radius: 50%;
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
   transition: all 1s;
 }
 .search:hover {
@@ -140,7 +132,7 @@ a:global(.active) {
   border: none;
   border-radius: 30px;
   outline: none;
-  box-shadow: 0 0 25px 0 #54cdff, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px 0 #54cdff, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
   opacity: 0;
   transition: all 1s;
 }
@@ -180,6 +172,12 @@ a:global(.active) {
   font-weight: bolder;
   text-shadow: 0 0 10px #82dcff;
   opacity: 0.5;
+}
+
+.navHeading{
+  text-align: 'center';
+  margin-top: '220px';
+  margin-bottom: '200px';
 }
 
 @media screen and (max-width: 991px) {
@@ -288,13 +286,8 @@ a:global(.active) {
 
 .Dropdown {
   float: right;
-
-  float: right;
-  margin-left: 500px;
-
   margin-left: 500px;
   color: #fff;
-
   font-size: 20px;
   background-color: #008dc8;
   border: none;
@@ -304,14 +297,9 @@ a:global(.active) {
 }
 
 .Button {
-  position: relative;
-  margin-right: 2%;
   padding: 5px 30px 5px 30px;
-  color: #fff;
-
-  font-size: 20px;
-
-  text-align: center;
+  color: #fff ;
+  font-size: 17px;
   text-align: center;
   background-color: #008dc8;
   border: none;
@@ -319,16 +307,51 @@ a:global(.active) {
   transition: all 0.5s;
 }
 
+.outline{
+  color: #008dc8;
+  background: #fff;
+  border: 1px solid #008dc8;
+}
+
+.Button:hover {
+  text-decoration: none;
+  background: #55b1eb;
+  background-image: -webkit-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: -moz-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: -ms-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: -o-linear-gradient(top, #55b1eb, #2389c4);
+  background-image: linear-gradient(to bottom, #55b1eb, #2389c4);
+}
+
+.outline:hover {
+  text-decoration: none;
+  color: #008dc8;
+  background: #d3e5f0;
+  background-image: -webkit-linear-gradient(top, #fff, #e1ecf3);
+  background-image: -moz-linear-gradient(top, #fff, #e1ecf3);
+  background-image: -ms-linear-gradient(top, #fff, #e1ecf3);
+  background-image: -o-linear-gradient(top, #fff, #e1ecf3);
+  background-image: linear-gradient(to bottom, #fff, #e1ecf3);
+}
+
+/* make outline none when button gets clicked */
+.Button:focus {
+  outline: none;
+}
+
+.link{
+  align-self: center;
+}
+
+.link:hover{
+  border: none;
+}
+
 @media (max-width: 360px) {
   .Logo {
     position: relative;
 
     font-size: 2rem;
-  }
-  .Button {
-    position: absolute;
-    top: 16px;
-    right: 0;
   }
 }
 
@@ -370,11 +393,7 @@ a:global(.active) {
       border: none;
       border-radius: 0px 8px 8px 0px;
     }
-    .Button {
-      position: absolute;
-      top: 16px;
-      right: 0;
-    }
+    
     .Search {
       width: 4rem;
     }
