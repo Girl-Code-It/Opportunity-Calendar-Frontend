@@ -1,34 +1,50 @@
 import React from 'react';
 
-import { NavDropdown, Card, Row, Col, Container } from 'react-bootstrap';
+import { NavDropdown, Card, Row, Col, Container, Image, Button } from 'react-bootstrap';
 import logo from '../../Assets/amdocs.png';
 import styles from './Opportunity.module.css';
 
 export function OpportunityCard(props) {
   const { item } = props;
-
+  console.log(item)
   return (
     <Card className={styles.Card}>
       <Container>
         <Row>
           <Col>
-            <Card.Img
+            <Row>
+            <Image
               src={logo}
               // src = {item.imgURL}
               alt={item.title}
               className={styles.CardImage}
+              roundedCircle
             />
-          </Col>
-          <Col>
-            <Card.Title className={styles.Title}>{item.title}</Card.Title>
-          </Col>
+            <Col>
+              <Card.Title className={styles.Title}>{item.title}</Card.Title>
+              <Card.Subtitle className='mb-2 text-muted' className={styles.Subtitle}><p>{item.company}</p></Card.Subtitle>
+            </Col>
+              
+            </Row>
+           
+        </Col>
+       
         </Row>
       </Container>
 
-      <Card.Body>
-        <Card.Text>
-          <p className={styles.Description}>{item.description}</p>
 
+      <Card.Body>
+        <Col>
+        <Card.Text>
+          { item.description && (
+              <ul className={styles.BulletList}>
+              <li>
+              <p className={styles.Description}>{item.description}</p>
+              </li>
+            </ul>
+          )}
+        
+         
           <Container>
             <Row>
               <Col>
@@ -38,7 +54,7 @@ export function OpportunityCard(props) {
               </Col>
               <Col>
                 <h5 className={styles.Heading}>
-                  Location :
+                  Location:
                   <span className={styles.Value}>{item.location}</span>
                 </h5>
               </Col>
@@ -61,8 +77,10 @@ export function OpportunityCard(props) {
           </Container>
         </Card.Text>
         <a href={item.url}>
-          <button className={styles.Button1}>Apply</button>
+          <Button variant="outline-info" className={styles.Button1}>Apply</Button>
         </a>
+        </Col>
+       
       </Card.Body>
     </Card>
   );
