@@ -21,24 +21,28 @@ function Footer() {
             <h5 style={{ fontSize: '22px' }}> Products </h5>
             <div className={styles.Rectangle} style={{ width: '120px' }}></div>
             <a href="https://girlcodeit.com/codemaps">
-            <p style={{ fontSize: '18px', color:'black' }}>CodeMaps</p>
+              <p style={{ fontSize: '18px', color: 'black'}}>CodeMaps</p>
             </a>
             <Link to="/">
-            <p style={{ fontSize: '18px' , color:"black"}}> Opportuntiy Calendar </p>
+              <p style={{ fontSize: '18px', color: "black" }}> Opportuntiy Calendar </p>
             </Link>
           </Col>
 
           <Col className={styles.ImgColumn}>
-            <a href="https://girlcodeit.com/" style={{justifyContent:"center"}}>
-            <Image className={styles.Logo} src={Logo} alt="Logo" />
+            <a href="https://girlcodeit.com/">
+              <Image className={styles.Logo} src={Logo} alt="Logo" />
             </a>
           </Col>
 
           <Col className={styles.Column2} style={{ textAlign: 'center' }}>
             <h5 style={{ fontSize: '22px' }}> Links </h5>
             <div className={styles.Rectangle2} style={{ width: '70px' }}></div>
-            <p style={{ fontSize: '18px' }}> Terms and Condition </p>
-            <p style={{ fontSize: '18px' }}> Privacy Policy </p>
+            <a href="#">
+            <p style={{ fontSize: '18px', color: 'black' }}> Terms and Condition </p>
+            </a>
+            <a href="#">
+            <p style={{ fontSize: '18px', color: 'black' }}> Privacy Policy </p>
+            </a>
           </Col>
         </Row>
 
@@ -71,7 +75,8 @@ function Footer() {
 
         <Row className={styles.Top1}>
           <Col className={styles.ContactCol} style={{ textAlign: 'center' }}>
-            <h5 style={{textDecoration: 'underline'}}> Contact Us </h5>
+            <h5> Contact Us </h5>
+            <div className={styles.Rectangle3}></div>
           </Col>
         </Row>
 

@@ -11,7 +11,13 @@ html {
 .ImgColumn {
   display: flex;
   justify-content: center;
-  margin-left: 12px;
+  margin-left: 100px;
+}
+
+.ImgColumn a:hover{
+  background-color: transparent;
+  color: transparent;
+  border-bottom: transparent;
 }
 
 .ContactCol {
@@ -49,16 +55,25 @@ h5 {
   position: absolute;
   right: 50%;
   left: 0;
-  margin-left: 130px;
+  margin-left: 120px;
   border-bottom: 2px #008dc8 solid;
 }
+
+
 .Rectangle2 {
   position: absolute;
   right: 60%;
   left: 0;
-  margin-left: 153px;
+  margin-left: 143px;
   border-bottom: 2px #008dc8 solid;
 }
+.Rectangle3 {
+  position: absolute;
+  width: 98px;
+  margin-left: 500px;
+  border-bottom: 2px #008dc8 solid;
+}
+
 p {
   margin-top: 10px;
   font-size: 16px;
