@@ -8,14 +8,14 @@
 .Card {
   width: 200px;
   border-radius: 2%;
-  box-shadow: 0px 3px 4px 0px #ccc;
+  /* box-shadow: 0px 3px 4px 0px #ccc; */
   /* margin-left: 50%; */
   transition: all 0.6s;
 }
 
 .Card:hover {
   z-index: 99;
-  box-shadow: 2px 2px 30px #b9b9b9;
+  box-shadow: 0px 3px 4px 0px #ccc;
   transform: scale(1.2);
   transition: all 1s;
 }
