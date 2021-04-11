@@ -6,7 +6,6 @@ import styles from './Opportunity.module.css';
 
 export function OpportunityCard(props) {
   const { item } = props;
-  console.log(item)
   return (
     <Card className={styles.Card}>
       <Container>
