@@ -16,8 +16,6 @@
   /* margin-left: 50%; */
   margin-top: 5rem;
   margin-left: 15rem;
-  border-top-color: #008dc8;
-  border-top-width: 20px;
   border-radius: 15px;
   /* margin-left: 50%; */
   border-radius: 15px;
@@ -132,6 +130,8 @@ a:hover {
   display:flex;
   justify-content:center;
   align-items:center;
+  margin-right: 5px;
+  float: right;
   font-size: 15px;
   text-align: center;
   border-radius: 5px;
@@ -141,6 +141,7 @@ a:hover {
 
 .Button1:hover {
   text-decoration: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   background-color: #008cd8;
 }
 
