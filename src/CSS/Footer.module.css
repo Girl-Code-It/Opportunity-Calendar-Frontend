@@ -99,6 +99,11 @@ p {
 .Shift:hover {
   border: none;
 }
+
+a:hover, Link:hover{
+  cursor:pointer;
+}
+
 @media only screen and (max-width: 1201px) {
   .Rectangle {
     margin-left: 128px;
