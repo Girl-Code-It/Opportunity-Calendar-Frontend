@@ -1,10 +1,10 @@
 .scrollTopButton {
   position: fixed;
-  right: 30px;
-  bottom: 20px;
+  right: 30.95px;
+  bottom: 30px;
   z-index: 99;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   font-size: 18px;
   background-color: #008dc8;
   border: none;
