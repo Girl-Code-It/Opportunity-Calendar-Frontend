@@ -174,11 +174,6 @@ a:global(.active) {
   opacity: 0.5;
 }
 
-.navHeading{
-  text-align: 'center';
-  margin-top: '220px';
-  margin-bottom: '200px';
-}
 
 @media screen and (max-width: 991px) {
   .container {

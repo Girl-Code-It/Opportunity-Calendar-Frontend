@@ -160,6 +160,31 @@ a:hover {
   margin-left: 200px;
 }
 
+.BannerText{
+  background-color: #e2f3fb;
+  margin-top: 6rem;
+  height: 10rem;
+  box-shadow: 0 8px 6px -4px #c7c7c7;
+}
+
+.cardText{
+  font-weight: bold; 
+  font-size: 48px;
+  color: #0084ba; 
+  margin-top: 25px;
+}
+
+.fallbackText{
+  text-align: center;
+  margin-top: 220px;
+  margin-bottom: 200px;
+}
+
+.opportunityBody{
+  background-color: white;
+  padding-top: 3rem; 
+}
+
 @media (max-width: 992px) {
   .BannerImage {
     width: 15rem;
@@ -181,12 +206,25 @@ a:hover {
   width: auto;
   min-width: 200px;
   color: #fff;
-  font-size: 10px;
-  background-color: #e4fbff;
-  border-color: #008dc8;
+  background-color: #f0f0f0;
+  border: none;
   border-radius: 5px 5px 5px 5px;
   cursor: pointer;
   transition: all 0.5s;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10px;
+  margin-top: 0;
+}
+
+.Dropdown a{
+  border: none;
+  color: #7a7a7a;
+  text-decoration: none;
+}
+
+.Dropdown a::after{
+  margin-left: 2em;
 }
 
 @media (max-width: 992px) {
@@ -230,6 +268,9 @@ a:hover {
     width: 25rem;
     margin-left: 0px;
   }
+  .cardText{
+    font-size: 40px;
+  }
 }
 
 @media only screen and (max-width: 530px) {
@@ -253,6 +294,10 @@ a:hover {
   .Card {
     width: 25rem;
     margin-left: 0;
+  }
+  
+  .cardText{
+    font-size: 35px;
   }
 }
 
@@ -282,6 +327,10 @@ a:hover {
   .Button1 {
     margin-top: 10px;
     margin-left: 150px;
+  }
+  .cardText{
+    margin-top: 30px;
+    font-size: 30px;
   }
 }
 

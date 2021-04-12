@@ -63,7 +63,7 @@ export function ViewOpportunity(props) {
       <div>
         <Navbar />
         <h3
-          className={styles.navHeading}
+          className={styles.fallbackText}
         >
           Loading Opportunities if any...
         </h3>
@@ -79,7 +79,7 @@ export function ViewOpportunity(props) {
         <div>
           <Navbar />
           <h3
-            className={styles.navHeading}
+            className={styles.fallbackText}
           >
             No opportunities found!!
           </h3>
@@ -88,39 +88,17 @@ export function ViewOpportunity(props) {
         <>
           <Navbar />
           <Card className="text-center">
-            <Card.Body
-              style={{
-                backgroundColor: '#e2f3fb',
-                marginTop: '6rem',
-                height: '10rem'
-              }}
-            >
-              <Card.Text 
-              style={{ fontWeight: 'bold', 
-                fontSize:'2.5rem',
-                color:'#0084ba', 
-                marginTop:'25px'}}>
-                 {mapUrlToName[splitUrl]}
+            <Card.Body className={styles.BannerText}>
+              <Card.Text className={styles.cardText}>
+                {mapUrlToName[splitUrl]}
               </Card.Text>
             </Card.Body>
           </Card>
-          <Jumbotron style={{ backgroundColor: 'white', marginTop: '5rem' }}>
+          <Jumbotron className={styles.opportunityBody}>
             <Container>
               <Row>
                 <NavDropdown
-                  title={
-                    <span
-                      className={styles.Title}
-                      style={{
-                        fontSize: '30px',
-                        fontFamily: 'Arial, Helvetica, sans-serif',
-                        marginRight: '10px',
-                        marginTop: '0',
-                      }}
-                    >
-                      {mapUrlToName[splitUrl]}
-                    </span>
-                  }
+                  title="Select Opportunity"
                   id="dropdown-basic-button"
                   className={styles.Dropdown}
                 >
@@ -161,7 +139,6 @@ export function ViewOpportunity(props) {
           </Jumbotron>
         </>
       )}
-      );
     </>
   );
 }
