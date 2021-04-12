@@ -31,12 +31,6 @@ a:hover {
   text-decoration: none;
 }
 
-.opportunity-header{
-  display: flex;
-  align-items: center;
-}
-
-
 .CardImage {
   margin-left: 20px;
   margin-top: 22px;
