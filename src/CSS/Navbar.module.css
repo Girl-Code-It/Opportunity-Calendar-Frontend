@@ -4,25 +4,48 @@
   background-color: white !important;
 }
 
-a:hover,
-a:active,
-a:global(.active) {
-  border-bottom: 2px solid #008dc8;
-  cursor: pointer;
-
-  /* background-color: #5cb3ff; */
-  /* border-radius: 10px; */
-  /* padding: 8px; */
-  transition: 0.4s;
-
+a:not([href]){
+  color: black;
+  text-decoration: none;
+}
+a:not([href]):hover{
+  color: #008dc8;
+  transition: 0.5s;
 }
 
-.NavBar a {
-  margin: auto 8px;
-  color: black !important;
-  font-weight: 500;
-  font-size: 17px;
-  letter-spacing: 0px;
+.NavLinks {
+  text-decoration: none;
+   color:rgba(255, 255, 255, .5);
+   position: relative;
+   display: inline-block;
+   list-style: none;
+   cursor: pointer;
+
+   margin: 0 10px;
+   font-weight: 500;
+   font-size: 17px;
+   letter-spacing: 0px;
+}
+
+.NavLinks::before{
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .5s;
+    border-bottom: 3px solid #008dc8;
+    margin-top: 22px;
+
+}
+.NavLinks:hover::before{
+    width: 100%;
+}
+
+.Brand {
+  color: black !important ;
 }
 
 .Brand:hover {

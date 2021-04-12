@@ -17,19 +17,19 @@ function navbar() {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
           <Link smooth={true} duration={1000} to="home">
-            Home
+            <a className={styles.NavLinks}>Home</a>
           </Link>
           <Link smooth={true} offset={-90} duration={1000} to="about">
-            About Us
+            <a className={styles.NavLinks}>About Us</a>
           </Link>
           <Link smooth={true} offset={-90} duration={1000} to="knowAbout">
-            Opportunities
+            <a className={styles.NavLinks}>Opportunities</a>
           </Link>
           <Link smooth={true} offset={-90} duration={1000} to="faqs">
-            FAQs
+            <a className={styles.NavLinks}>FAQs</a>
           </Link>
           <Link smooth={true} offset={-90} duration={1000} to="contact">
-            Contact Us
+            <a className={styles.NavLinks}>Contact Us</a>
           </Link>
         </Nav>
       </Navbar.Collapse>
