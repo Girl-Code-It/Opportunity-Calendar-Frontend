@@ -12,10 +12,10 @@
 }
 
 .Card {
-  width: 40rem;
+  width: 60rem;
   /* margin-left: 50%; */
   margin-top: 5rem;
-  margin-left: 15rem;
+  margin-left: 5rem;
   border-radius: 15px;
   /* margin-left: 50%; */
   border-radius: 15px;
@@ -31,9 +31,15 @@ a:hover {
   text-decoration: none;
 }
 
+.opportunity-header{
+  display: flex;
+  align-items: center;
+}
+
+
 .CardImage {
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 22px;
   border-radius: 50%;
   height: 70px;
   width:70px;
@@ -57,7 +63,7 @@ a:hover {
   margin-top: 2rem;
   color: #008dc8;
   margin-left: 10px;
-  font-size: 20px;
+  font-size: 1.5rem;
   word-wrap: break-word;
   word-break: normal;
   overflow-wrap: break-word;
@@ -68,6 +74,7 @@ a:hover {
 
 .Subtitle{
   margin-left: 10px;
+  font-size: 1.2rem
 }
 
 .BulletList{
@@ -132,7 +139,9 @@ a:hover {
   align-items:center;
   margin-right: 5px;
   float: right;
-  font-size: 15px;
+  font-size: 1.2rem;
+  padding: 5px 35px;
+  border: 1px solid #008cd8;
   text-align: center;
   border-radius: 5px;
   color: #008cd8;
