@@ -34,24 +34,25 @@
 
 <body>
   <style>
-    .darkmode--activated li, 
+    .darkmode--activated li,
     .darkmode--activated .FAQ_question__2nWoT,
-    .darkmode--activated .Banner_Heading__26CLo, 
+    .darkmode--activated .Banner_Heading__26CLo,
     .darkmode--activated .ContactUs_Heading__3GKnr,
     .darkmode--activated .Banner_TagLine__25ph4,
     .darkmode--activated .FAQ_head__RDAA-,
     .darkmode--activated .AboutUs_AboutUs_description__Hqk3E {
       color: #fff;
     }
-  
+
     .button {
       isolation: isolate;
     }
+
     .AboutUs_AboutUs_Us__2UBAE,
     .KnowAbout_About__2F5w9,
-    .FAQ_head__RDAA- ,
+    .FAQ_head__RDAA-,
     .ContactUs_Heading__3GKnr,
-    .FAQ_head__RDAA- ,
+    .FAQ_head__RDAA-,
     .Footer_Jumbotron__3UAm2 {
       isolation: isolate;
     }
@@ -80,6 +81,22 @@
     document.getElementsByTagName('nav').className = "Navbar_NavBar__1WArZ navbar navbar-expand-lg navbar-light bg-dark fixed-top";
   }
   window.addEventListener('load', addDarkmodeWidget);
+  const options = {
+    bottom: '64px', // default: '32px'
+    right: 'unset', // default: '32px'
+    left: '32px', // default: 'unset'
+    time: '0.5s', // default: '0.3s'
+    mixColor: '#fff', // default: '#fff'
+    backgroundColor: '#fff',  // default: '#fff'
+    buttonColorDark: '#100f2c',  // default: '#100f2c'
+    buttonColorLight: '#fff', // default: '#fff'
+    saveInCookies: false, // default: true,
+    label: '🌓', // default: ''
+    autoMatchOsTheme: true // default: true
+  }
+
+  const darkmode = new Darkmode(options);
+  darkmode.showWidget();
 </script>
 
 </html>
