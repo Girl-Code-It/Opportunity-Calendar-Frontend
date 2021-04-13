@@ -148,6 +148,9 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 122px;
   }
+  .Rectangle3{
+    margin-left: 405px;
+  }
   .ContactCol {
     margin-left: 22px;
   }
@@ -234,6 +237,12 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 82px;
   }
+  .Rectangle3{
+    margin-left: 290px;
+  }
+  .ImgColumn{
+    margin-left: 26px;
+  }
   .Bottom1 {
     margin-left: 30%;
   }
@@ -295,7 +304,7 @@ a:hover, Link:hover{
   }
   .Logo {
     width: 165%;
-    margin-left: -96px;
+    margin-left: -61px;
     padding: 20%;
   }
   .Bottom1 {
@@ -337,11 +346,12 @@ a:hover, Link:hover{
   .ImgColumn {
     width: 45%;
     height: 10%;
+    margin-left: -12px;
   }
   .Logo {
     width: 150%;
     height: 90%;
-    margin-left: -80px;
+    margin-left: -11px;
   }
   .Rectangle {
     margin-left: 200px;
@@ -414,6 +424,12 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 216px;
   }
+  .Logo{
+    margin-left: -39px;
+  }
+  .Rectangle3{
+    margin-left: 188px;
+  }
   .Bottom1 p {
     max-width: 100%;
     margin-left: 1px;
@@ -425,6 +441,9 @@ a:hover, Link:hover{
   }
   .Rectangle2 {
     margin-left: 214px;
+  }
+  .Rectangle3{
+    margin-left: 189px;
   }
   .Bottom1 p {
     max-width: 100%;
@@ -586,6 +605,12 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 150px;
   }
+  .Rectangle3{
+    margin-left: 123px;
+  }
+  .Logo{
+    margin-left: -23px;
+  }
 }
 @media (max-width: 411px) {
   .Rectangle {
@@ -593,6 +618,12 @@ a:hover, Link:hover{
   }
   .Rectangle2 {
     margin-left: 150px;
+  }
+  .Rectangle3{
+    margin-left: 124px;
+  }
+  .Logo{
+    margin-left: -25px;
   }
 }
 @media (max-width: 396px) {
@@ -618,6 +649,9 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 132px;
   }
+  .Rectangle3{
+    margin-left: 107px;
+  }
   .Bottom1 p {
     margin-left: 10px;
   }
@@ -628,6 +662,15 @@ a:hover, Link:hover{
   }
   .Rectangle2 {
     margin-left: 128px;
+  }
+  .Rectangle3{
+    margin-left: 106px;
+  }
+  .ImgColumn{
+    margin-left: -34px;
+  }
+  .Logo{
+    margin-left: -5px;
   }
   .Bottom1 p {
     margin-left: 16px;
@@ -672,6 +715,15 @@ a:hover, Link:hover{
   }
   .Rectangle2 {
     margin-left: 106px;
+  }
+  .Rectangle3{
+    margin-left: 78px;
+  }
+  .ImgColumn{
+    margin-left: -3px;
+  }
+  .Logo{
+    margin-left: -20px;
   }
   .Bottom1 p {
     margin-left: 24px;
@@ -723,6 +775,12 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 86px;
   }
+  .Rectangle3{
+    margin-left: 58px;
+  }
+  .Logo{
+    margin-left: -13px;
+  }
 }
 @media only screen and (max-width: 271px) {
   .Rectangle {
@@ -730,6 +788,9 @@ a:hover, Link:hover{
   }
   .Rectangle2 {
     margin-left: 80px;
+  }
+  .Rectangle3{
+    margin-left: 58px;
   }
 }
 @media only screen and (max-width: 271px) {
