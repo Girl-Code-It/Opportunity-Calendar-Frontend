@@ -19,12 +19,10 @@ export function OpportunityCard(props) {
               className={styles.CardImage}
               roundedCircle
             />
-            <Col>
+            <Col style={{alignItems: 'flex-start'}}>
               <Card.Title className={styles.Title}>{item.title}</Card.Title>
+              <Card.Subtitle className={styles.Subtitle}><p className={styles.Subtitle}>{item.company}</p></Card.Subtitle>
             </Col> 
-            <div>
-            <Card.Subtitle className={styles.Subtitle}><p className={styles.Subtitle}>{item.company}</p></Card.Subtitle>
-            </div>
 
             </Row>
            
