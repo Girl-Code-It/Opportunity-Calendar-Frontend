@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navbar from '../Navbar';
 import ScholarshipForm from './ScholarshipForm';
 
-function FullTime() {
+function Scholarships() {
   return (
     <div>
       <Navbar />
@@ -19,4 +19,4 @@ function FullTime() {
   );
 }
 
-export default FullTime;
+export default Scholarships;

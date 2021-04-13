@@ -3,7 +3,7 @@ import Navbar from '../Navbar';
 import InternshipForm from './InternshipForm';
 import styles from '../../../../CSS/FullTimeForm.module.css';
 
-function FullTime() {
+function Internships() {
   return (
     <div>
       <Navbar />
@@ -14,4 +14,4 @@ function FullTime() {
   );
 }
 
-export default FullTime;
+export default Internships;

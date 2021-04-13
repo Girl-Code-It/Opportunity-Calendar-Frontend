@@ -8,6 +8,7 @@ import {
   FormControl,
   Button,
   NavDropdown,
+  NavLink, 
 } from 'react-bootstrap';
 import { AiOutlineSearch } from 'react-icons/ai';
 
@@ -30,6 +31,36 @@ function navbar() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
         <Button variant="outline-info">Login/Signup</Button>{' '}
+      </Navbar.Collapse>
+      <Navbar.Collapse id="mr-auto" className={styles.ShiftRight}>
+        <Button variant="outline-info">
+          <NavLink href="./FullTime">Full Time</NavLink>
+          </Button>
+      </Navbar.Collapse>
+      <Navbar.Collapse id="mr-auto" className={styles.ShiftRight}>
+        <Button variant="outline-info">
+        <NavLink href="./Internships">Internships</NavLink>
+        </Button>
+      </Navbar.Collapse>
+      <Navbar.Collapse id="" className={styles.ShiftRight}>
+        <Button variant="outline-info">
+        <NavLink href="./CodingComp">CodingComp</NavLink>
+        </Button>
+      </Navbar.Collapse>
+      <Navbar.Collapse id="" className={styles.ShiftRight}>
+        <Button variant="outline-info">
+        <NavLink href="./TechConf">TechConf</NavLink>
+        </Button>
+      </Navbar.Collapse>
+      <Navbar.Collapse id="mr-auto" className={styles.ShiftRight}>
+        <Button variant="outline-info">
+          <NavLink href="./Hackathons">Hackathons</NavLink>
+        </Button>
+      </Navbar.Collapse>
+      <Navbar.Collapse id="" className={styles.ShiftRight}>
+        <Button variant="outline-info">
+          <NavLink href="./Scholarships">Scholarships</NavLink>
+        </Button>
       </Navbar.Collapse>
     </Navbar>
   );
