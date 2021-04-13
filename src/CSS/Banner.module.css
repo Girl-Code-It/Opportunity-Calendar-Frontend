@@ -58,9 +58,11 @@
 
 .BannerImage {
   z-index: 10;
-  width: 100%;
-  height: 525px;
-  margin-top: -15%;
+  width: 325px;
+  height: 325px;
+  margin-top: 10%;
+  position: relative;
+  left: 30%;
 }
 
 .BannerImage2 {
