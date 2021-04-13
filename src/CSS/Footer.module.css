@@ -290,9 +290,12 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 50px;
   }
+  .Rectangle3{
+    margin-left: 283px;
+  }
   .Logo {
     width: 165%;
-    margin-left: 0px;
+    margin-left: -96px;
     padding: 20%;
   }
   .Bottom1 {
@@ -338,13 +341,16 @@ a:hover, Link:hover{
   .Logo {
     width: 150%;
     height: 90%;
-    margin-left: 10px;
+    margin-left: -80px;
   }
   .Rectangle {
     margin-left: 200px;
   }
   .Rectangle2 {
     margin-left: 226px;
+  }
+  .Rectangle3{
+    margin-left: 122px;
   }
 }
 @media (max-width: 596px) {
