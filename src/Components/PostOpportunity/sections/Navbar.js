@@ -24,9 +24,8 @@ function navbar() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
-          <div className={styles.container}>
-            <input className={styles.inp} type="text" placeholder="Search..." />
-            <div className={styles.search}></div>
+          <div className={styles.searchContainer} >
+            <input type="text" className={styles.searchBar} placeholder="Search" />
           </div>
           <Link className={styles.link} to='/signup'>
             <Button className={`${styles.Button} ${styles.outline}`} variant="outline-info">Login/Signup</Button>{' '}
