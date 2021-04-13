@@ -31,10 +31,15 @@ a:hover {
   text-decoration: none;
 }
 
+.headingContainer{
+  align-items: center;
+}
+
 .CardImage {
   margin-left: 20px;
-  margin-top: 22px;
   border-radius: 50%;
+  margin-top: 2rem;
+  text-align: start;
   height: 70px;
   width:70px;
   padding-bottom: 0px;
@@ -68,7 +73,10 @@ a:hover {
 
 .Subtitle{
   margin-left: 10px;
-  font-size: 1.2rem
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: gray;
+  margin-right: 15px;
 }
 
 .BulletList{
@@ -201,7 +209,7 @@ a:hover {
   }
 
   .Card {
-    width: 25rem;
+    width: 40rem;
     margin-left: 150px;
   }
 
@@ -224,19 +232,18 @@ a:hover {
   }
 
   .Card {
-    width: 25rem;
+    width: 35rem;
     margin-left: 0px;
   }
 }
 
 @media only screen and (max-width: 530px) {
   .Title {
-    margin-top: 10px;
-    font-size: 30px;
+    font-size: 1.5rem;
   }
 
   .CardImage {
-    width: 100px;
+    width: 90px;
     height: 90px;
     margin-left: 15px;
     padding: 15px;
@@ -248,15 +255,14 @@ a:hover {
   }
 
   .Card {
-    width: 25rem;
+    width: 28rem;
     margin-left: 0;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .Title {
-    margin-top: 10px;
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .CardImage {
@@ -265,14 +271,16 @@ a:hover {
     margin-left: 15px;
     padding: 15px;
   }
-
+  .Subtitle{
+    font-size: 1px;
+  }
   .Heading,
   .Value {
     font-size: 1rem;
   }
 
   .Card {
-    width: 20rem;
+    width: 23rem;
     margin-left: 0;
   }
 
@@ -291,7 +299,9 @@ a:hover {
     margin-left: 15px;
     padding: 15px;
   }
-
+  .Subtitle{
+    display: none;
+  }
   .Heading,
   .Value {
     font-size: 1rem;

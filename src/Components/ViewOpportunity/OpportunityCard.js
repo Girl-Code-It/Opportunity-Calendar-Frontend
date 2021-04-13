@@ -11,7 +11,7 @@ export function OpportunityCard(props) {
       <Container>
         <Row>
           <Col>
-            <Row>
+            <Row className={styles.headingContainer}>
             <Image
               src={logo}
               // src = {item.imgURL}
@@ -21,9 +21,11 @@ export function OpportunityCard(props) {
             />
             <Col>
               <Card.Title className={styles.Title}>{item.title}</Card.Title>
-              <Card.Subtitle className='mb-2 text-muted' className={styles.Subtitle}><p>{item.company}</p></Card.Subtitle>
-            </Col>
-              
+            </Col> 
+            <div>
+            <Card.Subtitle className={styles.Subtitle}><p className={styles.Subtitle}>{item.company}</p></Card.Subtitle>
+            </div>
+
             </Row>
            
         </Col>
