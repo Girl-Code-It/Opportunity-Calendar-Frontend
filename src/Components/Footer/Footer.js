@@ -10,6 +10,7 @@ import {
 } from 'react-icons/fa';
 import { BiCopyright } from 'react-icons/bi';
 import { GrMail } from 'react-icons/gr';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -17,21 +18,27 @@ function Footer() {
       <Container className={styles.ContainerFooter}>
         <Row className={styles.Top1}>
           <Col className={styles.Column1} style={{ textAlign: 'center' }}>
-            <h5 style={{ fontSize: '22px' }}> PRODUCTS </h5>
+            <h5 style={{ fontSize: '22px' }}> Products </h5>
             <div className={styles.Rectangle} style={{ width: '120px' }}></div>
-            <p style={{ fontSize: '18px' }}> CodeMaps </p>
-            <p style={{ fontSize: '18px' }}> Opportuntiy Calendar </p>
+            <a href="https://girlcodeit.com/codemaps">
+              <p style={{ fontSize: '18px', color: 'black', cursor:"pointer"}}>CodeMaps</p>
+            </a>
+            <Link to="/">
+              <p style={{ fontSize: '18px', color: "black", cursor:"pointer" }}> Opportuntiy Calendar </p>
+            </Link>
           </Col>
 
           <Col className={styles.ImgColumn}>
-            <Image className={styles.Logo} src={Logo} alt="Logo" />
+            <a href="https://girlcodeit.com/">
+              <Image className={styles.Logo} src={Logo} alt="Logo" />
+            </a>
           </Col>
 
           <Col className={styles.Column2} style={{ textAlign: 'center' }}>
-            <h5 style={{ fontSize: '22px' }}> LINKS </h5>
+            <h5 style={{ fontSize: '22px' }}> Links </h5>
             <div className={styles.Rectangle2} style={{ width: '70px' }}></div>
-            <p style={{ fontSize: '18px' }}> Terms and Condition </p>
-            <p style={{ fontSize: '18px' }}> Privacy Policy </p>
+            <p style={{ fontSize: '18px', color: 'black' }}> Terms and Condition </p>
+            <p style={{ fontSize: '18px', color: 'black' }}> Privacy Policy </p>
           </Col>
         </Row>
 
@@ -64,7 +71,8 @@ function Footer() {
 
         <Row className={styles.Top1}>
           <Col className={styles.ContactCol} style={{ textAlign: 'center' }}>
-            <h5> CONTACT US </h5>
+            <h5> Contact Us </h5>
+            <div className={styles.Rectangle3}></div>
           </Col>
         </Row>
 
@@ -82,8 +90,7 @@ function Footer() {
         <Row className={styles.Bottom1}>
           <Col>
             <p>
-              {' '}
-              <BiCopyright /> {new Date().getFullYear()} Girl Code It | All rights reserved.
+              &copy; {new Date().getFullYear()} Girl Code It | All rights reserved.
             </p>
           </Col>
         </Row>
