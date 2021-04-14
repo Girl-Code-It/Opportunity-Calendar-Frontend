@@ -12,9 +12,11 @@
 .About {
   color: #008dc8;
 }
-.justify_content{
+
+.jus_content{
   justify-content: center;
 }
+
 @media only screen and (max-width: 531px) {
   .Heading {
     font-size: 40px;

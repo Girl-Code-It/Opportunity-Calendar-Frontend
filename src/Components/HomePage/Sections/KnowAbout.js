@@ -31,7 +31,7 @@ class KnowAbout extends Component {
             <span className={styles.About}> About </span>
           </h2>
           <Row
-            className={styles.justify_content}
+            className={styles.jus_content}
             style={{ marginTop: '50px' }}
           >
             {KnowAboutData}
