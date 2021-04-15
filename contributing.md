@@ -65,5 +65,65 @@ The commit message should be in the format - `(feature/try) - Added try componen
 git push -u origin NEW-BRANCH-NAME
 ```
 
+## GIT AND GITHUB
+
+Before continuing we want to clarify the difference between Git and Github. Git is a version control system(VCS) which is a tool to manage the history of our Source Code. GitHub is a hosting service for Git projects.
+
+We assume you have created an account on Github and installed Git on your System.
+
+Now tell Git your name and E-mail (used on Github) address.
+
+     $ git config --global user.name "YOUR NAME"
+     $ git config --global user.email "YOUR EMAIL ADDRESS"
+     
+
+This is an important step to mark your commits to your name and email.
+
+
+
+### ADD A REMOTE (UPSTREAM) TO ORIGINAL PROJECT REPOSITORY 
+
+Remote means the remote location of project on Github. By cloning, we have a remote called origin which points to your forked repository. Now we will add a remote to the original repository from where we had forked.
+
+    $ cd <your-forked-project-folder>
+    $ git remote add upstream https://github.com/<author-account-username>/<project>.git
+    
+You will see the benefits of adding remote later.
+
+### SYNCHRONIZING YOUR FORK -
+
+Open Source projects have a number of contributors who can push code anytime. So it is necessary to make your forked copy equal with the original repository. The remote added above called Upstream helps in this.
+
+
+    $ git checkout master
+    $ git fetch upstream
+    $ git merge upstream/master
+    $ git push origin master
+  
+
+The last command pushes the latest code to your forked repository on Github. The origin is the remote pointing to your forked repository on github.
+
+
+
+### REBASE YOUR FEATURE BRANCH WITH UPSTREAM-
+
+It can happen that your feature takes time to complete and other contributors are constantly pushing code. After completing the feature your feature branch should be rebase on latest changes to upstream master branch.
+
+    $ git checkout <feature-branch>
+    $ git pull --rebase upstream master
+
+Now you get the latest commits from other contributors and check that your commits are compatible with the new commits. If there are any conflicts solve them.
+
+### SQUASHING YOUR COMMITS-
+
+You have completed the feature, but you have made a number of commits which make less sense. You should squash your commits to make good commits.
+
+```$ git rebase -i HEAD~5```    
+This will open an editor which will allow you to squash the commits.
+
+Want to know more about our project ? Checkout the link below
+<br>
+![https://www.youtube.com/watch?v=ZeHPcMZ-qlE](https://www.youtube.com/watch?v=ZeHPcMZ-qlE)
+
 > Think you're ready :grey_question: Make the PR :tropical_drink:
 > Always make PRs to develop branch
