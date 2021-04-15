@@ -12,12 +12,10 @@
 }
 
 .Card {
-  width: 40rem;
+  width: 60rem;
   /* margin-left: 50%; */
   margin-top: 5rem;
-  margin-left: 15rem;
-  border-top-color: #008dc8;
-  border-top-width: 20px;
+  margin-left: 5rem;
   border-radius: 15px;
   /* margin-left: 50%; */
   border-radius: 15px;
@@ -33,13 +31,17 @@ a:hover {
   text-decoration: none;
 }
 
+.headingContainer{
+  align-items: center;
+}
+
 .CardImage {
-  width: 180px;
-  width: 180px;
-  height: 100px;
   margin-left: 20px;
-  padding: 20px;
-  padding: 20px;
+  border-radius: 50%;
+  margin-top: 2rem;
+  text-align: start;
+  height: 70px;
+  width:70px;
   padding-bottom: 0px;
 }
 
@@ -59,7 +61,8 @@ a:hover {
   display: inline-block;
   margin-top: 2rem;
   color: #008dc8;
-  font-size: 20px;
+  margin-left: 10px;
+  font-size: 1.5rem;
   word-wrap: break-word;
   word-break: normal;
   overflow-wrap: break-word;
@@ -67,18 +70,28 @@ a:hover {
   -webkit-hyphen: none;
   -moz-hyphen: none;
 }
+.titleContainer{
+  align-items: flex-start;
+}
 
-.Description {
-  margin-top: 25px;
-  margin-left: 35px;
-  hyphens: none;
-  line-break: auto;
+.Subtitle{
+  font-size: 1.2rem;
+  margin-left: 5px;
+  color: gray;
+}
+
+.BulletList{
+  list-style-type: circle;
 }
 
 .Description {
   margin-top: 15px;
-  margin-right: 25px;
-  margin-left: 35px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 35px;
+  color: #4c5052;
+  hyphens: none;
+  line-break: auto;
 }
 
 .Heading {
@@ -123,29 +136,25 @@ a:hover {
 }
 
 .Button1 {
-  position: relative;
+  margin-top: 40px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-right: 5px;
   float: right;
-  margin-top: 20px;
-  padding: 5px 30px 5px 30px;
-  color: #fff;
-  font-size: 20px;
+  font-size: 1.2rem;
+  padding: 5px 35px;
+  border: 1px solid #008cd8;
   text-align: center;
-  background-color: #008dc8;
-  border: none;
-  border-radius: 50px;
-  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  color: #008cd8;
   cursor: pointer;
-  transition: all 0.5s;
 }
 
 .Button1:hover {
   text-decoration: none;
-  background: #55b1eb;
-  background-image: -webkit-linear-gradient(top, #55b1eb, #2389c4);
-  background-image: -moz-linear-gradient(top, #55b1eb, #2389c4);
-  background-image: -ms-linear-gradient(top, #55b1eb, #2389c4);
-  background-image: -o-linear-gradient(top, #55b1eb, #2389c4);
-  background-image: linear-gradient(to bottom, #55b1eb, #2389c4);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: #008cd8;
 }
 
 /* make outline none when button gets clicked */
@@ -201,14 +210,11 @@ a:hover {
   }
 
   .Card {
-    width: 25rem;
+    width: 35rem;
     margin-left: 150px;
   }
 
-  .Button1 {
-    margin-top: 10px;
-    margin-left: 250px;
-  }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -227,19 +233,18 @@ a:hover {
   }
 
   .Card {
-    width: 25rem;
+    width: 30rem;
     margin-left: 0px;
   }
 }
 
 @media only screen and (max-width: 530px) {
   .Title {
-    margin-top: 10px;
-    font-size: 30px;
+    font-size: 1.5rem;
   }
 
   .CardImage {
-    width: 100px;
+    width: 90px;
     height: 90px;
     margin-left: 15px;
     padding: 15px;
@@ -251,15 +256,14 @@ a:hover {
   }
 
   .Card {
-    width: 25rem;
+    width: 24rem;
     margin-left: 0;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .Title {
-    margin-top: 10px;
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .CardImage {
@@ -268,7 +272,9 @@ a:hover {
     margin-left: 15px;
     padding: 15px;
   }
-
+  .Subtitle{
+    font-size: 1px;
+  }
   .Heading,
   .Value {
     font-size: 1rem;
@@ -279,10 +285,6 @@ a:hover {
     margin-left: 0;
   }
 
-  .Button1 {
-    margin-top: 10px;
-    margin-left: 150px;
-  }
 }
 
 @media only screen and (max-width: 355px) {
@@ -298,7 +300,6 @@ a:hover {
     margin-left: 15px;
     padding: 15px;
   }
-
   .Heading,
   .Value {
     font-size: 1rem;
@@ -313,8 +314,5 @@ a:hover {
     padding: 0;
   }
 
-  .Button1 {
-    margin-top: 10px;
-    margin-left: 100px;
-  }
+
 }
