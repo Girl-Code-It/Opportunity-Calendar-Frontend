@@ -11,7 +11,13 @@ html {
 .ImgColumn {
   display: flex;
   justify-content: center;
-  margin-left: 12px;
+  margin-left: 100px;
+}
+
+.ImgColumn a:hover{
+  background-color: transparent;
+  color: transparent;
+  border-bottom: transparent;
 }
 
 .ContactCol {
@@ -49,16 +55,25 @@ h5 {
   position: absolute;
   right: 50%;
   left: 0;
-  margin-left: 130px;
+  margin-left: 120px;
   border-bottom: 2px #008dc8 solid;
 }
+
+
 .Rectangle2 {
   position: absolute;
   right: 60%;
   left: 0;
-  margin-left: 153px;
+  margin-left: 143px;
   border-bottom: 2px #008dc8 solid;
 }
+.Rectangle3 {
+  position: absolute;
+  width: 98px;
+  margin-left: 500px;
+  border-bottom: 2px #008dc8 solid;
+}
+
 p {
   margin-top: 10px;
   font-size: 16px;
@@ -84,6 +99,11 @@ p {
 .Shift:hover {
   border: none;
 }
+
+a:hover, Link:hover{
+  cursor:pointer;
+}
+
 @media only screen and (max-width: 1201px) {
   .Rectangle {
     margin-left: 128px;
@@ -127,6 +147,9 @@ p {
   }
   .Rectangle2 {
     margin-left: 122px;
+  }
+  .Rectangle3{
+    margin-left: 405px;
   }
   .ContactCol {
     margin-left: 22px;
@@ -214,6 +237,12 @@ p {
   .Rectangle2 {
     margin-left: 82px;
   }
+  .Rectangle3{
+    margin-left: 290px;
+  }
+  .ImgColumn{
+    margin-left: 26px;
+  }
   .Bottom1 {
     margin-left: 30%;
   }
@@ -270,9 +299,12 @@ p {
   .Rectangle2 {
     margin-left: 50px;
   }
+  .Rectangle3{
+    margin-left: 283px;
+  }
   .Logo {
     width: 165%;
-    margin-left: 0px;
+    margin-left: -61px;
     padding: 20%;
   }
   .Bottom1 {
@@ -314,17 +346,21 @@ p {
   .ImgColumn {
     width: 45%;
     height: 10%;
+    margin-left: -12px;
   }
   .Logo {
     width: 150%;
     height: 90%;
-    margin-left: 10px;
+    margin-left: -11px;
   }
   .Rectangle {
     margin-left: 200px;
   }
   .Rectangle2 {
     margin-left: 226px;
+  }
+  .Rectangle3{
+    margin-left: 122px;
   }
 }
 @media (max-width: 596px) {
@@ -388,6 +424,12 @@ p {
   .Rectangle2 {
     margin-left: 216px;
   }
+  .Logo{
+    margin-left: -39px;
+  }
+  .Rectangle3{
+    margin-left: 188px;
+  }
   .Bottom1 p {
     max-width: 100%;
     margin-left: 1px;
@@ -399,6 +441,9 @@ p {
   }
   .Rectangle2 {
     margin-left: 214px;
+  }
+  .Rectangle3{
+    margin-left: 189px;
   }
   .Bottom1 p {
     max-width: 100%;
@@ -560,6 +605,12 @@ p {
   .Rectangle2 {
     margin-left: 150px;
   }
+  .Rectangle3{
+    margin-left: 123px;
+  }
+  .Logo{
+    margin-left: -23px;
+  }
 }
 @media (max-width: 411px) {
   .Rectangle {
@@ -567,6 +618,12 @@ p {
   }
   .Rectangle2 {
     margin-left: 150px;
+  }
+  .Rectangle3{
+    margin-left: 124px;
+  }
+  .Logo{
+    margin-left: -25px;
   }
 }
 @media (max-width: 396px) {
@@ -592,6 +649,9 @@ p {
   .Rectangle2 {
     margin-left: 132px;
   }
+  .Rectangle3{
+    margin-left: 107px;
+  }
   .Bottom1 p {
     margin-left: 10px;
   }
@@ -602,6 +662,15 @@ p {
   }
   .Rectangle2 {
     margin-left: 128px;
+  }
+  .Rectangle3{
+    margin-left: 106px;
+  }
+  .ImgColumn{
+    margin-left: -34px;
+  }
+  .Logo{
+    margin-left: -5px;
   }
   .Bottom1 p {
     margin-left: 16px;
@@ -646,6 +715,15 @@ p {
   }
   .Rectangle2 {
     margin-left: 106px;
+  }
+  .Rectangle3{
+    margin-left: 78px;
+  }
+  .ImgColumn{
+    margin-left: -3px;
+  }
+  .Logo{
+    margin-left: -20px;
   }
   .Bottom1 p {
     margin-left: 24px;
@@ -697,6 +775,12 @@ p {
   .Rectangle2 {
     margin-left: 86px;
   }
+  .Rectangle3{
+    margin-left: 58px;
+  }
+  .Logo{
+    margin-left: -13px;
+  }
 }
 @media only screen and (max-width: 271px) {
   .Rectangle {
@@ -704,6 +788,9 @@ p {
   }
   .Rectangle2 {
     margin-left: 80px;
+  }
+  .Rectangle3{
+    margin-left: 58px;
   }
 }
 @media only screen and (max-width: 271px) {
