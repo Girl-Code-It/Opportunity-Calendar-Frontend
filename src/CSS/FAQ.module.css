@@ -107,3 +107,18 @@
     zoom: 0.65;
   }
 }
+.darkmode--activated li,.darkmode--activated .FAQ_question__2nWoT,.darkmode--activated .Banner_Heading__26CLo,.darkmode--activated .ContactUs_Heading__3GKnr,.darkmode--activated .Banner_TagLine__25ph4,.darkmode--activated .FAQ_head__RDAA-,.darkmode--activated .AboutUs_AboutUs_description__Hqk3E {
+  color: #fff;
+}
+
+.button {
+isolation: isolate;
+}
+
+.AboutUs_AboutUs_Us__2UBAE,.KnowAbout_About__2F5w9,.FAQ_head__RDAA-,.ContactUs_Heading__3GKnr,.FAQ_head__RDAA-,.Footer_Jumbotron__3UAm2 {
+isolation: isolate;
+}
+
+.darkmode--activated .logo {
+mix-blend-mode: color;
+}
