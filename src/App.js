@@ -16,6 +16,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SignUp from './Components/SignupLogin/SignUp';
 import Login from './Components/SignupLogin/Login';
 import PageNotFound from './Components/Error/PageNotFound';
+import Forget from './Components/Forget/Forget';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           />
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/forget" component={Forget}/>
           <Route
             exact
             path="/viewopportunity"
