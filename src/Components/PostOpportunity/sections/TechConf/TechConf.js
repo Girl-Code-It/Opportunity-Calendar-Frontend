@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navbar from '../Navbar';
 import TechConfForm from './TechConfForm';
 import styles from '../../../../CSS/FullTimeForm.module.css';

@@ -7,8 +7,6 @@ import {
   Container,
   Jumbotron,
   Row,
-  Image,
-  Button,
   NavDropdown,
 } from 'react-bootstrap';
 import styles from './Opportunity.module.css';
