@@ -21,7 +21,7 @@ const SignUp = () => {
         </Navbar.Brand>
       </Navbar>
 
-      <Row className="justify-content-md-center">
+      <Row className="d-flex justify-content-center">
         <Card className={styles.card}>
           <h5>Sign Up</h5>
           <small className="text-muted">
