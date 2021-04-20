@@ -7,6 +7,8 @@ import {
   Container,
   Jumbotron,
   Row,
+  Image,
+  Button,
   NavDropdown,
 } from 'react-bootstrap';
 import styles from './Opportunity.module.css';
@@ -127,11 +129,13 @@ export function ViewOpportunity(props) {
                 </NavDropdown>
               </Row>
               <Row>
-                <Col style={{ marginTop: '20px' }} md={12}>
+                <Col md={1} sm={1} lg={1} xl={1} xs={0}></Col>
+                <Col style={{ marginTop: '20px' }} md={10} sm={10} lg={10} xl={10} xs={12}>
                   {data.map((item) => {
                     return <OpportunityCard key={item.id} item={item} />;
                   })}
                 </Col>
+                <Col md={1} sm={1} lg={1} xl={1} xs={0}></Col>
               </Row>
             </Container>
           </Jumbotron>
