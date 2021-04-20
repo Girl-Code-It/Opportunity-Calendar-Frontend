@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navbar from '../Navbar';
 import CodingCompForm from './CodingCompForm';
 import styles from '../../../../CSS/CodingCompForm.module.css';
