@@ -236,6 +236,23 @@ a:hover {
   margin-left: 2em;
 }
 
+@media (max-width: 1024px) {
+  .BannerImage {
+    width: 15rem;
+    margin-left: 0;
+  }
+
+  .Button {
+    width: 15rem;
+    margin-left: 0;
+  }
+
+  .Card {
+    width: 75vw;
+  }
+  
+}
+
 @media (max-width: 992px) {
   .BannerImage {
     width: 15rem;
@@ -326,7 +343,7 @@ a:hover {
   }
 
   .Card {
-    width: 20rem;
+    width: 80vw;
     margin-left: 0;
   }
 
@@ -342,7 +359,7 @@ a:hover {
 
 }
 
-@media only screen and (max-width: 355px) {
+@media only screen and (max-width: 360px) {
   .Title {
     margin-top: 10px;
     margin-right: 10px;
@@ -350,7 +367,7 @@ a:hover {
   }
 
   .CardImage {
-    width: 80px;
+    width: 82px;
     height: 80px;
     margin-left: 15px;
     padding: 15px;
@@ -361,7 +378,7 @@ a:hover {
   }
 
   .Card {
-    width: 17rem;
+    width: 80vw;
     margin-left: 0;
   }
 
