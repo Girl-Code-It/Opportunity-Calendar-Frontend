@@ -3,9 +3,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 750px;
     margin-top: 100px;
     padding: 10px;
+    width: 500px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
   
@@ -73,7 +73,7 @@ Form {
     margin-bottom: 17px;
     border-radius: 10px;
     display: block;
-    width: 500px; 
+    width: 450px; 
     height: 60px;
     font-family: 'Montserrat', sans-serif; 
 }  

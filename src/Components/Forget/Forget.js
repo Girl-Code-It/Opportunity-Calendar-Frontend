@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import styles from '../../CSS/Forget.module.css';
 import { Form, Card, Button, Row, InputGroup } from 'react-bootstrap';
-import { GoogleLogin } from 'react-google-login';
 import { BsEye, BsEyeSlash } from "react-icons/bs";
-import forget from '../Forget/forget.png' ;
+import forget from '../Forget/for.png' ;
 import Navbar from '../HomePage/Sections/Navbar';
 
 const Forget = () => {
@@ -47,9 +46,6 @@ const Forget = () => {
         <Button size="md" className={styles.button}>
         <a href="/login" style={{color:"white"}}>Submit</a>
         </Button>
-        
-        <p>OR</p>
-        <GoogleLogin buttonText="Sign in with Google" />
         <br></br>
       </Card>
     </Row>
