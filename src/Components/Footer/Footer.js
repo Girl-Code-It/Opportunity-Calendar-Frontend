@@ -8,7 +8,7 @@ import {
   FaTwitter,
   FaPhoneAlt,
 } from 'react-icons/fa';
-import { BiCopyright } from 'react-icons/bi';
+// import { BiCopyright } from 'react-icons/bi';
 import { GrMail } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
 
@@ -21,10 +21,10 @@ function Footer() {
             <h5 style={{ fontSize: '22px' }}> Products </h5>
             <div className={styles.Rectangle} style={{ width: '120px' }}></div>
             <a href="https://girlcodeit.com/codemaps">
-              <p style={{ fontSize: '18px', color: 'black', cursor:"pointer"}}>CodeMaps</p>
+              <p style={{ fontSize: '18px', color: 'black', cursor: "pointer" }}>CodeMaps</p>
             </a>
             <Link to="/">
-              <p style={{ fontSize: '18px', color: "black", cursor:"pointer" }}> Opportuntiy Calendar </p>
+              <p style={{ fontSize: '18px', color: "black", cursor: "pointer" }}> Opportuntiy Calendar </p>
             </Link>
           </Col>
 
