@@ -15,12 +15,12 @@ import styles from './Opportunity.module.css';
 import Navbar from './Navbar';
 
 const mapPathToResource = {
-  conference: { image: import('../../Assets/conference-large.png') },
-  competition: { image: import('../../Assets/coding-large.png') },
-  scholarship: { image: import('../../Assets/scholarship-large.png') },
-  hackathon: { image: import('../../Assets/hackathon-large.png') },
-  intern: { image: import('../../Assets/internships-large.png') },
-  job: { image: import('../../Assets/fte.svg') },
+  CONFERENCE: { image: import('../../Assets/conference-large.png') },
+  CODINGCOMPETITION: { image: import('../../Assets/coding-large.png') },
+  SCHOLARSHIP: { image: import('../../Assets/scholarship-large.png') },
+  HACKATHON: { image: import('../../Assets/hackathon-large.png') },
+  INTERNSHIP: { image: import('../../Assets/internships-large.png') },
+  JOB: { image: import('../../Assets/fte.svg') },
 };
 
 /**
@@ -40,7 +40,7 @@ const mapUrlToName = {
 };
 
 export function ViewOpportunity(props) {
-  const [data, setData] = React.useState([]);
+  const [data, setData] = React.useState(null);
   const [imgSrc, setImgSrc] = React.useState();
 
   // whenever props.path changes, get latest data from backend
@@ -48,7 +48,7 @@ export function ViewOpportunity(props) {
     axios
       .get(generateAPIEndpoint(props.path))
       .then((res) => {
-        setData(res.data);
+        setData(res.data.data);
       })
       .catch((err) => console.log(err.stack));
   }, [props.path]);
@@ -58,7 +58,7 @@ export function ViewOpportunity(props) {
     mapPathToResource[props.path].image.then((mod) => setImgSrc(mod.default));
   }, [props.path]);
 
-  if (data.length === 0 || !data) {
+  if (!data) {
     return (
       <div>
         <Navbar />
@@ -75,59 +75,61 @@ export function ViewOpportunity(props) {
 
   return (
     <>
-      {data_length === 0 ? (
-        <div>
-          <Navbar />
-          <h3
-            className={styles.fallbackText}
-          >
-            No opportunities found!!
-          </h3>
-        </div>
-      ) : (
-        <>
-          <Navbar />
-          <Card className="text-center">
-            <Card.Body className={styles.BannerText}>
-              <Card.Text className={styles.cardText}>
-                {mapUrlToName[splitUrl]}
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Jumbotron className={styles.opportunityBody}>
-            <Container>
-              <Row>
-                <NavDropdown
-                  title="Select Opportunity"
-                  id="dropdown-basic-button"
-                  className={styles.Dropdown}
-                >
-                  <NavDropdown.Item href="/viewopportunity/fulltime">
-                    {' '}
+      <Navbar />
+      <Card className="text-center">
+        <Card.Body className={styles.BannerText}>
+          <Card.Text className={styles.cardText}>
+            {mapUrlToName[splitUrl]}
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Jumbotron className={styles.opportunityBody}>
+        <Container>
+          <Row>
+            <NavDropdown
+              title="Select Opportunity"
+              id="dropdown-basic-button"
+              className={styles.Dropdown}
+            >
+              <NavDropdown.Item href="/viewopportunity/fulltime">
+                {' '}
                       Full Time Jobs{' '}
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/viewopportunity/hackathon">
-                    {' '}
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/viewopportunity/hackathon">
+                {' '}
                       Hackathons{' '}
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/viewopportunity/scholarship">
-                    {' '}
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/viewopportunity/scholarship">
+                {' '}
                       Scholarships{' '}
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/viewopportunity/codingcomp">
-                    {' '}
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/viewopportunity/codingcomp">
+                {' '}
                       Coding Competitions{' '}
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/viewopportunity/techconf">
-                    {' '}
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/viewopportunity/techconf">
+                {' '}
                       Tech Conferences{' '}
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/viewopportunity/internships">
-                    {' '}
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/viewopportunity/internships">
+                {' '}
                       Internship Opportunities{' '}
-                  </NavDropdown.Item>
-                </NavDropdown>
-              </Row>
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Row>
+          {data_length === 0 ? 
+          (
+            <div>
+              <Navbar />
+              <h3
+                className={styles.fallbackText}
+              >
+                No opportunities found!!
+            </h3>
+            </div>
+          ) : 
+          (
+            <>
               <Row>
                 <Col md={1} sm={1} lg={1} xl={1} xs={0}></Col>
                 <Col style={{ marginTop: '20px' }} md={10} sm={10} lg={10} xl={10} xs={12}>
@@ -137,10 +139,12 @@ export function ViewOpportunity(props) {
                 </Col>
                 <Col md={1} sm={1} lg={1} xl={1} xs={0}></Col>
               </Row>
+              </>
+          )}
             </Container>
           </Jumbotron>
-        </>
-      )}
+        
+      )
     </>
   );
 }
@@ -148,6 +152,6 @@ export function ViewOpportunity(props) {
 /**
  * @param {string} pathChunk API endpoint path for this specific job listing
  */
-function generateAPIEndpoint(pathChunk) {
-  return `https://opportunitycalendar.herokuapp.com/opportunities/${pathChunk}/list/`;
+function generateAPIEndpoint(TYPE) {
+  return `https://opportunity-calendar.herokuapp.com/opportunity/?type=${TYPE}`;
 }
