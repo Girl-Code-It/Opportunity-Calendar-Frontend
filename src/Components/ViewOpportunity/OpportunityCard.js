@@ -13,8 +13,14 @@ export function OpportunityCard(props) {
     opportunityRegistrationDeadline,
     opportunityDate,
     opportunityTitle,
+    opportunityOrganisation,
     opportunityURL } = props.item;
-    
+
+  const changeDateFormat = (timestamp) => {
+    const date = new Date(timestamp).toLocaleDateString().split('/');
+    return date[1] + '-' + date[0] + '-' + date[2];
+  }
+
   return (
     <Card className={styles.Card}>
       <Container>
@@ -30,7 +36,10 @@ export function OpportunityCard(props) {
               />
               <Col>
                 <Card.Title className={styles.Title}>{opportunityTitle}</Card.Title>
-                <Card.Subtitle className={styles.Subtitle}><p className={styles.Subtitle}>  </p></Card.Subtitle>
+                {
+                  opportunityOrganisation &&
+                  <Card.Subtitle className={styles.Subtitle}><p className={styles.Subtitle}> {opportunityOrganisation} </p></Card.Subtitle>
+                }
               </Col>
             </Row>
           </Col>
@@ -51,7 +60,7 @@ export function OpportunityCard(props) {
               <Row>
                 <Col>
                   <h5 className={styles.Heading}>
-                    Date :<span className={styles.Value}>{opportunityDate} </span>
+                    Date :<span className={styles.Value}>{changeDateFormat(opportunityDate)}</span>
                   </h5>
                 </Col>
                 <Col>
@@ -66,7 +75,7 @@ export function OpportunityCard(props) {
                 <Col>
                   <h5 className={styles.Heading}>
                     Deadline :
-                  <span className={styles.Value}>{opportunityRegistrationDeadline}</span>
+                  <span className={styles.Value}>{changeDateFormat(opportunityRegistrationDeadline)}</span>
                   </h5>
                 </Col>
                 <Col>
