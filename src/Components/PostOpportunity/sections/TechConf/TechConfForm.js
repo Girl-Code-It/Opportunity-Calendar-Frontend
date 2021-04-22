@@ -31,7 +31,7 @@ class TechConfForm extends Component {
     console.log('From handleSubmit', this.state.title);
     axios
       .post(
-        'https://opportunitycalendar.herokuapp.com/opportunities/conference/create/',
+        'https://opportunity-calendar.herokuapp.com/opportunity',
         {
           title: this.state.title,
           url: this.state.url,

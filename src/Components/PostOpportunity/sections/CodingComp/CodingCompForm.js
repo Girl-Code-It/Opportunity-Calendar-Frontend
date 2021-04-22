@@ -31,7 +31,7 @@ class CodingCompForm extends Component {
     console.log('From handleSubmit', this.state.title);
     axios
       .post(
-        'https://opportunitycalendar.herokuapp.com/opportunities/competition/create/',
+        'https://opportunity-calendar.herokuapp.com/opportunity',
         {
           title: this.state.title,
           url: this.state.url,

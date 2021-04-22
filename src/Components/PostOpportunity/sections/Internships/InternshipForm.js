@@ -34,7 +34,7 @@ class FullTimeForm extends Component {
     console.log('From handleSubmit', this.state.jobId);
     axios
       .post(
-        'https://opportunitycalendar.herokuapp.com/opportunities/intern/create/',
+        'https://opportunity-calendar.herokuapp.com/opportunity',
         {
           jobId: this.state.jobId,
           jobURL: this.state.jobURL,

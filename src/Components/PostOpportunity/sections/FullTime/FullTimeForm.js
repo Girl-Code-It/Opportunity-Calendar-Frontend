@@ -5,11 +5,11 @@ import styles from '../../../../CSS/CodingCompForm.module.css';
 //regex for url validation
 var pattern = new RegExp(
   '^(https?:\\/\\/)?' + // protocol
-    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
-    '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
-    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
-    '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
-    '(\\#[-a-z\\d_]*)?$',
+  '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
+  '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
+  '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
+  '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
+  '(\\#[-a-z\\d_]*)?$',
   'i'
 );
 class FullTimeForm extends Component {
@@ -66,7 +66,7 @@ class FullTimeForm extends Component {
     console.log('From handleSubmit', this.state.jobId);
     axios
       .post(
-        'https://opportunitycalendar.herokuapp.com/opportunities/job/create/',
+        'https://opportunity-calendar.herokuapp.com/opportunity',
         {
           jobId: this.state.jobId,
           jobURL: this.state.jobURL,
