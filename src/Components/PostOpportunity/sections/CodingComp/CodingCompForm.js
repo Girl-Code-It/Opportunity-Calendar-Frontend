@@ -33,14 +33,14 @@ class CodingCompForm extends Component {
       .post(
         'https://opportunity-calendar.herokuapp.com/opportunity',
         {
-          title: this.state.title,
-          url: this.state.url,
-          date: this.state.date,
-          description: this.state.description,
-          location: this.state.location,
-          eligibility: this.state.eligibility,
-          deadline: this.state.deadline,
-          image: this.state.image,
+          opportunityTitle: this.state.title,
+          opportunityURL: this.state.url,
+          opportunityDate: this.state.date,
+          opportunityDescription: this.state.description,
+          opportunityLocation: this.state.location,
+          opportunityEligibility: this.state.eligibility,
+          opportunityRegistrationDeadline: this.state.deadline,
+          opportunityImage: this.state.image,
         }
       )
       .then(

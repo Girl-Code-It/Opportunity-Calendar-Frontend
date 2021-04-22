@@ -31,12 +31,12 @@ class ScholarshipForm extends Component {
       .post(
         'https://opportunity-calendar.herokuapp.com/opportunity',
         {
-          title: this.state.title,
-          url: this.state.url,
-          description: this.state.description,
-          eligibility: this.state.eligibility,
-          deadline: this.state.deadline,
-          image: this.state.image,
+          opportunityTitle: this.state.title,
+          opportunityURL: this.state.jobURL,
+          opportunityDescription: this.state.jobDescription,
+          opportunityEligibility: this.state.eligibility,
+          opportunityRegistrationDeadline: this.state.deadline,
+          opportunityImage: this.state.image,
         }
       )
       .then(

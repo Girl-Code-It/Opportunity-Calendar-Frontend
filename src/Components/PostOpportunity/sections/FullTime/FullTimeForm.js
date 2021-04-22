@@ -68,15 +68,15 @@ class FullTimeForm extends Component {
       .post(
         'https://opportunity-calendar.herokuapp.com/opportunity',
         {
-          jobId: this.state.jobId,
-          jobURL: this.state.jobURL,
-          title: this.state.title,
-          company: this.state.company,
-          image: this.state.image,
-          jobDescription: this.state.jobDescription,
-          location: this.state.location,
-          eligibility: this.state.eligibility,
-          deadline: this.state.deadline,
+          opportunityId: this.state.jobId,
+          opportunityURL: this.state.jobURL,
+          opportunityTitle: this.state.title,
+          opportunityOrganisation: this.state.company,
+          opportunityImage: this.state.image,
+          opportunityDescription: this.state.jobDescription,
+          opportunityLocation: this.state.location,
+          opportunityEligibility: this.state.eligibility,
+          opportunityRegistrationDeadline: this.state.deadline,
         }
       )
       .then(
