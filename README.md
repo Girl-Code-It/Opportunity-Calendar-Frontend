@@ -11,6 +11,17 @@ Opportunity Calendar is the one-stop place to refer important opportunites avail
 [![Stars](https://img.shields.io/github/stars/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend)
 [![Watchers](https://img.shields.io/github/watchers/Girl-Code-It/Opportunity-Calendar-Frontend?style=social)](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend)
 
+<h2 align="center">We're a part of these Open Source programs</h2>
+
+<p align="center">
+ <a>
+ <img  width="70%" height="30%" src="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png">
+ 
+</p>
+
+</br>
+
+
 ## Table of Contents
 
 1. [Install](#install)
@@ -113,16 +124,6 @@ To get started have a look at our [documentation on contributing](https://github
 <h2 align="center">Copyright and license</h2>
 
 Code released under the [MIT License](https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend/blob/develop/LICENSE).
-
-## Opportunity-Calendar-Frontend is a part of these Open Source programs
-
-<p align="center">
- <a>
- <img  width="70%" height="30%" src="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png">
- 
-</p>
-
-</br>
 
 <h2 align="center">Contributor</h2>
 <h3> Credit goes to these people:✨</h3>
