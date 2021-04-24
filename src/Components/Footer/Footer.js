@@ -70,7 +70,7 @@ function Footer() {
           </a>
           <a
             data-testid="github"
-            href="https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend"
+            href="https://github.com/Girl-Code-It"
             className={styles.Shift}
           >
             {' '}
