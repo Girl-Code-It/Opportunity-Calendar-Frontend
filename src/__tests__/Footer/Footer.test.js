@@ -46,4 +46,8 @@ it('renders Footer Links', () => {
   expect(
     container.querySelector("[data-testid='twitter']").getAttribute('href')
   ).toEqual('https://twitter.com/GirlCodeIt1');
+  expect(
+    container.querySelector("[data-testid='github']").getAttribute('href')
+  ).toEqual('https://github.com/Girl-Code-It/Opportunity-Calendar-Frontend');
 });
+

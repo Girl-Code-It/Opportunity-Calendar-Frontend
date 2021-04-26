@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaTwitter,
   FaPhoneAlt,
+  FaGithub,
 } from 'react-icons/fa';
 // import { BiCopyright } from 'react-icons/bi';
 import { GrMail } from 'react-icons/gr';
@@ -66,6 +67,14 @@ function Footer() {
           >
             {' '}
             <FaTwitter />{' '}
+          </a>
+          <a
+            data-testid="github"
+            href="https://github.com/Girl-Code-It"
+            className={styles.Shift}
+          >
+            {' '}
+            <FaGithub />{' '}
           </a>
         </Row>
 
