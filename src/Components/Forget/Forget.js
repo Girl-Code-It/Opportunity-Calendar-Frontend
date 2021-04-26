@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from '../../CSS/Forget.module.css';
 import { Form, Card, Button, Row, InputGroup } from 'react-bootstrap';
 import { BsEye, BsEyeSlash } from "react-icons/bs";
-import forget from '../Forget/for.png' ;
+import forget from '../Forget/forget.png' ;
 import Navbar from '../HomePage/Sections/Navbar';
 
 const Forget = () => {
@@ -14,11 +14,8 @@ const Forget = () => {
       <Navbar/>
     <Row className="justify-content-md-center">
       <Card className={styles.card}><br></br>
-        <h1>Forget Password</h1>
+        <h5>Forget Password</h5>
         <img src={forget} alt="forget " height="430px" width="500px" className="mt-3 img" />
-        <h4 className="text-muted">
-          ** Regenerate Password **
-        </h4>
         <Form >
           <Form.Group controlId="fname">
             <Form.Control type="text" placeholder="Enter Your Name" className={styles.inputitem}/>
