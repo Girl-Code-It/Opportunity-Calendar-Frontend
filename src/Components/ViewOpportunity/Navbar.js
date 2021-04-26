@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from '../../CSS/Navbar.module.css';
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
-import { AiOutlineSearch } from 'react-icons/ai';
+// import { AiOutlineSearch } from 'react-icons/ai';
 
 function Navbar1() {
   const [postOpportunityPath, setPostOpportunityPath] = React.useState();
