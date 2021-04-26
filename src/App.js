@@ -56,7 +56,7 @@ function App() {
             path="/viewopportunity/fulltime"
             render={(props) => (
               <div>
-                <ViewOpportunity path="job" />
+                <ViewOpportunity path="JOB" />
               </div>
             )}
           />
@@ -65,7 +65,7 @@ function App() {
             path="/viewopportunity/hackathon"
             render={(props) => (
               <div>
-                <ViewOpportunity path="hackathon" />
+                <ViewOpportunity path="HACKATHON" />
               </div>
             )}
           />
@@ -74,7 +74,7 @@ function App() {
             path="/viewopportunity/scholarship"
             render={(props) => (
               <div>
-                <ViewOpportunity path="scholarship" />
+                <ViewOpportunity path="SCHOLARSHIP" />
               </div>
             )}
           />
@@ -84,7 +84,7 @@ function App() {
             render={(props) => (
               <div>
                 {/*<CodingComp />*/}
-                <ViewOpportunity path="competition" />
+                <ViewOpportunity path="CODINGCOMPETITION" />
               </div>
             )}
           />
@@ -96,7 +96,7 @@ function App() {
                 {/*
                   <TechConf />
                 */}
-                <ViewOpportunity path="conference" />
+                <ViewOpportunity path="CONFERENCE" />
               </div>
             )}
           />
@@ -105,7 +105,7 @@ function App() {
             path="/viewopportunity/internships"
             render={(props) => (
               <div>
-                <ViewOpportunity path="intern" />
+                <ViewOpportunity path="INTERNSHIP" />
               </div>
             )}
           />

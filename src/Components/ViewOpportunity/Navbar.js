@@ -1,10 +1,20 @@
 import React from 'react';
 import styles from '../../CSS/Navbar.module.css';
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
+// import { AiOutlineSearch } from 'react-icons/ai';
 
-import { AiOutlineSearch } from 'react-icons/ai';
+function Navbar1() {
+  const [postOpportunityPath, setPostOpportunityPath] = React.useState();
 
-function navbar() {
+  // as the last chunk of ViewOpportunity and PostOpportunity is same, we can
+  // simply extract it from the URL. passing a prop is not necessary
+  React.useEffect(() => {
+    const pathname = window.location.pathname;
+    const lastChunk = pathname.split('/').pop();
+    lastChunk && setPostOpportunityPath(`/postopportunity/${lastChunk}`);
+  }, []);
+
   return (
     <Navbar fixed="top" bg="light" expand="lg" className={styles.NavBar}>
       <Navbar.Brand className={styles.Logo}>
@@ -14,23 +24,26 @@ function navbar() {
           It
         </a>
       </Navbar.Brand>
-
-      <Form inline>
-        <div className={styles.container}>
-          <input className={styles.inp} type="text" placeholder="Search..." />
-          <div className={styles.search}></div>
-        </div>
-      </Form>
-
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
-        <Nav className="mr-auto"></Nav>
-        <Button href="/signup" variant="outline-info">
-          Login/Signup
-        </Button>{' '}
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav" >
+        <Nav className="ml-auto">
+          <div className={styles.searchContainer} >
+            <input type="text" className={styles.searchBar} placeholder="Search" />
+          </div>
+          <Link className={styles.link} to={postOpportunityPath}>
+            <Button className={styles.Button} >
+              Post Opportunity
+            </Button>
+          </Link>
+          <Link className={styles.link} to='/signup'>
+            <Button className={`${styles.Button} ${styles.outline}`} variant="outline-info">
+              Login/Signup
+            </Button>
+          </Link>
+        </Nav>
       </Navbar.Collapse>
     </Navbar>
   );
 }
 
-export default navbar;
+export default Navbar1;

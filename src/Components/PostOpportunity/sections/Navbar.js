@@ -1,15 +1,12 @@
 import React from 'react';
 import styles from '../../../CSS/Navbar.module.css';
-
+import { Link } from 'react-router-dom'
 import {
   Navbar,
   Nav,
-  Form,
-  FormControl,
   Button,
-  NavDropdown,
 } from 'react-bootstrap';
-import { AiOutlineSearch } from 'react-icons/ai';
+// import { AiOutlineSearch } from 'react-icons/ai';
 
 function navbar() {
   return (
@@ -21,15 +18,16 @@ function navbar() {
           It
         </a>
       </Navbar.Brand>
-      <Form inline>
-        <div className={styles.container}>
-          <input className={styles.inp} type="text" placeholder="Search..." />
-          <div className={styles.search}></div>
-        </div>
-      </Form>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav" className={styles.ShiftRight}>
-        <Button variant="outline-info">Login/Signup</Button>{' '}
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="ml-auto">
+          <div className={styles.searchContainer} >
+            <input type="text" className={styles.searchBar} placeholder="Search" />
+          </div>
+          <Link className={styles.link} to='/signup'>
+            <Button className={`${styles.Button} ${styles.outline}`} variant="outline-info">Login/Signup</Button>{' '}
+          </Link>
+        </Nav>
       </Navbar.Collapse>
     </Navbar>
   );
