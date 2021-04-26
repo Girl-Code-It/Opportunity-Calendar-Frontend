@@ -15,7 +15,7 @@ const Forget = () => {
     <Row className="justify-content-md-center">
       <Card className={styles.card}><br></br>
         <h5>Forget Password</h5>
-        <img src={forget} alt="forget " height="430px" width="500px" className="mt-3 img" />
+        <img src={forget} alt="Illustration by Freepik Storyset " height="430px" width="500px" className="mt-3 img" />
         <Form >
           <Form.Group controlId="fname">
             <Form.Control type="text" placeholder="Enter Your Name" className={styles.inputitem}/>
