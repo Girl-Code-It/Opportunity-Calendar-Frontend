@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styles from '../../CSS/Forget.module.css';
-import { Form, Card, Button, Row, InputGroup } from 'react-bootstrap';
+import {Navbar, Form, Card, Button, Row, InputGroup } from 'react-bootstrap';
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import forget from '../Forget/forget.png' ;
-import Navbar from '../HomePage/Sections/Navbar';
+
 
 const Forget = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -11,10 +11,22 @@ const Forget = () => {
 
   return (
       <>
-      <Navbar/>
+      <Navbar bg="light" expand="lg" className={styles.NavBar}>
+        <Navbar.Brand className={styles.Logo}>
+          <a
+            href="/"
+            className={styles.Brand}
+            style={{ fontSize: '35px', color: '#000000' }}
+          >
+            Girl
+            <span style={{ color: '#008DC8' }}> Code </span>
+            It
+          </a>
+        </Navbar.Brand>
+      </Navbar>
     <Row className="justify-content-md-center">
       <Card className={styles.card}><br></br>
-        <h5>Forget Password</h5>
+        <h5>Forgot Password</h5>
         <img src={forget} alt="Illustration by Freepik Storyset " height="430px" width="500px" className="mt-3 img" />
         <Form >
           <Form.Group controlId="fname">
