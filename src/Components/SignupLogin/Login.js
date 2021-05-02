@@ -1,16 +1,32 @@
 import React, { useState } from 'react';
 import styles from '../../CSS/SignupLogin.module.css';
-import { Form, Card, Button, Row, InputGroup } from 'react-bootstrap';
+import { Navbar, Form, Card, Button, Row,Col, InputGroup } from 'react-bootstrap';
+
 import { GoogleLogin } from 'react-google-login';
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import LoginImg from '../../Assets/login.svg';
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const handleShowPassword = () => setShowPassword(prevShowPassword => !prevShowPassword);
+  const handleShowPassword = () =>
+    setShowPassword((prevShowPassword) => !prevShowPassword);
 
   return (
-    <>
+    
+    <div>
+      <Navbar bg="light" expand="lg" className={styles.NavBar}>
+        <Navbar.Brand className={styles.Logo}>
+          <a
+            href="/"
+            className={styles.Brand}
+            style={{ fontSize: '35px', color: '#000000' }}
+          >
+            Girl
+            <span style={{ color: '#008DC8' }}> Code </span>
+            It
+          </a>
+        </Navbar.Brand>
+      </Navbar>
     <Row className="justify-content-md-center">
       <Card className={styles.card}>
         <h5>Login</h5>
@@ -47,7 +63,9 @@ const Login = () => {
       </Card>
     </Row>
     <br></br>
-    </>
+    </div>
+
+
   );
 };
 

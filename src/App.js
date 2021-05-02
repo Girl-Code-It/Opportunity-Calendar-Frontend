@@ -16,6 +16,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SignUp from './Components/SignupLogin/SignUp';
 import Login from './Components/SignupLogin/Login';
 import PageNotFound from './Components/Error/PageNotFound';
+import Forget from './Components/Forget/Forget';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           />
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/forget" component={Forget}/>
           <Route
             exact
             path="/viewopportunity"
@@ -56,7 +58,7 @@ function App() {
             path="/viewopportunity/fulltime"
             render={(props) => (
               <div>
-                <ViewOpportunity path="job" />
+                <ViewOpportunity path="JOB" />
               </div>
             )}
           />
@@ -65,7 +67,7 @@ function App() {
             path="/viewopportunity/hackathon"
             render={(props) => (
               <div>
-                <ViewOpportunity path="hackathon" />
+                <ViewOpportunity path="HACKATHON" />
               </div>
             )}
           />
@@ -74,7 +76,7 @@ function App() {
             path="/viewopportunity/scholarship"
             render={(props) => (
               <div>
-                <ViewOpportunity path="scholarship" />
+                <ViewOpportunity path="SCHOLARSHIP" />
               </div>
             )}
           />
@@ -84,7 +86,7 @@ function App() {
             render={(props) => (
               <div>
                 {/*<CodingComp />*/}
-                <ViewOpportunity path="competition" />
+                <ViewOpportunity path="CODINGCOMPETITION" />
               </div>
             )}
           />
@@ -96,7 +98,7 @@ function App() {
                 {/*
                   <TechConf />
                 */}
-                <ViewOpportunity path="conference" />
+                <ViewOpportunity path="CONFERENCE" />
               </div>
             )}
           />
@@ -105,7 +107,7 @@ function App() {
             path="/viewopportunity/internships"
             render={(props) => (
               <div>
-                <ViewOpportunity path="intern" />
+                <ViewOpportunity path="INTERNSHIP" />
               </div>
             )}
           />

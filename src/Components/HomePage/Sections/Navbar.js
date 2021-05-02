@@ -17,7 +17,7 @@ function navbar() {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
           <Link smooth={true} duration={1000} to="home">
-            <a className={styles.NavLinks}>Home</a>
+            <a className={styles.NavLinks} >Home</a>
           </Link>
           <Link smooth={true} offset={-90} duration={1000} to="about">
             <a className={styles.NavLinks}>About Us</a>
