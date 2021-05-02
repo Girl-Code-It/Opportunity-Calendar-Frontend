@@ -133,7 +133,7 @@ export function ViewOpportunity(props) {
               <Row>
                 <Col md={1} sm={1} lg={1} xl={1} xs={0}></Col>
                 <Col style={{ marginTop: '20px' }} md={10} sm={10} lg={10} xl={10} xs={12}>
-                  {data.map((item) => {
+                  {data.results.map((item) => {
                     return <OpportunityCard key={item.id} item={item} />;
                   })}
                 </Col>
