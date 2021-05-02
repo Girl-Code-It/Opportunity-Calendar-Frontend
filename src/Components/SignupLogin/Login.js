@@ -52,7 +52,7 @@ const Login = () => {
                   </InputGroup.Append>
                 </InputGroup>
 
-                <a href="#">
+                <a href="/forget">
                   <small>Forgot password ?</small>
                 </a>
               </Form.Group>

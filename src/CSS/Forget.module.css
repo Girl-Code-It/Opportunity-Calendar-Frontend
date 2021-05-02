@@ -1,0 +1,69 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+  
+h1 {
+    color: #008dc8;
+}
+  
+Form {
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+  
+.button {
+    position: relative;
+    /* float: right; */
+    margin-top: 20px;
+    /* margin-right: 10%; */
+    padding: 5px 30px 5px 30px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background-color: #008dc8;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+  
+.button:hover {
+    text-decoration: none;
+    background: #55b1eb;
+    background-image: -webkit-linear-gradient(top, #55b1eb, #2389c4);
+    background-image: -moz-linear-gradient(top, #55b1eb, #2389c4);
+    background-image: -ms-linear-gradient(top, #55b1eb, #2389c4);
+    background-image: -o-linear-gradient(top, #55b1eb, #2389c4);
+    background-image: linear-gradient(to bottom, #55b1eb, #2389c4);
+}
+  
+  /* make outline none when button gets clicked */
+.button:focus {
+    outline: none;
+}
+  
+.card a {
+    color: #008dc8;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+  
+.card a:hover {
+    text-decoration: none;
+}
+  
+.reactIcons {
+    cursor: pointer;
+}
+.inputitem{
+    width: 350px;
+}
