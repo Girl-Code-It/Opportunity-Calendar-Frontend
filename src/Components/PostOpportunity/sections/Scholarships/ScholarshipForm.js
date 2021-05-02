@@ -36,7 +36,7 @@ class ScholarshipForm extends Component {
           opportunityDescription: this.state.jobDescription,
           opportunityEligibility: this.state.eligibility,
           opportunityRegistrationDeadline: this.state.deadline,
-          opportunityImage: this.state.image,
+          organisationLogoURL: this.state.image,
         }
       )
       .then(

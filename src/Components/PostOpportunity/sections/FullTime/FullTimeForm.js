@@ -72,7 +72,7 @@ class FullTimeForm extends Component {
           opportunityURL: this.state.jobURL,
           opportunityTitle: this.state.title,
           opportunityOrganisation: this.state.company,
-          opportunityImage: this.state.image,
+          organisationLogoURL: this.state.image,
           opportunityDescription: this.state.jobDescription,
           opportunityLocation: this.state.location,
           opportunityEligibility: this.state.eligibility,

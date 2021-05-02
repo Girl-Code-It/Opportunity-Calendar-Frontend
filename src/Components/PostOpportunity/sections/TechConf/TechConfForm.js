@@ -40,7 +40,7 @@ class TechConfForm extends Component {
           opportunityLocation: this.state.location,
           opportunityEligibility: this.state.eligibility,
           opportunityRegistrationDeadline: this.state.deadline,
-          opportunityImage: this.state.image,
+          organisationLogoURL: this.state.image,
         }
       )
       .then(
