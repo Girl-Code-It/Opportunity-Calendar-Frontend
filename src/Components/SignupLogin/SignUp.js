@@ -3,36 +3,36 @@ import styles from '../../CSS/SignupLogin.module.css';
 import { Form, Card, Button, Row, InputGroup } from 'react-bootstrap';
 import { GoogleLogin } from 'react-google-login';
 import { BsEye, BsEyeSlash } from "react-icons/bs";
+import SignupImg from '../../Assets/signup.svg';
+
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
   const handleShowPassword = () => setShowPassword(prevShowPassword => !prevShowPassword);
 
   return (
+    <>
     <Row className="justify-content-md-center">
       <Card className={styles.card}>
         <h5>Sign Up</h5>
+        <img src={SignupImg} alt="Illustration by Freepik Storyset" height="500px" className="mt-3" />
         <small className="text-muted">
           Please fill this form to create your account.
         </small>
         <Form>
-          <Form.Group controlId="fname">
-            <Form.Label>First Name</Form.Label>
+          <Form.Group controlId="fname" className={styles.inputitem}>
             <Form.Control type="text" placeholder="First Name" />
           </Form.Group>
 
-          <Form.Group controlId="lname">
-            <Form.Label>Last Name</Form.Label>
+          <Form.Group controlId="lname" className={styles.inputitem}>
             <Form.Control type="text" placeholder="Last Name" />
           </Form.Group>
 
-          <Form.Group controlId="email">
-            <Form.Label>Email</Form.Label>
+          <Form.Group controlId="email" className={styles.inputitem}>
             <Form.Control type="email" placeholder="name@example.com" />
           </Form.Group>
 
-          <Form.Group controlId="passWord">
-            <Form.Label>Password</Form.Label>
+          <Form.Group controlId="passWord" className={styles.inputitem}>
             <InputGroup>
               <Form.Control type={showPassword ? 'text' : 'password'}  placeholder="Password" />
               <InputGroup.Append className={styles.reactIcons} onClick={handleShowPassword}>
@@ -43,8 +43,7 @@ const SignUp = () => {
             </InputGroup>
           </Form.Group>
 
-          <Form.Group controlId="c_passWord">
-            <Form.Label>Confirm Password</Form.Label>
+          <Form.Group controlId="c_passWord" className={styles.inputitem}>
             <Form.Control type="password" placeholder="Confirm Password" />
           </Form.Group>
 
@@ -66,6 +65,8 @@ const SignUp = () => {
         </p>
       </Card>
     </Row>
+    <br></br>
+    </>
   );
 };
 
