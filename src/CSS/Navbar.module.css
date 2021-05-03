@@ -79,11 +79,15 @@ a:not([href]):hover{
 .searchContainer{
   margin-right: 10px;
   align-self: center;
+  padding-left: 10px;
+  background-color: #f0f0f0;
 }
-
+.searchContainer input{
+  outline: none;
+}
 .searchBar{
   height: 2.25rem;
-  width:200px;
+  width:163px;
   background-color: #f0f0f0;
   border:none;
   border-radius: 5px;
@@ -285,6 +289,8 @@ a:not([href]):hover{
   .searchContainer{
     align-self: flex-start;
     margin-left: 20px;
+    padding-left: 10px;
+    background-color: #f0f0f0;
   }
   .link{
     align-self: flex-start;
