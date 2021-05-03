@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Button, Form, Card } from 'react-bootstrap';
+import { Button, Form, Card, Col } from 'react-bootstrap';
 import styles from '../../../../CSS/CodingCompForm.module.css';
 
 class FullTimeForm extends Component {
@@ -10,6 +10,7 @@ class FullTimeForm extends Component {
     this.state = {
       jobId: '',
       jobURL: '',
+      type: '',
       title: '',
       company: '',
       image: '',
@@ -17,6 +18,7 @@ class FullTimeForm extends Component {
       location: '',
       eligibility: '',
       deadline: '',
+      onlyForFemale: false
     };
 
     this.data = {};
@@ -39,12 +41,14 @@ class FullTimeForm extends Component {
           opportunityId: this.state.jobId,
           opportunityURL: this.state.jobURL,
           opportunityTitle: this.state.title,
+          opportunityType: this.state.type,
           opportunityOrganisation: this.state.company,
           organisationLogoURL: this.state.image,
           opportunityDescription: this.state.jobDescription,
           opportunityLocation: this.state.location,
           opportunityEligibility: this.state.eligibility,
           opportunityRegistrationDeadline: this.state.deadline,
+          onlyForFemale: this.state.onlyForFemale
         }
       )
       .then(
@@ -61,12 +65,14 @@ class FullTimeForm extends Component {
       jobId: '',
       jobURL: '',
       title: '',
+      type: '',
       company: '',
       image: '',
       jobDescription: '',
       location: '',
       eligibility: '',
       deadline: '',
+      onlyForFemale: ''
     });
   };
 
@@ -104,6 +110,41 @@ class FullTimeForm extends Component {
                   onChange={this.handleChange}
                 />
               </Form.Group>
+
+              <Form.Row>
+                <Form.Group as={Col} controlId="formGridType">
+                  <Form.Control
+                    as="select"
+                    size="lg"
+                    defaultValue="Type"
+                    onChange={this.handleChange}
+                    style={{ marginTop: '30px' }}
+                  >
+                    <option defaultValue hidden>Opportunity type</option>
+                    <option value="Job">Job</option>
+                    <option value="Internship">Internship</option>
+                    <option value="Hackathon">Hackathon</option>
+                    <option value="Scholarship">Scholarship</option>
+                    <option value="Conference">Conferencne</option>
+                    <option value="Coding Competition">Coding Competition</option>
+                  </Form.Control>
+                </Form.Group>
+
+                <div style={{ fontSize: 12, color: 'red', marginLeft: '40px' }}>
+                  {this.state.FieldEmptyError}
+                </div>
+
+                <Form.Group as={Col} controlId="formGridType">
+                  <Form.Check
+                    type="checkbox"
+                    size="md"
+                    label="Only for female"
+                    style={{ marginTop: '40px' }}
+                    onChange={(event) => this.setState({ onlyForFemale: event.target.checked })}
+                  />
+                </Form.Group>
+              </Form.Row>
+
 
               <Form.Group>
                 <Form.Control

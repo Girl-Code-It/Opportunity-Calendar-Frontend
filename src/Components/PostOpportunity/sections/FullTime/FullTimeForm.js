@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Button, Form, Card } from 'react-bootstrap';
+import { Button, Form, Card, Col } from 'react-bootstrap';
 import styles from '../../../../CSS/CodingCompForm.module.css';
 //regex for url validation
 var pattern = new RegExp(
@@ -17,6 +17,7 @@ class FullTimeForm extends Component {
     super(props);
 
     this.state = {
+      type: '',
       jobId: '',
       jobURL: '',
       title: '',
@@ -44,6 +45,7 @@ class FullTimeForm extends Component {
     let URLError = '';
 
     if (
+      !this.state.type ||
       !this.state.title ||
       !this.state.jobDescription ||
       !this.state.jobId ||
@@ -63,12 +65,13 @@ class FullTimeForm extends Component {
   };
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log('From handleSubmit', this.state.jobId);
+    // console.log('From handleSubmit', this.state.jobId);
     axios
       .post(
         'https://opportunity-calendar.herokuapp.com/opportunity',
         {
           opportunityId: this.state.jobId,
+          opportunityType: this.state.type,
           opportunityURL: this.state.jobURL,
           opportunityTitle: this.state.title,
           opportunityOrganisation: this.state.company,
@@ -77,6 +80,7 @@ class FullTimeForm extends Component {
           opportunityLocation: this.state.location,
           opportunityEligibility: this.state.eligibility,
           opportunityRegistrationDeadline: this.state.deadline,
+          opportunityOnlyForFemale: this.state.onlyForFemale,
         }
       )
       .then(
@@ -90,6 +94,7 @@ class FullTimeForm extends Component {
         }
       );
     this.setState({
+      type: '',
       jobId: '',
       jobURL: '',
       title: '',
@@ -99,6 +104,7 @@ class FullTimeForm extends Component {
       location: '',
       eligibility: '',
       deadline: '',
+      onlyForFemale: false,
     });
   };
 
@@ -169,6 +175,40 @@ class FullTimeForm extends Component {
               <div style={{ fontSize: 12, color: 'red', marginLeft: '40px' }}>
                 {this.state.FieldEmptyError}
               </div>
+
+              <Form.Row>
+                <Form.Group as={Col} controlId="formGridType">
+                  <Form.Control
+                    as="select"
+                    size="lg"
+                    defaultValue="Type"
+                    onChange={this.handleChange}
+                    style={{ marginTop: '30px' }}
+                  >
+                    <option defaultValue hidden>Opportunity type</option>
+                    <option value="Job">Job</option>
+                    <option value="Internship">Internship</option>
+                    <option value="Hackathon">Hackathon</option>
+                    <option value="Scholarship">Scholarship</option>
+                    <option value="Conference">Conferencne</option>
+                    <option value="Coding Competition">Coding Competition</option>
+                  </Form.Control>
+                </Form.Group>
+
+                <div style={{ fontSize: 12, color: 'red', marginLeft: '40px' }}>
+                  {this.state.FieldEmptyError}
+                </div>
+
+                <Form.Group as={Col} controlId="formGridType">
+                  <Form.Check
+                    type="checkbox"
+                    size="md"
+                    label="Only for female"
+                    style={{ marginTop: '40px' }}
+                    onChange={(event) => this.setState({ onlyForFemale: event.target.checked })}
+                  />
+                </Form.Group>
+              </Form.Row>
 
               <Form.Group>
                 <Form.Control

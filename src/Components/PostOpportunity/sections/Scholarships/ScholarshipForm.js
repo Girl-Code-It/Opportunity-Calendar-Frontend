@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Col, Card } from 'react-bootstrap';
 import styles from '../../../../CSS/ScholarshipForm.module.css';
 
 class ScholarshipForm extends Component {
@@ -8,12 +8,14 @@ class ScholarshipForm extends Component {
     super(props);
 
     this.state = {
+      type: '',
       title: '',
       url: '',
       description: '',
       eligibility: '',
       deadline: '',
       image: '',
+      onlyForFemale: false
     };
   }
 
@@ -32,11 +34,13 @@ class ScholarshipForm extends Component {
         'https://opportunity-calendar.herokuapp.com/opportunity',
         {
           opportunityTitle: this.state.title,
+          opportunityType: this.state.type,
           opportunityURL: this.state.jobURL,
           opportunityDescription: this.state.jobDescription,
           opportunityEligibility: this.state.eligibility,
           opportunityRegistrationDeadline: this.state.deadline,
           organisationLogoURL: this.state.image,
+          onlyForFemale: this.state.onlyForFemale
         }
       )
       .then(
@@ -51,11 +55,14 @@ class ScholarshipForm extends Component {
       );
     this.setState({
       title: '',
+      type: '',
       url: '',
       description: '',
       eligibility: '',
       deadline: '',
       image: '',
+      onlyForFemale: ''
+
     });
   };
 
@@ -72,89 +79,129 @@ class ScholarshipForm extends Component {
     return (
       <div style={{ marginBottom: '80px' }}>
         <Form onSubmit={this.handleSubmit}>
-          <Form.Label className={styles.CardTitle}>
-            Post a Scholarship
-          </Form.Label>
+          <Card className={styles.Card}>
+            <Card.Header as="h5">
+              <Form.Label className={styles.CardTitle}>
+                Post a Scholarship
+              </Form.Label>
+            </Card.Header>
+            <Card.Body>
+              <Form.Group>
+                <Form.Control
+                  className={styles.Input}
+                  type="text"
+                  name="title"
+                  value={title}
+                  placeholder="Scholarship Name"
+                  onChange={this.handleChange}
+                />
+              </Form.Group>
 
-          <div className={styles.RectangleBasicDetails}></div>
+              <Form.Row>
+                <Form.Group as={Col} controlId="formGridType">
+                  <Form.Control
+                    as="select"
+                    size="lg"
+                    defaultValue="Type"
+                    onChange={this.handleChange}
+                    style={{ marginTop: '30px' }}
+                  >
+                    <option defaultValue hidden>Opportunity type</option>
+                    <option value="Job">Job</option>
+                    <option value="Internship">Internship</option>
+                    <option value="Hackathon">Hackathon</option>
+                    <option value="Scholarship">Scholarship</option>
+                    <option value="Conference">Conferencne</option>
+                    <option value="Coding Competition">Coding Competition</option>
+                  </Form.Control>
+                </Form.Group>
 
-          <Form.Group>
-            <Form.Control
-              style={{ marginLeft: '40px' }}
-              className={styles.Input}
-              type="text"
-              name="title"
-              value={title}
-              placeholder="Scholarship Name"
-              onChange={this.handleChange}
-            />
-          </Form.Group>
+                <div style={{ fontSize: 12, color: 'red', marginLeft: '40px' }}>
+                  {this.state.FieldEmptyError}
+                </div>
 
-          <Form.Group>
-            <Form.Control
-              className={styles.Input}
-              type="text"
-              name="image"
-              value={image}
-              placeholder="Logo URL"
-              style={{ marginLeft: '40px', marginTop: '30px' }}
-              onChange={this.handleChange}
-            />
-          </Form.Group>
+                <Form.Group as={Col} controlId="formGridType">
+                  <Form.Check
+                    type="checkbox"
+                    size="md"
+                    label="Only for female"
+                    style={{ marginTop: '40px' }}
+                    onChange={(event) => this.setState({ onlyForFemale: event.target.checked })}
+                  />
+                </Form.Group>
+              </Form.Row>
 
-          <Form.Group>
-            <Form.Control
-              as="textarea"
-              rows={4}
-              style={{ marginTop: '35px', marginLeft: '40px' }}
-              name="description"
-              value={description}
-              placeholder="Short Description"
-              onChange={this.handleChange}
-            />
-          </Form.Group>
+              <Form.Group>
+                <Form.Control
+                  className={styles.Input}
+                  type="text"
+                  name="image"
+                  value={image}
+                  placeholder="Logo URL"
+                  style={{ marginTop: '30px' }}
+                  onChange={this.handleChange}
+                />
+              </Form.Group>
 
-          <Form.Group>
-            <Form.Control
-              className={styles.Input}
-              type="text"
-              name="deadline"
-              value={deadline}
-              placeholder="Last Date to Apply"
-              style={{ marginTop: '30px', marginLeft: '40px' }}
-              onChange={this.handleChange}
-            />
-          </Form.Group>
+              <Form.Group>
+                <Form.Control
+                  as="textarea"
+                  rows={4}
+                  style={{ marginTop: '30px' }}
+                  name="description"
+                  value={description}
+                  placeholder="Short Description"
+                  onChange={this.handleChange}
+                />
+              </Form.Group>
 
-          <Form.Group>
-            <Form.Control
-              className={styles.Input}
-              type="text"
-              name="eligibility"
-              value={eligibility}
-              placeholder="Eligibility"
-              style={{ marginLeft: '40px', marginTop: '30px' }}
-              onChange={this.handleChange}
-            />
-          </Form.Group>
+              <Form.Group>
+                <Form.Control
+                  className={styles.Input}
+                  type="text"
+                  name="deadline"
+                  value={deadline}
+                  placeholder="Last Date to Apply"
+                  style={{ marginTop: '30px' }}
+                  onChange={this.handleChange}
+                />
+              </Form.Group>
 
-          <Form.Group>
-            <Form.Control
-              className={styles.Input}
-              type="text"
-              name="url"
-              value={url}
-              placeholder="Website"
-              style={{ marginLeft: '40px', marginTop: '30px' }}
-              onChange={this.handleChange}
-            />
-          </Form.Group>
+              <Form.Group>
+                <Form.Control
+                  className={styles.Input}
+                  type="text"
+                  name="eligibility"
+                  value={eligibility}
+                  placeholder="Eligibility"
+                  style={{ marginTop: '30px' }}
+                  onChange={this.handleChange}
+                />
+              </Form.Group>
 
-          <Form.Group>
-            <Button className={styles.Button} type="submit">
-              Submit
+              <Form.Group>
+                <Form.Control
+                  className={styles.Input}
+                  type="text"
+                  name="url"
+                  value={url}
+                  placeholder="Website"
+                  style={{ marginTop: '30px' }}
+                  onChange={this.handleChange}
+                />
+              </Form.Group>
+
+              <Form.Group>
+                <Button className={styles.Button} type="submit">
+                  Submit
             </Button>
-          </Form.Group>
+              </Form.Group>
+            </Card.Body>
+          </Card>
+
+          {/* <div className={styles.RectangleBasicDetails}></div> */}
+
+
         </Form>
       </div>
     );

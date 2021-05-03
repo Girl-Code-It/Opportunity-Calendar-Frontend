@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Button, Form, Card } from 'react-bootstrap';
+import { Button, Form, Card, Col } from 'react-bootstrap';
 import styles from '../../../../CSS/CodingCompForm.module.css';
 
 class TechConfForm extends Component {
@@ -8,6 +8,7 @@ class TechConfForm extends Component {
     super(props);
 
     this.state = {
+      type: '',
       title: '',
       url: '',
       date: '',
@@ -16,6 +17,7 @@ class TechConfForm extends Component {
       eligibility: '',
       deadline: '',
       image: '',
+      onlyForFemale: false
     };
   }
 
@@ -34,6 +36,7 @@ class TechConfForm extends Component {
         'https://opportunity-calendar.herokuapp.com/opportunity',
         {
           opportunityTitle: this.state.title,
+          opportunityType: this.state.type,
           opportunityURL: this.state.url,
           opportunityDate: this.state.date,
           opportunityDescription: this.state.description,
@@ -41,6 +44,7 @@ class TechConfForm extends Component {
           opportunityEligibility: this.state.eligibility,
           opportunityRegistrationDeadline: this.state.deadline,
           organisationLogoURL: this.state.image,
+          onlyForFemale: this.state.onlyForFemale
         }
       )
       .then(
@@ -54,6 +58,7 @@ class TechConfForm extends Component {
         }
       );
     this.setState({
+      type: '',
       title: '',
       url: '',
       date: '',
@@ -62,6 +67,7 @@ class TechConfForm extends Component {
       eligibility: '',
       deadline: '',
       image: '',
+      onlyforFemale: ''
     });
   };
 
@@ -98,6 +104,41 @@ class TechConfForm extends Component {
                   onChange={this.handleChange}
                 />
               </Form.Group>
+
+              <Form.Row>
+                <Form.Group as={Col} controlId="formGridType">
+                  <Form.Control
+                    as="select"
+                    size="lg"
+                    defaultValue="Type"
+                    onChange={this.handleChange}
+                    style={{ marginTop: '30px' }}
+                  >
+                    <option defaultValue hidden>Opportunity type</option>
+                    <option value="Job">Job</option>
+                    <option value="Internship">Internship</option>
+                    <option value="Hackathon">Hackathon</option>
+                    <option value="Scholarship">Scholarship</option>
+                    <option value="Conference">Conferencne</option>
+                    <option value="Coding Competition">Coding Competition</option>
+                  </Form.Control>
+                </Form.Group>
+
+                <div style={{ fontSize: 12, color: 'red', marginLeft: '40px' }}>
+                  {this.state.FieldEmptyError}
+                </div>
+
+                <Form.Group as={Col} controlId="formGridType">
+                  <Form.Check
+                    type="checkbox"
+                    size="md"
+                    label="Only for female"
+                    style={{ marginTop: '40px' }}
+                    onChange={(event) => this.setState({ onlyForFemale: event.target.checked })}
+                  />
+                </Form.Group>
+              </Form.Row>
+
 
               <Form.Group>
                 <Form.Control
