@@ -18,9 +18,10 @@ function Footer() {
     <Jumbotron className={styles.Jumbotron}>
       <Container className={styles.ContainerFooter}>
         <Row className={styles.Top1}>
+
           <Col className={styles.Column1} style={{ textAlign: 'center' }}>
             <h5 style={{ fontSize: '22px' }}> Products </h5>
-            <div className={styles.Rectangle} style={{ width: '120px' }}></div>
+            <div className={styles.Rectangle} style={{ width: '100px' }}></div>
             <a href="https://girlcodeit.com/codemaps">
               <p style={{ fontSize: '18px', color: 'black', cursor: "pointer" }}>CodeMaps</p>
             </a>
@@ -28,6 +29,28 @@ function Footer() {
               <p style={{ fontSize: '18px', color: "black", cursor: "pointer" }}> Opportuntiy Calendar </p>
             </Link>
           </Col>
+
+
+          <Col className={styles.Column3} style={{ textAlign: 'center' }}>
+            <h5 style={{ fontSize: '22px' }}> Navigation</h5>
+            <div className={styles.Rectangle4} style={{ width: '100px' }}></div>
+            <a href="/">
+              <p style={{ fontSize: '15px', color: 'black', cursor: "pointer" }}>Home</p>
+            </a>
+            <a href="/">
+              <p style={{ fontSize: '15px', color: 'black', cursor: "pointer" }}>About Us</p>
+            </a>
+            <a href="/">
+              <p style={{ fontSize: '15px', color: 'black', cursor: "pointer" }}>Opportunities</p>
+            </a>
+          <a href="/">
+              <p style={{ fontSize: '15px', color: "black", cursor: "pointer" }}>FAQs</p>
+            </a>
+            <a href="/">
+                <p style={{ fontSize: '15px', color: "black", cursor: "pointer" }}> Contact Us</p>
+              </a>
+          </Col>
+
 
           <Col className={styles.ImgColumn}>
             <a href="https://girlcodeit.com/">

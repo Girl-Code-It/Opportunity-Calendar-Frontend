@@ -55,16 +55,24 @@ h5 {
   position: absolute;
   right: 50%;
   left: 0;
-  margin-left: 120px;
+  margin-left: 75px;
   border-bottom: 2px #008dc8 solid;
 }
 
+.Rectangle4 {
+  position: absolute;
+  right: 50%;
+  margin-top: 2px;
+  left: 0;
+  margin-left: 85px;
+  border-bottom: 2px #008dc8 solid;
+}
 
 .Rectangle2 {
   position: absolute;
   right: 60%;
   left: 0;
-  margin-left: 143px;
+  margin-left: 95px;
   border-bottom: 2px #008dc8 solid;
 }
 .Rectangle3 {
@@ -87,7 +95,7 @@ p {
 .SocialLinks {
   justify-content: center;
   margin-top: 0px;
-  margin-right: 2px;
+  margin-right: -150px;
   text-align: end;
 }
 .Shift {
@@ -107,6 +115,9 @@ a:hover, Link:hover{
 @media only screen and (max-width: 1201px) {
   .Rectangle {
     margin-left: 128px;
+  }
+  .Rectangle4{
+    margin-left: 138px;
   }
   .Rectangle2 {
     margin-left: 152px;
@@ -279,7 +290,7 @@ a:hover, Link:hover{
     margin-left: 30%;
   }
   .ContactCol {
-    margin-left: 4px;
+    margin-left: 40px;
   }
   .ContactRow {
     margin-left: 36px;
@@ -290,7 +301,7 @@ a:hover, Link:hover{
     justify-content: space-evenly;
   }
   .Column1,
-  .Column2 {
+  .Column2,.Column3 {
     font-size: 1px;
   }
   .Rectangle {
@@ -303,8 +314,8 @@ a:hover, Link:hover{
     margin-left: 283px;
   }
   .Logo {
-    width: 165%;
-    margin-left: -61px;
+    width: 200%;
+    margin-left: -51px;
     padding: 20%;
   }
   .Bottom1 {
@@ -326,7 +337,7 @@ a:hover, Link:hover{
     justify-content: space-evenly;
   }
   .Column1,
-  .Column2 {
+  .Column2,.Column3{
     margin-bottom: 0px;
     margin-left: 15px;
   }
@@ -346,7 +357,7 @@ a:hover, Link:hover{
   .ImgColumn {
     width: 45%;
     height: 10%;
-    margin-left: -12px;
+    margin-left: -10px;
   }
   .Logo {
     width: 150%;
@@ -356,15 +367,22 @@ a:hover, Link:hover{
   .Rectangle {
     margin-left: 200px;
   }
+  .Rectangle4 {
+    margin-left: 200px;
+  }
   .Rectangle2 {
     margin-left: 226px;
   }
   .Rectangle3{
     margin-left: 122px;
   }
+
 }
 @media (max-width: 596px) {
   .Rectangle {
+    margin-left: 202px;
+  }
+  .Rectangle4 {
     margin-left: 202px;
   }
   .Rectangle2 {
@@ -385,6 +403,9 @@ a:hover, Link:hover{
   .Rectangle {
     margin-left: 208px;
   }
+  .Rectangle4 {
+    margin-left: 208px;
+  }
   .Rectangle2 {
     margin-left: 232px;
   }
@@ -395,6 +416,9 @@ a:hover, Link:hover{
 }
 @media (max-width: 565px) {
   .Rectangle {
+    margin-left: 204px;
+  }
+  .Rectangle4 {
     margin-left: 204px;
   }
   .Rectangle2 {
@@ -428,6 +452,9 @@ a:hover, Link:hover{
     margin-left: -39px;
   }
   .Rectangle3{
+    margin-left: 188px;
+  }
+  .Rectangle4{
     margin-left: 188px;
   }
   .Bottom1 p {
@@ -600,7 +627,7 @@ a:hover, Link:hover{
 }
 @media (max-width: 415px) {
   .Rectangle {
-    margin-left: 126px;
+    margin-left: 120px;
   }
   .Rectangle2 {
     margin-left: 150px;
@@ -801,3 +828,8 @@ a:hover, Link:hover{
     margin-left: 70px;
   }
 }
+ .Column3{
+    margin-bottom: auto;
+    margin-top: 100px;
+
+  }
