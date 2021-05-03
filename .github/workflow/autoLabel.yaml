@@ -12,3 +12,4 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           ignore-comments: true
           labels-synonyms: '{"GSSOC21":["GSSOC","GSSOC21","gssoc21","Gssoc21"]}'
+          configuration-path: .github/workflow/autoLabel.yaml
