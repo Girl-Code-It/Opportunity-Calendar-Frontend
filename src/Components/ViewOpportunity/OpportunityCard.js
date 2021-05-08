@@ -14,6 +14,7 @@ export function OpportunityCard(props) {
     opportunityDate,
     opportunityTitle,
     opportunityOrganisation,
+    organisationLogoURL,
     opportunityURL } = props.item;
 
   const changeDateFormat = (timestamp) => {
@@ -28,8 +29,7 @@ export function OpportunityCard(props) {
           <Col>
             <Row className={styles.headingContainer}>
               <Image
-                src={logo}
-                // src = {item.imgURL}
+                src = {organisationLogoURL}
                 alt={opportunityTitle}
                 className={styles.CardImage}
                 roundedCircle
