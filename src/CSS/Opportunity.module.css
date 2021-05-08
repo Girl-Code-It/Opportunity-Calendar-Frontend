@@ -13,7 +13,7 @@
 
 .Card {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 3rem;
     border-radius: 15px;
     border-radius: 15px;
     box-shadow: 0px 2px 2px 0px #ccc;
@@ -36,8 +36,8 @@ a:hover {
     border-radius: 50%;
     margin-top: 2rem;
     text-align: start;
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     padding-bottom: 0px;
 }
 
@@ -72,19 +72,13 @@ a:hover {
 }
 
 .Subtitle {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-left: 5px;
     color: gray;
 }
 
-.BulletList {
-    list-style-type: circle;
-}
-
 .Description {
     margin-top: 15px;
-    margin-right: 5px;
-    margin-left: 5px;
     margin-bottom: 35px;
     color: #4c5052;
     hyphens: none;
@@ -92,14 +86,17 @@ a:hover {
 }
 
 .Heading {
+    color: #008dc8;
     margin-top: 5px;
     margin-left: 0px;
+    font-size: 1.1rem;
 }
 
 .Value {
     margin-top: 5px;
     margin-left: 5px;
     color: black;
+    font-size: 1.1rem;
 }
 
 .Button {
@@ -135,13 +132,13 @@ a:hover {
 }
 
 .Button1 {
-    margin-top: 40px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 5px;
     float: right;
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 5px 35px;
     border: 1px solid #008cd8;
     text-align: center;
@@ -172,14 +169,14 @@ a:hover {
 
 .BannerText {
     background-color: #e2f3fb;
-    margin-top: 6rem;
+    margin-top: 4.5rem;
     height: 10rem;
     box-shadow: 0 8px 6px -4px #c7c7c7;
 }
 
 .cardText {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2.7em;
     color: #0084ba;
     margin-top: 25px;
 }
@@ -193,6 +190,8 @@ a:hover {
 .opportunityBody {
     background-color: white;
     padding-top: 3rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .Dropdown {
@@ -204,7 +203,7 @@ a:hover {
     border-radius: 5px 5px 5px 5px;
     cursor: pointer;
     transition: all 0.5s;
-    font-size: 1.5em;
+    font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 10px;
     margin-top: 0;

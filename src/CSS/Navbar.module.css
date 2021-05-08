@@ -80,18 +80,19 @@ a:not([href]):hover{
   margin-right: 10px;
   align-self: center;
   padding-left: 10px;
+  border-radius: 5px;
   background-color: #f0f0f0;
 }
 .searchContainer input{
   outline: none;
 }
 .searchBar{
-  height: 2.25rem;
-  width:163px;
+  /* height: 2.25rem; */
+  width: 250px;
   background-color: #f0f0f0;
-  border:none;
+  border: none;
   border-radius: 5px;
-  padding: 6px 14px;
+  padding: 3px 5px;
 }
 
 .searchBar::placeholder{

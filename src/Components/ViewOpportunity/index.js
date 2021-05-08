@@ -11,8 +11,9 @@ import {
   Button,
   NavDropdown,
 } from 'react-bootstrap';
-import styles from './Opportunity.module.css';
+import styles from '../../CSS/Opportunity.module.css';
 import Navbar from './Navbar';
+import CommonComponents from './CommonComponents';
 
 const mapPathToResource = {
   CONFERENCE: { image: import('../../Assets/conference-large.png') },
@@ -61,7 +62,7 @@ export function ViewOpportunity(props) {
   if (!data) {
     return (
       <div>
-        <Navbar />
+        <CommonComponents />
         <h3
           className={styles.fallbackText}
         >
@@ -75,52 +76,13 @@ export function ViewOpportunity(props) {
 
   return (
     <>
-      <Navbar />
-      <Card className="text-center">
-        <Card.Body className={styles.BannerText}>
-          <Card.Text className={styles.cardText}>
-            {mapUrlToName[splitUrl]}
-          </Card.Text>
-        </Card.Body>
-      </Card>
+      <CommonComponents />
       <Jumbotron className={styles.opportunityBody}>
         <Container>
-          <Row>
-            <NavDropdown
-              title="Select Opportunity"
-              id="dropdown-basic-button"
-              className={styles.Dropdown}
-            >
-              <NavDropdown.Item href="/viewopportunity/fulltime">
-                {' '}
-                      Full Time Jobs{' '}
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/viewopportunity/hackathon">
-                {' '}
-                      Hackathons{' '}
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/viewopportunity/scholarship">
-                {' '}
-                      Scholarships{' '}
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/viewopportunity/codingcomp">
-                {' '}
-                      Coding Competitions{' '}
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/viewopportunity/techconf">
-                {' '}
-                      Tech Conferences{' '}
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/viewopportunity/internships">
-                {' '}
-                      Internship Opportunities{' '}
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Row>
           {data_length === 0 ? 
           (
             <div>
-              <Navbar />
+              <CommonComponents />
               <h3
                 className={styles.fallbackText}
               >
@@ -132,7 +94,7 @@ export function ViewOpportunity(props) {
             <>
               <Row>
                 <Col md={1} sm={1} lg={1} xl={1} xs={0}></Col>
-                <Col style={{ marginTop: '20px' }} md={10} sm={10} lg={10} xl={10} xs={12}>
+                <Col md={10} sm={10} lg={10} xl={10} xs={12}>
                   {data.results.map((item) => {
                     return <OpportunityCard key={item.id} item={item} />;
                   })}
@@ -141,10 +103,8 @@ export function ViewOpportunity(props) {
               </Row>
               </>
           )}
-            </Container>
-          </Jumbotron>
-        
-      )
+        </Container>
+      </Jumbotron>
     </>
   );
 }
