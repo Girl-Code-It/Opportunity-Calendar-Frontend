@@ -2,6 +2,9 @@ import React from 'react';
 import styles from '../../CSS/Navbar.module.css';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
+import {
+  FiSearch
+} from 'react-icons/fi';
 // import { AiOutlineSearch } from 'react-icons/ai';
 
 function Navbar1() {
@@ -28,7 +31,8 @@ function Navbar1() {
       <Navbar.Collapse id="responsive-navbar-nav" >
         <Nav className="ml-auto">
           <div className={styles.searchContainer} >
-            <input type="text" className={styles.searchBar} placeholder="Search" />
+           <FiSearch />
+            <input type="text" className={styles.searchBar}  placeholder="Search" />
           </div>
           <Link className={styles.link} to={postOpportunityPath}>
             <Button className={styles.Button} >
