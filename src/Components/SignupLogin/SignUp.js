@@ -13,7 +13,7 @@ const SignUp = () => {
   return (
     <>
     <Row className="justify-content-md-center">
-      <Card className={styles.card}>
+      <Card className={styles.card}><br></br><br></br>
         <h5>Sign Up</h5>
         <img src={SignupImg} alt="Illustration by Freepik Storyset" height="500px" className="mt-3" />
         <small className="text-muted">

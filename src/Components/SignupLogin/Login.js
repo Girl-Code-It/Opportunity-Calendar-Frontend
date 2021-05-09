@@ -12,7 +12,7 @@ const Login = () => {
   return (
     <>
     <Row className="justify-content-md-center">
-      <Card className={styles.card}>
+      <Card className={styles.card}><br></br><br></br>
         <h5>Login</h5>
         <img src={LoginImg} alt="Illustration by Freepik Storyset" height="500px" className="mt-3" />
         <Form>
