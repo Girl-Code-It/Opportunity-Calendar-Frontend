@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Button, Form, Card } from 'react-bootstrap';
+import { Button, Form, Card, Col } from 'react-bootstrap';
 import styles from '../../../../CSS/CodingCompForm.module.css';
 
 class FullTimeForm extends Component {
@@ -8,8 +8,8 @@ class FullTimeForm extends Component {
     super(props);
 
     this.state = {
-      jobId: '',
       jobURL: '',
+      type: '',
       title: '',
       company: '',
       image: '',
@@ -17,9 +17,10 @@ class FullTimeForm extends Component {
       location: '',
       eligibility: '',
       deadline: '',
+      onlyForFemale: false
     };
 
-    this.data = {};
+    // this.data = {};
   }
 
   handleChange = (event) => {
@@ -31,20 +32,21 @@ class FullTimeForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log('From handleSubmit', this.state.jobId);
+    console.log('From handleSubmit', this.state);
     axios
       .post(
-        'https://opportunitycalendar.herokuapp.com/opportunities/intern/create/',
+        'https://opportunity-calendar.herokuapp.com/opportunity',
         {
-          jobId: this.state.jobId,
-          jobURL: this.state.jobURL,
-          title: this.state.title,
-          company: this.state.company,
-          image: this.state.image,
-          jobDescription: this.state.jobDescription,
-          location: this.state.location,
-          eligibility: this.state.eligibility,
-          deadline: this.state.deadline,
+          opportunityTitle: this.state.title,
+          opportunityURL: this.state.jobURL,
+          opportunityType: this.state.type,
+          opportunityOrganisation: this.state.company,
+          organisationLogoURL: this.state.image,
+          opportunityDescription: this.state.jobDescription,
+          opportunityLocation: this.state.location,
+          opportunityEligibility: this.state.eligibility,
+          opportunityDate: this.state.deadline,
+          onlyForFemale: this.state.onlyForFemale
         }
       )
       .then(
@@ -58,21 +60,22 @@ class FullTimeForm extends Component {
         }
       );
     this.setState({
-      jobId: '',
       jobURL: '',
       title: '',
+      type: '',
       company: '',
       image: '',
       jobDescription: '',
       location: '',
       eligibility: '',
       deadline: '',
+      onlyForFemale: ''
     });
   };
 
   render() {
     const {
-      jobId,
+      type,
       jobURL,
       title,
       company,
@@ -109,18 +112,6 @@ class FullTimeForm extends Component {
                 <Form.Control
                   className={styles.Input}
                   type="text"
-                  name="image"
-                  value={image}
-                  placeholder="Company Logo URL"
-                  onChange={this.handleChange}
-                  style={{ marginTop: '30px' }}
-                />
-              </Form.Group>
-
-              <Form.Group>
-                <Form.Control
-                  className={styles.Input}
-                  type="text"
                   name="title"
                   value={title}
                   placeholder="Opportunity Title"
@@ -129,13 +120,49 @@ class FullTimeForm extends Component {
                 />
               </Form.Group>
 
+              <Form.Row>
+                <Form.Group as={Col} controlId="formGridType">
+                  <Form.Control
+                    as="select"
+                    size="lg"
+                    name="type"
+                    value={type}
+                    onChange={this.handleChange}
+                    style={{ marginTop: '30px' }}
+                  >
+                    <option defaultValue hidden>Opportunity type</option>
+                    <option value="JOB">Job</option>
+                    <option value="INTERNSHIP">Internship</option>
+                    <option value="HACKATHON">Hackathon</option>
+                    <option value="SCHOLARSHIP">Scholarship</option>
+                    <option value="CONFERENCE">Conferencne</option>
+                    <option value="CODINGCOMPETITION">Coding Competition</option>
+                    <option value="OTHERS">Others</option>
+                  </Form.Control>
+                </Form.Group>
+
+                <div style={{ fontSize: 12, color: 'red', marginLeft: '40px' }}>
+                  {this.state.FieldEmptyError}
+                </div>
+
+                <Form.Group as={Col} controlId="formBasicType">
+                  <Form.Check
+                    type="checkbox"
+                    size="md"
+                    label="Only for female"
+                    style={{ marginTop: '40px' }}
+                    onChange={(event) => this.setState({ onlyForFemale: event.target.checked })}
+                  />
+                </Form.Group>
+              </Form.Row>
+
               <Form.Group>
                 <Form.Control
                   className={styles.Input}
                   type="text"
-                  name="jobId"
-                  value={jobId}
-                  placeholder="Job ID"
+                  name="image"
+                  value={image}
+                  placeholder="Company Logo URL"
                   onChange={this.handleChange}
                   style={{ marginTop: '30px' }}
                 />
