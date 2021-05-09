@@ -58,11 +58,6 @@ const SignUp = () => {
           </Form.Group>
 
 
-            <Form.Group controlId="c_passWord">
-              <Form.Label>Confirm Password</Form.Label>
-              <Form.Control type="password" placeholder="Confirm Password" />
-            </Form.Group>
-
             <input type="checkbox" />
 
             <small style={{ paddingLeft: 10 }}>
