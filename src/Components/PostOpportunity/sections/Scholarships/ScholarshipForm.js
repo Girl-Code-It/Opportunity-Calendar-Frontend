@@ -35,10 +35,11 @@ class ScholarshipForm extends Component {
         {
           opportunityTitle: this.state.title,
           opportunityType: this.state.type,
-          opportunityURL: this.state.jobURL,
-          opportunityDescription: this.state.jobDescription,
+          opportunityURL: this.state.url,
+          organisationLogoURL: this.state.image,
+          opportunityDescription: this.state.description,
           opportunityEligibility: this.state.eligibility,
-          opportunityRegistrationDeadline: this.state.deadline,
+          opportunityDate: this.state.deadline,
           organisationLogoURL: this.state.image,
           onlyForFemale: this.state.onlyForFemale
         }
@@ -68,6 +69,7 @@ class ScholarshipForm extends Component {
 
   render() {
     const {
+      type,
       title,
       url,
       description,
@@ -97,40 +99,6 @@ class ScholarshipForm extends Component {
                 />
               </Form.Group>
 
-              <Form.Row>
-                <Form.Group as={Col} controlId="formGridType">
-                  <Form.Control
-                    as="select"
-                    size="lg"
-                    defaultValue="Type"
-                    onChange={this.handleChange}
-                    style={{ marginTop: '30px' }}
-                  >
-                    <option defaultValue hidden>Opportunity type</option>
-                    <option value="Job">Job</option>
-                    <option value="Internship">Internship</option>
-                    <option value="Hackathon">Hackathon</option>
-                    <option value="Scholarship">Scholarship</option>
-                    <option value="Conference">Conferencne</option>
-                    <option value="Coding Competition">Coding Competition</option>
-                  </Form.Control>
-                </Form.Group>
-
-                <div style={{ fontSize: 12, color: 'red', marginLeft: '40px' }}>
-                  {this.state.FieldEmptyError}
-                </div>
-
-                <Form.Group as={Col} controlId="formGridType">
-                  <Form.Check
-                    type="checkbox"
-                    size="md"
-                    label="Only for female"
-                    style={{ marginTop: '40px' }}
-                    onChange={(event) => this.setState({ onlyForFemale: event.target.checked })}
-                  />
-                </Form.Group>
-              </Form.Row>
-
               <Form.Group>
                 <Form.Control
                   className={styles.Input}
@@ -142,6 +110,42 @@ class ScholarshipForm extends Component {
                   onChange={this.handleChange}
                 />
               </Form.Group>
+
+              <Form.Row>
+                <Form.Group as={Col} controlId="formGridType">
+                  <Form.Control
+                    as="select"
+                    size="lg"
+                    name="type"
+                    value={type}
+                    onChange={this.handleChange}
+                    style={{ marginTop: '30px' }}
+                  >
+                    <option defaultValue hidden>Opportunity type</option>
+                    <option value="JOB">Job</option>
+                    <option value="INTERNSHIP">Internship</option>
+                    <option value="HACKATHON">Hackathon</option>
+                    <option value="SCHOLARSHIP">Scholarship</option>
+                    <option value="CONFERENCE">Conferencne</option>
+                    <option value="CODINGCOMPETITION">Coding Competition</option>
+                    <option value="OTHERS">Others</option>
+                  </Form.Control>
+                </Form.Group>
+
+                <div style={{ fontSize: 12, color: 'red', marginLeft: '40px' }}>
+                  {this.state.FieldEmptyError}
+                </div>
+
+                <Form.Group as={Col} controlId="formBasicType">
+                  <Form.Check
+                    type="checkbox"
+                    size="md"
+                    label="Only for female"
+                    style={{ marginTop: '40px' }}
+                    onChange={(event) => this.setState({ onlyForFemale: event.target.checked })}
+                  />
+                </Form.Group>
+              </Form.Row>
 
               <Form.Group>
                 <Form.Control

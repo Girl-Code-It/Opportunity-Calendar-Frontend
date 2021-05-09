@@ -73,6 +73,7 @@ class HackathonsForm extends Component {
 
   render() {
     const {
+      type,
       title,
       url,
       date,
@@ -112,17 +113,19 @@ class HackathonsForm extends Component {
                   <Form.Control
                     as="select"
                     size="lg"
-                    defaultValue="Type"
+                    name="type"
+                    value={type}
                     onChange={this.handleChange}
                     style={{ marginTop: '30px' }}
                   >
                     <option defaultValue hidden>Opportunity type</option>
-                    <option value="Job">Job</option>
-                    <option value="Internship">Internship</option>
-                    <option value="Hackathon">Hackathon</option>
-                    <option value="Scholarship">Scholarship</option>
-                    <option value="Conference">Conferencne</option>
-                    <option value="Coding Competition">Coding Competition</option>
+                    <option value="JOB">Job</option>
+                    <option value="INTERNSHIP">Internship</option>
+                    <option value="HACKATHON">Hackathon</option>
+                    <option value="SCHOLARSHIP">Scholarship</option>
+                    <option value="CONFERENCE">Conferencne</option>
+                    <option value="CODINGCOMPETITION">Coding Competition</option>
+                    <option value="OTHERS">Others</option>
                   </Form.Control>
                 </Form.Group>
 
@@ -130,7 +133,7 @@ class HackathonsForm extends Component {
                   {this.state.FieldEmptyError}
                 </div>
 
-                <Form.Group as={Col} controlId="formGridType">
+                <Form.Group as={Col} controlId="formBasicType">
                   <Form.Check
                     type="checkbox"
                     size="md"

@@ -18,7 +18,6 @@ class FullTimeForm extends Component {
 
     this.state = {
       type: '',
-      jobId: '',
       jobURL: '',
       title: '',
       company: '',
@@ -27,11 +26,12 @@ class FullTimeForm extends Component {
       location: '',
       eligibility: '',
       deadline: '',
+      onlyForFemale: false,
       FieldEmptyError: '',
       URLError: '',
     };
 
-    this.data = {};
+    // this.data = {};
   }
 
   handleChange = (event) => {
@@ -48,7 +48,6 @@ class FullTimeForm extends Component {
       !this.state.type ||
       !this.state.title ||
       !this.state.jobDescription ||
-      !this.state.jobId ||
       !this.state.eligibility ||
       !this.state.location
     ) {
@@ -65,24 +64,21 @@ class FullTimeForm extends Component {
   };
   handleSubmit = (event) => {
     event.preventDefault();
-    // console.log('From handleSubmit', this.state.jobId);
     axios
       .post(
         'https://opportunity-calendar.herokuapp.com/opportunity',
         {
-          opportunityId: this.state.jobId,
+          opportunityTitle: this.state.title,
           opportunityType: this.state.type,
           opportunityURL: this.state.jobURL,
-          opportunityTitle: this.state.title,
           opportunityOrganisation: this.state.company,
           organisationLogoURL: this.state.image,
           opportunityDescription: this.state.jobDescription,
           opportunityLocation: this.state.location,
           opportunityEligibility: this.state.eligibility,
-          opportunityRegistrationDeadline: this.state.deadline,
-          opportunityOnlyForFemale: this.state.onlyForFemale,
-        }
-      )
+          opportunityDate: this.state.deadline,
+          onlyForFemale: this.state.onlyForFemale,
+        })
       .then(
         (res) => {
           const data = res.data;
@@ -95,7 +91,6 @@ class FullTimeForm extends Component {
       );
     this.setState({
       type: '',
-      jobId: '',
       jobURL: '',
       title: '',
       company: '',
@@ -110,7 +105,7 @@ class FullTimeForm extends Component {
 
   render() {
     const {
-      jobId,
+      type,
       jobURL,
       title,
       company,
@@ -181,17 +176,19 @@ class FullTimeForm extends Component {
                   <Form.Control
                     as="select"
                     size="lg"
-                    defaultValue="Type"
+                    name="type"
+                    value={type}
                     onChange={this.handleChange}
                     style={{ marginTop: '30px' }}
                   >
                     <option defaultValue hidden>Opportunity type</option>
-                    <option value="Job">Job</option>
-                    <option value="Internship">Internship</option>
-                    <option value="Hackathon">Hackathon</option>
-                    <option value="Scholarship">Scholarship</option>
-                    <option value="Conference">Conferencne</option>
-                    <option value="Coding Competition">Coding Competition</option>
+                    <option value="JOB">Job</option>
+                    <option value="INTERNSHIP">Internship</option>
+                    <option value="HACKATHON">Hackathon</option>
+                    <option value="SCHOLARSHIP">Scholarship</option>
+                    <option value="CONFERENCE">Conferencne</option>
+                    <option value="CODINGCOMPETITION">Coding Competition</option>
+                    <option value="OTHERS">Others</option>
                   </Form.Control>
                 </Form.Group>
 
@@ -199,7 +196,7 @@ class FullTimeForm extends Component {
                   {this.state.FieldEmptyError}
                 </div>
 
-                <Form.Group as={Col} controlId="formGridType">
+                <Form.Group as={Col} controlId="formBasicType">
                   <Form.Check
                     type="checkbox"
                     size="md"
@@ -209,21 +206,6 @@ class FullTimeForm extends Component {
                   />
                 </Form.Group>
               </Form.Row>
-
-              <Form.Group>
-                <Form.Control
-                  className={styles.Input}
-                  type="text"
-                  name="jobId"
-                  value={jobId}
-                  placeholder="Job ID"
-                  onChange={this.handleChange}
-                  style={{ marginTop: '30px' }}
-                />
-              </Form.Group>
-              <div style={{ fontSize: 12, color: 'red', marginLeft: '40px' }}>
-                {this.state.FieldEmptyError}
-              </div>
 
               <Form.Group>
                 <Form.Control
