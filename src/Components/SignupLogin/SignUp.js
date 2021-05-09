@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../../CSS/SignupLogin.module.css';
-import { Form, Card, Button, Row, InputGroup } from 'react-bootstrap';
+import { Form, Card, Button, Row, InputGroup,Navbar } from 'react-bootstrap';
 import { GoogleLogin } from 'react-google-login';
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import SignupImg from '../../Assets/signup.svg';
@@ -8,10 +8,20 @@ import SignupImg from '../../Assets/signup.svg';
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const handleShowPassword = () => setShowPassword(prevShowPassword => !prevShowPassword);
+  const handleShowPassword = () =>
+    setShowPassword((prevShowPassword) => !prevShowPassword);
 
   return (
-    <>
+    <div>
+      <Navbar bg="light" expand="lg" className={styles.NavBar}>
+        <Navbar.Brand className={styles.Logo}>
+          <a href="/" className={styles.Brand} style={{ fontSize: '35px',color: '#000000' }}>
+            Girl
+            <span style={{ color: '#008DC8' }}> Code </span>
+            It
+          </a>
+        </Navbar.Brand>
+      </Navbar>
     <Row className="justify-content-md-center">
       <Card className={styles.card}><br></br><br></br>
         <h5>Sign Up</h5>
@@ -47,26 +57,31 @@ const SignUp = () => {
             <Form.Control type="password" placeholder="Confirm Password" />
           </Form.Group>
 
-          <input type="checkbox" />
 
-          <small style={{ paddingLeft: 10 }}>
-            I accept the
-            <a href="#"> Terms and Conditions </a>&{' '}
-            <a href="#">Privacy Policy</a>
-          </small>
-        </Form>
-        <Button size="md" className={styles.button}>
-          Sign Up
-        </Button>
-        <p>OR</p>
-        <GoogleLogin buttonText="Sign in with Google" />
-        <p>
-          Already have an Account? <a href="/login">Login</a>
-        </p>
-      </Card>
-    </Row>
-    <br></br>
-    </>
+            <Form.Group controlId="c_passWord">
+              <Form.Label>Confirm Password</Form.Label>
+              <Form.Control type="password" placeholder="Confirm Password" />
+            </Form.Group>
+
+            <input type="checkbox" />
+
+            <small style={{ paddingLeft: 10 }}>
+              I accept the
+              <a href="#"> Terms and Conditions </a>&{' '}
+              <a href="#">Privacy Policy</a>
+            </small>
+          </Form>
+          <Button size="md" className={styles.button}>
+            Sign Up
+          </Button>
+          <p>OR</p>
+          <GoogleLogin buttonText="Sign in with Google" />
+          <p>
+            Already have an Account? <a href="/login">Login</a>
+          </p>
+        </Card>
+      </Row>
+    </div>
   );
 };
 
