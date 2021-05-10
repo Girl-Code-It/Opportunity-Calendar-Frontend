@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 // import axios from 'axios'
 import HomePage from './Components/HomePage/HomePage';
+import SocialIcons from "./Components/SocialIcons/SocialIcons"
 import PostOpportunity from './Components/PostOpportunity/PostOpportunity';
 import FullTimeForm from './Components/PostOpportunity/sections/FullTime/FullTime';
 import InternshipForm from './Components/PostOpportunity/sections/Internships/Internships';
@@ -22,6 +23,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+      <SocialIcons />
         <Switch>
           <Route
             exact
@@ -172,7 +174,7 @@ function App() {
               </div>
             )}
           />
-        </Switch>
+        </Switch> 
         <ScrollTop />
         <Footer />
       </div>
