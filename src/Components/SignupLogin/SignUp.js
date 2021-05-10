@@ -23,9 +23,9 @@ const SignUp = () => {
         </Navbar.Brand>
       </Navbar>
     <Row className="justify-content-md-center">
-      <Card className={styles.card}><br></br><br></br>
+      <Card className={styles.card2}><br></br><br></br>
         <h5>Sign Up</h5>
-        <img src={SignupImg} alt="Illustration by Freepik Storyset" height="500px" className="mt-3" />
+        <img src={SignupImg} alt="Illustration by Freepik Storyset" height="500px" className="mt-3" className={styles.img} />
         <small className="text-muted">
           Please fill this form to create your account.
         </small>
