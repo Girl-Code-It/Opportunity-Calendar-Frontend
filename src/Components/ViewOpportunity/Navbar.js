@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../../CSS/Navbar.module.css';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
-// import { AiOutlineSearch } from 'react-icons/ai';
+import { AiOutlineSearch } from 'react-icons/ai';
 
 function Navbar1() {
   const [postOpportunityPath, setPostOpportunityPath] = React.useState();
@@ -28,7 +28,8 @@ function Navbar1() {
       <Navbar.Collapse id="responsive-navbar-nav" >
         <Nav className="ml-auto">
           <div className={styles.searchContainer} >
-            <input type="text" className={styles.searchBar} placeholder="Search" />
+           <AiOutlineSearch />
+            <input type="text" className={styles.searchBar}  placeholder="Search" />
           </div>
           <Link className={styles.link} to={postOpportunityPath}>
             <Button className={styles.Button} >
@@ -37,7 +38,7 @@ function Navbar1() {
           </Link>
           <Link className={styles.link} to='/signup'>
             <Button className={`${styles.Button} ${styles.outline}`} variant="outline-info">
-              Login/Signup
+              Login
             </Button>
           </Link>
         </Nav>

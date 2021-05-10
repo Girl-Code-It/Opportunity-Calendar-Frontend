@@ -79,15 +79,20 @@ a:not([href]):hover{
 .searchContainer{
   margin-right: 10px;
   align-self: center;
-}
-
-.searchBar{
-  height: 2.25rem;
-  width:200px;
-  background-color: #f0f0f0;
-  border:none;
+  padding-left: 10px;
   border-radius: 5px;
-  padding: 6px 14px;
+  background-color: #f0f0f0;
+}
+.searchContainer input{
+  outline: none;
+}
+.searchBar{
+  /* height: 2.25rem; */
+  width: 250px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 5px;
 }
 
 .searchBar::placeholder{
@@ -285,6 +290,8 @@ a:not([href]):hover{
   .searchContainer{
     align-self: flex-start;
     margin-left: 20px;
+    padding-left: 10px;
+    background-color: #f0f0f0;
   }
   .link{
     align-self: flex-start;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Button, Form, Card } from 'react-bootstrap';
+import { Button, Form, Card, Col } from 'react-bootstrap';
 import styles from '../../../../CSS/CodingCompForm.module.css';
 
 class HackathonsForm extends Component {
@@ -8,6 +8,7 @@ class HackathonsForm extends Component {
     super(props);
 
     this.state = {
+      type: '',
       title: '',
       url: '',
       date: '',
@@ -16,6 +17,7 @@ class HackathonsForm extends Component {
       eligibility: '',
       deadline: '',
       image: '',
+      onlyForFemale: false
     };
   }
 
@@ -31,16 +33,18 @@ class HackathonsForm extends Component {
     console.log('From handleSubmit', this.state.title);
     axios
       .post(
-        'https://opportunitycalendar.herokuapp.com/opportunities/hackathon/create/',
+        'https://opportunity-calendar.herokuapp.com/opportunity',
         {
-          title: this.state.title,
-          url: this.state.url,
-          date: this.state.date,
-          description: this.state.description,
-          location: this.state.location,
-          eligibility: this.state.eligibility,
-          deadline: this.state.deadline,
-          image: this.state.image,
+          opportunityTitle: this.state.title,
+          opportunityType: this.state.type,
+          opportunityURL: this.state.url,
+          opportunityDate: this.state.date,
+          opportunityDescription: this.state.description,
+          opportunityLocation: this.state.location,
+          opportunityEligibility: this.state.eligibility,
+          opportunityRegistrationDeadline: this.state.deadline,
+          organisationLogoURL: this.state.image,
+          onlyForFemale: this.state.onlyForFemale
         }
       )
       .then(
@@ -54,6 +58,7 @@ class HackathonsForm extends Component {
         }
       );
     this.setState({
+      type: '',
       title: '',
       url: '',
       date: '',
@@ -62,11 +67,13 @@ class HackathonsForm extends Component {
       eligibility: '',
       deadline: '',
       image: '',
+      onlyForFemale: ''
     });
   };
 
   render() {
     const {
+      type,
       title,
       url,
       date,
@@ -100,6 +107,42 @@ class HackathonsForm extends Component {
                   onChange={this.handleChange}
                 />
               </Form.Group>
+
+              <Form.Row>
+                <Form.Group as={Col} controlId="formGridType">
+                  <Form.Control
+                    as="select"
+                    size="lg"
+                    name="type"
+                    value={type}
+                    onChange={this.handleChange}
+                    style={{ marginTop: '30px' }}
+                  >
+                    <option defaultValue hidden>Opportunity type</option>
+                    <option value="JOB">Job</option>
+                    <option value="INTERNSHIP">Internship</option>
+                    <option value="HACKATHON">Hackathon</option>
+                    <option value="SCHOLARSHIP">Scholarship</option>
+                    <option value="CONFERENCE">Conferencne</option>
+                    <option value="CODINGCOMPETITION">Coding Competition</option>
+                    <option value="OTHERS">Others</option>
+                  </Form.Control>
+                </Form.Group>
+
+                <div style={{ fontSize: 12, color: 'red', marginLeft: '40px' }}>
+                  {this.state.FieldEmptyError}
+                </div>
+
+                <Form.Group as={Col} controlId="formBasicType">
+                  <Form.Check
+                    type="checkbox"
+                    size="md"
+                    label="Only for female"
+                    style={{ marginTop: '40px' }}
+                    onChange={(event) => this.setState({ onlyForFemale: event.target.checked })}
+                  />
+                </Form.Group>
+              </Form.Row>
 
               <Form.Group>
                 <Form.Control
