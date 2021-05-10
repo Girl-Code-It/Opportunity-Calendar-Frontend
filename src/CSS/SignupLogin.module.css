@@ -5,12 +5,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 20px;
   padding: 10px;
+  width: 500px;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 22px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-h5 {
+h1 {
   color: #008dc8;
 }
 
@@ -65,4 +77,10 @@ Form {
 
 .reactIcons {
   cursor: pointer;
+}
+.inputitem{
+  width: 350px;
+} 
+.img{
+  margin-top:-10px ;
 }
