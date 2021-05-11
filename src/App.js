@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './App.css';
+import './App.css';
 // import axios from 'axios'
 import HomePage from './Components/HomePage/HomePage';
 import SocialIcons from "./Components/SocialIcons/SocialIcons"
