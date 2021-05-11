@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import styles from './App.css';
 // import axios from 'axios'
 import HomePage from './Components/HomePage/HomePage';
 import SocialIcons from "./Components/SocialIcons/SocialIcons"
@@ -24,12 +24,12 @@ function App() {
     <Router>
       <div className="App">
       <SocialIcons />
-        <Switch>
+        <Switch >
           <Route
             exact
             path="/"
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 <HomePage />
               </div>
             )}
@@ -41,7 +41,7 @@ function App() {
             exact
             path="/viewopportunity"
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 <ViewOpportunity />
               </div>
             )}
@@ -50,7 +50,7 @@ function App() {
             exact
             path="/postopportunity"
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 <PostOpportunity />
               </div>
             )}
@@ -59,7 +59,7 @@ function App() {
             exact
             path="/viewopportunity/fulltime"
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 <ViewOpportunity path="JOB" />
               </div>
             )}
@@ -68,7 +68,7 @@ function App() {
             exact
             path="/viewopportunity/hackathon"
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 <ViewOpportunity path="HACKATHON" />
               </div>
             )}
@@ -77,7 +77,7 @@ function App() {
             exact
             path="/viewopportunity/scholarship"
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 <ViewOpportunity path="SCHOLARSHIP" />
               </div>
             )}
@@ -86,7 +86,7 @@ function App() {
             exact
             path="/viewopportunity/codingcomp"
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 {/*<CodingComp />*/}
                 <ViewOpportunity path="CODINGCOMPETITION" />
               </div>
@@ -96,7 +96,7 @@ function App() {
             exact
             path="/viewopportunity/techconf"
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 {/*
                   <TechConf />
                 */}
@@ -108,7 +108,7 @@ function App() {
             exact
             path="/viewopportunity/internships"
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 <ViewOpportunity path="INTERNSHIP" />
               </div>
             )}
@@ -117,7 +117,7 @@ function App() {
             exact
             path="/postopportunity/FullTime"
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 <FullTimeForm />
               </div>
             )}
@@ -126,7 +126,7 @@ function App() {
             exact
             path="/postopportunity/CodingComp"
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 <CodingCompForm />
               </div>
             )}
@@ -135,7 +135,7 @@ function App() {
             exact
             path="/postopportunity/Hackathon" // just changed the path to make the hackathon table visible
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 <HackathonForm />
               </div>
             )}
@@ -144,7 +144,7 @@ function App() {
             exact
             path="/postopportunity/Internships"
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 <InternshipForm />
               </div>
             )}
@@ -153,7 +153,7 @@ function App() {
             exact
             path="/postopportunity/Scholarship" // changed the path from Scholarships to Scholarship to make the scholaeship table visible and also the navbar to visible
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 <ScholarshipForm />
               </div>
             )}
@@ -162,14 +162,14 @@ function App() {
             exact
             path="/postopportunity/TechConf"
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 <TechConfForm />
               </div>
             )}
           />
           <Route
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
                 <PageNotFound />
               </div>
             )}
