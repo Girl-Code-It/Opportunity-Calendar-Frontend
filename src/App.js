@@ -23,13 +23,13 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <SocialIcons />
         <Switch >
           <Route
             exact
             path="/"
             render={(props) => (
               <div style={{marginLeft: "54px"}}>
+                <SocialIcons />
                 <HomePage />
               </div>
             )}
@@ -41,7 +41,7 @@ function App() {
             exact
             path="/viewopportunity"
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div >
                 <ViewOpportunity />
               </div>
             )}
@@ -50,7 +50,7 @@ function App() {
             exact
             path="/postopportunity"
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div >
                 <PostOpportunity />
               </div>
             )}
@@ -59,7 +59,7 @@ function App() {
             exact
             path="/viewopportunity/fulltime"
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div>
                 <ViewOpportunity path="JOB" />
               </div>
             )}
@@ -68,7 +68,7 @@ function App() {
             exact
             path="/viewopportunity/hackathon"
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div>
                 <ViewOpportunity path="HACKATHON" />
               </div>
             )}
@@ -77,7 +77,7 @@ function App() {
             exact
             path="/viewopportunity/scholarship"
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div >
                 <ViewOpportunity path="SCHOLARSHIP" />
               </div>
             )}
@@ -86,7 +86,7 @@ function App() {
             exact
             path="/viewopportunity/codingcomp"
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div >
                 {/*<CodingComp />*/}
                 <ViewOpportunity path="CODINGCOMPETITION" />
               </div>
@@ -96,7 +96,7 @@ function App() {
             exact
             path="/viewopportunity/techconf"
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div>
                 {/*
                   <TechConf />
                 */}
@@ -108,7 +108,7 @@ function App() {
             exact
             path="/viewopportunity/internships"
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div >
                 <ViewOpportunity path="INTERNSHIP" />
               </div>
             )}
@@ -117,7 +117,7 @@ function App() {
             exact
             path="/postopportunity/FullTime"
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div>
                 <FullTimeForm />
               </div>
             )}
@@ -126,7 +126,7 @@ function App() {
             exact
             path="/postopportunity/CodingComp"
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div>
                 <CodingCompForm />
               </div>
             )}
@@ -135,7 +135,7 @@ function App() {
             exact
             path="/postopportunity/Hackathon" // just changed the path to make the hackathon table visible
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div>
                 <HackathonForm />
               </div>
             )}
@@ -144,7 +144,7 @@ function App() {
             exact
             path="/postopportunity/Internships"
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div >
                 <InternshipForm />
               </div>
             )}
@@ -153,7 +153,7 @@ function App() {
             exact
             path="/postopportunity/Scholarship" // changed the path from Scholarships to Scholarship to make the scholaeship table visible and also the navbar to visible
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div>
                 <ScholarshipForm />
               </div>
             )}
@@ -162,14 +162,14 @@ function App() {
             exact
             path="/postopportunity/TechConf"
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div>
                 <TechConfForm />
               </div>
             )}
           />
           <Route
             render={(props) => (
-              <div style={{marginLeft: "54px"}}>
+              <div>
                 <PageNotFound />
               </div>
             )}
