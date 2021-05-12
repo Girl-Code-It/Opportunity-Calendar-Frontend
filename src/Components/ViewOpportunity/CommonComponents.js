@@ -25,10 +25,13 @@ const mapUrlToName = {
   fulltime: 'Full Time Jobs',
 };
 
-export default function CommonComponents() {
+export default function CommonComponents({ onSearchFinal }) {
+  const handleSearchString = (value) => {
+    onSearchFinal(value)
+  }
   return (
     <>
-      <Navbar />
+      <Navbar onSearch={handleSearchString}/>
       <Card className="text-center">
         <Card.Body className={styles.BannerText}>
           <Card.Text className={styles.cardText}>
