@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 // import axios from 'axios'
 import HomePage from './Components/HomePage/HomePage';
+import SocialIcons from "./Components/SocialIcons/SocialIcons"
 import PostOpportunity from './Components/PostOpportunity/PostOpportunity';
 import FullTimeForm from './Components/PostOpportunity/sections/FullTime/FullTime';
 import InternshipForm from './Components/PostOpportunity/sections/Internships/Internships';
@@ -22,12 +23,13 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Switch>
+        <Switch >
           <Route
             exact
             path="/"
             render={(props) => (
-              <div>
+              <div style={{marginLeft: "54px"}}>
+                <SocialIcons />
                 <HomePage />
               </div>
             )}
@@ -39,7 +41,7 @@ function App() {
             exact
             path="/viewopportunity"
             render={(props) => (
-              <div>
+              <div >
                 <ViewOpportunity />
               </div>
             )}
@@ -48,7 +50,7 @@ function App() {
             exact
             path="/postopportunity"
             render={(props) => (
-              <div>
+              <div >
                 <PostOpportunity />
               </div>
             )}
@@ -75,7 +77,7 @@ function App() {
             exact
             path="/viewopportunity/scholarship"
             render={(props) => (
-              <div>
+              <div >
                 <ViewOpportunity path="SCHOLARSHIP" />
               </div>
             )}
@@ -84,7 +86,7 @@ function App() {
             exact
             path="/viewopportunity/codingcomp"
             render={(props) => (
-              <div>
+              <div >
                 {/*<CodingComp />*/}
                 <ViewOpportunity path="CODINGCOMPETITION" />
               </div>
@@ -106,7 +108,7 @@ function App() {
             exact
             path="/viewopportunity/internships"
             render={(props) => (
-              <div>
+              <div >
                 <ViewOpportunity path="INTERNSHIP" />
               </div>
             )}
@@ -142,7 +144,7 @@ function App() {
             exact
             path="/postopportunity/Internships"
             render={(props) => (
-              <div>
+              <div >
                 <InternshipForm />
               </div>
             )}
@@ -172,7 +174,7 @@ function App() {
               </div>
             )}
           />
-        </Switch>
+        </Switch> 
         <ScrollTop />
         <Footer />
       </div>
