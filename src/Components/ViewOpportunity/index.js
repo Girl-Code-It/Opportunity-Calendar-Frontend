@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import axios from 'axios';
 import { OpportunityCard } from './OpportunityCard';
 import {
@@ -39,8 +39,28 @@ const mapUrlToName = {
 };
 
 export function ViewOpportunity(props) {
-  const [data, setData] = React.useState(null);
-  const [imgSrc, setImgSrc] = React.useState();
+  const [data, setData] = useState(null);
+  const [imgSrc, setImgSrc] = useState();
+  const [filteredData, setFilteredData] = useState(data);
+  const [searchString, setSearchString] = useState('');
+
+  React.useEffect(()=>{
+    if (searchString?.length>0){
+      setFilteredData(data.results.filter(opportunity => {
+        if(opportunity.opportunityTitle?.toLowerCase().includes(searchString.toLowerCase()) 
+        || opportunity.opportunityOrganisation?.toLowerCase().includes(searchString.toLowerCase())){
+          return opportunity;
+        }
+      }))
+    }
+    else{
+      setFilteredData(data?.results)
+    }
+  },[searchString,data]);
+
+  const handleSearchString = (val) => {
+    setSearchString(val)
+  }
 
   // whenever props.path changes, get latest data from backend
   React.useEffect(() => {
@@ -60,7 +80,7 @@ export function ViewOpportunity(props) {
   if (!data) {
     return (
       <div>
-        <CommonComponents />
+        <CommonComponents onSearchFinal={handleSearchString}/>
         <h3
           className={styles.fallbackText}
         >
@@ -70,17 +90,16 @@ export function ViewOpportunity(props) {
     );
   }
 
-  const data_length = data.length; // used to check whether opportunity count is 0
+  const data_length = filteredData?.length; // used to check whether opportunity count is 0
 
   return (
     <>
-      <CommonComponents />
+      <CommonComponents onSearchFinal={handleSearchString}/>
       <Jumbotron className={styles.opportunityBody}>
         <Container>
           {data_length === 0 ? 
           (
             <div>
-              <CommonComponents />
               <h3
                 className={styles.fallbackText}
               >
@@ -93,7 +112,7 @@ export function ViewOpportunity(props) {
               <Row>
                 <Col md={1} sm={1} lg={1} xl={1} xs={0}></Col>
                 <Col md={10} sm={10} lg={10} xl={10} xs={12}>
-                  {data.results.map((item) => {
+                  {filteredData?.map((item) => {
                     return <OpportunityCard key={item.id} item={item} />;
                   })}
                 </Col>

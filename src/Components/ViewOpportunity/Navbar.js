@@ -4,7 +4,7 @@ import { Navbar, Nav, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 import { AiOutlineSearch } from 'react-icons/ai';
 
-function Navbar1() {
+function Navbar1({onSearch}) {
   const [postOpportunityPath, setPostOpportunityPath] = React.useState();
 
   // as the last chunk of ViewOpportunity and PostOpportunity is same, we can
@@ -14,6 +14,8 @@ function Navbar1() {
     const lastChunk = pathname.split('/').pop();
     lastChunk && setPostOpportunityPath(`/postopportunity/${lastChunk}`);
   }, []);
+
+  const handleChange = (value) => onSearch(value);
 
   return (
     <Navbar fixed="top" bg="light" expand="lg" className={styles.NavBar}>
@@ -29,7 +31,7 @@ function Navbar1() {
         <Nav className="ml-auto">
           <div className={styles.searchContainer} >
            <AiOutlineSearch />
-            <input type="text" className={styles.searchBar}  placeholder="Search" />
+            <input type="text" className={styles.searchBar} onChange={e => handleChange(e.currentTarget.value)} placeholder="Search" />
           </div>
           <Link className={styles.link} to={postOpportunityPath}>
             <Button className={styles.Button} >
