@@ -19,6 +19,7 @@ import Login from './Components/SignupLogin/Login';
 import PageNotFound from './Components/Error/PageNotFound';
 import Forget from './Components/Forget/Forget';
 
+
 function App() {
   return (
     <Router>
@@ -37,6 +38,7 @@ function App() {
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/forget" component={Forget}/>
+          
           <Route
             exact
             path="/viewopportunity"

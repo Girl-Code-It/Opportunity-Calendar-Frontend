@@ -42,7 +42,10 @@ function Navbar1({onSearch}) {
             <Button className={`${styles.Button} ${styles.outline}`} variant="outline-info">
               Login
             </Button>
-          </Link>
+          </Link >
+          <button className={`${styles.Button} ${styles.outline}`}>
+            <a href="https://forms.gle/jP3SEJgDcTPMiTGM7" className={styles.atag}>Feedback</a>
+          </button>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
