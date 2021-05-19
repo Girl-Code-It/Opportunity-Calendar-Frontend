@@ -15,7 +15,7 @@ html {
   margin-left: 100px;
 }
 
-.ImgColumn a:hover{
+.ImgColumn a:hover {
   background-color: transparent;
   color: transparent;
   border-bottom: transparent;
@@ -60,7 +60,6 @@ h5 {
   border-bottom: 2px #008dc8 solid;
 }
 
-
 .Rectangle2 {
   position: absolute;
   right: 60%;
@@ -101,8 +100,9 @@ p {
   border: none;
 }
 
-a:hover, Link:hover{
-  cursor:pointer;
+a:hover,
+Link:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1201px) {
@@ -149,7 +149,7 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 122px;
   }
-  .Rectangle3{
+  .Rectangle3 {
     margin-left: 405px;
   }
   .ContactCol {
@@ -238,10 +238,10 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 82px;
   }
-  .Rectangle3{
+  .Rectangle3 {
     margin-left: 290px;
   }
-  .ImgColumn{
+  .ImgColumn {
     margin-left: 26px;
   }
   .Bottom1 {
@@ -300,7 +300,7 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 50px;
   }
-  .Rectangle3{
+  .Rectangle3 {
     margin-left: 283px;
   }
   .Logo {
@@ -360,7 +360,7 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 226px;
   }
-  .Rectangle3{
+  .Rectangle3 {
     margin-left: 122px;
   }
 }
@@ -425,10 +425,10 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 216px;
   }
-  .Logo{
+  .Logo {
     margin-left: -39px;
   }
-  .Rectangle3{
+  .Rectangle3 {
     margin-left: 188px;
   }
   .Bottom1 p {
@@ -443,7 +443,7 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 214px;
   }
-  .Rectangle3{
+  .Rectangle3 {
     margin-left: 189px;
   }
   .Bottom1 p {
@@ -606,10 +606,10 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 150px;
   }
-  .Rectangle3{
+  .Rectangle3 {
     margin-left: 123px;
   }
-  .Logo{
+  .Logo {
     margin-left: -23px;
   }
 }
@@ -620,10 +620,10 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 150px;
   }
-  .Rectangle3{
+  .Rectangle3 {
     margin-left: 124px;
   }
-  .Logo{
+  .Logo {
     margin-left: -25px;
   }
 }
@@ -650,7 +650,7 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 132px;
   }
-  .Rectangle3{
+  .Rectangle3 {
     margin-left: 107px;
   }
   .Bottom1 p {
@@ -664,13 +664,13 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 128px;
   }
-  .Rectangle3{
+  .Rectangle3 {
     margin-left: 106px;
   }
-  .ImgColumn{
+  .ImgColumn {
     margin-left: -34px;
   }
-  .Logo{
+  .Logo {
     margin-left: -5px;
   }
   .Bottom1 p {
@@ -717,13 +717,13 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 106px;
   }
-  .Rectangle3{
+  .Rectangle3 {
     margin-left: 78px;
   }
-  .ImgColumn{
+  .ImgColumn {
     margin-left: -3px;
   }
-  .Logo{
+  .Logo {
     margin-left: -20px;
   }
   .Bottom1 p {
@@ -776,10 +776,10 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 86px;
   }
-  .Rectangle3{
+  .Rectangle3 {
     margin-left: 58px;
   }
-  .Logo{
+  .Logo {
     margin-left: -13px;
   }
 }
@@ -790,7 +790,7 @@ a:hover, Link:hover{
   .Rectangle2 {
     margin-left: 80px;
   }
-  .Rectangle3{
+  .Rectangle3 {
     margin-left: 58px;
   }
 }

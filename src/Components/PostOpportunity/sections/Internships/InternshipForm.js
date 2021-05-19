@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Button, Form, Card, Col,Row } from 'react-bootstrap';
+import { Button, Form, Card, Col, Row } from 'react-bootstrap';
 import styles from '../../../../CSS/PostForm.module.css';
 
 class InternshipForm extends Component {
@@ -17,7 +17,7 @@ class InternshipForm extends Component {
       location: '',
       eligibility: '',
       deadline: '',
-      onlyForFemale: false
+      onlyForFemale: false,
     };
 
     // this.data = {};
@@ -34,21 +34,18 @@ class InternshipForm extends Component {
     event.preventDefault();
     console.log('From handleSubmit', this.state);
     axios
-      .post(
-        'https://opportunity-calendar.herokuapp.com/opportunity',
-        {
-          opportunityTitle: this.state.title,
-          opportunityURL: this.state.jobURL,
-          opportunityType: this.state.type,
-          opportunityOrganisation: this.state.company,
-          organisationLogoURL: this.state.image,
-          opportunityDescription: this.state.jobDescription,
-          opportunityLocation: this.state.location,
-          opportunityEligibility: this.state.eligibility,
-          opportunityDate: this.state.deadline,
-          onlyForFemale: this.state.onlyForFemale
-        }
-      )
+      .post('https://opportunity-calendar.herokuapp.com/opportunity', {
+        opportunityTitle: this.state.title,
+        opportunityURL: this.state.jobURL,
+        opportunityType: this.state.type,
+        opportunityOrganisation: this.state.company,
+        organisationLogoURL: this.state.image,
+        opportunityDescription: this.state.jobDescription,
+        opportunityLocation: this.state.location,
+        opportunityEligibility: this.state.eligibility,
+        opportunityDate: this.state.deadline,
+        onlyForFemale: this.state.onlyForFemale,
+      })
       .then(
         (res) => {
           const data = res.data;
@@ -69,7 +66,7 @@ class InternshipForm extends Component {
       location: '',
       eligibility: '',
       deadline: '',
-      onlyForFemale: ''
+      onlyForFemale: '',
     });
   };
 
@@ -89,7 +86,7 @@ class InternshipForm extends Component {
     return (
       <div style={{ marginBottom: '80px' }}>
         <Form onSubmit={this.handleSubmit}>
-        <Row form>
+          <Row form>
             <Col xs={12} sm={8}>
               <Form.Label
                 className={styles.form_header}
@@ -228,7 +225,6 @@ class InternshipForm extends Component {
             </Col>
           </Row>
           <Row form>
-            
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
                 <Form.Label className={styles.label} for="joburl">

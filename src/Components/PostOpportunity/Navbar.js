@@ -5,12 +5,8 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 =======
 import styles from '../../../CSS/Navbar.module.css';
-import { Link } from 'react-router-dom'
-import {
-  Navbar,
-  Nav,
-  Button,
-} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 import { propTypes } from 'react-bootstrap/esm/Image';
 >>>>>>> feat_post_opp:src/Components/PostOpportunity/sections/Navbar.js
 // import { AiOutlineSearch } from 'react-icons/ai';
@@ -45,6 +41,7 @@ function navbar(props) {
             </Button>{' '}
 =======
           <Link to={props.flink}>
+<<<<<<< HEAD:src/Components/PostOpportunity/Navbar.js
         <Button className={styles.Button} >
               Find Opportunity
             </Button>
@@ -52,6 +49,17 @@ function navbar(props) {
           <Link className={styles.link} to='/signup'>
             <Button className={`${styles.Button} ${styles.outline}`} variant="outline-info">Login/Signup</Button>{' '}
 >>>>>>> feat_post_opp:src/Components/PostOpportunity/sections/Navbar.js
+=======
+            <Button className={styles.Button}>Find Opportunity</Button>
+          </Link>
+          <Link className={styles.link} to="/signup">
+            <Button
+              className={`${styles.Button} ${styles.outline}`}
+              variant="outline-info"
+            >
+              Login/Signup
+            </Button>{' '}
+>>>>>>> small fix:src/Components/PostOpportunity/sections/Navbar.js
           </Link>
         </Nav>
       </Navbar.Collapse>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Form, Button, Col, Card,Row } from 'react-bootstrap';
+import { Form, Button, Col, Card, Row } from 'react-bootstrap';
 import styles from '../../../../CSS/PostForm.module.css';
 
 class ScholarshipForm extends Component {
@@ -15,7 +15,7 @@ class ScholarshipForm extends Component {
       eligibility: '',
       deadline: '',
       image: '',
-      onlyForFemale: false
+      onlyForFemale: false,
     };
   }
 
@@ -30,20 +30,17 @@ class ScholarshipForm extends Component {
     event.preventDefault();
     console.log('From handleSubmit', this.state.title);
     axios
-      .post(
-        'https://opportunity-calendar.herokuapp.com/opportunity',
-        {
-          opportunityTitle: this.state.title,
-          opportunityType: this.state.type,
-          opportunityURL: this.state.url,
-          organisationLogoURL: this.state.image,
-          opportunityDescription: this.state.description,
-          opportunityEligibility: this.state.eligibility,
-          opportunityDate: this.state.deadline,
-          organisationLogoURL: this.state.image,
-          onlyForFemale: this.state.onlyForFemale
-        }
-      )
+      .post('https://opportunity-calendar.herokuapp.com/opportunity', {
+        opportunityTitle: this.state.title,
+        opportunityType: this.state.type,
+        opportunityURL: this.state.url,
+        organisationLogoURL: this.state.image,
+        opportunityDescription: this.state.description,
+        opportunityEligibility: this.state.eligibility,
+        opportunityDate: this.state.deadline,
+        organisationLogoURL: this.state.image,
+        onlyForFemale: this.state.onlyForFemale,
+      })
       .then(
         (res) => {
           const data = res.data;
@@ -62,8 +59,7 @@ class ScholarshipForm extends Component {
       eligibility: '',
       deadline: '',
       image: '',
-      onlyForFemale: ''
-
+      onlyForFemale: '',
     });
   };
 
@@ -81,7 +77,7 @@ class ScholarshipForm extends Component {
     return (
       <div style={{ marginBottom: '80px' }}>
         <Form onSubmit={this.handleSubmit}>
-        <Row form>
+          <Row form>
             <Col xs={12} sm={8}>
               <Form.Label
                 className={styles.form_header}
@@ -116,7 +112,7 @@ class ScholarshipForm extends Component {
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
                 <Form.Label className={styles.label} for="title">
-                Scholarship Name
+                  Scholarship Name
                 </Form.Label>
                 <Form.Control
                   className={styles.Input}
@@ -131,7 +127,7 @@ class ScholarshipForm extends Component {
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
                 <Form.Label className={styles.label} for="logo">
-                Scholarship logo Url
+                  Scholarship logo Url
                 </Form.Label>
                 <Form.Control
                   className={styles.Input}
@@ -145,8 +141,8 @@ class ScholarshipForm extends Component {
             </Col>
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label className={styles.label} >
-                Last Date to Apply
+                <Form.Label className={styles.label}>
+                  Last Date to Apply
                 </Form.Label>
                 <Form.Control
                   className={styles.Input}
@@ -160,13 +156,9 @@ class ScholarshipForm extends Component {
             </Col>
           </Row>
           <Row form>
-            
-           
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label className={styles.label} >
-                Eligibility
-                </Form.Label>
+                <Form.Label className={styles.label}>Eligibility</Form.Label>
                 <Form.Control
                   className={styles.Input}
                   type="text"
@@ -174,19 +166,15 @@ class ScholarshipForm extends Component {
                   value={eligibility}
                   style={{ marginTop: '5px' }}
                   onChange={this.handleChange}
-                
                 />
               </Form.Group>
             </Col>
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label
-                  className={styles.label}
-                >
+                <Form.Label className={styles.label}>
                   Website / Link to Register
                 </Form.Label>
                 <Form.Control
-
                   className={styles.Input}
                   type="text"
                   name="url"
@@ -196,7 +184,7 @@ class ScholarshipForm extends Component {
                 />
               </Form.Group>
             </Col>
-            
+
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
                 <Form.Check
@@ -212,23 +200,22 @@ class ScholarshipForm extends Component {
             </Col>
           </Row>
           <Row form>
-          <Col xs={12} sm={4}>
+            <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
                 <Form.Label className={styles.label} for="description">
                   Description
                 </Form.Label>
                 <Form.Control
-                as="textarea"
-                rows={4}
-                name="description"
-                value={description}
-                onChange={this.handleChange}
-                style={{ marginTop: '5px' }}
+                  as="textarea"
+                  rows={4}
+                  name="description"
+                  value={description}
+                  onChange={this.handleChange}
+                  style={{ marginTop: '5px' }}
                 />
               </Form.Group>
             </Col>
           </Row>
-
         </Form>
       </div>
     );

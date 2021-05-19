@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Form,  Col ,Row} from 'react-bootstrap';
+import { Form, Col, Row } from 'react-bootstrap';
 import styles from '../../../../CSS/PostForm.module.css';
 
 class CodingCompForm extends Component {
@@ -17,7 +17,7 @@ class CodingCompForm extends Component {
       eligibility: '',
       deadline: '',
       image: '',
-      onlyForFemale: false
+      onlyForFemale: false,
     };
   }
 
@@ -32,21 +32,18 @@ class CodingCompForm extends Component {
     event.preventDefault();
     console.log('From handleSubmit', this.state.title);
     axios
-      .post(
-        'https://opportunity-calendar.herokuapp.com/opportunity',
-        {
-          opportunityTitle: this.state.title,
-          opportunityType: this.state.type,
-          opportunityURL: this.state.url,
-          opportunityDate: this.state.date,
-          opportunityDescription: this.state.description,
-          opportunityLocation: this.state.location,
-          opportunityEligibility: this.state.eligibility,
-          opportunityRegistrationDeadline: this.state.deadline,
-          organisationLogoURL: this.state.image,
-          onlyForFemale: this.state.onlyForFemale,
-        }
-      )
+      .post('https://opportunity-calendar.herokuapp.com/opportunity', {
+        opportunityTitle: this.state.title,
+        opportunityType: this.state.type,
+        opportunityURL: this.state.url,
+        opportunityDate: this.state.date,
+        opportunityDescription: this.state.description,
+        opportunityLocation: this.state.location,
+        opportunityEligibility: this.state.eligibility,
+        opportunityRegistrationDeadline: this.state.deadline,
+        organisationLogoURL: this.state.image,
+        onlyForFemale: this.state.onlyForFemale,
+      })
       .then(
         (res) => {
           const data = res.data;
@@ -67,7 +64,7 @@ class CodingCompForm extends Component {
       eligibility: '',
       deadline: '',
       image: '',
-      onlyForFemale: ''
+      onlyForFemale: '',
     });
   };
 
@@ -87,7 +84,7 @@ class CodingCompForm extends Component {
     return (
       <div style={{ marginBottom: '80px' }}>
         <Form onSubmit={this.handleSubmit}>
-        <Row form>
+          <Row form>
             <Col xs={12} sm={8}>
               <Form.Label
                 className={styles.form_header}
@@ -125,7 +122,6 @@ class CodingCompForm extends Component {
                   Coding Competition Name
                 </Form.Label>
                 <Form.Control
-
                   className={styles.Input}
                   type="text"
                   name="title"
@@ -155,17 +151,17 @@ class CodingCompForm extends Component {
             </Col>
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label className={styles.label} >
-                Date of Competition
+                <Form.Label className={styles.label}>
+                  Date of Competition
                 </Form.Label>
                 <Form.Control
-                 className={styles.Input}
-                 type="text"
-                 name="date"
-                 value={date}
-                 placeholder="Date of Competition"
-                 style={{ marginTop: '5px' }}
-                 onChange={this.handleChange}
+                  className={styles.Input}
+                  type="text"
+                  name="date"
+                  value={date}
+                  placeholder="Date of Competition"
+                  style={{ marginTop: '5px' }}
+                  onChange={this.handleChange}
                 />
               </Form.Group>
             </Col>
@@ -177,20 +173,20 @@ class CodingCompForm extends Component {
                   Location
                 </Form.Label>
                 <Form.Control
-                 className={styles.Input}
-                 type="text"
-                 name="location"
-                 value={location}
-                 placeholder="Location"
-                 style={{ marginTop: '5px' }}
-                 onChange={this.handleChange}
+                  className={styles.Input}
+                  type="text"
+                  name="location"
+                  value={location}
+                  placeholder="Location"
+                  style={{ marginTop: '5px' }}
+                  onChange={this.handleChange}
                 />
               </Form.Group>
             </Col>
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label className={styles.label} >
-                Last Date to Apply
+                <Form.Label className={styles.label}>
+                  Last Date to Apply
                 </Form.Label>
                 <Form.Control
                   className={styles.Input}
@@ -205,9 +201,7 @@ class CodingCompForm extends Component {
             </Col>
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label className={styles.label} >
-                Eligibility
-                </Form.Label>
+                <Form.Label className={styles.label}>Eligibility</Form.Label>
                 <Form.Control
                   className={styles.Input}
                   type="text"
@@ -216,7 +210,6 @@ class CodingCompForm extends Component {
                   placeholder="Eligibility"
                   style={{ marginTop: '5px' }}
                   onChange={this.handleChange}
-                
                 />
               </Form.Group>
             </Col>
@@ -224,13 +217,8 @@ class CodingCompForm extends Component {
           <Row form>
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label
-                  className={styles.label}
-                >
-                  Website
-                </Form.Label>
+                <Form.Label className={styles.label}>Website</Form.Label>
                 <Form.Control
-
                   className={styles.Input}
                   type="text"
                   name="url"
@@ -247,14 +235,13 @@ class CodingCompForm extends Component {
                   Description
                 </Form.Label>
                 <Form.Control
-
-                as="textarea"
-                rows={4}
-                style={{ marginTop: '5px' }}
-                name="description"
-                value={description}
-                placeholder="Short Description"
-                onChange={this.handleChange}
+                  as="textarea"
+                  rows={4}
+                  style={{ marginTop: '5px' }}
+                  name="description"
+                  value={description}
+                  placeholder="Short Description"
+                  onChange={this.handleChange}
                 />
               </Form.Group>
             </Col>

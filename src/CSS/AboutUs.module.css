@@ -95,8 +95,6 @@
 
   .AboutUs_knowMore {
     position: unset;
-
-   
   }
 }
 
@@ -125,7 +123,6 @@
 @media screen and (max-width: 360px) {
   .AboutUs_AboutImage {
     margin-top: 0;
-
   }
 
   .AboutUs_knowMore {

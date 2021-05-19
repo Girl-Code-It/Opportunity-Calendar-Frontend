@@ -1,39 +1,39 @@
-.socialIcons{
-    position: fixed;
-    top: 30%;
-    left: 0%;
-    width: 82px;
-    display: flex;
-    flex-direction: column;
+.socialIcons {
+  position: fixed;
+  top: 30%;
+  left: 0%;
+  width: 82px;
+  display: flex;
+  flex-direction: column;
 }
-.socialIcons a{
-    padding: 10px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    font-size: 17px;
-    background-color: #008dc8;
-    margin: 2px;
-    text-align: right;
-    border-radius: 0px 33px 33px 0px;
-    transform: translate(-32px,0px);
-    transition: all 0.5s;
+.socialIcons a {
+  padding: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 17px;
+  background-color: #008dc8;
+  margin: 2px;
+  text-align: right;
+  border-radius: 0px 33px 33px 0px;
+  transform: translate(-32px, 0px);
+  transition: all 0.5s;
 }
-.socialIcons a:hover{
-    transform: translate(-12px,0px);
+.socialIcons a:hover {
+  transform: translate(-12px, 0px);
 }
-.icons{
-    margin-left: 25px;
-    background-color: white;
-    height: 32px;
-    width: 34px;
-    color: black;
-    padding: 6px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 33%;
-    transition: all 0.5s;
+.icons {
+  margin-left: 25px;
+  background-color: white;
+  height: 32px;
+  width: 34px;
+  color: black;
+  padding: 6px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 33%;
+  transition: all 0.5s;
 }
 
-.socialIcons a:hover .icons{
-    transform: rotate(360deg);
+.socialIcons a:hover .icons {
+  transform: rotate(360deg);
 }

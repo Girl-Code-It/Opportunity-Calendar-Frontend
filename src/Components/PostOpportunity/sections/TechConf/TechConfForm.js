@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Button, Form, Card, Col ,Row} from 'react-bootstrap';
+import { Button, Form, Card, Col, Row } from 'react-bootstrap';
 import styles from '../../../../CSS/PostForm.module.css';
 
 class TechConfForm extends Component {
@@ -17,7 +17,7 @@ class TechConfForm extends Component {
       eligibility: '',
       deadline: '',
       image: '',
-      onlyForFemale: false
+      onlyForFemale: false,
     };
   }
 
@@ -32,21 +32,18 @@ class TechConfForm extends Component {
     event.preventDefault();
     console.log('From handleSubmit', this.state.title);
     axios
-      .post(
-        'https://opportunity-calendar.herokuapp.com/opportunity',
-        {
-          opportunityTitle: this.state.title,
-          opportunityType: this.state.type,
-          opportunityURL: this.state.url,
-          opportunityDate: this.state.date,
-          opportunityDescription: this.state.description,
-          opportunityLocation: this.state.location,
-          opportunityEligibility: this.state.eligibility,
-          opportunityRegistrationDeadline: this.state.deadline,
-          organisationLogoURL: this.state.image,
-          onlyForFemale: this.state.onlyForFemale
-        }
-      )
+      .post('https://opportunity-calendar.herokuapp.com/opportunity', {
+        opportunityTitle: this.state.title,
+        opportunityType: this.state.type,
+        opportunityURL: this.state.url,
+        opportunityDate: this.state.date,
+        opportunityDescription: this.state.description,
+        opportunityLocation: this.state.location,
+        opportunityEligibility: this.state.eligibility,
+        opportunityRegistrationDeadline: this.state.deadline,
+        organisationLogoURL: this.state.image,
+        onlyForFemale: this.state.onlyForFemale,
+      })
       .then(
         (res) => {
           const data = res.data;
@@ -67,7 +64,7 @@ class TechConfForm extends Component {
       eligibility: '',
       deadline: '',
       image: '',
-      onlyforFemale: ''
+      onlyforFemale: '',
     });
   };
 
@@ -87,7 +84,7 @@ class TechConfForm extends Component {
     return (
       <div style={{ marginBottom: '80px' }}>
         <Form onSubmit={this.handleSubmit}>
-        <Row form>
+          <Row form>
             <Col xs={12} sm={8}>
               <Form.Label
                 className={styles.form_header}
@@ -122,7 +119,7 @@ class TechConfForm extends Component {
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
                 <Form.Label className={styles.label} for="title">
-                Tech Conference Name
+                  Tech Conference Name
                 </Form.Label>
                 <Form.Control
                   className={styles.Input}
@@ -137,7 +134,7 @@ class TechConfForm extends Component {
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
                 <Form.Label className={styles.label} for="logo">
-                Tech Conference Logo URL
+                  Tech Conference Logo URL
                 </Form.Label>
                 <Form.Control
                   className={styles.Input}
@@ -151,16 +148,14 @@ class TechConfForm extends Component {
             </Col>
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label className={styles.label} >
-                Date of Event
-                </Form.Label>
+                <Form.Label className={styles.label}>Date of Event</Form.Label>
                 <Form.Control
-                className={styles.Input}
-                type="text"
-                name="date"
-                value={date}
-                 style={{ marginTop: '5px' }}
-                 onChange={this.handleChange}
+                  className={styles.Input}
+                  type="text"
+                  name="date"
+                  value={date}
+                  style={{ marginTop: '5px' }}
+                  onChange={this.handleChange}
                 />
               </Form.Group>
             </Col>
@@ -172,19 +167,19 @@ class TechConfForm extends Component {
                   Location
                 </Form.Label>
                 <Form.Control
-                 className={styles.Input}
-                 type="text"
-                 name="location"
-                 value={location}
-                 style={{ marginTop: '5px' }}
-                 onChange={this.handleChange}
+                  className={styles.Input}
+                  type="text"
+                  name="location"
+                  value={location}
+                  style={{ marginTop: '5px' }}
+                  onChange={this.handleChange}
                 />
               </Form.Group>
             </Col>
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label className={styles.label} >
-                Last Date to Apply
+                <Form.Label className={styles.label}>
+                  Last Date to Apply
                 </Form.Label>
                 <Form.Control
                   className={styles.Input}
@@ -198,9 +193,7 @@ class TechConfForm extends Component {
             </Col>
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label className={styles.label} >
-                Eligibility
-                </Form.Label>
+                <Form.Label className={styles.label}>Eligibility</Form.Label>
                 <Form.Control
                   className={styles.Input}
                   type="text"
@@ -208,7 +201,6 @@ class TechConfForm extends Component {
                   value={eligibility}
                   style={{ marginTop: '5px' }}
                   onChange={this.handleChange}
-                
                 />
               </Form.Group>
             </Col>
@@ -216,13 +208,10 @@ class TechConfForm extends Component {
           <Row form>
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label
-                  className={styles.label}
-                >
+                <Form.Label className={styles.label}>
                   Website / Link to Register
                 </Form.Label>
                 <Form.Control
-
                   className={styles.Input}
                   type="text"
                   name="url"
@@ -238,12 +227,12 @@ class TechConfForm extends Component {
                   Description
                 </Form.Label>
                 <Form.Control
-                as="textarea"
-                rows={4}
-                name="description"
-                value={description}
-                onChange={this.handleChange}
-                style={{ marginTop: '5px' }}
+                  as="textarea"
+                  rows={4}
+                  name="description"
+                  value={description}
+                  onChange={this.handleChange}
+                  style={{ marginTop: '5px' }}
                 />
               </Form.Group>
             </Col>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Button, Form, Card, Col ,Row} from 'react-bootstrap';
+import { Button, Form, Card, Col, Row } from 'react-bootstrap';
 import styles from '../../../../CSS/PostForm.module.css';
 
 class HackathonsForm extends Component {
@@ -17,7 +17,7 @@ class HackathonsForm extends Component {
       eligibility: '',
       deadline: '',
       image: '',
-      onlyForFemale: false
+      onlyForFemale: false,
     };
   }
 
@@ -32,21 +32,18 @@ class HackathonsForm extends Component {
     event.preventDefault();
     console.log('From handleSubmit', this.state.title);
     axios
-      .post(
-        'https://opportunity-calendar.herokuapp.com/opportunity',
-        {
-          opportunityTitle: this.state.title,
-          opportunityType: this.state.type,
-          opportunityURL: this.state.url,
-          opportunityDate: this.state.date,
-          opportunityDescription: this.state.description,
-          opportunityLocation: this.state.location,
-          opportunityEligibility: this.state.eligibility,
-          opportunityRegistrationDeadline: this.state.deadline,
-          organisationLogoURL: this.state.image,
-          onlyForFemale: this.state.onlyForFemale
-        }
-      )
+      .post('https://opportunity-calendar.herokuapp.com/opportunity', {
+        opportunityTitle: this.state.title,
+        opportunityType: this.state.type,
+        opportunityURL: this.state.url,
+        opportunityDate: this.state.date,
+        opportunityDescription: this.state.description,
+        opportunityLocation: this.state.location,
+        opportunityEligibility: this.state.eligibility,
+        opportunityRegistrationDeadline: this.state.deadline,
+        organisationLogoURL: this.state.image,
+        onlyForFemale: this.state.onlyForFemale,
+      })
       .then(
         (res) => {
           const data = res.data;
@@ -67,7 +64,7 @@ class HackathonsForm extends Component {
       eligibility: '',
       deadline: '',
       image: '',
-      onlyForFemale: ''
+      onlyForFemale: '',
     });
   };
 
@@ -87,7 +84,7 @@ class HackathonsForm extends Component {
     return (
       <div style={{ marginBottom: '80px' }}>
         <Form onSubmit={this.handleSubmit}>
-        <Row form>
+          <Row form>
             <Col xs={12} sm={8}>
               <Form.Label
                 className={styles.form_header}
@@ -122,7 +119,7 @@ class HackathonsForm extends Component {
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
                 <Form.Label className={styles.label} for="title">
-                Hackathon Name
+                  Hackathon Name
                 </Form.Label>
                 <Form.Control
                   className={styles.Input}
@@ -138,7 +135,7 @@ class HackathonsForm extends Component {
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
                 <Form.Label className={styles.label} for="logo">
-                Hackathon Logo URL
+                  Hackathon Logo URL
                 </Form.Label>
                 <Form.Control
                   className={styles.Input}
@@ -153,16 +150,14 @@ class HackathonsForm extends Component {
             </Col>
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label className={styles.label} >
-                Date of Event
-                </Form.Label>
+                <Form.Label className={styles.label}>Date of Event</Form.Label>
                 <Form.Control
-                className={styles.Input}
-                type="text"
-                name="date"
-                value={date}
-                 style={{ marginTop: '5px' }}
-                 onChange={this.handleChange}
+                  className={styles.Input}
+                  type="text"
+                  name="date"
+                  value={date}
+                  style={{ marginTop: '5px' }}
+                  onChange={this.handleChange}
                 />
               </Form.Group>
             </Col>
@@ -174,20 +169,20 @@ class HackathonsForm extends Component {
                   Location
                 </Form.Label>
                 <Form.Control
-                 className={styles.Input}
-                 type="text"
-                 name="location"
-                 value={location}
-                 placeholder="Location"
-                 style={{ marginTop: '5px' }}
-                 onChange={this.handleChange}
+                  className={styles.Input}
+                  type="text"
+                  name="location"
+                  value={location}
+                  placeholder="Location"
+                  style={{ marginTop: '5px' }}
+                  onChange={this.handleChange}
                 />
               </Form.Group>
             </Col>
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label className={styles.label} >
-                Last Date to Apply
+                <Form.Label className={styles.label}>
+                  Last Date to Apply
                 </Form.Label>
                 <Form.Control
                   className={styles.Input}
@@ -202,9 +197,7 @@ class HackathonsForm extends Component {
             </Col>
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label className={styles.label} >
-                Eligibility
-                </Form.Label>
+                <Form.Label className={styles.label}>Eligibility</Form.Label>
                 <Form.Control
                   className={styles.Input}
                   type="text"
@@ -213,7 +206,6 @@ class HackathonsForm extends Component {
                   placeholder="Eligibility"
                   style={{ marginTop: '5px' }}
                   onChange={this.handleChange}
-                
                 />
               </Form.Group>
             </Col>
@@ -221,13 +213,10 @@ class HackathonsForm extends Component {
           <Row form>
             <Col xs={12} sm={4}>
               <Form.Group className={styles.form_group}>
-                <Form.Label
-                  className={styles.label}
-                >
+                <Form.Label className={styles.label}>
                   Website / Link to Register
                 </Form.Label>
                 <Form.Control
-
                   className={styles.Input}
                   type="text"
                   name="url"
@@ -244,13 +233,13 @@ class HackathonsForm extends Component {
                   Description
                 </Form.Label>
                 <Form.Control
-                as="textarea"
-                rows={4}
-                name="description"
-                value={description}
-                placeholder="Short Description"
-                onChange={this.handleChange}
-                style={{ marginTop: '5px' }}
+                  as="textarea"
+                  rows={4}
+                  name="description"
+                  value={description}
+                  placeholder="Short Description"
+                  onChange={this.handleChange}
+                  style={{ marginTop: '5px' }}
                 />
               </Form.Group>
             </Col>
