@@ -39,7 +39,7 @@ export default function CommonComponents({ onSearchFinal }) {
           </Card.Text>
         </Card.Body>
       </Card>
-      <Jumbotron className={styles.opportunityBody}>
+      <Jumbotron className={styles.opportunityBody} >
         <Container>
           <Row>
             <NavDropdown
@@ -66,7 +66,9 @@ export default function CommonComponents({ onSearchFinal }) {
                 {' '} Internship Opportunities{' '}
               </NavDropdown.Item>
             </NavDropdown>
+            
           </Row>
+          
         </Container>
       </Jumbotron>    
     </>

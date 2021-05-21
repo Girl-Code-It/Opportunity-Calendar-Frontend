@@ -132,6 +132,9 @@ a:not([href]):hover{
   transition: all 0.5s;
   margin-right: 10px;
 }
+.atag{
+  color: #008dc8;
+}
 
 .outline{
   color: #008dc8;

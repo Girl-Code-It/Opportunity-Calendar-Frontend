@@ -42,7 +42,7 @@ function Navbar1({onSearch}) {
             <Button className={`${styles.Button} ${styles.outline}`} variant="outline-info">
               Login
             </Button>
-          </Link>
+          </Link >
         </Nav>
       </Navbar.Collapse>
     </Navbar>

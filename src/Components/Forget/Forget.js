@@ -24,7 +24,8 @@ const Forget = () => {
           </a>
         </Navbar.Brand>
       </Navbar>
-    <Row className="justify-content-md-center">
+      <br></br>
+    <Row className="justify-content-md-center ">
       <Card className={styles.card}><br></br>
         <h5>Forgot Password</h5>
         <img src={forget} alt="Illustration by Freepik Storyset " height="430px" width="500px" className="mt-3 img" />
