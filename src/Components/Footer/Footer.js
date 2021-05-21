@@ -40,6 +40,7 @@ function Footer() {
             <div className={styles.Rectangle2} style={{ width: '70px' }}></div>
             <p style={{ fontSize: '18px', color: 'black' }}> Terms and Condition </p>
             <p style={{ fontSize: '18px', color: 'black' }}> Privacy Policy </p>
+            <a href="https://forms.gle/jP3SEJgDcTPMiTGM7" style={{ fontSize: '18px', color: 'black' }} target="_blank">Feedback Form</a>
           </Col>
         </Row>
 
