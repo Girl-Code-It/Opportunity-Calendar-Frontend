@@ -1,29 +1,55 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import './App.css';
 // import axios from 'axios'
-import HomePage from './Components/HomePage/HomePage';
-import SocialIcons from "./Components/SocialIcons/SocialIcons"
-import PostOpportunity from './Components/PostOpportunity/PostOpportunity';
-import FullTimeForm from './Components/PostOpportunity/sections/FullTime/FullTime';
-import InternshipForm from './Components/PostOpportunity/sections/Internships/Internships';
-import TechConfForm from './Components/PostOpportunity/sections/TechConf/TechConf';
-import HackathonForm from './Components/PostOpportunity/sections/Hackathons/Hackathons';
-import CodingCompForm from './Components/PostOpportunity/sections/CodingComp/CodingComp';
-import ScholarshipForm from './Components/PostOpportunity/sections/Scholarships/Scholarships';
-import ScrollTop from './Components/ScrollTop/ScrollTop';
-import { ViewOpportunity } from './Components/ViewOpportunity/';
-import Footer from './Components/Footer/Footer';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import SignUp from './Components/SignupLogin/SignUp';
-import Login from './Components/SignupLogin/Login';
-import PageNotFound from './Components/Error/PageNotFound';
-import Forget from './Components/Forget/Forget';
+// import HomePage from './Components/HomePage/HomePage';
+// import SocialIcons from "./Components/SocialIcons/SocialIcons"
+// import PostOpportunity from './Components/PostOpportunity/PostOpportunity';
+// import FullTimeForm from './Components/PostOpportunity/sections/FullTime/FullTime';
+// import InternshipForm from './Components/PostOpportunity/sections/Internships/Internships';
+// import TechConfForm from './Components/PostOpportunity/sections/TechConf/TechConf';
+// import HackathonForm from './Components/PostOpportunity/sections/Hackathons/Hackathons';
+// import CodingCompForm from './Components/PostOpportunity/sections/CodingComp/CodingComp';
+// import ScholarshipForm from './Components/PostOpportunity/sections/Scholarships/Scholarships';
+// import ScrollTop from './Components/ScrollTop/ScrollTop';
+// import  ViewOpportunity  from './Components/ViewOpportunity/';
+// import Footer from './Components/Footer/Footer';
+ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import SignUp from './Components/SignupLogin/SignUp';
+// import Login from './Components/SignupLogin/Login';
+// import PageNotFound from './Components/Error/PageNotFound';
+// import Forget from './Components/Forget/Forget';
+
+// const Home = React.lazy(() => {
+//     return new Promise(resolve => {
+//       setTimeout(() => resolve(import('./components/home')), 4000);
+//     });
+//   });
+
+const HomePage  = lazy( () => import('./Components/HomePage/HomePage'));
+const SocialIcons  = lazy( () => import("./Components/SocialIcons/SocialIcons"));
+const Footer  = lazy( () => import('./Components/Footer/Footer'));
+const Forget  = lazy( () => import('./Components/Forget/Forget'));
+const PageNotFound  = lazy( () => import('./Components/Error/PageNotFound'));
+const Login  = lazy( () => import('./Components/SignupLogin/Login'));
+const SignUp  = lazy( () => import('./Components/SignupLogin/SignUp'));
+const ScholarshipForm  = lazy( () => import('./Components/PostOpportunity/sections/Scholarships/Scholarships'));
+const CodingCompForm  = lazy( () => import('./Components/PostOpportunity/sections/CodingComp/CodingComp'));
+const HackathonForm  = lazy( () => import('./Components/PostOpportunity/sections/Hackathons/Hackathons'));
+const TechConfForm  = lazy( () => import('./Components/PostOpportunity/sections/TechConf/TechConf'));
+const InternshipForm  = lazy( () => import('./Components/PostOpportunity/sections/Internships/Internships'));
+const FullTimeForm  = lazy( () => import('./Components/PostOpportunity/sections/FullTime/FullTime'));
+const PostOpportunity  = lazy( () => import('./Components/PostOpportunity/PostOpportunity'));
+const ViewOpportunity  = lazy( () => import('./Components/ViewOpportunity/'));
+const ScrollTop  = lazy( () => import('./Components/ScrollTop/ScrollTop'));
+// const ScrollTop  = lazy( () => import('./Components/ScrollTop/ScrollTop'));
+
 
 
 function App() {
   return (
     <Router>
       <div className="App">
+      <Suspense fallback={<div style={{ display: 'flex', justifyContent: 'center', marginTop:'50px'}}>Loading...</div>}>
         <Switch >
           <Route
             exact
@@ -177,8 +203,11 @@ function App() {
             )}
           />
         </Switch> 
+        </Suspense>
+        <Suspense fallback={<div style={{ display: 'flex', justifyContent: 'center', marginTop:'50px'}}></div>}>
         <ScrollTop />
         <Footer />
+        </Suspense>
       </div>
     </Router>
   );
