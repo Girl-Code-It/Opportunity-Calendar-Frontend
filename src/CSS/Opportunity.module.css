@@ -228,3 +228,33 @@ a:hover {
 .Dropdown a::after {
     margin-left: 2em;
 }
+
+.btn {
+    width: auto;
+    min-width: 200px;
+    color: #fff;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -40px;
+    margin-left: 940px;
+    
+}
+.atag{
+    color: #7a7a7a;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+}
+.btn:hover{
+    background-color: #f0f0f0;
+    color: #7a7a7a;
+}
+.atag:hover{
+    
+    color: #7a7a7a;
+}

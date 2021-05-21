@@ -43,9 +43,6 @@ function Navbar1({onSearch}) {
               Login
             </Button>
           </Link >
-          <button className={`${styles.Button} ${styles.outline}`}>
-            <a href="https://forms.gle/jP3SEJgDcTPMiTGM7" className={styles.atag}>Feedback</a>
-          </button>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

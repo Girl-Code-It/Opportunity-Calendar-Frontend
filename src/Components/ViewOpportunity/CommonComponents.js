@@ -13,6 +13,7 @@ import {
 } from 'react-bootstrap';
 import styles from '../../CSS/Opportunity.module.css';
 import Navbar from './Navbar';
+import { Link } from 'react-scroll';
 
 const URL = window.location.href;
 const splitUrl = URL.split('/viewopportunity/')[1];
@@ -66,7 +67,14 @@ export default function CommonComponents({ onSearchFinal }) {
                 {' '} Internship Opportunities{' '}
               </NavDropdown.Item>
             </NavDropdown>
+            
+            <Button className={styles.btn}>
+              <a href="https://forms.gle/jP3SEJgDcTPMiTGM7" target="_blank" className={styles.atag}>Feedback</a>
+            </Button>
+            
+            
           </Row>
+          
         </Container>
       </Jumbotron>    
     </>
