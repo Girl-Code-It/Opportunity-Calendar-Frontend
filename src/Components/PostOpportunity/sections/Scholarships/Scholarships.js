@@ -1,19 +1,14 @@
 import React from 'react';
 import Navbar from '../Navbar';
-import ScholarshipForm from './ScholarshipForm';
+import styles from '../../../../CSS/FullTimeForm.module.css';
+import OpportunityForm from '../OpportunityForm/OpportunityForm';
 
 function FullTime() {
   return (
     <div>
       <Navbar />
-      <div
-        style={{
-          marginTop: '120px',
-          marginLeft: '300px',
-          marginRight: '300px',
-        }}
-      >
-        <ScholarshipForm />
+      <div className={styles.FullTimeComponent}>
+        <OpportunityForm path="scholarship" />
       </div>
     </div>
   );

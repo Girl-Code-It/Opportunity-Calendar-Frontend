@@ -1,14 +1,14 @@
 import React from 'react';
 import Navbar from '../Navbar';
-import TechConfForm from './TechConfForm';
-import styles from '../../../../CSS/FullTimeForm.module.css';
+import OpportunityForm from '../OpportunityForm/OpportunityForm';
+import styles from '../../../../CSS/CodingCompForm.module.css';
 
 function TechConf() {
   return (
     <div>
       <Navbar />
-      <div className={styles.FullTimeComponent}>
-        <TechConfForm />
+      <div className={styles.CodingCompComponent}>
+        <OpportunityForm path="techconf" />
       </div>
     </div>
   );

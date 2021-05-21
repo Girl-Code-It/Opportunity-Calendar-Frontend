@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../Navbar';
-import CodingCompForm from './CodingCompForm';
+import OpportunityForm from '../OpportunityForm/OpportunityForm';
 import styles from '../../../../CSS/CodingCompForm.module.css';
 
 function CodingComp() {
@@ -8,7 +8,7 @@ function CodingComp() {
     <div>
       <Navbar />
       <div className={styles.CodingCompComponent}>
-        <CodingCompForm />
+        <OpportunityForm path="codingcomp" />
       </div>
     </div>
   );

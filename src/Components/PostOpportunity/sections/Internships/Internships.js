@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../Navbar';
-import InternshipForm from './InternshipForm';
+import OpportunityForm from '../OpportunityForm/OpportunityForm';
 import styles from '../../../../CSS/FullTimeForm.module.css';
 
 function FullTime() {
@@ -8,7 +8,7 @@ function FullTime() {
     <div>
       <Navbar />
       <div className={styles.FullTimeComponent}>
-        <InternshipForm />
+        <OpportunityForm path="internships" />
       </div>
     </div>
   );
