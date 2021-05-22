@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Form, Button, Card, Col } from 'react-bootstrap';
-import styles from '../../../../CSS/CodingCompForm.module.css';
+import styles from '../../CSS/CodingCompForm.module.css';
 //regex for url validation
 var pattern = new RegExp(
   '^(https?:\\/\\/)?' + // protocol
