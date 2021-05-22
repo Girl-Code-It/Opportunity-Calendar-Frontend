@@ -31,7 +31,10 @@ function App() {
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/forget" component={Forget} />
+<<<<<<< HEAD
 
+=======
+>>>>>>> added chnages
           <Route
             exact
             path="/viewopportunity"
@@ -140,7 +143,11 @@ function App() {
             path="/postopportunity/Internships"
             render={(props) => (
               <div>
+<<<<<<< HEAD
                 <PostOpportunity path="internships" />
+=======
+                <InternshipForm />
+>>>>>>> added chnages
               </div>
             )}
           />
