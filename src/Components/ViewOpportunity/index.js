@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import { OpportunityCard } from './OpportunityCard';
 import {
@@ -44,23 +44,30 @@ export function ViewOpportunity(props) {
   const [filteredData, setFilteredData] = useState(data);
   const [searchString, setSearchString] = useState('');
 
-  React.useEffect(()=>{
-    if (searchString?.length>0){
-      setFilteredData(data.results.filter(opportunity => {
-        if(opportunity.opportunityTitle?.toLowerCase().includes(searchString.toLowerCase()) 
-        || opportunity.opportunityOrganisation?.toLowerCase().includes(searchString.toLowerCase())){
-          return opportunity;
-        }
-      }))
+  React.useEffect(() => {
+    if (searchString?.length > 0) {
+      setFilteredData(
+        data.results.filter((opportunity) => {
+          if (
+            opportunity.opportunityTitle
+              ?.toLowerCase()
+              .includes(searchString.toLowerCase()) ||
+            opportunity.opportunityOrganisation
+              ?.toLowerCase()
+              .includes(searchString.toLowerCase())
+          ) {
+            return opportunity;
+          }
+        })
+      );
+    } else {
+      setFilteredData(data?.results);
     }
-    else{
-      setFilteredData(data?.results)
-    }
-  },[searchString,data]);
+  }, [searchString, data]);
 
   const handleSearchString = (val) => {
-    setSearchString(val)
-  }
+    setSearchString(val);
+  };
 
   // whenever props.path changes, get latest data from backend
   React.useEffect(() => {
@@ -80,12 +87,8 @@ export function ViewOpportunity(props) {
   if (!data) {
     return (
       <div>
-        <CommonComponents onSearchFinal={handleSearchString}/>
-        <h3
-          className={styles.fallbackText}
-        >
-          Loading Opportunities if any...
-        </h3>
+        <CommonComponents onSearchFinal={handleSearchString} />
+        <h3 className={styles.fallbackText}>Loading Opportunities if any...</h3>
       </div>
     );
   }
@@ -94,20 +97,14 @@ export function ViewOpportunity(props) {
 
   return (
     <>
-      <CommonComponents onSearchFinal={handleSearchString}/>
+      <CommonComponents onSearchFinal={handleSearchString} />
       <Jumbotron className={styles.opportunityBody}>
         <Container>
-          {data_length === 0 ? 
-          (
+          {data_length === 0 ? (
             <div>
-              <h3
-                className={styles.fallbackText}
-              >
-                No opportunities found!!
-            </h3>
+              <h3 className={styles.fallbackText}>No opportunities found!!</h3>
             </div>
-          ) : 
-          (
+          ) : (
             <>
               <Row>
                 <Col md={1} sm={1} lg={1} xl={1} xs={0}></Col>
@@ -118,7 +115,7 @@ export function ViewOpportunity(props) {
                 </Col>
                 <Col md={1} sm={1} lg={1} xl={1} xs={0}></Col>
               </Row>
-              </>
+            </>
           )}
         </Container>
       </Jumbotron>

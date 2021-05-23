@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Form, Button, Card, Col } from 'react-bootstrap';
 import styles from '../../CSS/CodingCompForm.module.css';
+import { Link } from 'react-router-dom';
+
 //regex for url validation
 var pattern = new RegExp(
   '^(https?:\\/\\/)?' + // protocol
@@ -21,11 +23,12 @@ const mapUrlToName = {
   fulltime: 'Full Time Job',
 };
 let path;
-
+let viewOpportunityPath;
 class OpportunityForm extends Component {
   constructor(props) {
     super(props);
     path = props.path;
+    viewOpportunityPath = `/viewopportunity/${path}`;
 
     this.state = {
       type: '',
@@ -284,9 +287,11 @@ class OpportunityForm extends Component {
                 />
               </Form.Group>
               <Form.Group>
-                <Button className={styles.Button} type="submit">
-                  Submit
-                </Button>
+                <Link className={styles.link} to={viewOpportunityPath}>
+                  <Button className={styles.Button} type="submit">
+                    Submit
+                  </Button>
+                </Link>
               </Form.Group>
             </Card.Body>
           </Card>
