@@ -28,7 +28,6 @@ class OpportunityForm extends Component {
   constructor(props) {
     super(props);
     path = props.path;
-    viewOpportunityPath = `/viewopportunity/${path}`;
 
     this.state = {
       type: '',
@@ -57,7 +56,6 @@ class OpportunityForm extends Component {
   validate = () => {
     let FieldEmptyError = '';
     let URLError = '';
-
     if (
       !this.state.type ||
       !this.state.title ||
@@ -116,6 +114,9 @@ class OpportunityForm extends Component {
       image: '',
       onlyForFemale: '',
     });
+    setTimeout(() => {
+      window.location.href = `/viewopportunity/${path}`;
+    }, 1000);
   };
 
   render() {
@@ -287,11 +288,9 @@ class OpportunityForm extends Component {
                 />
               </Form.Group>
               <Form.Group>
-                <Link className={styles.link} to={viewOpportunityPath}>
-                  <Button className={styles.Button} type="submit">
-                    Submit
-                  </Button>
-                </Link>
+                <Button className={styles.Button} type="submit">
+                  Submit
+                </Button>
               </Form.Group>
             </Card.Body>
           </Card>
