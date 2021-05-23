@@ -31,13 +31,10 @@ a:hover {
   border-bottom: #008dc8 solid 5px;
   color: #000000;
 }
-.switch {
-  font-weight: 1000;
-}
+
 .label {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 1000;
   font-size: 18px;
   line-height: 16px;
   /* or 89% */
@@ -84,19 +81,18 @@ a:hover {
 }
 
 .Button {
+  padding: 5px 30px;
+  font-size: 17px;
   position: relative;
   float: right;
   margin-top: 10px;
-  padding: 5px 20px 5px 20px;
+  margin-left: 20px;
   color: #fff;
-  font-size: 16px;
   text-align: center;
   background-color: #008dc8;
   border: none;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-  cursor: pointer;
-  transition: all 0.5s;
+  box-shadow: 0 10px 20px -8px rgb(0 0 0 / 70%);
+  transition: all .5s;
 }
 
 /* make outline none when button gets clicked */
