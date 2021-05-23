@@ -16,6 +16,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "react-scroll": "^1.8.1",
+    "reactjs-popup": "^2.0.4",
     "reactstrap": "^8.9.0"
   },
   "scripts": {

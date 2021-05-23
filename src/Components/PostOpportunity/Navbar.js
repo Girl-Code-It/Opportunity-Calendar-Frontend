@@ -1,11 +1,7 @@
 import React from 'react';
-import styles from '../../../CSS/Navbar.module.css';
-import { Link } from 'react-router-dom'
-import {
-  Navbar,
-  Nav,
-  Button,
-} from 'react-bootstrap';
+import styles from '../../CSS/Navbar.module.css';
+import { Link } from 'react-router-dom';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 // import { AiOutlineSearch } from 'react-icons/ai';
 
 function navbar() {
@@ -21,11 +17,20 @@ function navbar() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
-          <div className={styles.searchContainer} >
-            <input type="text" className={styles.searchBar} placeholder="Search" />
+          <div className={styles.searchContainer}>
+            <input
+              type="text"
+              className={styles.searchBar}
+              placeholder="Search"
+            />
           </div>
-          <Link className={styles.link} to='/signup'>
-            <Button className={`${styles.Button} ${styles.outline}`} variant="outline-info">Login/Signup</Button>{' '}
+          <Link className={styles.link} to="/signup">
+            <Button
+              className={`${styles.Button} ${styles.outline}`}
+              variant="outline-info"
+            >
+              Login/Signup
+            </Button>{' '}
           </Link>
         </Nav>
       </Navbar.Collapse>

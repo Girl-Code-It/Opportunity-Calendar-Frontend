@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from '../../CSS/Navbar.module.css';
 import { Navbar, Nav, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { AiOutlineSearch } from 'react-icons/ai';
 
-function Navbar1({onSearch}) {
+function Navbar1({ onSearch }) {
   const [postOpportunityPath, setPostOpportunityPath] = React.useState();
 
   // as the last chunk of ViewOpportunity and PostOpportunity is same, we can
@@ -27,22 +27,28 @@ function Navbar1({onSearch}) {
         </a>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav" >
+      <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
-          <div className={styles.searchContainer} >
-           <AiOutlineSearch />
-            <input type="text" className={styles.searchBar} onChange={e => handleChange(e.currentTarget.value)} placeholder="Search" />
+          <div className={styles.searchContainer}>
+            <AiOutlineSearch />
+            <input
+              type="text"
+              className={styles.searchBar}
+              onChange={(e) => handleChange(e.currentTarget.value)}
+              placeholder="Search"
+            />
           </div>
           <Link className={styles.link} to={postOpportunityPath}>
-            <Button className={styles.Button} >
-              Post Opportunity
-            </Button>
+            <Button className={styles.Button}>Post Opportunity</Button>
           </Link>
-          <Link className={styles.link} to='/signup'>
-            <Button className={`${styles.Button} ${styles.outline}`} variant="outline-info">
+          <Link className={styles.link} to="/signup">
+            <Button
+              className={`${styles.Button} ${styles.outline}`}
+              variant="outline-info"
+            >
               Login
             </Button>
-          </Link >
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
