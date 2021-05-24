@@ -100,7 +100,7 @@ a:hover {
   outline: none;
 }
 
-.FullTimeComponent {
+.PostFormComponent {
   width: 100%;
   padding: 10px;
   margin: 80px 0 0 0;
@@ -108,7 +108,7 @@ a:hover {
 }
 
 /* @media only screen and (max-width: 1113px) {
-  .FullTimeComponent {
+  .PostFormComponent {
     width: 60%;
     margin: 120px auto 20px;
     padding-left: 3%;
@@ -116,7 +116,7 @@ a:hover {
 /* } */
 
 /* @media only screen and (max-width: 1000px) {
-  .FullTimeComponent {
+  .PostFormComponent {
     width: 65%;
     margin: 120px auto 20px;
     padding-left: 2%;
@@ -124,7 +124,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 801px) {
-  .FullTimeComponent {
+  .PostFormComponent {
     width: 70%;
     margin: 120px auto 20px;
     padding-left: 0;
@@ -132,7 +132,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 650px) {
-  .FullTimeComponent {
+  .PostFormComponent {
     width: 75%;
     margin: 120px auto 20px;
     padding-right: 40px;
