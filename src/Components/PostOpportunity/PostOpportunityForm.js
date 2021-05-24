@@ -1,8 +1,8 @@
+
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Form, Button, Card, Col } from 'react-bootstrap';
-import styles from '../../CSS/CodingCompForm.module.css';
-import { Link } from 'react-router-dom';
+import { Form, Button,Row, Col } from 'react-bootstrap';
+import styles from '../../CSS/PostForm.module.css';
 
 //regex for url validation
 var pattern = new RegExp(
@@ -23,7 +23,6 @@ const mapUrlToName = {
   fulltime: 'Full Time Job',
 };
 let path;
-let viewOpportunityPath;
 class OpportunityForm extends Component {
   constructor(props) {
     super(props);
@@ -36,6 +35,7 @@ class OpportunityForm extends Component {
       company: '',
       date: '',
       description: '',
+      jobid:'',
       location: '',
       eligibility: '',
       deadline: '',
@@ -110,6 +110,7 @@ class OpportunityForm extends Component {
       description: '',
       location: '',
       eligibility: '',
+      jobid:'',
       deadline: '',
       image: '',
       onlyForFemale: '',
@@ -124,6 +125,7 @@ class OpportunityForm extends Component {
       type,
       title,
       company,
+      jobid,
       url,
       date,
       description,
@@ -135,165 +137,246 @@ class OpportunityForm extends Component {
     return (
       <div style={{ marginBottom: '80px' }}>
         <Form onSubmit={this.handleSubmit}>
-          <Card className={styles.Card}>
-            <Card.Header as="h5">
-              {' '}
-              <Form.Label className={styles.CardTitle}>
+        <Row form>
+            <Col xs={12} sm={8}>
+              <Form.Label
+                className={styles.form_header}
+                style={{ marginBottom: '40px' }}
+              >
                 Post a {mapUrlToName[path]}
               </Form.Label>
-            </Card.Header>
+            </Col>
+            <Col md={4} sm={4} style={{ padding: '0 30px' }}>
+              <Form.Control
+                as="select"
+                size="lg"
+                style={{ marginBottom: '40px' }}
+                name="type"
+                value={type}
+                onChange={this.handleChange}
+              >
+                <option>Opportunity type</option>
+                <option value="JOB" selected>
+                  Job
+                </option>
+                <option value="INTERNSHIP">Internship</option>
+                <option value="HACKATHON">Hackathon</option>
+                <option value="SCHOLARSHIP">Scholarship</option>
+                <option value="CONFERENCE">Conferencne</option>
+                <option value="CODINGCOMPETITION">Coding Competition</option>
+                <option value="OTHERS">Others</option>
+              </Form.Control>
+            </Col>
+          </Row>
 
-            <Card.Body>
-              {(path == 'internships' || path == 'fulltime') && (
-                <Form.Group>
-                  <Form.Control
-                    className={styles.Input}
-                    type="text"
-                    name="company"
-                    value={company}
-                    placeholder="Company Name"
-                    onChange={this.handleChange}
-                  />
-                </Form.Group>
-              )}
-              <Form.Group>
+
+          <Row form>
+            <Col xs={12} sm={4}>
+              <Form.Group className={styles.form_group}>
+                <Form.Label className={styles.label} for="deadline">
+                  Last date to apply (YYYY-MM-DD)
+                </Form.Label>
                 <Form.Control
                   className={styles.Input}
                   type="text"
-                  name="title"
-                  value={title}
-                  placeholder={mapUrlToName[path] + ' Name'}
+                  id="deadline"
+                  name="deadline"
+                  value={deadline}
+                  placeholder="Last Date to Apply"
+                  style={{ marginTop: '5px' }}
                   onChange={this.handleChange}
                 />
               </Form.Group>
-              <Form.Group>
+            </Col>
+            <Col xs={12} sm={4}>
+              <Form.Group className={styles.form_group}>
+                <Form.Label className={styles.label} for="logo">
+                  Logo URL
+                </Form.Label>
                 <Form.Control
                   className={styles.Input}
                   type="text"
                   name="image"
+                  id="logo"
                   value={image}
-                  placeholder="Logo URL"
-                  style={{ marginTop: '30px' }}
                   onChange={this.handleChange}
+                  style={{ marginTop: '5px' }}
                 />
               </Form.Group>
-              <Form.Row>
-                <Form.Group as={Col} controlId="formGridType">
-                  <Form.Control
-                    as="select"
-                    size="lg"
-                    name="type"
-                    value={type}
-                    onChange={this.handleChange}
-                    style={{ marginTop: '30px' }}
-                  >
-                    <option defaultValue hidden>
-                      Opportunity type
-                    </option>
-                    <option value="JOB">Job</option>
-                    <option value="INTERNSHIP">Internship</option>
-                    <option value="HACKATHON">Hackathon</option>
-                    <option value="SCHOLARSHIP">Scholarship</option>
-                    <option value="CONFERENCE">Conferencne</option>
-                    <option value="CODINGCOMPETITION">
-                      Coding Competition
-                    </option>
-                  </Form.Control>
-                </Form.Group>
-
-                <div style={{ fontSize: 12, color: 'red', marginLeft: '40px' }}>
-                  {this.state.FieldEmptyError}
-                </div>
-
-                <Form.Group as={Col} controlId="formBasicType">
-                  <Form.Check
-                    type="checkbox"
-                    size="md"
-                    label="Only for female"
-                    style={{ marginTop: '40px' }}
-                    onChange={(event) =>
-                      this.setState({ onlyForFemale: event.target.checked })
-                    }
-                  />
-                </Form.Group>
-              </Form.Row>
-              <Form.Group>
+            </Col>
+            <Col xs={12} sm={4}>
+              <Form.Group className={styles.form_group}>
+                <Form.Label className={styles.label} for="title">
+                {mapUrlToName[path] + ' Name'}
+                </Form.Label>
                 <Form.Control
-                  as="textarea"
-                  rows={4}
-                  style={{ marginTop: '30px' }}
-                  name="description"
-                  value={description}
-                  placeholder="Short Description"
+                  className={styles.Input}
+                  type="text"
+                  name="title"
+                  id="title"
+                  value={title}
                   onChange={this.handleChange}
+                  style={{ marginTop: '5px' }}
                 />
               </Form.Group>
-              {(path == 'techconf' ||
-                path == 'codingcomp' ||
-                path == 'hackathon') && (
-                <Form.Group>
-                  <Form.Control
-                    className={styles.Input}
-                    type="text"
-                    name="date"
-                    value={date}
-                    placeholder="Event date"
-                    style={{ marginTop: '30px' }}
-                    onChange={this.handleChange}
-                  />
-                </Form.Group>
-              )}
-              <Form.Group>
+            </Col>
+          </Row>
+
+          <Row form>
+
+            <Col xs={12} sm={4}>
+              <Form.Group className={styles.form_group}>
+                <Form.Label className={styles.label} for="location">
+                  Location
+                </Form.Label>
                 <Form.Control
                   className={styles.Input}
                   type="text"
                   name="location"
+                  id="location"
                   value={location}
                   placeholder="Location"
-                  style={{ marginTop: '30px' }}
+                  style={{ marginTop: '5px' }}
                   onChange={this.handleChange}
                 />
               </Form.Group>
-              <Form.Group>
-                <Form.Control
-                  className={styles.Input}
-                  type="text"
-                  name="deadline"
-                  value={deadline}
-                  placeholder="Last Date to Apply"
-                  style={{ marginTop: '30px' }}
-                  onChange={this.handleChange}
-                />
-              </Form.Group>
-              <Form.Group>
+            </Col>
+            <Col xs={12} sm={4}>
+              <Form.Group className={styles.form_group}>
+                <Form.Label
+                  className={styles.label}
+                  for="eligibility"
+                >
+                  Eligibility
+                </Form.Label>
                 <Form.Control
                   className={styles.Input}
                   type="text"
                   name="eligibility"
+                  id="eligibility"
                   value={eligibility}
-                  placeholder="Eligibility"
-                  style={{ marginTop: '30px' }}
+                  style={{ marginTop: '5px' }}
                   onChange={this.handleChange}
                 />
               </Form.Group>
-              <Form.Group>
+            </Col>
+            <Col xs={12} sm={4}>
+              <Form.Group className={styles.form_group}>
+                <Form.Label className={styles.label} for="joburl">
+                  Website
+                </Form.Label>
                 <Form.Control
                   className={styles.Input}
                   type="text"
                   name="url"
+                  id="joburl"
                   value={url}
-                  placeholder="Website"
-                  style={{ marginTop: '30px' }}
+                  style={{ marginTop: '5px' }}
                   onChange={this.handleChange}
                 />
               </Form.Group>
-              <Form.Group>
-                <Button className={styles.Button} type="submit">
-                  Submit
-                </Button>
+            </Col>
+          </Row>
+
+          <Row form>
+          {(path === 'internships' || path === 'fulltime') && (
+            <Col xs={12} sm={4}>
+              <Form.Group className={styles.form_group}>
+                <Form.Label className={styles.label} for="jobid">
+                  Job Id
+                </Form.Label>
+                <Form.Control
+                  className={styles.Input}
+                  type="text"
+                  name="jobid"
+                  id="jobid"
+                  value={jobid}
+                  style={{ marginTop: '5px' }}
+                  onChange={this.handleChange}
+                />
               </Form.Group>
-            </Card.Body>
-          </Card>
+            </Col>)}
+            
+            {(path === 'internships' || path === 'fulltime') && (
+            <Col xs={12} sm={4}>
+              <Form.Group className={styles.form_group}>
+                <Form.Label className={styles.label} for="companyname">
+                  Company name
+                </Form.Label>
+                <Form.Control
+                  className={styles.Input}
+                  type="text"
+                  name="company"
+                  id="companyname"
+                  style={{ marginTop: '5px' }}
+                  value={company}
+                  onChange={this.handleChange}
+                />
+              </Form.Group>
+            </Col>
+            )}
+          </Row>
+
+          <Row form>
+          {(path === 'techconf' ||
+                path === 'codingcomp' ||
+                path === 'hackathon') && (
+          <Col xs={12} sm={4}>
+              <Form.Group className={styles.form_group}>
+                <Form.Label className={styles.label} for="description">
+                  Event Date
+                </Form.Label>
+                <Form.Control
+
+                  className={styles.Input}
+                  type="text"
+                  name="date"
+                  value={date}
+                  placeholder="Event date"
+                  style={{ marginTop: '5px' }}
+                  onChange={this.handleChange}
+                                  />
+              </Form.Group>
+            </Col>)}
+
+
+            <Col xs={12} sm={4}>
+              <Form.Group className={styles.form_group}>
+                <Form.Label className={styles.label} for="description">
+                  Description
+                </Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows={4}
+                  id="description"
+                  style={{ marginTop: '5px' }}
+                  name="description"
+                  value={description}
+                  onChange={this.handleChange}
+                />
+              </Form.Group>
+            </Col>
+            <Col xs={12} sm={4}>
+              <Form.Group className={styles.form_group}>
+                <Form.Check
+                  type="switch"
+                  className={styles.switch}
+                  id="custom-switch"
+                  label="Female specific"
+                  onChange={(event) =>
+                    this.setState({ onlyForFemale: event.target.checked })
+                  }
+                />
+              </Form.Group>
+            </Col>
+          </Row>
+          <Row>
+            <Form.Group className={styles.form_group}>
+              <Button className={styles.Button} type="submit">
+                Post Opportunity
+              </Button>
+            </Form.Group>
+          </Row>
         </Form>
       </div>
     );

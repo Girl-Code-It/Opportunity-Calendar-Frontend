@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 .CardTitle {
   color: black;
   font-size: 33px;
@@ -15,6 +16,36 @@ a:hover {
   padding-bottom: 0px;
 }
 
+.form_group {
+  margin: 20px 0;
+  padding: 0 20px;
+}
+.form_header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  width: auto;
+  margin-left: 20px;
+  line-height: 55px;
+  border-bottom: #008dc8 solid 5px;
+  color: #000000;
+}
+
+.label {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 16px;
+  /* or 89% */
+
+  letter-spacing: 0.15px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  /* Charcoal */
+
+  color: #384248;
+}
 .Input {
   border-top-width: 0in;
   border-right-width: 0in;
@@ -50,19 +81,18 @@ a:hover {
 }
 
 .Button {
+  padding: 5px 30px;
+  font-size: 17px;
   position: relative;
   float: right;
-  margin-top: 5px;
-  padding: 5px 20px 5px 20px;
+  margin-top: 10px;
+  margin-left: 20px;
   color: #fff;
-  font-size: 16px;
   text-align: center;
   background-color: #008dc8;
   border: none;
-  border-radius: 50px;
-  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-  cursor: pointer;
-  transition: all 0.5s;
+  box-shadow: 0 10px 20px -8px rgb(0 0 0 / 70%);
+  transition: all .5s;
 }
 
 /* make outline none when button gets clicked */
@@ -71,20 +101,21 @@ a:hover {
 }
 
 .FullTimeComponent {
-  width: 55%;
-  margin: 120px auto 20px;
-  padding-left: 3%;
+  width: 100%;
+  padding: 10px;
+  margin: 80px 0 0 0;
+  background: #e2f3fb;
 }
 
-@media only screen and (max-width: 1113px) {
+/* @media only screen and (max-width: 1113px) {
   .FullTimeComponent {
     width: 60%;
     margin: 120px auto 20px;
     padding-left: 3%;
-  }
-}
+  } */
+/* } */
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
   .FullTimeComponent {
     width: 65%;
     margin: 120px auto 20px;
@@ -106,17 +137,10 @@ a:hover {
     margin: 120px auto 20px;
     padding-right: 40px;
   }
-}
+} */
 
-@media only screen and (max-width: 500px) {
-  .FullTimeComponent {
-    width: 80%;
-    margin: 120px auto 20px;
-    padding-right: 0px;
-  }
-
-  .Input,
-  textarea {
-    margin-left: 0px !important;
+@media only screen and (max-width: 578px) {
+  .switch {
+    margin: 20px 0;
   }
 }

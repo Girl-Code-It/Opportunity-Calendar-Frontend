@@ -22,10 +22,19 @@ function Footer() {
             <h5 style={{ fontSize: '22px' }}> Products </h5>
             <div className={styles.Rectangle} style={{ width: '120px' }}></div>
             <a href="https://girlcodeit.com/codemaps">
-              <p style={{ fontSize: '18px', color: 'black', cursor: "pointer" }}>CodeMaps</p>
+              <p
+                style={{ fontSize: '18px', color: 'black', cursor: 'pointer' }}
+              >
+                CodeMaps
+              </p>
             </a>
             <Link to="/">
-              <p style={{ fontSize: '18px', color: "black", cursor: "pointer" }}> Opportuntiy Calendar </p>
+              <p
+                style={{ fontSize: '18px', color: 'black', cursor: 'pointer' }}
+              >
+                {' '}
+                Opportuntiy Calendar{' '}
+              </p>
             </Link>
           </Col>
 
@@ -38,7 +47,10 @@ function Footer() {
           <Col className={styles.Column2} style={{ textAlign: 'center' }}>
             <h5 style={{ fontSize: '22px' }}> Links </h5>
             <div className={styles.Rectangle2} style={{ width: '70px' }}></div>
-            <p style={{ fontSize: '18px', color: 'black' }}> Terms and Condition </p>
+            <p style={{ fontSize: '18px', color: 'black' }}>
+              {' '}
+              Terms and Condition{' '}
+            </p>
             <p style={{ fontSize: '18px', color: 'black' }}> Privacy Policy </p>
             <a href="https://forms.gle/jP3SEJgDcTPMiTGM7" style={{ fontSize: '18px', color: 'black' }} target="_blank">Feedback Form</a>
           </Col>
@@ -100,7 +112,8 @@ function Footer() {
         <Row className={styles.Bottom1}>
           <Col>
             <p>
-              &copy; {new Date().getFullYear()} Girl Code It | All rights reserved.
+              &copy; {new Date().getFullYear()} Girl Code It | All rights
+              reserved.
             </p>
           </Col>
         </Row>

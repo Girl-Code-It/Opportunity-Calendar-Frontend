@@ -1,14 +1,16 @@
 import React from 'react';
-import Navbar from './Navbar';
 import PostOpportunityForm from './PostOpportunityForm';
-import styles from '../../CSS/CodingCompForm.module.css';
+import styles from '../../CSS/PostForm.module.css';
+import AddDiv from './AddDiv';
+import Navbar from './Navbar';
 
 function PostOpportunity(props) {
   let path = props.path;
   return (
     <div>
-      <Navbar />
-      <div className={styles.CodingCompComponent}>
+      <Navbar flink={`/viewopportunity/${path}`}/>
+      <AddDiv/>
+      <div className={styles.FullTimeComponent}>
         <PostOpportunityForm path={path} />
       </div>
     </div>

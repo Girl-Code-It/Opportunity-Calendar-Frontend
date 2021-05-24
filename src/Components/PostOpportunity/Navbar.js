@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 // import { AiOutlineSearch } from 'react-icons/ai';
 
-function navbar() {
+function navbar(props) {
   return (
     <Navbar fixed="top" bg="light" expand="lg" className={styles.NavBar}>
       <Navbar.Brand className={styles.Logo}>
@@ -24,6 +24,11 @@ function navbar() {
               placeholder="Search"
             />
           </div>
+          <Link to={props.flink} className={styles.link}>
+        <Button className={styles.Button} >
+              Find Opportunity
+            </Button>
+            </Link>
           <Link className={styles.link} to="/signup">
             <Button
               className={`${styles.Button} ${styles.outline}`}

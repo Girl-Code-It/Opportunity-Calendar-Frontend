@@ -1,3 +1,5 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -11,4 +13,61 @@
   border-radius: 20px;
   box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%),
     inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+
+.add_post{  
+    margin-top: 150px;
+  background: #0084BA;
+  border-radius: 0 200px 200px 0;
+  align-items: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.post_text{
+  position: absolute;
+width: 992px;
+height: 84px;
+left: 211px;
+top: 135px;
+
+font-family: Roboto;
+font-style: italic;
+font-weight: 300;
+font-size: 50px;
+line-height: 22px;
+/* or 44% */
+
+letter-spacing: 0.15px;
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+color: #FFFFFF;
+}
+
+.text-box{
+  width: 65%;
+  padding: 15px 15px 15px 0;
+}
+
+.text-line{
+
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 65px;
+  color: white;
+  letter-spacing: 0.15px;
+}
+@media only screen and (max-width: 991px) {
+  .text-line{
+font-size: 2em;
+line-height: 45px;
+  }
+
+  .text-box{
+    width: 80%;
+    padding: 15px 15px 15px 0;
+  }
 }
