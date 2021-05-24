@@ -18,7 +18,8 @@
   border-radius: 15px;
   box-shadow: 0px 12px 12px -10px #ccc;
   transition: all 0.6s;
-  background-color: #fbfcfc;
+  background-color: #FBFCFC ; 
+  
 }
 .Card:hover {
   z-index: 99;
@@ -133,6 +134,7 @@ a:hover {
   background-image: linear-gradient(to bottom, #55b1eb, #2389c4);
 }
 
+
 /* make outline none when button gets clicked */
 
 .Button:focus {
@@ -157,10 +159,10 @@ a:hover {
 
 .Button1:hover {
   text-decoration: none;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   background-color: #008cd8;
 }
+
 
 /* make outline none when button gets clicked */
 
@@ -224,40 +226,35 @@ a:hover {
 }
 
 .Dropdown a::after {
-<<<<<<< HEAD
-    margin-left: 2em;
+  margin-left: 2em;
 }
 
 .btn {
-    width: auto;
-    min-width: 200px;
-    color: #fff;
-    background-color: #f0f0f0;
-    border: none;
-    border-radius: 5px 5px 5px 5px;
-    cursor: pointer;
-    transition: all 0.5s;
-    font-size: 1.1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: -40px;
-    margin-left: 940px;
-    
+  width: auto;
+  min-width: 200px;
+  color: #fff;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -40px;
+  margin-left: 940px;
+  
 }
 .atag{
-    color: #7a7a7a;
-    text-decoration: none;
-    border: none;
-    text-align: center;
+  color: #7a7a7a;
+  text-decoration: none;
+  border: none;
+  text-align: center;
 }
 .btn:hover{
-    background-color: #f0f0f0;
-    color: #7a7a7a;
+  background-color: #f0f0f0;
+  color: #7a7a7a;
 }
 .atag:hover{
-    
-    color: #7a7a7a;
+  
+  color: #7a7a7a;
 }
-=======
-  margin-left: 2em;
-}
->>>>>>> small fix

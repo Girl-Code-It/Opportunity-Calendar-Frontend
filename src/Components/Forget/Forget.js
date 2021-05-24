@@ -24,18 +24,8 @@ const Forget = () => {
           </a>
         </Navbar.Brand>
       </Navbar>
-<<<<<<< HEAD
       <br></br>
-    <Row className="justify-content-md-center ">
-      <Card className={styles.card}><br></br>
-        <h5>Forgot Password</h5>
-        <img src={forget} alt="Illustration by Freepik Storyset " height="430px" width="500px" className="mt-3 img" />
-        <Form >
-          <Form.Group controlId="fname">
-            <Form.Control type="text" placeholder="Enter Your Name" className={styles.inputitem}/>
-          </Form.Group>
-=======
-      <Row className="justify-content-md-center">
+      <Row className="justify-content-md-center ">
         <Card className={styles.card}>
           <br></br>
           <h5>Forgot Password</h5>
@@ -54,7 +44,6 @@ const Forget = () => {
                 className={styles.inputitem}
               />
             </Form.Group>
->>>>>>> feat_post_opp
 
             <Form.Group controlId="email">
               <Form.Control
