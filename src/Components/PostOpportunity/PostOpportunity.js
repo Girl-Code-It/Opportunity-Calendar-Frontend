@@ -10,7 +10,7 @@ function PostOpportunity(props) {
     <div>
       <Navbar flink={`/viewopportunity/${path}`}/>
       <AddDiv/>
-      <div className={styles.FullTimeComponent}>
+      <div className={styles.PostFormComponent}>
         <PostOpportunityForm path={path} />
       </div>
     </div>
