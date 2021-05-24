@@ -1,19 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Form, Button, Card, Col } from 'react-bootstrap';
-import styles from '../../CSS/CodingCompForm.module.css';
-import { Link } from 'react-router-dom';
+import styles from '../../CSS/PostOpportunityForm.module.css';
 
-//regex for url validation
-var pattern = new RegExp(
-  '^(https?:\\/\\/)?' + // protocol
-    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
-    '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
-    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
-    '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
-    '(\\#[-a-z\\d_]*)?$',
-  'i'
-);
 const mapUrlToName = {
   techconf: 'Tech Conference',
   codingcomp: 'Coding Competition',
@@ -23,7 +12,6 @@ const mapUrlToName = {
   fulltime: 'Full Time Job',
 };
 let path;
-let viewOpportunityPath;
 class OpportunityForm extends Component {
   constructor(props) {
     super(props);
@@ -51,28 +39,6 @@ class OpportunityForm extends Component {
     this.setState({
       [event.target.name]: itemValue,
     });
-  };
-
-  validate = () => {
-    let FieldEmptyError = '';
-    let URLError = '';
-    if (
-      !this.state.type ||
-      !this.state.title ||
-      !this.state.description ||
-      !this.state.eligibility ||
-      !this.state.location
-    ) {
-      FieldEmptyError = 'cannot be blank';
-    }
-    if (!pattern.test(this.state.jobURL) || !pattern.test(this.state.image)) {
-      URLError = 'Invalid URL';
-    }
-    if (FieldEmptyError || URLError) {
-      this.setState({ FieldEmptyError, URLError });
-      return false;
-    }
-    return true;
   };
 
   handleSubmit = (event) => {
