@@ -36,11 +36,7 @@ function Footer() {
                 Opportuntiy Calendar{' '}
               </p>
             </Link>
-            <Link to="/newsletter" exact>
-                <p style={{ fontSize: '18px', color: 'black', cursor: 'pointer'}}>
-                  {' '}Newsletter{' '}
-                </p>
-            </Link>
+            
           </Col>
 
           <Col className={styles.ImgColumn}>
