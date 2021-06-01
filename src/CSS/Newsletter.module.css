@@ -13,7 +13,7 @@
         margin-bottom: 2rem;
         height: 40px;
         width: 200px;
-        border: 1px solid grey;
+        border: 1px solid gray;
         border-radius: 4px;
     }
     
@@ -31,7 +31,7 @@
     .sub_text fieldset input{
      height: 40px;
      width: 200px;
-       border: 1px solid grey;
+       border: 1px solid gray;
        border-radius: 4px;
    }
    .field{

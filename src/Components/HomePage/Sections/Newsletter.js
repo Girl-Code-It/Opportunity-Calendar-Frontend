@@ -7,8 +7,6 @@ const newsletter = () => {
 
             <div className={styles.subscribe}>
             
-               
-            
                 <div className={styles.sub_text}>
                     <h1>
                         Newsletter
@@ -16,7 +14,7 @@ const newsletter = () => {
                     <br/>
                     <h4>Get weekly updates in your inbox! </h4>
                     <fieldset className={styles.field}>
-                        <div className={styles.email}><input type="email" name="email" placeholder="Enter email"></input>
+                        <div className={styles.email}><input type="email" name="email" placeholder="Enter your email id"></input>
                         </div>
                         
                         <button type="submit">Subscribe</button>
