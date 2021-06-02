@@ -16,7 +16,14 @@
         border: 1px solid gray;
         border-radius: 4px;
     }
-     
+    .sub_text fieldset{
+      margin-left: 10%;
+      padding: 8%;
+      margin-bottom: 4%;
+    }
+    .sub_text h4{
+      padding: 2%;
+    }
    .subscribe h1{
     margin-left: 20%;
   }
@@ -46,6 +53,14 @@
    .subscribe h1{
     margin-left: 36%;
   }
+  .sub_text fieldset{
+    margin-left: 16%;
+    padding: 8%;
+    margin-bottom: 4%;
+  }
+  .sub_text h4{
+    padding: 2%;
+  }
   }
    @media (min-width: 992px) {
      .field{
@@ -70,6 +85,14 @@
    .subscribe h1{
     margin-left: 38%;
   }
+  .sub_text fieldset{
+    margin-left: 30%;
+    padding: 8%;
+    margin-bottom: 4%;
+  }
+  .sub_text h4{
+    padding: 2%;
+  }
    }
    @media (min-width: 1200px) {
     .field{
@@ -92,15 +115,20 @@
     }
      
    .subscribe h1{
-    margin-left: 41%;
+    margin-left: 42%;
+  }
+  .sub_text h4{
+    padding: 2%;
+  }
+  .sub_text fieldset{
+    margin-left: 32%;
+    padding: 10%;
+    margin-bottom: 4%;
   }
    }
  
 
-  .sub_text{
-    margin-left: 5%;
-    padding: 7%;
-  }
+  
   .sub_text h1{
     color: '#008dc8';
     font-weight: bold;
