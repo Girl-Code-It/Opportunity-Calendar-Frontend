@@ -6,12 +6,11 @@ const newsletter = () => {
     return(
 
             <div className={styles.subscribe}>
-            
-                <div className={styles.sub_text}>
-                    <h1>
+                <h1>
                         Newsletter
-                    </h1>
-                    <br/>
+                </h1>
+                <div className={styles.sub_text}>
+                    
                     <h4>Get weekly updates in your inbox! </h4>
                     <fieldset className={styles.field}>
                         <div className={styles.email}><input type="email" name="email" placeholder="Enter your email id"></input>

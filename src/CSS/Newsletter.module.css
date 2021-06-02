@@ -9,13 +9,17 @@
     }
      .sub_text fieldset input{
 
-        margin-right: 2rem;
+        margin-right: 1.7rem;
         margin-bottom: 2rem;
         height: 40px;
         width: 200px;
         border: 1px solid gray;
         border-radius: 4px;
     }
+     
+   .subscribe h1{
+    margin-left: 20%;
+  }
     
    }
   
@@ -38,6 +42,10 @@
      display: flex;
      flex-direction: row;
    }
+    
+   .subscribe h1{
+    margin-left: 36%;
+  }
   }
    @media (min-width: 992px) {
      .field{
@@ -58,6 +66,10 @@
       display: flex;
       flex-direction: row;
     }
+     
+   .subscribe h1{
+    margin-left: 38%;
+  }
    }
    @media (min-width: 1200px) {
     .field{
@@ -78,10 +90,15 @@
       font-size: 20px;
       height: 45px;
     }
+     
+   .subscribe h1{
+    margin-left: 41%;
+  }
    }
+ 
 
-  .subscribe{
-    margin-left: 10%;
+  .sub_text{
+    margin-left: 5%;
     padding: 7%;
   }
   .sub_text h1{
