@@ -28,9 +28,6 @@ function navbar() {
           <Link smooth={true} offset={-90} duration={1000} to="faqs">
             <a className={styles.NavLinks}>FAQs</a>
           </Link>
-          <Link smooth={true} offset={-90} duration={1000} to="faqs">
-            <a className={styles.NavLinks}>Newsletter</a>
-          </Link>
           <Link smooth={true} offset={-90} duration={1000} to="contact">
             <a className={styles.NavLinks}>Contact Us</a>
           </Link>

@@ -6,7 +6,7 @@ const newsletter = () => {
     return(
 
             <div className={styles.subscribe}>
-                <h1>
+                <h1 className={styles.Heading}>
                         Newsletter
                 </h1>
                 <div className={styles.sub_text}>

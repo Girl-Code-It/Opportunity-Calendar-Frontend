@@ -12,7 +12,7 @@ import SignUp from './Components/SignupLogin/SignUp';
 import Login from './Components/SignupLogin/Login';
 import PageNotFound from './Components/Error/PageNotFound';
 import Forget from './Components/Forget/Forget';
-import Newsletter from './Components/HomePage/Sections/Newsletter';
+
 
 function App() {
   return (
@@ -163,7 +163,7 @@ function App() {
               </div>
             )}
           />
-          <Route path="/newsletter" component={Newsletter} strict exact/>
+          
           <Route
             render={(props) => (
               <div>
