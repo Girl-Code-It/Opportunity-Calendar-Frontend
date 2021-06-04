@@ -36,6 +36,7 @@ function Footer() {
                 Opportuntiy Calendar{' '}
               </p>
             </Link>
+            
           </Col>
 
           <Col className={styles.ImgColumn}>

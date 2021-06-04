@@ -5,6 +5,7 @@ import KnowAbout from './Sections/KnowAbout';
 import Faq from './Sections/FAQ_main';
 import AboutUs from './Sections/AboutUs';
 import ContactUs from './Sections/ContactUs';
+import Newsletter from './Sections/Newsletter'
 
 function HomePage() {
   return (
@@ -14,6 +15,7 @@ function HomePage() {
       <AboutUs />
       <KnowAbout />
       <Faq />
+      <Newsletter/>
       <ContactUs />
     </div>
   );
