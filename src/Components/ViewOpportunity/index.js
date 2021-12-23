@@ -43,6 +43,7 @@ export function ViewOpportunity(props) {
   const [imgSrc, setImgSrc] = useState();
   const [filteredData, setFilteredData] = useState(data);
   const [searchString, setSearchString] = useState('');
+  const [onlyForWomen, setOnlyForWomen] = useState(false);
 
   React.useEffect(() => {
     if (searchString?.length > 0) {
@@ -98,6 +99,15 @@ export function ViewOpportunity(props) {
   return (
     <>
       <CommonComponents onSearchFinal={handleSearchString} />
+      <div className="container">
+        <input
+          type="checkbox"
+          id="women_opp"
+          checked={onlyForWomen}
+          onChange={(e) => setOnlyForWomen(e.target.checked)}
+        />
+        <label for="women_opp">Only For Women</label>
+      </div>
       <Jumbotron className={styles.opportunityBody}>
         <Container>
           {data_length === 0 ? (
@@ -110,6 +120,7 @@ export function ViewOpportunity(props) {
                 <Col md={1} sm={1} lg={1} xl={1} xs={0}></Col>
                 <Col md={10} sm={10} lg={10} xl={10} xs={12}>
                   {filteredData?.map((item) => {
+                    if (onlyForWomen && !item.onlyForFemale) return;
                     return <OpportunityCard key={item.id} item={item} />;
                   })}
                 </Col>
