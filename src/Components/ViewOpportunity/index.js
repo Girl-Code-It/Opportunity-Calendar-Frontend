@@ -8,6 +8,7 @@ import {
   Jumbotron,
   Row,
   NavDropdown,
+  ToggleButton,
 } from 'react-bootstrap';
 import styles from '../../CSS/Opportunity.module.css';
 import Navbar from './Navbar';
@@ -43,6 +44,7 @@ export function ViewOpportunity(props) {
   const [imgSrc, setImgSrc] = useState();
   const [filteredData, setFilteredData] = useState(data);
   const [searchString, setSearchString] = useState('');
+  const [onlyForWomen, setOnlyForWomen] = useState(false);
 
   React.useEffect(() => {
     if (searchString?.length > 0) {
@@ -100,6 +102,67 @@ export function ViewOpportunity(props) {
       <CommonComponents onSearchFinal={handleSearchString} />
       <Jumbotron className={styles.opportunityBody}>
         <Container>
+          <Row>
+            <Col sm={8} md={{ span: 3, offset: 3 }}>
+              <NavDropdown
+                title="Select Opportunity"
+                id="dropdown-basic-button"
+                className={styles.Dropdown}
+              >
+                <NavDropdown.Item href="/viewopportunity/fulltime">
+                  {' '}
+                  Full Time Jobs{' '}
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/viewopportunity/hackathon">
+                  {' '}
+                  Hackathons{' '}
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/viewopportunity/scholarship">
+                  {' '}
+                  Scholarships{' '}
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/viewopportunity/codingcomp">
+                  {' '}
+                  Coding Competitions{' '}
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/viewopportunity/techconf">
+                  {' '}
+                  Tech Conferences{' '}
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/viewopportunity/internships">
+                  {' '}
+                  Internship Opportunities{' '}
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Col>
+            <Col sm={8} md={3}>
+              <ToggleButton
+                className="my-1"
+                id="toggle-check"
+                type="checkbox"
+                variant="outline-secondary"
+                checked={onlyForWomen}
+                value={onlyForWomen}
+                onChange={(e) => setOnlyForWomen(e.currentTarget.checked)}
+              >
+                Only For Women
+              </ToggleButton>
+            </Col>
+          </Row>
+        </Container>
+      </Jumbotron>
+
+      {/* <div className="container">
+        <input
+          type="checkbox"
+          id="women_opp"
+          checked={onlyForWomen}
+          onChange={(e) => setOnlyForWomen(e.target.checked)}
+        />
+        <label for="women_opp">Only For Women</label>
+      </div> */}
+      <Jumbotron className={styles.opportunityBody}>
+        <Container>
           {data_length === 0 ? (
             <div>
               <h3 className={styles.fallbackText}>No opportunities found!!</h3>
@@ -110,6 +173,7 @@ export function ViewOpportunity(props) {
                 <Col md={1} sm={1} lg={1} xl={1} xs={0}></Col>
                 <Col md={10} sm={10} lg={10} xl={10} xs={12}>
                   {filteredData?.map((item) => {
+                    if (onlyForWomen && !item.onlyForFemale) return;
                     return <OpportunityCard key={item.id} item={item} />;
                   })}
                 </Col>
